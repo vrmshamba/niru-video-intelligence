@@ -1,0 +1,877 @@
+{
+  "video_name": "documentary isiolo.mp4",
+  "processed_at": "2026-01-01T13:52:39.734099",
+  "transcript": {
+    "error": "[WinError 2] The system cannot find the file specified"
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 44,
+    "scenes": [
+      {
+        "frame_index": 210,
+        "timestamp": 7.004455121059845,
+        "objects": [
+          {
+            "object": "refrigerator",
+            "confidence": 0.5530366897583008
+          }
+        ]
+      },
+      {
+        "frame_index": 240,
+        "timestamp": 8.005091566925536,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.5766021609306335
+          },
+          {
+            "object": "person",
+            "confidence": 0.3583577275276184
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.33013004064559937
+          },
+          {
+            "object": "car",
+            "confidence": 0.32317960262298584
+          },
+          {
+            "object": "car",
+            "confidence": 0.31246426701545715
+          },
+          {
+            "object": "person",
+            "confidence": 0.30572864413261414
+          },
+          {
+            "object": "car",
+            "confidence": 0.253759503364563
+          }
+        ]
+      },
+      {
+        "frame_index": 270,
+        "timestamp": 9.005728012791229,
+        "objects": [
+          {
+            "object": "sheep",
+            "confidence": 0.7733598351478577
+          },
+          {
+            "object": "sheep",
+            "confidence": 0.2894001305103302
+          }
+        ]
+      },
+      {
+        "frame_index": 300,
+        "timestamp": 10.00636445865692,
+        "objects": [
+          {
+            "object": "cow",
+            "confidence": 0.6894741058349609
+          },
+          {
+            "object": "cow",
+            "confidence": 0.6619314551353455
+          },
+          {
+            "object": "cow",
+            "confidence": 0.5769428610801697
+          },
+          {
+            "object": "cow",
+            "confidence": 0.3964132070541382
+          },
+          {
+            "object": "cow",
+            "confidence": 0.38637474179267883
+          },
+          {
+            "object": "horse",
+            "confidence": 0.3535517454147339
+          },
+          {
+            "object": "elephant",
+            "confidence": 0.35204318165779114
+          },
+          {
+            "object": "cow",
+            "confidence": 0.32234013080596924
+          },
+          {
+            "object": "cow",
+            "confidence": 0.29816123843193054
+          },
+          {
+            "object": "cow",
+            "confidence": 0.28689631819725037
+          }
+        ]
+      },
+      {
+        "frame_index": 330,
+        "timestamp": 11.007000904522613,
+        "objects": [
+          {
+            "object": "dog",
+            "confidence": 0.27073076367378235
+          }
+        ]
+      },
+      {
+        "frame_index": 360,
+        "timestamp": 12.007637350388304,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.6827614903450012
+          },
+          {
+            "object": "person",
+            "confidence": 0.6223735213279724
+          },
+          {
+            "object": "person",
+            "confidence": 0.417795330286026
+          },
+          {
+            "object": "person",
+            "confidence": 0.2800025939941406
+          }
+        ]
+      },
+      {
+        "frame_index": 390,
+        "timestamp": 13.008273796253997,
+        "objects": [
+          {
+            "object": "sheep",
+            "confidence": 0.5875964760780334
+          },
+          {
+            "object": "cow",
+            "confidence": 0.3742257356643677
+          },
+          {
+            "object": "elephant",
+            "confidence": 0.3453262150287628
+          },
+          {
+            "object": "horse",
+            "confidence": 0.27633604407310486
+          }
+        ]
+      },
+      {
+        "frame_index": 600,
+        "timestamp": 20.01272891731384,
+        "objects": [
+          {
+            "object": "sheep",
+            "confidence": 0.8499568104743958
+          },
+          {
+            "object": "cow",
+            "confidence": 0.5688645243644714
+          },
+          {
+            "object": "sheep",
+            "confidence": 0.3044971227645874
+          }
+        ]
+      },
+      {
+        "frame_index": 630,
+        "timestamp": 21.013365363179535,
+        "objects": [
+          {
+            "object": "sheep",
+            "confidence": 0.7867010831832886
+          },
+          {
+            "object": "cow",
+            "confidence": 0.7330139875411987
+          },
+          {
+            "object": "cow",
+            "confidence": 0.5303614139556885
+          }
+        ]
+      },
+      {
+        "frame_index": 660,
+        "timestamp": 22.014001809045226,
+        "objects": [
+          {
+            "object": "cow",
+            "confidence": 0.720973789691925
+          },
+          {
+            "object": "sheep",
+            "confidence": 0.6080623269081116
+          },
+          {
+            "object": "cow",
+            "confidence": 0.6054781079292297
+          }
+        ]
+      },
+      {
+        "frame_index": 690,
+        "timestamp": 23.014638254910917,
+        "objects": [
+          {
+            "object": "cow",
+            "confidence": 0.6278144121170044
+          },
+          {
+            "object": "cow",
+            "confidence": 0.6216768622398376
+          },
+          {
+            "object": "cow",
+            "confidence": 0.5038556456565857
+          },
+          {
+            "object": "cow",
+            "confidence": 0.4200204312801361
+          },
+          {
+            "object": "cow",
+            "confidence": 0.41882410645484924
+          },
+          {
+            "object": "bird",
+            "confidence": 0.2926039695739746
+          }
+        ]
+      },
+      {
+        "frame_index": 720,
+        "timestamp": 24.015274700776608,
+        "objects": [
+          {
+            "object": "cow",
+            "confidence": 0.7060899138450623
+          },
+          {
+            "object": "cow",
+            "confidence": 0.6123284697532654
+          },
+          {
+            "object": "cow",
+            "confidence": 0.35981786251068115
+          },
+          {
+            "object": "cow",
+            "confidence": 0.3594690263271332
+          },
+          {
+            "object": "sheep",
+            "confidence": 0.3107938766479492
+          },
+          {
+            "object": "cow",
+            "confidence": 0.30241644382476807
+          }
+        ]
+      },
+      {
+        "frame_index": 750,
+        "timestamp": 25.015911146642303,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9160327315330505
+          }
+        ]
+      },
+      {
+        "frame_index": 780,
+        "timestamp": 26.016547592507994,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8545477390289307
+          }
+        ]
+      },
+      {
+        "frame_index": 810,
+        "timestamp": 27.017184038373685,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8233513236045837
+          },
+          {
+            "object": "tie",
+            "confidence": 0.2508942782878876
+          }
+        ]
+      },
+      {
+        "frame_index": 840,
+        "timestamp": 28.01782048423938,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7221452593803406
+          }
+        ]
+      },
+      {
+        "frame_index": 870,
+        "timestamp": 29.01845693010507,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9586681723594666
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.6232539415359497
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.5154270529747009
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.44269612431526184
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.42486584186553955
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.33894991874694824
+          }
+        ]
+      },
+      {
+        "frame_index": 900,
+        "timestamp": 30.019093375970762,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9251198172569275
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.6230387687683105
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.48385223746299744
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.43349120020866394
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.43179890513420105
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.36826571822166443
+          }
+        ]
+      },
+      {
+        "frame_index": 930,
+        "timestamp": 31.019729821836453,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9154304265975952
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.6088114380836487
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.43345439434051514
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.4132916033267975
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.403024822473526
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.3748408257961273
+          }
+        ]
+      },
+      {
+        "frame_index": 960,
+        "timestamp": 32.020366267702144,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8843209147453308
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.6316580176353455
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.5029301047325134
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.45730769634246826
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.4242572486400604
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.33979475498199463
+          }
+        ]
+      },
+      {
+        "frame_index": 990,
+        "timestamp": 33.02100271356784,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8869656324386597
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.6128948330879211
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.45926985144615173
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.4177618622779846
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.41353118419647217
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.3352271616458893
+          }
+        ]
+      },
+      {
+        "frame_index": 1020,
+        "timestamp": 34.02163915943353,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8721171617507935
+          }
+        ]
+      },
+      {
+        "frame_index": 1050,
+        "timestamp": 35.02227560529922,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8528662323951721
+          }
+        ]
+      },
+      {
+        "frame_index": 1080,
+        "timestamp": 36.022912051164916,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8346752524375916
+          }
+        ]
+      },
+      {
+        "frame_index": 1110,
+        "timestamp": 37.0235484970306,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8532915711402893
+          }
+        ]
+      },
+      {
+        "frame_index": 1140,
+        "timestamp": 38.0241849428963,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9135006666183472
+          }
+        ]
+      },
+      {
+        "frame_index": 1170,
+        "timestamp": 39.02482138876199,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9088839292526245
+          }
+        ]
+      },
+      {
+        "frame_index": 1200,
+        "timestamp": 40.02545783462768,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8994930982589722
+          }
+        ]
+      },
+      {
+        "frame_index": 1230,
+        "timestamp": 41.026094280493375,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9462846517562866
+          }
+        ]
+      },
+      {
+        "frame_index": 1260,
+        "timestamp": 42.02673072635907,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.86854487657547
+          }
+        ]
+      },
+      {
+        "frame_index": 1290,
+        "timestamp": 43.02736717222476,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8751453757286072
+          }
+        ]
+      },
+      {
+        "frame_index": 1320,
+        "timestamp": 44.02800361809045,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8592376112937927
+          }
+        ]
+      },
+      {
+        "frame_index": 1350,
+        "timestamp": 45.028640063956146,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8744562268257141
+          }
+        ]
+      },
+      {
+        "frame_index": 1380,
+        "timestamp": 46.029276509821834,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9239203333854675
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.6404376029968262
+          }
+        ]
+      },
+      {
+        "frame_index": 1410,
+        "timestamp": 47.02991295568753,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9198377132415771
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.6554564833641052
+          }
+        ]
+      },
+      {
+        "frame_index": 1440,
+        "timestamp": 48.030549401553216,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9299271702766418
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.6340763568878174
+          },
+          {
+            "object": "keyboard",
+            "confidence": 0.26014235615730286
+          }
+        ]
+      },
+      {
+        "frame_index": 1470,
+        "timestamp": 49.03118584741891,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9306226968765259
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.6313741207122803
+          }
+        ]
+      },
+      {
+        "frame_index": 1500,
+        "timestamp": 50.031822293284606,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9202901124954224
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.6259380578994751
+          }
+        ]
+      },
+      {
+        "frame_index": 1530,
+        "timestamp": 51.03245873915029,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9249616861343384
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.6423915028572083
+          },
+          {
+            "object": "chair",
+            "confidence": 0.274820476770401
+          }
+        ]
+      },
+      {
+        "frame_index": 1560,
+        "timestamp": 52.03309518501599,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9156139492988586
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.6302962899208069
+          }
+        ]
+      },
+      {
+        "frame_index": 1770,
+        "timestamp": 59.03755030607583,
+        "objects": [
+          {
+            "object": "horse",
+            "confidence": 0.2721662223339081
+          }
+        ]
+      },
+      {
+        "frame_index": 1980,
+        "timestamp": 66.04200542713568,
+        "objects": [
+          {
+            "object": "refrigerator",
+            "confidence": 0.2588712275028229
+          }
+        ]
+      },
+      {
+        "frame_index": 2010,
+        "timestamp": 67.04264187300137,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.35814368724823
+          }
+        ]
+      },
+      {
+        "frame_index": 2040,
+        "timestamp": 68.04327831886707,
+        "objects": [
+          {
+            "object": "horse",
+            "confidence": 0.5959268808364868
+          },
+          {
+            "object": "giraffe",
+            "confidence": 0.46833062171936035
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [],
+  "insertion_points": [
+    {
+      "timestamp": 11.007000904522613,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 3
+    },
+    {
+      "timestamp": 12.007637350388304,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 3
+    },
+    {
+      "timestamp": 34.02163915943353,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 1
+    },
+    {
+      "timestamp": 35.02227560529922,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 1
+    },
+    {
+      "timestamp": 36.022912051164916,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 1
+    },
+    {
+      "timestamp": 37.0235484970306,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 1
+    },
+    {
+      "timestamp": 38.0241849428963,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 1
+    },
+    {
+      "timestamp": 39.02482138876199,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 1
+    },
+    {
+      "timestamp": 40.02545783462768,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 1
+    },
+    {
+      "timestamp": 41.026094280493375,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 1
+    },
+    {
+      "timestamp": 42.02673072635907,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 1
+    },
+    {
+      "timestamp": 43.02736717222476,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 1
+    },
+    {
+      "timestamp": 44.02800361809045,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 1
+    },
+    {
+      "timestamp": 45.028640063956146,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 2
+    },
+    {
+      "timestamp": 46.029276509821834,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 2
+    },
+    {
+      "timestamp": 47.02991295568753,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 2
+    },
+    {
+      "timestamp": 48.030549401553216,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 2
+    },
+    {
+      "timestamp": 49.03118584741891,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 2
+    },
+    {
+      "timestamp": 50.031822293284606,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 1
+    },
+    {
+      "timestamp": 51.03245873915029,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 1
+    }
+  ],
+  "summary": {
+    "total_objects_detected": 44,
+    "safety_flags": 0,
+    "safe_insertion_windows": 20
+  },
+  "annotated_video": "annotated_documentary isiolo.mp4"
+}

@@ -1,0 +1,12 @@
+flask==3.0.0
+torch
+torchvision
+gdown==4.7.1
+pillow
+numpy==1.24.3
+pandas==2.1.3
+pydub==0.25.1
+moviepy==1.0.3
+openai-whisper
+ultralytics
+opencv-python

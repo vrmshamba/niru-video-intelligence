@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+
+# Large Files (Videos & Models)
+videos/*.mp4
+videos/*.avi
+videos/*.mov
+results/annotated_*.mp4
+models/
+*.pt
+
+# Results (optional - if you want to keep data separate)
+# results/*.json
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
