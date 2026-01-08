@@ -1,8 +1,305 @@
 {
   "video_name": "documentary isiolo.mp4",
-  "processed_at": "2026-01-01T13:52:39.734099",
+  "processed_at": "2026-01-07T07:51:38.139384",
   "transcript": {
-    "error": "[WinError 2] The system cannot find the file specified"
+    "text": " Inwae wilna\u0441\u0442\u0432\u0435\u043dai Kikaya vaimere Oskala Clichul Tuo to un teni wat\u62b1 irang sama Diopyear tihassue Kwarra wata\ufffd ISIL\u55ce disentin K patients DTY Snew ilcozawa,kitinder partea no iketano's",
+    "language": "sw",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 15.0,
+        "text": " Inwae wilna",
+        "tokens": [
+          50364,
+          682,
+          4151,
+          68,
+          20501,
+          629,
+          51114
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -4.935844421386719,
+        "compression_ratio": 0.71875,
+        "no_speech_prob": 0.014221003279089928
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 15.02,
+        "end": 23.02,
+        "text": "\u0441\u0442\u0432\u0435\u043dai",
+        "tokens": [
+          51115,
+          12134,
+          1301,
+          51515
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -4.935844421386719,
+        "compression_ratio": 0.71875,
+        "no_speech_prob": 0.014221003279089928
+      },
+      {
+        "id": 2,
+        "seek": 2302,
+        "start": 23.02,
+        "end": 25.419999999999998,
+        "text": " Kikaya vaimere Oskala Clichul",
+        "tokens": [
+          50364,
+          17459,
+          789,
+          64,
+          2773,
+          332,
+          323,
+          422,
+          5161,
+          5159,
+          383,
+          1739,
+          425,
+          50484
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.5515391031901045,
+        "compression_ratio": 1.0476190476190477,
+        "no_speech_prob": 0.21361388266086578
+      },
+      {
+        "id": 3,
+        "seek": 2302,
+        "start": 25.419999999999998,
+        "end": 26.58,
+        "text": " Tuo to un teni",
+        "tokens": [
+          50484,
+          7836,
+          78,
+          281,
+          517,
+          2064,
+          72,
+          50542
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.5515391031901045,
+        "compression_ratio": 1.0476190476190477,
+        "no_speech_prob": 0.21361388266086578
+      },
+      {
+        "id": 4,
+        "seek": 2302,
+        "start": 26.58,
+        "end": 28.74,
+        "text": " wat\u62b1 irang sama",
+        "tokens": [
+          50542,
+          6858,
+          7235,
+          109,
+          3418,
+          656,
+          17768,
+          50650
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.5515391031901045,
+        "compression_ratio": 1.0476190476190477,
+        "no_speech_prob": 0.21361388266086578
+      },
+      {
+        "id": 5,
+        "seek": 2302,
+        "start": 28.74,
+        "end": 31.060000000000002,
+        "text": " Diopyear tihassue",
+        "tokens": [
+          50650,
+          8789,
+          404,
+          5294,
+          256,
+          4247,
+          640,
+          622,
+          50766
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.5515391031901045,
+        "compression_ratio": 1.0476190476190477,
+        "no_speech_prob": 0.21361388266086578
+      },
+      {
+        "id": 6,
+        "seek": 2302,
+        "start": 31.060000000000002,
+        "end": 33.58,
+        "text": " Kwarra wata",
+        "tokens": [
+          50766,
+          591,
+          6925,
+          424,
+          261,
+          3274,
+          50892
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.5515391031901045,
+        "compression_ratio": 1.0476190476190477,
+        "no_speech_prob": 0.21361388266086578
+      },
+      {
+        "id": 7,
+        "seek": 2302,
+        "start": 33.62,
+        "end": 35.379999999999995,
+        "text": "\ufffd",
+        "tokens": [
+          50894,
+          5342,
+          50982
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.5515391031901045,
+        "compression_ratio": 1.0476190476190477,
+        "no_speech_prob": 0.21361388266086578
+      },
+      {
+        "id": 8,
+        "seek": 2302,
+        "start": 35.379999999999995,
+        "end": 37.019999999999996,
+        "text": " ISIL\u55ce",
+        "tokens": [
+          50982,
+          6205,
+          4620,
+          7434,
+          51064
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.5515391031901045,
+        "compression_ratio": 1.0476190476190477,
+        "no_speech_prob": 0.21361388266086578
+      },
+      {
+        "id": 9,
+        "seek": 2302,
+        "start": 37.019999999999996,
+        "end": 39.5,
+        "text": " disentin",
+        "tokens": [
+          51064,
+          37313,
+          259,
+          51188
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.5515391031901045,
+        "compression_ratio": 1.0476190476190477,
+        "no_speech_prob": 0.21361388266086578
+      },
+      {
+        "id": 10,
+        "seek": 2302,
+        "start": 40.019999999999996,
+        "end": 43.58,
+        "text": " K patients",
+        "tokens": [
+          51214,
+          591,
+          4209,
+          51392
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.5515391031901045,
+        "compression_ratio": 1.0476190476190477,
+        "no_speech_prob": 0.21361388266086578
+      },
+      {
+        "id": 11,
+        "seek": 2302,
+        "start": 43.58,
+        "end": 46.94,
+        "text": " DTY",
+        "tokens": [
+          51392,
+          413,
+          23433,
+          51560
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.5515391031901045,
+        "compression_ratio": 1.0476190476190477,
+        "no_speech_prob": 0.21361388266086578
+      },
+      {
+        "id": 12,
+        "seek": 2302,
+        "start": 46.94,
+        "end": 48.019999999999996,
+        "text": " Snew",
+        "tokens": [
+          51560,
+          318,
+          7686,
+          51614
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.5515391031901045,
+        "compression_ratio": 1.0476190476190477,
+        "no_speech_prob": 0.21361388266086578
+      },
+      {
+        "id": 13,
+        "seek": 4802,
+        "start": 48.02,
+        "end": 50.260000000000005,
+        "text": " ilcozawa,kitinder partea no",
+        "tokens": [
+          50364,
+          1930,
+          1291,
+          89,
+          10449,
+          11,
+          22681,
+          5669,
+          6975,
+          64,
+          572,
+          50476
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.367814716539885,
+        "compression_ratio": 0.8222222222222222,
+        "no_speech_prob": 0.3335892856121063
+      },
+      {
+        "id": 14,
+        "seek": 4802,
+        "start": 50.260000000000005,
+        "end": 55.6,
+        "text": " iketano's",
+        "tokens": [
+          50476,
+          741,
+          5758,
+          3730,
+          311,
+          50743
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.367814716539885,
+        "compression_ratio": 0.8222222222222222,
+        "no_speech_prob": 0.3335892856121063
+      }
+    ]
   },
   "scene_analysis": {
     "total_scenes_analyzed": 44,
@@ -869,6 +1166,7 @@
     }
   ],
   "summary": {
+    "language_detected": "sw",
     "total_objects_detected": 44,
     "safety_flags": 0,
     "safe_insertion_windows": 20

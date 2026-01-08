@@ -1,8 +1,27 @@
 {
   "video_name": "Street scene.mp4",
-  "processed_at": "2026-01-01T14:01:01.889753",
+  "processed_at": "2026-01-07T08:09:49.767278",
   "transcript": {
-    "error": "[WinError 2] The system cannot find the file specified"
+    "text": "\ufffd\ufffd",
+    "language": "nn",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 10.6,
+        "text": "\ufffd\ufffd",
+        "tokens": [
+          50364,
+          11825,
+          50894
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.030732154846191,
+        "compression_ratio": 0.42857142857142855,
+        "no_speech_prob": 0.5289404392242432
+      }
+    ]
   },
   "scene_analysis": {
     "total_scenes_analyzed": 134,
@@ -3033,6 +3052,7 @@
     }
   ],
   "summary": {
+    "language_detected": "nn",
     "total_objects_detected": 134,
     "safety_flags": 0,
     "safe_insertion_windows": 88

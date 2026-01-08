@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NIRU Video Intelligence</title>
+    <title>Whisper Banana - Video Intelligence</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -12,18 +12,18 @@
         rel="stylesheet">
     <style>
         :root {
-            --primary: #6366f1;
-            --primary-dark: #4f46e5;
+            --primary: #fbbf24;
+            --primary-dark: #f59e0b;
             --secondary: #1e293b;
-            --accent: #f43f5e;
+            --accent: #facc15;
             --success: #10b981;
             --warning: #f59e0b;
-            --bg: #0f172a;
-            --card-bg: #1e293b;
-            --text-main: #f8fafc;
-            --text-dim: #94a3b8;
-            --glass: rgba(255, 255, 255, 0.03);
-            --glass-border: rgba(255, 255, 255, 0.08);
+            --bg: #0a0a0a;
+            --card-bg: #1a1a1a;
+            --text-main: #fef3c7;
+            --text-dim: #d1d5db;
+            --glass: rgba(251, 191, 36, 0.05);
+            --glass-border: rgba(251, 191, 36, 0.15);
         }
 
         * {
@@ -35,34 +35,128 @@
             font-family: 'Inter', sans-serif;
             background-color: var(--bg);
             background-image:
-                radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
-                radial-gradient(at 100% 100%, rgba(244, 63, 94, 0.1) 0px, transparent 50%);
+                radial-gradient(at 20% 30%, rgba(251, 191, 36, 0.1) 0px, transparent 50%),
+                radial-gradient(at 80% 70%, rgba(245, 158, 11, 0.08) 0px, transparent 50%),
+                radial-gradient(at 50% 50%, rgba(252, 211, 77, 0.05) 0px, transparent 60%);
             background-attachment: fixed;
             margin: 0;
             padding: 0;
             color: var(--text-main);
             line-height: 1.6;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: -50%;
+            right: -20%;
+            width: 1000px;
+            height: 1000px;
+            background: radial-gradient(circle, rgba(251, 191, 36, 0.03) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 20s ease-in-out infinite;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        body::after {
+            content: '';
+            position: fixed;
+            bottom: -30%;
+            left: -15%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(245, 158, 11, 0.04) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 15s ease-in-out infinite reverse;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .banana-silhouette {
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-15deg);
+            opacity: 0.08;
+            z-index: 0;
+            pointer-events: none;
+            filter: blur(1px);
+        }
+
+        .banana-shape {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, 
+                rgba(251, 191, 36, 0.9) 0%, 
+                rgba(245, 158, 11, 0.7) 50%, 
+                rgba(252, 211, 77, 0.5) 100%);
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            position: relative;
+            animation: pulse 8s ease-in-out infinite;
+        }
+
+        .banana-shape::before {
+            content: '';
+            position: absolute;
+            top: -10%;
+            left: 45%;
+            width: 15%;
+            height: 20%;
+            background: rgba(245, 158, 11, 0.6);
+            border-radius: 50% 50% 0 0;
+            transform: rotate(-20deg);
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+            33% {
+                transform: translate(30px, -30px) rotate(5deg);
+            }
+            66% {
+                transform: translate(-20px, 20px) rotate(-5deg);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1) rotate(-15deg);
+                opacity: 0.08;
+            }
+            50% {
+                transform: scale(1.08) rotate(-12deg);
+                opacity: 0.12;
+            }
         }
 
         header {
             padding: 60px 20px;
             text-align: center;
-            background: rgba(15, 23, 42, 0.6);
+            background: rgba(10, 10, 10, 0.8);
             backdrop-filter: blur(10px);
             border-bottom: 1px solid var(--glass-border);
             margin-bottom: 40px;
+            position: relative;
+            z-index: 10;
         }
 
         h1 {
             font-family: 'Outfit', sans-serif;
             margin: 0;
-            font-size: 3rem;
+            font-size: 3.5rem;
             font-weight: 700;
             letter-spacing: -0.02em;
-            background: linear-gradient(to right, #818cf8, #f472b6);
+            background: linear-gradient(135deg, #fbbf24 0%, #fcd34d 50%, #f59e0b 100%);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 80px rgba(251, 191, 36, 0.3);
         }
 
         header p {
@@ -75,6 +169,8 @@
             max-width: 1280px;
             margin: 0 auto;
             padding: 0 20px 60px 20px;
+            position: relative;
+            z-index: 10;
         }
 
         .summary-stats {
@@ -97,8 +193,8 @@
 
         .stat-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
-            border-color: rgba(99, 102, 241, 0.3);
+            box-shadow: 0 20px 25px -5px rgba(251, 191, 36, 0.2);
+            border-color: rgba(251, 191, 36, 0.4);
         }
 
         .stat-value {
@@ -191,11 +287,11 @@
         }
 
         .badge-video {
-            background: var(--primary);
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
         }
 
         .badge-annotated {
-            background: var(--accent);
+            background: linear-gradient(135deg, #facc15, #fbbf24);
         }
 
         .analysis-section {
@@ -283,9 +379,14 @@
 </head>
 
 <body>
+    <!-- Floating Banana Silhouette -->
+    <div class="banana-silhouette">
+        <div class="banana-shape"></div>
+    </div>
+
     <header>
-        <h1>NIRU Video Intelligence Platform</h1>
-        <p>AI-Powered Content Analysis & Safety Screening for Kenyan Media</p>
+        <h1>Whisper Banana</h1>
+        <p>AI-Powered Video Intelligence for Kenyan Content</p>
     </header>
 
     <div class="container">
@@ -342,9 +443,10 @@
                 const card = document.createElement('div');
                 card.className = 'video-card';
 
-                // Video Source Paths
-                const rawVideoUrl = `/videos/${item.video_name}`;
-                const annotatedVideoUrl = item.annotated_video ? `/results/${item.annotated_video}` : null;
+                // Video Source Paths - FIXED for web-compatible videos
+                const rawVideoUrl = `/videos/${encodeURIComponent(item.video_name)}`;
+                const annotatedFileName = `web_annotated_${item.video_name}`;
+                const annotatedVideoUrl = `/results/${encodeURIComponent(annotatedFileName)}`;
 
                 let safetyHtml = '';
                 if (item.safety_concerns && item.safety_concerns.length > 0) {
@@ -386,15 +488,15 @@
                                     </video>
                                 </div>
                             </div>
-                            ${annotatedVideoUrl ? `
-                            <div style="margin-top:15px;">
+                            <div>
                                 <span class="label-badge badge-annotated">AI Vision (Annotated)</span>
                                 <div class="video-wrapper">
                                     <video controls preload="metadata">
                                         <source src="${annotatedVideoUrl}" type="video/mp4">
+                                        Your browser does not support the video tag.
                                     </video>
                                 </div>
-                            </div>` : ''}
+                            </div>
                         </div>
                         
                         <div class="analysis-section">
@@ -404,7 +506,7 @@
                             <div class="section-title" style="margin-top:20px;">Insertion Recommendations</div>
                             ${insertionHtml}
                             
-                            <div class="section-title" style="margin-top:20px;">Audio Transcript (${item.summary.language_detected})</div>
+                            <div class="section-title" style="margin-top:20px;">Audio Transcript (${item.summary.language_detected || 'N/A'})</div>
                             <div class="transcript-box">
                                 ${item.transcript.text || "No speech detected."}
                             </div>
