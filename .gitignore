@@ -25,3 +25,6 @@ models/
 # OS
 .DS_Store
 Thumbs.db
+results/*.mp4
+outputs/*.mp4
+videos/*.mp4
