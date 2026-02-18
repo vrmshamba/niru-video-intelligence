@@ -13,7 +13,7 @@ VIDEOS_DIR = "videos"
 RESULTS_DIR = "results"
 # Set NIRU_LIBRARY_DIR env var to override (e.g. to point at H:/)
 LIBRARY_DIR = os.environ.get("NIRU_LIBRARY_DIR", "H:/")
-SUPPORTED_EXTS = ('.mp4', '.avi', '.mov')
+SUPPORTED_EXTS = ('.mp4', '.avi', '.mov', '.mxf')
 
 # Single-slot processing state — one video at a time
 _processing_lock = threading.Lock()

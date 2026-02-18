@@ -364,12 +364,11 @@ if __name__ == "__main__":
         video_files = [
             f for f in os.listdir(videos_dir)
             if os.path.isfile(os.path.join(videos_dir, f))
-            and f.lower().endswith(('.mp4', '.avi', '.mov'))
+            and f.lower().endswith(('.mp4', '.avi', '.mov', '.mxf'))
         ]
 
         if not video_files:
-            print("No supported video files found (.mp4, .avi, .mov).")
-            print("Note: .MXF files are not supported by this pipeline.")
+            print("No supported video files found (.mp4, .avi, .mov, .mxf).")
         else:
             print(f"Found {len(video_files)} videos: {video_files}")
             for video_file in video_files:
