@@ -1,0 +1,1161 @@
+{
+  "video_name": "TRAFFIC JAM.AVI",
+  "processed_at": "2026-02-18T11:04:35.932647",
+  "transcript": {
+    "text": "",
+    "language": "nn",
+    "segments": []
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 21,
+    "scenes": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.9302884340286255
+          },
+          {
+            "object": "truck",
+            "confidence": 0.7932618260383606
+          },
+          {
+            "object": "car",
+            "confidence": 0.751237154006958
+          },
+          {
+            "object": "car",
+            "confidence": 0.6870089173316956
+          },
+          {
+            "object": "car",
+            "confidence": 0.5929619073867798
+          },
+          {
+            "object": "car",
+            "confidence": 0.4809836447238922
+          },
+          {
+            "object": "truck",
+            "confidence": 0.4446702301502228
+          },
+          {
+            "object": "car",
+            "confidence": 0.2897246778011322
+          },
+          {
+            "object": "car",
+            "confidence": 0.2719031572341919
+          },
+          {
+            "object": "car",
+            "confidence": 0.2587466537952423
+          },
+          {
+            "object": "car",
+            "confidence": 0.25695887207984924
+          },
+          {
+            "object": "car",
+            "confidence": 0.2560732960700989
+          }
+        ]
+      },
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.9302590489387512
+          },
+          {
+            "object": "car",
+            "confidence": 0.8161655068397522
+          },
+          {
+            "object": "truck",
+            "confidence": 0.7948892712593079
+          },
+          {
+            "object": "car",
+            "confidence": 0.6365686655044556
+          },
+          {
+            "object": "car",
+            "confidence": 0.5645333528518677
+          },
+          {
+            "object": "truck",
+            "confidence": 0.4841770827770233
+          },
+          {
+            "object": "car",
+            "confidence": 0.4336615204811096
+          },
+          {
+            "object": "car",
+            "confidence": 0.3314441740512848
+          },
+          {
+            "object": "car",
+            "confidence": 0.3221760094165802
+          },
+          {
+            "object": "bus",
+            "confidence": 0.31262966990470886
+          },
+          {
+            "object": "bus",
+            "confidence": 0.2709709703922272
+          },
+          {
+            "object": "car",
+            "confidence": 0.2530946135520935
+          }
+        ]
+      },
+      {
+        "frame_index": 60,
+        "timestamp": 2.4,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.934562087059021
+          },
+          {
+            "object": "truck",
+            "confidence": 0.824154257774353
+          },
+          {
+            "object": "car",
+            "confidence": 0.7115396857261658
+          },
+          {
+            "object": "car",
+            "confidence": 0.6695088744163513
+          },
+          {
+            "object": "car",
+            "confidence": 0.6141082644462585
+          },
+          {
+            "object": "car",
+            "confidence": 0.48092228174209595
+          },
+          {
+            "object": "bus",
+            "confidence": 0.47830474376678467
+          },
+          {
+            "object": "car",
+            "confidence": 0.38630568981170654
+          },
+          {
+            "object": "truck",
+            "confidence": 0.3507014811038971
+          },
+          {
+            "object": "car",
+            "confidence": 0.33700135350227356
+          },
+          {
+            "object": "car",
+            "confidence": 0.32048460841178894
+          },
+          {
+            "object": "car",
+            "confidence": 0.31607377529144287
+          },
+          {
+            "object": "car",
+            "confidence": 0.28165215253829956
+          },
+          {
+            "object": "car",
+            "confidence": 0.28029781579971313
+          },
+          {
+            "object": "bus",
+            "confidence": 0.2557528018951416
+          }
+        ]
+      },
+      {
+        "frame_index": 90,
+        "timestamp": 3.6,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.9144105911254883
+          },
+          {
+            "object": "car",
+            "confidence": 0.7433052062988281
+          },
+          {
+            "object": "car",
+            "confidence": 0.6368038654327393
+          },
+          {
+            "object": "truck",
+            "confidence": 0.6163951754570007
+          },
+          {
+            "object": "car",
+            "confidence": 0.5621486306190491
+          },
+          {
+            "object": "truck",
+            "confidence": 0.5387094020843506
+          },
+          {
+            "object": "bus",
+            "confidence": 0.48443740606307983
+          },
+          {
+            "object": "car",
+            "confidence": 0.43569648265838623
+          },
+          {
+            "object": "car",
+            "confidence": 0.39139485359191895
+          },
+          {
+            "object": "car",
+            "confidence": 0.29804444313049316
+          },
+          {
+            "object": "car",
+            "confidence": 0.2968234121799469
+          },
+          {
+            "object": "car",
+            "confidence": 0.2958833575248718
+          },
+          {
+            "object": "car",
+            "confidence": 0.2809920012950897
+          },
+          {
+            "object": "bus",
+            "confidence": 0.27417582273483276
+          },
+          {
+            "object": "car",
+            "confidence": 0.26985692977905273
+          }
+        ]
+      },
+      {
+        "frame_index": 120,
+        "timestamp": 4.8,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.9199029803276062
+          },
+          {
+            "object": "truck",
+            "confidence": 0.710361897945404
+          },
+          {
+            "object": "car",
+            "confidence": 0.6397769451141357
+          },
+          {
+            "object": "car",
+            "confidence": 0.5710996985435486
+          },
+          {
+            "object": "car",
+            "confidence": 0.5391256809234619
+          },
+          {
+            "object": "truck",
+            "confidence": 0.42553865909576416
+          },
+          {
+            "object": "car",
+            "confidence": 0.35115131735801697
+          },
+          {
+            "object": "car",
+            "confidence": 0.3468810021877289
+          },
+          {
+            "object": "car",
+            "confidence": 0.32188352942466736
+          },
+          {
+            "object": "car",
+            "confidence": 0.30119413137435913
+          },
+          {
+            "object": "bus",
+            "confidence": 0.2979763150215149
+          },
+          {
+            "object": "truck",
+            "confidence": 0.29304975271224976
+          },
+          {
+            "object": "car",
+            "confidence": 0.2719528377056122
+          }
+        ]
+      },
+      {
+        "frame_index": 150,
+        "timestamp": 6.0,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.9223511219024658
+          },
+          {
+            "object": "truck",
+            "confidence": 0.8043558597564697
+          },
+          {
+            "object": "car",
+            "confidence": 0.7721433639526367
+          },
+          {
+            "object": "car",
+            "confidence": 0.7021180987358093
+          },
+          {
+            "object": "car",
+            "confidence": 0.5966231226921082
+          },
+          {
+            "object": "car",
+            "confidence": 0.5624427795410156
+          },
+          {
+            "object": "bus",
+            "confidence": 0.3433956205844879
+          },
+          {
+            "object": "car",
+            "confidence": 0.3142232596874237
+          },
+          {
+            "object": "car",
+            "confidence": 0.29382196068763733
+          },
+          {
+            "object": "car",
+            "confidence": 0.2848793566226959
+          },
+          {
+            "object": "car",
+            "confidence": 0.2743946313858032
+          },
+          {
+            "object": "car",
+            "confidence": 0.26786917448043823
+          },
+          {
+            "object": "car",
+            "confidence": 0.2634742856025696
+          }
+        ]
+      },
+      {
+        "frame_index": 180,
+        "timestamp": 7.2,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.9308121204376221
+          },
+          {
+            "object": "car",
+            "confidence": 0.779850423336029
+          },
+          {
+            "object": "car",
+            "confidence": 0.6758756637573242
+          },
+          {
+            "object": "truck",
+            "confidence": 0.6750015020370483
+          },
+          {
+            "object": "bus",
+            "confidence": 0.6079781651496887
+          },
+          {
+            "object": "car",
+            "confidence": 0.6061111688613892
+          },
+          {
+            "object": "car",
+            "confidence": 0.5558937191963196
+          },
+          {
+            "object": "bus",
+            "confidence": 0.4461498260498047
+          },
+          {
+            "object": "car",
+            "confidence": 0.4429147243499756
+          },
+          {
+            "object": "car",
+            "confidence": 0.33254459500312805
+          },
+          {
+            "object": "car",
+            "confidence": 0.26469841599464417
+          },
+          {
+            "object": "car",
+            "confidence": 0.2533414363861084
+          }
+        ]
+      },
+      {
+        "frame_index": 210,
+        "timestamp": 8.4,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.9278066754341125
+          },
+          {
+            "object": "car",
+            "confidence": 0.7118768095970154
+          },
+          {
+            "object": "truck",
+            "confidence": 0.6558616757392883
+          },
+          {
+            "object": "car",
+            "confidence": 0.6188310980796814
+          },
+          {
+            "object": "car",
+            "confidence": 0.6101045608520508
+          },
+          {
+            "object": "bus",
+            "confidence": 0.5520457625389099
+          },
+          {
+            "object": "car",
+            "confidence": 0.5358951687812805
+          },
+          {
+            "object": "car",
+            "confidence": 0.5144346952438354
+          },
+          {
+            "object": "car",
+            "confidence": 0.3866291642189026
+          },
+          {
+            "object": "car",
+            "confidence": 0.37667325139045715
+          },
+          {
+            "object": "bus",
+            "confidence": 0.3318961560726166
+          },
+          {
+            "object": "car",
+            "confidence": 0.302334725856781
+          }
+        ]
+      },
+      {
+        "frame_index": 240,
+        "timestamp": 9.6,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.9344414472579956
+          },
+          {
+            "object": "car",
+            "confidence": 0.8424279689788818
+          },
+          {
+            "object": "car",
+            "confidence": 0.663896381855011
+          },
+          {
+            "object": "car",
+            "confidence": 0.6083676815032959
+          },
+          {
+            "object": "truck",
+            "confidence": 0.5971072316169739
+          },
+          {
+            "object": "car",
+            "confidence": 0.5191788673400879
+          },
+          {
+            "object": "car",
+            "confidence": 0.4942207336425781
+          },
+          {
+            "object": "bus",
+            "confidence": 0.49245959520339966
+          },
+          {
+            "object": "car",
+            "confidence": 0.43074166774749756
+          },
+          {
+            "object": "car",
+            "confidence": 0.35101836919784546
+          },
+          {
+            "object": "bus",
+            "confidence": 0.3244999945163727
+          },
+          {
+            "object": "car",
+            "confidence": 0.3087361752986908
+          },
+          {
+            "object": "bus",
+            "confidence": 0.29469388723373413
+          },
+          {
+            "object": "car",
+            "confidence": 0.25042304396629333
+          }
+        ]
+      },
+      {
+        "frame_index": 270,
+        "timestamp": 10.8,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.9205410480499268
+          },
+          {
+            "object": "car",
+            "confidence": 0.7872065901756287
+          },
+          {
+            "object": "car",
+            "confidence": 0.6768401861190796
+          },
+          {
+            "object": "car",
+            "confidence": 0.6643823981285095
+          },
+          {
+            "object": "car",
+            "confidence": 0.6535816192626953
+          },
+          {
+            "object": "truck",
+            "confidence": 0.548370897769928
+          },
+          {
+            "object": "car",
+            "confidence": 0.5376821756362915
+          },
+          {
+            "object": "car",
+            "confidence": 0.4499971866607666
+          },
+          {
+            "object": "car",
+            "confidence": 0.4450492262840271
+          },
+          {
+            "object": "bus",
+            "confidence": 0.42184770107269287
+          },
+          {
+            "object": "bus",
+            "confidence": 0.39216938614845276
+          },
+          {
+            "object": "bus",
+            "confidence": 0.3516167402267456
+          },
+          {
+            "object": "car",
+            "confidence": 0.31690919399261475
+          },
+          {
+            "object": "car",
+            "confidence": 0.2666407525539398
+          }
+        ]
+      },
+      {
+        "frame_index": 300,
+        "timestamp": 12.0,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.9284238219261169
+          },
+          {
+            "object": "car",
+            "confidence": 0.7731990814208984
+          },
+          {
+            "object": "car",
+            "confidence": 0.6870207786560059
+          },
+          {
+            "object": "car",
+            "confidence": 0.6597734093666077
+          },
+          {
+            "object": "bus",
+            "confidence": 0.620083749294281
+          },
+          {
+            "object": "bus",
+            "confidence": 0.5367200970649719
+          },
+          {
+            "object": "car",
+            "confidence": 0.49357134103775024
+          },
+          {
+            "object": "car",
+            "confidence": 0.49295446276664734
+          },
+          {
+            "object": "truck",
+            "confidence": 0.46530047059059143
+          },
+          {
+            "object": "car",
+            "confidence": 0.45799005031585693
+          },
+          {
+            "object": "car",
+            "confidence": 0.38347771763801575
+          },
+          {
+            "object": "car",
+            "confidence": 0.3798643946647644
+          },
+          {
+            "object": "car",
+            "confidence": 0.3393879234790802
+          },
+          {
+            "object": "car",
+            "confidence": 0.30193328857421875
+          }
+        ]
+      },
+      {
+        "frame_index": 330,
+        "timestamp": 13.2,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.9338737726211548
+          },
+          {
+            "object": "car",
+            "confidence": 0.7532312870025635
+          },
+          {
+            "object": "car",
+            "confidence": 0.6624707579612732
+          },
+          {
+            "object": "car",
+            "confidence": 0.6368324756622314
+          },
+          {
+            "object": "truck",
+            "confidence": 0.6351969242095947
+          },
+          {
+            "object": "bus",
+            "confidence": 0.6191676259040833
+          },
+          {
+            "object": "car",
+            "confidence": 0.530096709728241
+          },
+          {
+            "object": "car",
+            "confidence": 0.508267343044281
+          },
+          {
+            "object": "car",
+            "confidence": 0.4706227779388428
+          },
+          {
+            "object": "car",
+            "confidence": 0.4493487477302551
+          },
+          {
+            "object": "car",
+            "confidence": 0.38090386986732483
+          }
+        ]
+      },
+      {
+        "frame_index": 360,
+        "timestamp": 14.4,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.9434131383895874
+          },
+          {
+            "object": "car",
+            "confidence": 0.8157566785812378
+          },
+          {
+            "object": "truck",
+            "confidence": 0.6822633743286133
+          },
+          {
+            "object": "car",
+            "confidence": 0.6536925435066223
+          },
+          {
+            "object": "car",
+            "confidence": 0.631401002407074
+          },
+          {
+            "object": "car",
+            "confidence": 0.6109175682067871
+          },
+          {
+            "object": "car",
+            "confidence": 0.6109092235565186
+          },
+          {
+            "object": "bus",
+            "confidence": 0.5943266749382019
+          },
+          {
+            "object": "car",
+            "confidence": 0.5332512259483337
+          },
+          {
+            "object": "car",
+            "confidence": 0.3467687964439392
+          },
+          {
+            "object": "car",
+            "confidence": 0.3283821642398834
+          }
+        ]
+      },
+      {
+        "frame_index": 390,
+        "timestamp": 15.6,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.8553220629692078
+          },
+          {
+            "object": "car",
+            "confidence": 0.7872062921524048
+          },
+          {
+            "object": "car",
+            "confidence": 0.7530899047851562
+          },
+          {
+            "object": "car",
+            "confidence": 0.6918431520462036
+          },
+          {
+            "object": "car",
+            "confidence": 0.6767316460609436
+          },
+          {
+            "object": "truck",
+            "confidence": 0.532967746257782
+          },
+          {
+            "object": "car",
+            "confidence": 0.46009835600852966
+          },
+          {
+            "object": "car",
+            "confidence": 0.4554536044597626
+          },
+          {
+            "object": "bus",
+            "confidence": 0.42917394638061523
+          },
+          {
+            "object": "truck",
+            "confidence": 0.33024588227272034
+          },
+          {
+            "object": "car",
+            "confidence": 0.2614139914512634
+          },
+          {
+            "object": "car",
+            "confidence": 0.2593010365962982
+          }
+        ]
+      },
+      {
+        "frame_index": 420,
+        "timestamp": 16.8,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.843989372253418
+          },
+          {
+            "object": "car",
+            "confidence": 0.8336552977561951
+          },
+          {
+            "object": "car",
+            "confidence": 0.774523913860321
+          },
+          {
+            "object": "car",
+            "confidence": 0.6838969588279724
+          },
+          {
+            "object": "car",
+            "confidence": 0.6809277534484863
+          },
+          {
+            "object": "bus",
+            "confidence": 0.49152910709381104
+          },
+          {
+            "object": "truck",
+            "confidence": 0.47876569628715515
+          },
+          {
+            "object": "truck",
+            "confidence": 0.455523282289505
+          },
+          {
+            "object": "car",
+            "confidence": 0.45461270213127136
+          },
+          {
+            "object": "car",
+            "confidence": 0.42759403586387634
+          },
+          {
+            "object": "car",
+            "confidence": 0.4155912399291992
+          },
+          {
+            "object": "car",
+            "confidence": 0.39816194772720337
+          },
+          {
+            "object": "car",
+            "confidence": 0.3488616943359375
+          }
+        ]
+      },
+      {
+        "frame_index": 450,
+        "timestamp": 18.0,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.7944108247756958
+          },
+          {
+            "object": "car",
+            "confidence": 0.7755805850028992
+          },
+          {
+            "object": "truck",
+            "confidence": 0.7367067337036133
+          },
+          {
+            "object": "truck",
+            "confidence": 0.68617844581604
+          },
+          {
+            "object": "car",
+            "confidence": 0.5181522369384766
+          },
+          {
+            "object": "car",
+            "confidence": 0.4904196262359619
+          },
+          {
+            "object": "car",
+            "confidence": 0.46507900953292847
+          },
+          {
+            "object": "truck",
+            "confidence": 0.4060623347759247
+          }
+        ]
+      },
+      {
+        "frame_index": 480,
+        "timestamp": 19.2,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.8496218323707581
+          },
+          {
+            "object": "car",
+            "confidence": 0.6348695755004883
+          },
+          {
+            "object": "car",
+            "confidence": 0.5858089923858643
+          },
+          {
+            "object": "car",
+            "confidence": 0.5848790407180786
+          },
+          {
+            "object": "truck",
+            "confidence": 0.43639782071113586
+          },
+          {
+            "object": "car",
+            "confidence": 0.3959117531776428
+          },
+          {
+            "object": "car",
+            "confidence": 0.3335174024105072
+          },
+          {
+            "object": "car",
+            "confidence": 0.32082125544548035
+          },
+          {
+            "object": "truck",
+            "confidence": 0.30115705728530884
+          },
+          {
+            "object": "car",
+            "confidence": 0.2504158914089203
+          }
+        ]
+      },
+      {
+        "frame_index": 510,
+        "timestamp": 20.4,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.8383462429046631
+          },
+          {
+            "object": "car",
+            "confidence": 0.7314202785491943
+          },
+          {
+            "object": "truck",
+            "confidence": 0.6332100033760071
+          },
+          {
+            "object": "car",
+            "confidence": 0.5655317306518555
+          },
+          {
+            "object": "car",
+            "confidence": 0.4685426652431488
+          },
+          {
+            "object": "truck",
+            "confidence": 0.3912607729434967
+          },
+          {
+            "object": "car",
+            "confidence": 0.36212053894996643
+          },
+          {
+            "object": "car",
+            "confidence": 0.32639214396476746
+          },
+          {
+            "object": "car",
+            "confidence": 0.3107704222202301
+          },
+          {
+            "object": "car",
+            "confidence": 0.2891411781311035
+          },
+          {
+            "object": "car",
+            "confidence": 0.2590402364730835
+          }
+        ]
+      },
+      {
+        "frame_index": 540,
+        "timestamp": 21.6,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.7430028915405273
+          },
+          {
+            "object": "car",
+            "confidence": 0.7116872668266296
+          },
+          {
+            "object": "truck",
+            "confidence": 0.7097469568252563
+          },
+          {
+            "object": "car",
+            "confidence": 0.5432507395744324
+          },
+          {
+            "object": "truck",
+            "confidence": 0.4388248920440674
+          },
+          {
+            "object": "car",
+            "confidence": 0.4115583300590515
+          },
+          {
+            "object": "car",
+            "confidence": 0.36653992533683777
+          },
+          {
+            "object": "car",
+            "confidence": 0.3415866196155548
+          },
+          {
+            "object": "car",
+            "confidence": 0.3041965365409851
+          }
+        ]
+      },
+      {
+        "frame_index": 570,
+        "timestamp": 22.8,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.7655633091926575
+          },
+          {
+            "object": "truck",
+            "confidence": 0.7508409023284912
+          },
+          {
+            "object": "car",
+            "confidence": 0.6631768941879272
+          },
+          {
+            "object": "car",
+            "confidence": 0.5786059498786926
+          },
+          {
+            "object": "car",
+            "confidence": 0.5284264087677002
+          },
+          {
+            "object": "truck",
+            "confidence": 0.5095105171203613
+          },
+          {
+            "object": "car",
+            "confidence": 0.45176494121551514
+          },
+          {
+            "object": "car",
+            "confidence": 0.3768547773361206
+          },
+          {
+            "object": "truck",
+            "confidence": 0.3573771119117737
+          },
+          {
+            "object": "car",
+            "confidence": 0.30729159712791443
+          },
+          {
+            "object": "car",
+            "confidence": 0.25399720668792725
+          }
+        ]
+      },
+      {
+        "frame_index": 600,
+        "timestamp": 24.0,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.7587523460388184
+          },
+          {
+            "object": "truck",
+            "confidence": 0.7431992292404175
+          },
+          {
+            "object": "car",
+            "confidence": 0.712266743183136
+          },
+          {
+            "object": "car",
+            "confidence": 0.5437692403793335
+          },
+          {
+            "object": "car",
+            "confidence": 0.45651528239250183
+          },
+          {
+            "object": "truck",
+            "confidence": 0.4355469346046448
+          },
+          {
+            "object": "truck",
+            "confidence": 0.3718143105506897
+          },
+          {
+            "object": "car",
+            "confidence": 0.37156081199645996
+          },
+          {
+            "object": "car",
+            "confidence": 0.36741402745246887
+          },
+          {
+            "object": "car",
+            "confidence": 0.3553139269351959
+          },
+          {
+            "object": "car",
+            "confidence": 0.2917056977748871
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [],
+  "insertion_points": [],
+  "summary": {
+    "language_detected": "nn",
+    "total_objects_detected": 21,
+    "safety_flags": 0,
+    "safe_insertion_windows": 0
+  },
+  "annotated_video": "web_annotated_TRAFFIC JAM.AVI"
+}

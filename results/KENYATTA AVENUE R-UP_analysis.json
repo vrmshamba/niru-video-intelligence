@@ -1,0 +1,1031 @@
+{
+  "video_name": "KENYATTA AVENUE R-UP.AVI",
+  "processed_at": "2026-02-18T08:54:05.760049",
+  "transcript": {
+    "text": "",
+    "language": "ja",
+    "segments": []
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 22,
+    "scenes": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.9090422987937927
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8328160643577576
+          },
+          {
+            "object": "car",
+            "confidence": 0.8274480700492859
+          },
+          {
+            "object": "car",
+            "confidence": 0.8170075416564941
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.7925403118133545
+          },
+          {
+            "object": "person",
+            "confidence": 0.7380353808403015
+          },
+          {
+            "object": "car",
+            "confidence": 0.6851339936256409
+          },
+          {
+            "object": "bus",
+            "confidence": 0.6475534439086914
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6118906140327454
+          },
+          {
+            "object": "car",
+            "confidence": 0.4528304934501648
+          }
+        ]
+      },
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.8313170075416565
+          },
+          {
+            "object": "car",
+            "confidence": 0.8084487915039062
+          },
+          {
+            "object": "person",
+            "confidence": 0.7747028470039368
+          },
+          {
+            "object": "car",
+            "confidence": 0.7482036352157593
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.7204434871673584
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.7094953656196594
+          },
+          {
+            "object": "person",
+            "confidence": 0.6910117864608765
+          },
+          {
+            "object": "car",
+            "confidence": 0.3992822468280792
+          },
+          {
+            "object": "car",
+            "confidence": 0.317243367433548
+          },
+          {
+            "object": "bus",
+            "confidence": 0.29276636242866516
+          },
+          {
+            "object": "truck",
+            "confidence": 0.2640286982059479
+          },
+          {
+            "object": "person",
+            "confidence": 0.2581063210964203
+          }
+        ]
+      },
+      {
+        "frame_index": 60,
+        "timestamp": 2.4,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.8273624181747437
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.781572163105011
+          },
+          {
+            "object": "car",
+            "confidence": 0.7800424098968506
+          },
+          {
+            "object": "person",
+            "confidence": 0.6852261424064636
+          },
+          {
+            "object": "person",
+            "confidence": 0.5653954148292542
+          },
+          {
+            "object": "person",
+            "confidence": 0.2978063225746155
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.28368788957595825
+          },
+          {
+            "object": "car",
+            "confidence": 0.2548380494117737
+          }
+        ]
+      },
+      {
+        "frame_index": 90,
+        "timestamp": 3.6,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.8443053960800171
+          },
+          {
+            "object": "person",
+            "confidence": 0.7721231579780579
+          },
+          {
+            "object": "person",
+            "confidence": 0.6092329621315002
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5860418677330017
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5744934678077698
+          },
+          {
+            "object": "person",
+            "confidence": 0.49125319719314575
+          },
+          {
+            "object": "train",
+            "confidence": 0.2701505422592163
+          }
+        ]
+      },
+      {
+        "frame_index": 120,
+        "timestamp": 4.8,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.8481420874595642
+          },
+          {
+            "object": "person",
+            "confidence": 0.6998695135116577
+          },
+          {
+            "object": "car",
+            "confidence": 0.6805410981178284
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5551830530166626
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5516160726547241
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5453263521194458
+          },
+          {
+            "object": "person",
+            "confidence": 0.5418956279754639
+          },
+          {
+            "object": "car",
+            "confidence": 0.3419991731643677
+          },
+          {
+            "object": "car",
+            "confidence": 0.31368488073349
+          },
+          {
+            "object": "truck",
+            "confidence": 0.3126736283302307
+          }
+        ]
+      },
+      {
+        "frame_index": 150,
+        "timestamp": 6.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7536220550537109
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6815900802612305
+          },
+          {
+            "object": "person",
+            "confidence": 0.6682407855987549
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6482515931129456
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6447221040725708
+          },
+          {
+            "object": "train",
+            "confidence": 0.28657904267311096
+          }
+        ]
+      },
+      {
+        "frame_index": 180,
+        "timestamp": 7.2,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.7622665166854858
+          },
+          {
+            "object": "person",
+            "confidence": 0.7542840838432312
+          },
+          {
+            "object": "person",
+            "confidence": 0.6526056528091431
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6342589855194092
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.494981974363327
+          },
+          {
+            "object": "truck",
+            "confidence": 0.4133281409740448
+          }
+        ]
+      },
+      {
+        "frame_index": 210,
+        "timestamp": 8.4,
+        "objects": [
+          {
+            "object": "truck",
+            "confidence": 0.7816832065582275
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.7283719182014465
+          },
+          {
+            "object": "person",
+            "confidence": 0.6593729257583618
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6281803846359253
+          },
+          {
+            "object": "person",
+            "confidence": 0.55950528383255
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.4551936089992523
+          }
+        ]
+      },
+      {
+        "frame_index": 240,
+        "timestamp": 9.6,
+        "objects": [
+          {
+            "object": "truck",
+            "confidence": 0.8029078841209412
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6612351536750793
+          },
+          {
+            "object": "person",
+            "confidence": 0.5758204460144043
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5204882025718689
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.4959409534931183
+          },
+          {
+            "object": "person",
+            "confidence": 0.3402627110481262
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.3105759620666504
+          }
+        ]
+      },
+      {
+        "frame_index": 270,
+        "timestamp": 10.8,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.7550938725471497
+          },
+          {
+            "object": "truck",
+            "confidence": 0.6917293667793274
+          },
+          {
+            "object": "person",
+            "confidence": 0.6289313435554504
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5530591607093811
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5316572785377502
+          },
+          {
+            "object": "car",
+            "confidence": 0.4541013538837433
+          },
+          {
+            "object": "truck",
+            "confidence": 0.45240694284439087
+          },
+          {
+            "object": "person",
+            "confidence": 0.39406731724739075
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.36585375666618347
+          },
+          {
+            "object": "person",
+            "confidence": 0.29660189151763916
+          }
+        ]
+      },
+      {
+        "frame_index": 300,
+        "timestamp": 12.0,
+        "objects": [
+          {
+            "object": "bus",
+            "confidence": 0.7734156847000122
+          },
+          {
+            "object": "person",
+            "confidence": 0.7366442084312439
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.7017979621887207
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6039857268333435
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5217812061309814
+          },
+          {
+            "object": "person",
+            "confidence": 0.3767933249473572
+          },
+          {
+            "object": "bus",
+            "confidence": 0.2793254852294922
+          }
+        ]
+      },
+      {
+        "frame_index": 330,
+        "timestamp": 13.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7387075424194336
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.7056244015693665
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6604815125465393
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5923814177513123
+          },
+          {
+            "object": "train",
+            "confidence": 0.49766775965690613
+          },
+          {
+            "object": "person",
+            "confidence": 0.37850815057754517
+          }
+        ]
+      },
+      {
+        "frame_index": 360,
+        "timestamp": 14.4,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.7780762314796448
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.7765682339668274
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6849644780158997
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6840358376502991
+          },
+          {
+            "object": "person",
+            "confidence": 0.659083902835846
+          },
+          {
+            "object": "bus",
+            "confidence": 0.5131382942199707
+          },
+          {
+            "object": "bus",
+            "confidence": 0.41472887992858887
+          },
+          {
+            "object": "person",
+            "confidence": 0.2749235928058624
+          }
+        ]
+      },
+      {
+        "frame_index": 390,
+        "timestamp": 15.6,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.8506466746330261
+          },
+          {
+            "object": "car",
+            "confidence": 0.817315399646759
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.730449914932251
+          },
+          {
+            "object": "person",
+            "confidence": 0.7188315987586975
+          },
+          {
+            "object": "person",
+            "confidence": 0.6775496006011963
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6208600401878357
+          },
+          {
+            "object": "bus",
+            "confidence": 0.598163902759552
+          },
+          {
+            "object": "car",
+            "confidence": 0.5025312900543213
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.3721960484981537
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.3670595586299896
+          },
+          {
+            "object": "car",
+            "confidence": 0.25808680057525635
+          }
+        ]
+      },
+      {
+        "frame_index": 420,
+        "timestamp": 16.8,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.8683688640594482
+          },
+          {
+            "object": "person",
+            "confidence": 0.7434431910514832
+          },
+          {
+            "object": "car",
+            "confidence": 0.7281924486160278
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6999029517173767
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6861653923988342
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6698436737060547
+          },
+          {
+            "object": "person",
+            "confidence": 0.4857262074947357
+          },
+          {
+            "object": "car",
+            "confidence": 0.435854434967041
+          },
+          {
+            "object": "bus",
+            "confidence": 0.31003516912460327
+          }
+        ]
+      },
+      {
+        "frame_index": 450,
+        "timestamp": 18.0,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.8715699315071106
+          },
+          {
+            "object": "car",
+            "confidence": 0.797700047492981
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.7850446105003357
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.7316533923149109
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.7213355898857117
+          },
+          {
+            "object": "car",
+            "confidence": 0.6689836978912354
+          },
+          {
+            "object": "person",
+            "confidence": 0.6417976021766663
+          },
+          {
+            "object": "person",
+            "confidence": 0.6204468607902527
+          },
+          {
+            "object": "person",
+            "confidence": 0.5227811932563782
+          },
+          {
+            "object": "person",
+            "confidence": 0.4251975119113922
+          },
+          {
+            "object": "bus",
+            "confidence": 0.4148409366607666
+          }
+        ]
+      },
+      {
+        "frame_index": 480,
+        "timestamp": 19.2,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.8060754537582397
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.781726598739624
+          },
+          {
+            "object": "person",
+            "confidence": 0.7195557951927185
+          },
+          {
+            "object": "person",
+            "confidence": 0.6763558387756348
+          },
+          {
+            "object": "person",
+            "confidence": 0.6579603552818298
+          },
+          {
+            "object": "person",
+            "confidence": 0.6515030264854431
+          },
+          {
+            "object": "car",
+            "confidence": 0.6332715153694153
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6261975765228271
+          },
+          {
+            "object": "car",
+            "confidence": 0.6173198819160461
+          },
+          {
+            "object": "car",
+            "confidence": 0.6028101444244385
+          },
+          {
+            "object": "person",
+            "confidence": 0.6001248955726624
+          },
+          {
+            "object": "car",
+            "confidence": 0.5484341979026794
+          },
+          {
+            "object": "person",
+            "confidence": 0.5369387865066528
+          },
+          {
+            "object": "person",
+            "confidence": 0.5255922079086304
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.42186132073402405
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.41995769739151
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.31881746649742126
+          }
+        ]
+      },
+      {
+        "frame_index": 510,
+        "timestamp": 20.4,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.8322581052780151
+          },
+          {
+            "object": "person",
+            "confidence": 0.8218231201171875
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.7816280126571655
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.7441626787185669
+          },
+          {
+            "object": "person",
+            "confidence": 0.6660903096199036
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.650229811668396
+          },
+          {
+            "object": "car",
+            "confidence": 0.6135300993919373
+          },
+          {
+            "object": "person",
+            "confidence": 0.5486005544662476
+          },
+          {
+            "object": "bus",
+            "confidence": 0.505436360836029
+          },
+          {
+            "object": "person",
+            "confidence": 0.49284452199935913
+          },
+          {
+            "object": "person",
+            "confidence": 0.43478915095329285
+          },
+          {
+            "object": "car",
+            "confidence": 0.4137229323387146
+          },
+          {
+            "object": "person",
+            "confidence": 0.4067017436027527
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.40153205394744873
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.39176374673843384
+          },
+          {
+            "object": "person",
+            "confidence": 0.37763622403144836
+          },
+          {
+            "object": "person",
+            "confidence": 0.3745153248310089
+          },
+          {
+            "object": "car",
+            "confidence": 0.272534042596817
+          }
+        ]
+      },
+      {
+        "frame_index": 540,
+        "timestamp": 21.6,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.8749607801437378
+          },
+          {
+            "object": "car",
+            "confidence": 0.8492068648338318
+          },
+          {
+            "object": "car",
+            "confidence": 0.7985045313835144
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.7942087054252625
+          },
+          {
+            "object": "person",
+            "confidence": 0.7868269681930542
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.7462850213050842
+          },
+          {
+            "object": "bus",
+            "confidence": 0.705956757068634
+          },
+          {
+            "object": "person",
+            "confidence": 0.6750991940498352
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.663727343082428
+          },
+          {
+            "object": "person",
+            "confidence": 0.5783627033233643
+          },
+          {
+            "object": "car",
+            "confidence": 0.47123226523399353
+          },
+          {
+            "object": "car",
+            "confidence": 0.4091273546218872
+          },
+          {
+            "object": "person",
+            "confidence": 0.3415975570678711
+          },
+          {
+            "object": "car",
+            "confidence": 0.2774069011211395
+          },
+          {
+            "object": "bus",
+            "confidence": 0.2702358365058899
+          },
+          {
+            "object": "car",
+            "confidence": 0.26977285742759705
+          }
+        ]
+      },
+      {
+        "frame_index": 570,
+        "timestamp": 22.8,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.8804740309715271
+          },
+          {
+            "object": "person",
+            "confidence": 0.8377482891082764
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8073648810386658
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.765465259552002
+          },
+          {
+            "object": "truck",
+            "confidence": 0.7395868301391602
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.7123073935508728
+          },
+          {
+            "object": "bus",
+            "confidence": 0.6441784501075745
+          },
+          {
+            "object": "bus",
+            "confidence": 0.6350807547569275
+          },
+          {
+            "object": "car",
+            "confidence": 0.6052250266075134
+          },
+          {
+            "object": "person",
+            "confidence": 0.43711671233177185
+          }
+        ]
+      },
+      {
+        "frame_index": 600,
+        "timestamp": 24.0,
+        "objects": [
+          {
+            "object": "truck",
+            "confidence": 0.886949896812439
+          },
+          {
+            "object": "person",
+            "confidence": 0.8302077054977417
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8105269074440002
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.7871330976486206
+          },
+          {
+            "object": "car",
+            "confidence": 0.7782626152038574
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6706379652023315
+          },
+          {
+            "object": "person",
+            "confidence": 0.6081095337867737
+          },
+          {
+            "object": "car",
+            "confidence": 0.4619099497795105
+          },
+          {
+            "object": "car",
+            "confidence": 0.34776178002357483
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.3339785635471344
+          }
+        ]
+      },
+      {
+        "frame_index": 630,
+        "timestamp": 25.2,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.9241602420806885
+          },
+          {
+            "object": "truck",
+            "confidence": 0.8433490991592407
+          },
+          {
+            "object": "car",
+            "confidence": 0.8185855746269226
+          },
+          {
+            "object": "person",
+            "confidence": 0.8166921734809875
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8131082653999329
+          },
+          {
+            "object": "person",
+            "confidence": 0.6733210682868958
+          },
+          {
+            "object": "bus",
+            "confidence": 0.6443459987640381
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6304430961608887
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6260658502578735
+          },
+          {
+            "object": "person",
+            "confidence": 0.5685567855834961
+          },
+          {
+            "object": "person",
+            "confidence": 0.5031384229660034
+          },
+          {
+            "object": "person",
+            "confidence": 0.37673652172088623
+          },
+          {
+            "object": "person",
+            "confidence": 0.36026760935783386
+          },
+          {
+            "object": "person",
+            "confidence": 0.3445444405078888
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [],
+  "insertion_points": [],
+  "summary": {
+    "language_detected": "ja",
+    "total_objects_detected": 22,
+    "safety_flags": 0,
+    "safe_insertion_windows": 0
+  },
+  "annotated_video": "web_annotated_KENYATTA AVENUE R-UP.AVI"
+}

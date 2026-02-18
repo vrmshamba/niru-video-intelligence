@@ -1,0 +1,273 @@
+{
+  "video_name": "FLOODS IN NAIROBI COUNTY.AVI",
+  "processed_at": "2026-02-18T08:47:36.538808",
+  "transcript": {
+    "text": " Disturra da richitzare addil carimo facebook",
+    "language": "it",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 3.14,
+        "text": " Disturra da richitzare",
+        "tokens": [
+          50364,
+          9840,
+          374,
+          424,
+          1120,
+          4593,
+          6862,
+          543,
+          50521
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -4.0381622314453125,
+        "compression_ratio": 0.8461538461538461,
+        "no_speech_prob": 0.09480969607830048
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 4.38,
+        "end": 7.08,
+        "text": " addil carimo facebook",
+        "tokens": [
+          50583,
+          909,
+          388,
+          1032,
+          6934,
+          23372,
+          50718
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -4.0381622314453125,
+        "compression_ratio": 0.8461538461538461,
+        "no_speech_prob": 0.09480969607830048
+      }
+    ]
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 8,
+    "scenes": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "objects": [
+          {
+            "object": "motorcycle",
+            "confidence": 0.3883626461029053
+          },
+          {
+            "object": "truck",
+            "confidence": 0.38786762952804565
+          },
+          {
+            "object": "truck",
+            "confidence": 0.27180612087249756
+          }
+        ]
+      },
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "objects": [
+          {
+            "object": "truck",
+            "confidence": 0.335592657327652
+          },
+          {
+            "object": "motorcycle",
+            "confidence": 0.3254162073135376
+          }
+        ]
+      },
+      {
+        "frame_index": 60,
+        "timestamp": 2.4,
+        "objects": [
+          {
+            "object": "bus",
+            "confidence": 0.3910406529903412
+          }
+        ]
+      },
+      {
+        "frame_index": 90,
+        "timestamp": 3.6,
+        "objects": [
+          {
+            "object": "bus",
+            "confidence": 0.4645450711250305
+          },
+          {
+            "object": "truck",
+            "confidence": 0.25190457701683044
+          }
+        ]
+      },
+      {
+        "frame_index": 150,
+        "timestamp": 6.0,
+        "objects": [
+          {
+            "object": "motorcycle",
+            "confidence": 0.7289605140686035
+          },
+          {
+            "object": "car",
+            "confidence": 0.680385410785675
+          },
+          {
+            "object": "person",
+            "confidence": 0.3703363835811615
+          },
+          {
+            "object": "truck",
+            "confidence": 0.28270652890205383
+          }
+        ]
+      },
+      {
+        "frame_index": 180,
+        "timestamp": 7.2,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.8835315108299255
+          },
+          {
+            "object": "car",
+            "confidence": 0.6603031754493713
+          },
+          {
+            "object": "car",
+            "confidence": 0.6455482840538025
+          },
+          {
+            "object": "person",
+            "confidence": 0.586510956287384
+          },
+          {
+            "object": "car",
+            "confidence": 0.5774583220481873
+          },
+          {
+            "object": "motorcycle",
+            "confidence": 0.5365676283836365
+          },
+          {
+            "object": "car",
+            "confidence": 0.5336848497390747
+          },
+          {
+            "object": "person",
+            "confidence": 0.4048912823200226
+          },
+          {
+            "object": "car",
+            "confidence": 0.36242130398750305
+          },
+          {
+            "object": "person",
+            "confidence": 0.3149551749229431
+          },
+          {
+            "object": "car",
+            "confidence": 0.2810078561306
+          },
+          {
+            "object": "car",
+            "confidence": 0.2698891758918762
+          }
+        ]
+      },
+      {
+        "frame_index": 210,
+        "timestamp": 8.4,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.8981274366378784
+          },
+          {
+            "object": "car",
+            "confidence": 0.8885692954063416
+          },
+          {
+            "object": "person",
+            "confidence": 0.7350903153419495
+          },
+          {
+            "object": "car",
+            "confidence": 0.45531120896339417
+          },
+          {
+            "object": "motorcycle",
+            "confidence": 0.4359557330608368
+          },
+          {
+            "object": "motorcycle",
+            "confidence": 0.30698978900909424
+          },
+          {
+            "object": "car",
+            "confidence": 0.3064430058002472
+          },
+          {
+            "object": "car",
+            "confidence": 0.2936733365058899
+          },
+          {
+            "object": "car",
+            "confidence": 0.2826368808746338
+          }
+        ]
+      },
+      {
+        "frame_index": 240,
+        "timestamp": 9.6,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.8879217505455017
+          },
+          {
+            "object": "car",
+            "confidence": 0.8255428075790405
+          },
+          {
+            "object": "car",
+            "confidence": 0.5203955769538879
+          },
+          {
+            "object": "truck",
+            "confidence": 0.33962729573249817
+          },
+          {
+            "object": "motorcycle",
+            "confidence": 0.2693454325199127
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [],
+  "insertion_points": [
+    {
+      "timestamp": 0.0,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 2
+    }
+  ],
+  "summary": {
+    "language_detected": "it",
+    "total_objects_detected": 8,
+    "safety_flags": 0,
+    "safe_insertion_windows": 1
+  },
+  "annotated_video": "web_annotated_FLOODS IN NAIROBI COUNTY.AVI"
+}

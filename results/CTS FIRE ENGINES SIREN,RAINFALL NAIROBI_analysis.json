@@ -1,0 +1,275 @@
+{
+  "video_name": "CTS FIRE ENGINES SIREN,RAINFALL NAIROBI.AVI",
+  "processed_at": "2026-02-18T08:40:08.547187",
+  "transcript": {
+    "text": "",
+    "language": "jw",
+    "segments": []
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 10,
+    "scenes": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.7785398364067078
+          },
+          {
+            "object": "person",
+            "confidence": 0.7383617758750916
+          },
+          {
+            "object": "car",
+            "confidence": 0.6677924394607544
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5522744655609131
+          },
+          {
+            "object": "truck",
+            "confidence": 0.3823096752166748
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.32405370473861694
+          },
+          {
+            "object": "car",
+            "confidence": 0.29099181294441223
+          },
+          {
+            "object": "car",
+            "confidence": 0.28557005524635315
+          },
+          {
+            "object": "parking meter",
+            "confidence": 0.2723754048347473
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.2543255090713501
+          }
+        ]
+      },
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7431617379188538
+          },
+          {
+            "object": "car",
+            "confidence": 0.6470569372177124
+          },
+          {
+            "object": "person",
+            "confidence": 0.30374661087989807
+          },
+          {
+            "object": "person",
+            "confidence": 0.27969661355018616
+          },
+          {
+            "object": "train",
+            "confidence": 0.2782236933708191
+          },
+          {
+            "object": "bus",
+            "confidence": 0.2737545967102051
+          }
+        ]
+      },
+      {
+        "frame_index": 60,
+        "timestamp": 2.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.847129225730896
+          },
+          {
+            "object": "car",
+            "confidence": 0.4792608320713043
+          },
+          {
+            "object": "car",
+            "confidence": 0.42738258838653564
+          },
+          {
+            "object": "car",
+            "confidence": 0.268774151802063
+          }
+        ]
+      },
+      {
+        "frame_index": 90,
+        "timestamp": 3.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7865745425224304
+          },
+          {
+            "object": "car",
+            "confidence": 0.7099772095680237
+          },
+          {
+            "object": "truck",
+            "confidence": 0.3161478042602539
+          },
+          {
+            "object": "car",
+            "confidence": 0.31407007575035095
+          },
+          {
+            "object": "car",
+            "confidence": 0.25778403878211975
+          }
+        ]
+      },
+      {
+        "frame_index": 120,
+        "timestamp": 4.8,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.6544343829154968
+          },
+          {
+            "object": "car",
+            "confidence": 0.6342098712921143
+          },
+          {
+            "object": "car",
+            "confidence": 0.4059067368507385
+          }
+        ]
+      },
+      {
+        "frame_index": 150,
+        "timestamp": 6.0,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.7944737076759338
+          },
+          {
+            "object": "car",
+            "confidence": 0.47774240374565125
+          },
+          {
+            "object": "car",
+            "confidence": 0.4110793173313141
+          },
+          {
+            "object": "truck",
+            "confidence": 0.3706938624382019
+          },
+          {
+            "object": "truck",
+            "confidence": 0.3680354952812195
+          },
+          {
+            "object": "car",
+            "confidence": 0.26660656929016113
+          },
+          {
+            "object": "car",
+            "confidence": 0.2607783079147339
+          }
+        ]
+      },
+      {
+        "frame_index": 180,
+        "timestamp": 7.2,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.8459070920944214
+          },
+          {
+            "object": "car",
+            "confidence": 0.49788734316825867
+          },
+          {
+            "object": "truck",
+            "confidence": 0.33756783604621887
+          },
+          {
+            "object": "car",
+            "confidence": 0.3204972743988037
+          }
+        ]
+      },
+      {
+        "frame_index": 210,
+        "timestamp": 8.4,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.7617164254188538
+          },
+          {
+            "object": "car",
+            "confidence": 0.5410045385360718
+          },
+          {
+            "object": "truck",
+            "confidence": 0.27008381485939026
+          }
+        ]
+      },
+      {
+        "frame_index": 240,
+        "timestamp": 9.6,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.642055094242096
+          },
+          {
+            "object": "car",
+            "confidence": 0.6126603484153748
+          },
+          {
+            "object": "car",
+            "confidence": 0.3358098566532135
+          }
+        ]
+      },
+      {
+        "frame_index": 270,
+        "timestamp": 10.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8159179091453552
+          },
+          {
+            "object": "umbrella",
+            "confidence": 0.8021826148033142
+          },
+          {
+            "object": "car",
+            "confidence": 0.6880627870559692
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [],
+  "insertion_points": [],
+  "summary": {
+    "language_detected": "jw",
+    "total_objects_detected": 10,
+    "safety_flags": 0,
+    "safe_insertion_windows": 0
+  },
+  "annotated_video": "web_annotated_CTS FIRE ENGINES SIREN,RAINFALL NAIROBI.AVI"
+}

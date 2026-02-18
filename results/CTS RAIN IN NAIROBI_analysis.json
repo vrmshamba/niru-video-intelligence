@@ -1,0 +1,342 @@
+{
+  "video_name": "CTS RAIN IN NAIROBI.AVI",
+  "processed_at": "2026-02-18T08:44:07.436404",
+  "transcript": {
+    "text": " The locals have owned many good people. We could find something like it abroad. We went round for a walk.",
+    "language": "en",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 2.88,
+        "text": " The locals have owned many good people.",
+        "tokens": [
+          50364,
+          440,
+          23335,
+          362,
+          11684,
+          867,
+          665,
+          561,
+          13,
+          50508
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -4.302631123860677,
+        "compression_ratio": 1.1538461538461537,
+        "no_speech_prob": 0.2618809938430786
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 12.06,
+        "end": 16.06,
+        "text": " We could find something like it abroad.",
+        "tokens": [
+          50967,
+          492,
+          727,
+          915,
+          746,
+          411,
+          309,
+          12637,
+          13,
+          51167
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -4.302631123860677,
+        "compression_ratio": 1.1538461538461537,
+        "no_speech_prob": 0.2618809938430786
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 24.68,
+        "end": 27.02,
+        "text": " We went round for a walk.",
+        "tokens": [
+          51598,
+          492,
+          1437,
+          3098,
+          337,
+          257,
+          1792,
+          13,
+          51715
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -4.302631123860677,
+        "compression_ratio": 1.1538461538461537,
+        "no_speech_prob": 0.2618809938430786
+      }
+    ]
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 9,
+    "scenes": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "objects": [
+          {
+            "object": "train",
+            "confidence": 0.3544735610485077
+          }
+        ]
+      },
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.9099082350730896
+          },
+          {
+            "object": "person",
+            "confidence": 0.6291523575782776
+          },
+          {
+            "object": "car",
+            "confidence": 0.4064315855503082
+          }
+        ]
+      },
+      {
+        "frame_index": 60,
+        "timestamp": 2.4,
+        "objects": [
+          {
+            "object": "bus",
+            "confidence": 0.2627078890800476
+          }
+        ]
+      },
+      {
+        "frame_index": 90,
+        "timestamp": 3.6,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.840488076210022
+          },
+          {
+            "object": "motorcycle",
+            "confidence": 0.7203159332275391
+          },
+          {
+            "object": "person",
+            "confidence": 0.5907400250434875
+          },
+          {
+            "object": "car",
+            "confidence": 0.49136149883270264
+          },
+          {
+            "object": "car",
+            "confidence": 0.4675462245941162
+          },
+          {
+            "object": "car",
+            "confidence": 0.3215830624103546
+          },
+          {
+            "object": "car",
+            "confidence": 0.31288009881973267
+          },
+          {
+            "object": "car",
+            "confidence": 0.2565271258354187
+          }
+        ]
+      },
+      {
+        "frame_index": 120,
+        "timestamp": 4.8,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.9032524228096008
+          },
+          {
+            "object": "car",
+            "confidence": 0.9005354046821594
+          },
+          {
+            "object": "car",
+            "confidence": 0.8237726092338562
+          },
+          {
+            "object": "car",
+            "confidence": 0.8208369612693787
+          },
+          {
+            "object": "car",
+            "confidence": 0.8069592118263245
+          },
+          {
+            "object": "car",
+            "confidence": 0.7604445815086365
+          },
+          {
+            "object": "person",
+            "confidence": 0.7261255383491516
+          },
+          {
+            "object": "bus",
+            "confidence": 0.7132925987243652
+          },
+          {
+            "object": "umbrella",
+            "confidence": 0.6443361639976501
+          },
+          {
+            "object": "person",
+            "confidence": 0.603497326374054
+          },
+          {
+            "object": "person",
+            "confidence": 0.5788906812667847
+          },
+          {
+            "object": "person",
+            "confidence": 0.5784781575202942
+          },
+          {
+            "object": "motorcycle",
+            "confidence": 0.549234926700592
+          },
+          {
+            "object": "car",
+            "confidence": 0.5366259217262268
+          },
+          {
+            "object": "car",
+            "confidence": 0.37357279658317566
+          },
+          {
+            "object": "car",
+            "confidence": 0.3338415026664734
+          },
+          {
+            "object": "car",
+            "confidence": 0.3195972144603729
+          }
+        ]
+      },
+      {
+        "frame_index": 150,
+        "timestamp": 6.0,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.8865885138511658
+          },
+          {
+            "object": "car",
+            "confidence": 0.8285679817199707
+          },
+          {
+            "object": "car",
+            "confidence": 0.7653499841690063
+          },
+          {
+            "object": "person",
+            "confidence": 0.7601198554039001
+          },
+          {
+            "object": "car",
+            "confidence": 0.479480117559433
+          },
+          {
+            "object": "person",
+            "confidence": 0.3763313591480255
+          },
+          {
+            "object": "car",
+            "confidence": 0.30855700373649597
+          },
+          {
+            "object": "umbrella",
+            "confidence": 0.28637611865997314
+          },
+          {
+            "object": "car",
+            "confidence": 0.27262598276138306
+          },
+          {
+            "object": "car",
+            "confidence": 0.252674400806427
+          }
+        ]
+      },
+      {
+        "frame_index": 180,
+        "timestamp": 7.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.6585936546325684
+          },
+          {
+            "object": "motorcycle",
+            "confidence": 0.6118264198303223
+          },
+          {
+            "object": "person",
+            "confidence": 0.5264312028884888
+          },
+          {
+            "object": "motorcycle",
+            "confidence": 0.2755250632762909
+          },
+          {
+            "object": "bus",
+            "confidence": 0.2720452845096588
+          }
+        ]
+      },
+      {
+        "frame_index": 210,
+        "timestamp": 8.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.6827381253242493
+          },
+          {
+            "object": "person",
+            "confidence": 0.2699059844017029
+          }
+        ]
+      },
+      {
+        "frame_index": 270,
+        "timestamp": 10.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.6212038397789001
+          },
+          {
+            "object": "person",
+            "confidence": 0.36508724093437195
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [],
+  "insertion_points": [],
+  "summary": {
+    "language_detected": "en",
+    "total_objects_detected": 9,
+    "safety_flags": 0,
+    "safe_insertion_windows": 0
+  },
+  "annotated_video": "web_annotated_CTS RAIN IN NAIROBI.AVI"
+}

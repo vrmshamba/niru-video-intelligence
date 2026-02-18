@@ -1,0 +1,365 @@
+{
+  "video_name": "CITY HOPPA CONDUCTOR SCREENING PASSENGERS .AVI",
+  "processed_at": "2026-02-18T08:35:46.926783",
+  "transcript": {
+    "text": " equipmenta\ufffd\ufffdera del Mina\ufffd\ufffd bueno he dale\u0103m donde",
+    "language": "es",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 2.92,
+        "text": " equipmenta",
+        "tokens": [
+          50364,
+          5927,
+          64,
+          50510
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.380043819032866,
+        "compression_ratio": 0.95,
+        "no_speech_prob": 0.4281347692012787
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 3.92,
+        "end": 4.6000000000000005,
+        "text": "\ufffd\ufffdera del",
+        "tokens": [
+          50560,
+          43858,
+          1663,
+          1103,
+          50594
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.380043819032866,
+        "compression_ratio": 0.95,
+        "no_speech_prob": 0.4281347692012787
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 4.6000000000000005,
+        "end": 6.7,
+        "text": " Mina",
+        "tokens": [
+          50594,
+          35981,
+          50699
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.380043819032866,
+        "compression_ratio": 0.95,
+        "no_speech_prob": 0.4281347692012787
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 7.94,
+        "end": 9.8,
+        "text": "\ufffd\ufffd bueno",
+        "tokens": [
+          50761,
+          2708,
+          11974,
+          50854
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.380043819032866,
+        "compression_ratio": 0.95,
+        "no_speech_prob": 0.4281347692012787
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 9.8,
+        "end": 11.56,
+        "text": " he",
+        "tokens": [
+          50854,
+          415,
+          50942
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.380043819032866,
+        "compression_ratio": 0.95,
+        "no_speech_prob": 0.4281347692012787
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 11.56,
+        "end": 12.74,
+        "text": " dale",
+        "tokens": [
+          50942,
+          27326,
+          51001
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.380043819032866,
+        "compression_ratio": 0.95,
+        "no_speech_prob": 0.4281347692012787
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 12.76,
+        "end": 14.02,
+        "text": "\u0103m",
+        "tokens": [
+          51002,
+          21434,
+          51065
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.380043819032866,
+        "compression_ratio": 0.95,
+        "no_speech_prob": 0.4281347692012787
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 14.02,
+        "end": 16.7,
+        "text": " donde",
+        "tokens": [
+          51065,
+          10488,
+          51199
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.380043819032866,
+        "compression_ratio": 0.95,
+        "no_speech_prob": 0.4281347692012787
+      }
+    ]
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 15,
+    "scenes": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8957484364509583
+          }
+        ]
+      },
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9127811193466187
+          }
+        ]
+      },
+      {
+        "frame_index": 60,
+        "timestamp": 2.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.5159123539924622
+          },
+          {
+            "object": "person",
+            "confidence": 0.27832475304603577
+          }
+        ]
+      },
+      {
+        "frame_index": 90,
+        "timestamp": 3.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7242516279220581
+          }
+        ]
+      },
+      {
+        "frame_index": 120,
+        "timestamp": 4.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8431507349014282
+          },
+          {
+            "object": "person",
+            "confidence": 0.2663801908493042
+          }
+        ]
+      },
+      {
+        "frame_index": 150,
+        "timestamp": 6.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.5847650766372681
+          },
+          {
+            "object": "person",
+            "confidence": 0.30868464708328247
+          }
+        ]
+      },
+      {
+        "frame_index": 180,
+        "timestamp": 7.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9182562828063965
+          }
+        ]
+      },
+      {
+        "frame_index": 210,
+        "timestamp": 8.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9219217896461487
+          }
+        ]
+      },
+      {
+        "frame_index": 240,
+        "timestamp": 9.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8910120129585266
+          }
+        ]
+      },
+      {
+        "frame_index": 270,
+        "timestamp": 10.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9083414673805237
+          },
+          {
+            "object": "person",
+            "confidence": 0.3994655907154083
+          }
+        ]
+      },
+      {
+        "frame_index": 300,
+        "timestamp": 12.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8947839140892029
+          },
+          {
+            "object": "person",
+            "confidence": 0.4043513834476471
+          },
+          {
+            "object": "person",
+            "confidence": 0.3719260096549988
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.273242324590683
+          }
+        ]
+      },
+      {
+        "frame_index": 330,
+        "timestamp": 13.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9266447424888611
+          },
+          {
+            "object": "person",
+            "confidence": 0.8094903230667114
+          }
+        ]
+      },
+      {
+        "frame_index": 360,
+        "timestamp": 14.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9130343198776245
+          }
+        ]
+      },
+      {
+        "frame_index": 390,
+        "timestamp": 15.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8711191415786743
+          },
+          {
+            "object": "person",
+            "confidence": 0.7408954501152039
+          }
+        ]
+      },
+      {
+        "frame_index": 420,
+        "timestamp": 16.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9374485015869141
+          },
+          {
+            "object": "person",
+            "confidence": 0.2935347855091095
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [],
+  "insertion_points": [
+    {
+      "timestamp": 0.0,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 1
+    },
+    {
+      "timestamp": 6.0,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 1
+    },
+    {
+      "timestamp": 12.0,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 2
+    }
+  ],
+  "summary": {
+    "language_detected": "es",
+    "total_objects_detected": 15,
+    "safety_flags": 0,
+    "safe_insertion_windows": 3
+  },
+  "annotated_video": "web_annotated_CITY HOPPA CONDUCTOR SCREENING PASSENGERS .AVI"
+}

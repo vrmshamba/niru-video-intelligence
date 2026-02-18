@@ -1,0 +1,247 @@
+{
+  "video_name": "NAIROBI AERIAL SHOTS (3).MP4",
+  "processed_at": "2026-02-18T10:05:27.854417",
+  "transcript": {
+    "error": "Failed to load audio: ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers\r\n  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)\r\n  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband\r\n  libavutil      59. 39.100 / 59. 39.100\r\n  libavcodec     61. 19.100 / 61. 19.100\r\n  libavformat    61.  7.100 / 61.  7.100\r\n  libavdevice    61.  3.100 / 61.  3.100\r\n  libavfilter    10.  4.100 / 10.  4.100\r\n  libswscale      8.  3.100 /  8.  3.100\r\n  libswresample   5.  3.100 /  5.  3.100\r\n  libpostproc    58.  3.100 / 58.  3.100\r\nInput #0, mov,mp4,m4a,3gp,3g2,mj2, from 'H:/NAIROBI AERIAL SHOTS (3).MP4':\r\n  Metadata:\r\n    major_brand     : isom\r\n    minor_version   : 512\r\n    compatible_brands: isomiso2avc1mp41\r\n    creation_time   : 2022-06-10T15:59:08.000000Z\r\n    encoder         : Lavf56.15.102\r\n  Duration: 00:01:05.88, start: 0.000000, bitrate: 35002 kb/s\r\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080, 35000 kb/s, 25 fps, 25 tbr, 25k tbn (default)\r\n      Metadata:\r\n        creation_time   : 2022-06-10T15:59:08.000000Z\r\n        handler_name    : VideoHandler\r\n        vendor_id       : [0][0][0][0]\r\nOutput #0, s16le, to 'pipe:':\r\n[out#0/s16le @ 0000029d37d20dc0] Output file does not contain any stream\r\nError opening output file -.\r\nError opening output files: Invalid argument\r\n"
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 18,
+    "scenes": [
+      {
+        "frame_index": 300,
+        "timestamp": 12.0,
+        "objects": [
+          {
+            "object": "truck",
+            "confidence": 0.36442384123802185
+          }
+        ]
+      },
+      {
+        "frame_index": 420,
+        "timestamp": 16.8,
+        "objects": [
+          {
+            "object": "train",
+            "confidence": 0.3246248960494995
+          }
+        ]
+      },
+      {
+        "frame_index": 450,
+        "timestamp": 18.0,
+        "objects": [
+          {
+            "object": "train",
+            "confidence": 0.3806631565093994
+          },
+          {
+            "object": "train",
+            "confidence": 0.25319886207580566
+          }
+        ]
+      },
+      {
+        "frame_index": 510,
+        "timestamp": 20.4,
+        "objects": [
+          {
+            "object": "train",
+            "confidence": 0.36442938446998596
+          },
+          {
+            "object": "truck",
+            "confidence": 0.35939356684684753
+          },
+          {
+            "object": "truck",
+            "confidence": 0.3352557420730591
+          }
+        ]
+      },
+      {
+        "frame_index": 540,
+        "timestamp": 21.6,
+        "objects": [
+          {
+            "object": "truck",
+            "confidence": 0.283441424369812
+          },
+          {
+            "object": "train",
+            "confidence": 0.26930347084999084
+          }
+        ]
+      },
+      {
+        "frame_index": 570,
+        "timestamp": 22.8,
+        "objects": [
+          {
+            "object": "train",
+            "confidence": 0.2692098021507263
+          }
+        ]
+      },
+      {
+        "frame_index": 600,
+        "timestamp": 24.0,
+        "objects": [
+          {
+            "object": "train",
+            "confidence": 0.35406503081321716
+          },
+          {
+            "object": "train",
+            "confidence": 0.3041798174381256
+          }
+        ]
+      },
+      {
+        "frame_index": 630,
+        "timestamp": 25.2,
+        "objects": [
+          {
+            "object": "train",
+            "confidence": 0.29895615577697754
+          },
+          {
+            "object": "car",
+            "confidence": 0.28443482518196106
+          }
+        ]
+      },
+      {
+        "frame_index": 690,
+        "timestamp": 27.6,
+        "objects": [
+          {
+            "object": "train",
+            "confidence": 0.4419039487838745
+          }
+        ]
+      },
+      {
+        "frame_index": 720,
+        "timestamp": 28.8,
+        "objects": [
+          {
+            "object": "train",
+            "confidence": 0.25088930130004883
+          }
+        ]
+      },
+      {
+        "frame_index": 1140,
+        "timestamp": 45.6,
+        "objects": [
+          {
+            "object": "truck",
+            "confidence": 0.39892175793647766
+          }
+        ]
+      },
+      {
+        "frame_index": 1320,
+        "timestamp": 52.8,
+        "objects": [
+          {
+            "object": "boat",
+            "confidence": 0.47490397095680237
+          }
+        ]
+      },
+      {
+        "frame_index": 1380,
+        "timestamp": 55.2,
+        "objects": [
+          {
+            "object": "boat",
+            "confidence": 0.43892431259155273
+          }
+        ]
+      },
+      {
+        "frame_index": 1410,
+        "timestamp": 56.4,
+        "objects": [
+          {
+            "object": "boat",
+            "confidence": 0.26562681794166565
+          }
+        ]
+      },
+      {
+        "frame_index": 1500,
+        "timestamp": 60.0,
+        "objects": [
+          {
+            "object": "boat",
+            "confidence": 0.2532004714012146
+          }
+        ]
+      },
+      {
+        "frame_index": 1530,
+        "timestamp": 61.2,
+        "objects": [
+          {
+            "object": "train",
+            "confidence": 0.2958439290523529
+          },
+          {
+            "object": "boat",
+            "confidence": 0.26892608404159546
+          }
+        ]
+      },
+      {
+        "frame_index": 1560,
+        "timestamp": 62.4,
+        "objects": [
+          {
+            "object": "boat",
+            "confidence": 0.32865479588508606
+          }
+        ]
+      },
+      {
+        "frame_index": 1590,
+        "timestamp": 63.6,
+        "objects": [
+          {
+            "object": "boat",
+            "confidence": 0.2785365581512451
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [],
+  "insertion_points": [
+    {
+      "timestamp": 12.0,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 1
+    },
+    {
+      "timestamp": 22.8,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 1
+    },
+    {
+      "timestamp": 45.6,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 1
+    }
+  ],
+  "summary": {
+    "total_objects_detected": 18,
+    "safety_flags": 0,
+    "safe_insertion_windows": 3
+  },
+  "annotated_video": "web_annotated_NAIROBI AERIAL SHOTS (3).MP4"
+}

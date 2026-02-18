@@ -1,0 +1,232 @@
+{
+  "video_name": "CTS PEOPLE WALKING ON WATER NAIROBI.AVI",
+  "processed_at": "2026-02-18T08:41:36.466293",
+  "transcript": {
+    "text": "",
+    "language": "nn",
+    "segments": []
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 12,
+    "scenes": [
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.66008061170578
+          },
+          {
+            "object": "car",
+            "confidence": 0.4542141258716583
+          },
+          {
+            "object": "car",
+            "confidence": 0.3248627185821533
+          }
+        ]
+      },
+      {
+        "frame_index": 60,
+        "timestamp": 2.4,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.5092412233352661
+          },
+          {
+            "object": "person",
+            "confidence": 0.43814465403556824
+          }
+        ]
+      },
+      {
+        "frame_index": 90,
+        "timestamp": 3.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8579058051109314
+          },
+          {
+            "object": "person",
+            "confidence": 0.5882453322410583
+          }
+        ]
+      },
+      {
+        "frame_index": 120,
+        "timestamp": 4.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7841952443122864
+          },
+          {
+            "object": "dog",
+            "confidence": 0.29597732424736023
+          }
+        ]
+      },
+      {
+        "frame_index": 150,
+        "timestamp": 6.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.6386208534240723
+          }
+        ]
+      },
+      {
+        "frame_index": 180,
+        "timestamp": 7.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.6821331977844238
+          }
+        ]
+      },
+      {
+        "frame_index": 210,
+        "timestamp": 8.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8158582448959351
+          }
+        ]
+      },
+      {
+        "frame_index": 240,
+        "timestamp": 9.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.6355924010276794
+          },
+          {
+            "object": "elephant",
+            "confidence": 0.29201680421829224
+          }
+        ]
+      },
+      {
+        "frame_index": 270,
+        "timestamp": 10.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7127367854118347
+          }
+        ]
+      },
+      {
+        "frame_index": 300,
+        "timestamp": 12.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.4949333667755127
+          },
+          {
+            "object": "person",
+            "confidence": 0.455064982175827
+          },
+          {
+            "object": "person",
+            "confidence": 0.2650938630104065
+          }
+        ]
+      },
+      {
+        "frame_index": 330,
+        "timestamp": 13.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.3412294089794159
+          },
+          {
+            "object": "elephant",
+            "confidence": 0.29345905780792236
+          },
+          {
+            "object": "person",
+            "confidence": 0.2757110893726349
+          }
+        ]
+      },
+      {
+        "frame_index": 360,
+        "timestamp": 14.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8190824389457703
+          },
+          {
+            "object": "person",
+            "confidence": 0.6648603081703186
+          },
+          {
+            "object": "person",
+            "confidence": 0.6191020011901855
+          },
+          {
+            "object": "zebra",
+            "confidence": 0.595833420753479
+          },
+          {
+            "object": "person",
+            "confidence": 0.5339223146438599
+          },
+          {
+            "object": "person",
+            "confidence": 0.5006262063980103
+          },
+          {
+            "object": "person",
+            "confidence": 0.3357011675834656
+          },
+          {
+            "object": "person",
+            "confidence": 0.2938382029533386
+          },
+          {
+            "object": "person",
+            "confidence": 0.26084813475608826
+          },
+          {
+            "object": "person",
+            "confidence": 0.2558949887752533
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [],
+  "insertion_points": [
+    {
+      "timestamp": 1.2,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 2
+    },
+    {
+      "timestamp": 7.2,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 1
+    }
+  ],
+  "summary": {
+    "language_detected": "nn",
+    "total_objects_detected": 12,
+    "safety_flags": 0,
+    "safe_insertion_windows": 2
+  },
+  "annotated_video": "web_annotated_CTS PEOPLE WALKING ON WATER NAIROBI.AVI"
+}
