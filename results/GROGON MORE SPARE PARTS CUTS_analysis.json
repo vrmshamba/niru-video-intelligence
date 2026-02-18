@@ -1,0 +1,53 @@
+{
+  "video_name": "GROGON MORE SPARE PARTS CUTS.MXF",
+  "processed_at": "2026-02-18T18:03:45.060513",
+  "transcript": {
+    "text": "",
+    "language": "en",
+    "segments": []
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 3,
+    "scenes": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "objects": [
+          {
+            "object": "motorcycle",
+            "confidence": 0.25073087215423584
+          }
+        ]
+      },
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "objects": [
+          {
+            "object": "motorcycle",
+            "confidence": 0.3393688499927521
+          }
+        ]
+      },
+      {
+        "frame_index": 180,
+        "timestamp": 7.2,
+        "objects": [
+          {
+            "object": "motorcycle",
+            "confidence": 0.5560606122016907
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [],
+  "insertion_points": [],
+  "summary": {
+    "language_detected": "en",
+    "total_objects_detected": 3,
+    "safety_flags": 0,
+    "safe_insertion_windows": 0
+  },
+  "annotated_video": "web_annotated_GROGON MORE SPARE PARTS CUTS.MXF"
+}

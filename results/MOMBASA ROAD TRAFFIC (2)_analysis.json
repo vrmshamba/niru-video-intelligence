@@ -1,0 +1,19 @@
+{
+  "video_name": "MOMBASA ROAD TRAFFIC (2).MXF",
+  "processed_at": "2026-02-18T18:13:41.122525",
+  "transcript": {
+    "text": "",
+    "language": "nn",
+    "segments": []
+  },
+  "scene_analysis": {
+    "error": "ffmpeg MXF->MP4 conversion failed: 00460202951977\n  Stream #0:4: Audio: pcm_s16le, 48000 Hz, mono, s16, 768 kb/s\n      Metadata:\n        file_package_umid: 0x060A2B340101010501010D43130000004F001DD8529405DD0800460202951977\n  Stream #0:5: Data: none\nStream mapping:\n  Stream #0:0 -> #0:0 (copy)\n[mp4 @ 000002acd21bde00] Could not find tag for codec dvvideo in stream #0, codec not currently supported in container\n[out#0/mp4 @ 000002acd2266600] Could not write header (incorrect codec parameters ?): Invalid argument\nConversion failed!\n"
+  },
+  "safety_concerns": [],
+  "insertion_points": [],
+  "summary": {
+    "language_detected": "nn",
+    "safety_flags": 0,
+    "safe_insertion_windows": 0
+  }
+}

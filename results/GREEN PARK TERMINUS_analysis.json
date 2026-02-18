@@ -1,0 +1,36 @@
+{
+  "video_name": "GREEN PARK TERMINUS.MXF",
+  "processed_at": "2026-02-18T18:03:08.954849",
+  "transcript": {
+    "text": " y\u00fcz<|ja|>",
+    "language": "ja",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 30.84,
+        "text": " y\u00fcz",
+        "tokens": [
+          50364,
+          16162,
+          50266
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.128277778625488,
+        "compression_ratio": 0.5555555555555556,
+        "no_speech_prob": 0.4442395865917206
+      }
+    ]
+  },
+  "scene_analysis": {
+    "error": "ffmpeg MXF->MP4 conversion failed: 9D6BFFFEAF5595\n  Stream #0:4: Audio: pcm_s16le, 48000 Hz, mono, s16, 768 kb/s\n      Metadata:\n        file_package_umid: 0x060A2B340101010501010D4313000000F475A325319305C5009D6BFFFEAF5595\n  Stream #0:5: Data: none\nStream mapping:\n  Stream #0:0 -> #0:0 (copy)\n[mp4 @ 00000169cdacde00] Could not find tag for codec dvvideo in stream #0, codec not currently supported in container\n[out#0/mp4 @ 00000169cdb76600] Could not write header (incorrect codec parameters ?): Invalid argument\nConversion failed!\n"
+  },
+  "safety_concerns": [],
+  "insertion_points": [],
+  "summary": {
+    "language_detected": "ja",
+    "safety_flags": 0,
+    "safe_insertion_windows": 0
+  }
+}

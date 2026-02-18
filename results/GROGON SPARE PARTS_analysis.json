@@ -1,0 +1,126 @@
+{
+  "video_name": "GROGON SPARE PARTS.MXF",
+  "processed_at": "2026-02-18T18:06:45.781067",
+  "transcript": {
+    "text": "",
+    "language": "cy",
+    "segments": []
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 8,
+    "scenes": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "objects": [
+          {
+            "object": "motorcycle",
+            "confidence": 0.6220690608024597
+          },
+          {
+            "object": "truck",
+            "confidence": 0.29564687609672546
+          },
+          {
+            "object": "train",
+            "confidence": 0.2778707444667816
+          }
+        ]
+      },
+      {
+        "frame_index": 90,
+        "timestamp": 3.6,
+        "objects": [
+          {
+            "object": "train",
+            "confidence": 0.5477955341339111
+          }
+        ]
+      },
+      {
+        "frame_index": 120,
+        "timestamp": 4.8,
+        "objects": [
+          {
+            "object": "clock",
+            "confidence": 0.3308057188987732
+          },
+          {
+            "object": "clock",
+            "confidence": 0.3060431480407715
+          }
+        ]
+      },
+      {
+        "frame_index": 150,
+        "timestamp": 6.0,
+        "objects": [
+          {
+            "object": "motorcycle",
+            "confidence": 0.507989227771759
+          }
+        ]
+      },
+      {
+        "frame_index": 360,
+        "timestamp": 14.4,
+        "objects": [
+          {
+            "object": "donut",
+            "confidence": 0.8462890386581421
+          },
+          {
+            "object": "motorcycle",
+            "confidence": 0.2790626883506775
+          }
+        ]
+      },
+      {
+        "frame_index": 390,
+        "timestamp": 15.6,
+        "objects": [
+          {
+            "object": "boat",
+            "confidence": 0.29833146929740906
+          }
+        ]
+      },
+      {
+        "frame_index": 450,
+        "timestamp": 18.0,
+        "objects": [
+          {
+            "object": "donut",
+            "confidence": 0.27698972821235657
+          }
+        ]
+      },
+      {
+        "frame_index": 480,
+        "timestamp": 19.2,
+        "objects": [
+          {
+            "object": "train",
+            "confidence": 0.38859787583351135
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [],
+  "insertion_points": [
+    {
+      "timestamp": 0.0,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 1
+    }
+  ],
+  "summary": {
+    "language_detected": "cy",
+    "total_objects_detected": 8,
+    "safety_flags": 0,
+    "safe_insertion_windows": 1
+  },
+  "annotated_video": "web_annotated_GROGON SPARE PARTS.MXF"
+}

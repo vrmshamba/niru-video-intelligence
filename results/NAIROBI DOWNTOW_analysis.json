@@ -1,0 +1,62 @@
+{
+  "video_name": "NAIROBI DOWNTOW.MXF",
+  "processed_at": "2026-02-18T18:15:37.817320",
+  "transcript": {
+    "text": " Volks\u00e9g \u043f\u043e\u0437b\u00e1lik meg. Pel\u00e9!",
+    "language": "hu",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 2.92,
+        "text": " Volks\u00e9g \u043f\u043e\u0437b\u00e1lik meg.",
+        "tokens": [
+          50364,
+          8911,
+          1694,
+          9095,
+          12188,
+          65,
+          11447,
+          1035,
+          10816,
+          13,
+          50510
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -4.513110890107996,
+        "compression_ratio": 0.7857142857142857,
+        "no_speech_prob": 0.16230584681034088
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 2.92,
+        "end": 6.0,
+        "text": " Pel\u00e9!",
+        "tokens": [
+          50510,
+          21083,
+          526,
+          0,
+          50664
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -4.513110890107996,
+        "compression_ratio": 0.7857142857142857,
+        "no_speech_prob": 0.16230584681034088
+      }
+    ]
+  },
+  "scene_analysis": {
+    "error": "ffmpeg MXF->MP4 conversion failed: 004602029518C0\n  Stream #0:4: Audio: pcm_s16le, 48000 Hz, mono, s16, 768 kb/s\n      Metadata:\n        file_package_umid: 0x060A2B340101010501010D43130000005436C97D738005C208004602029518C0\n  Stream #0:5: Data: none\nStream mapping:\n  Stream #0:0 -> #0:0 (copy)\n[mp4 @ 0000026182d2db40] Could not find tag for codec dvvideo in stream #0, codec not currently supported in container\n[out#0/mp4 @ 0000026182dd6540] Could not write header (incorrect codec parameters ?): Invalid argument\nConversion failed!\n"
+  },
+  "safety_concerns": [],
+  "insertion_points": [],
+  "summary": {
+    "language_detected": "hu",
+    "safety_flags": 0,
+    "safe_insertion_windows": 0
+  }
+}

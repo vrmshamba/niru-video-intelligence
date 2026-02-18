@@ -1,0 +1,1381 @@
+{
+  "video_name": "WALKING SHOTS..MXF",
+  "processed_at": "2026-02-18T18:24:33.822999",
+  "transcript": {
+    "text": " es mayor que le haya en el partido de mis",
+    "language": "es",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 18.28,
+        "text": " es mayor que le haya",
+        "tokens": [
+          50364,
+          785,
+          10120,
+          631,
+          476,
+          24693,
+          51278
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -3.882805824279785,
+        "compression_ratio": 0.8541666666666666,
+        "no_speech_prob": 0.4441058933734894
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 18.28,
+        "end": 29.38,
+        "text": " en el partido de mis",
+        "tokens": [
+          51278,
+          465,
+          806,
+          41310,
+          368,
+          3346,
+          51833
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -3.882805824279785,
+        "compression_ratio": 0.8541666666666666,
+        "no_speech_prob": 0.4441058933734894
+      }
+    ]
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 19,
+    "scenes": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.846705436706543
+          },
+          {
+            "object": "person",
+            "confidence": 0.823667585849762
+          },
+          {
+            "object": "person",
+            "confidence": 0.8142737746238708
+          },
+          {
+            "object": "person",
+            "confidence": 0.8073700070381165
+          },
+          {
+            "object": "person",
+            "confidence": 0.7137992978096008
+          },
+          {
+            "object": "person",
+            "confidence": 0.3154381513595581
+          },
+          {
+            "object": "person",
+            "confidence": 0.2660820186138153
+          },
+          {
+            "object": "person",
+            "confidence": 0.2655235826969147
+          }
+        ]
+      },
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9291810989379883
+          },
+          {
+            "object": "person",
+            "confidence": 0.9159044623374939
+          },
+          {
+            "object": "person",
+            "confidence": 0.822045624256134
+          },
+          {
+            "object": "person",
+            "confidence": 0.8007524609565735
+          },
+          {
+            "object": "person",
+            "confidence": 0.7215587496757507
+          },
+          {
+            "object": "person",
+            "confidence": 0.6247332096099854
+          },
+          {
+            "object": "person",
+            "confidence": 0.5831461548805237
+          },
+          {
+            "object": "person",
+            "confidence": 0.43360334634780884
+          },
+          {
+            "object": "person",
+            "confidence": 0.35378220677375793
+          },
+          {
+            "object": "person",
+            "confidence": 0.33388978242874146
+          },
+          {
+            "object": "person",
+            "confidence": 0.3286114037036896
+          },
+          {
+            "object": "person",
+            "confidence": 0.320406973361969
+          },
+          {
+            "object": "person",
+            "confidence": 0.2621239125728607
+          }
+        ]
+      },
+      {
+        "frame_index": 60,
+        "timestamp": 2.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8787098526954651
+          },
+          {
+            "object": "person",
+            "confidence": 0.854091227054596
+          },
+          {
+            "object": "person",
+            "confidence": 0.8203173875808716
+          },
+          {
+            "object": "person",
+            "confidence": 0.6756569743156433
+          },
+          {
+            "object": "person",
+            "confidence": 0.6705187559127808
+          },
+          {
+            "object": "person",
+            "confidence": 0.6038204431533813
+          },
+          {
+            "object": "person",
+            "confidence": 0.4688161611557007
+          },
+          {
+            "object": "person",
+            "confidence": 0.38553234934806824
+          },
+          {
+            "object": "person",
+            "confidence": 0.38181570172309875
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.3677729368209839
+          },
+          {
+            "object": "person",
+            "confidence": 0.32851502299308777
+          },
+          {
+            "object": "person",
+            "confidence": 0.3219263553619385
+          },
+          {
+            "object": "person",
+            "confidence": 0.3162740170955658
+          },
+          {
+            "object": "person",
+            "confidence": 0.3108157217502594
+          },
+          {
+            "object": "person",
+            "confidence": 0.30949199199676514
+          },
+          {
+            "object": "person",
+            "confidence": 0.2914792597293854
+          },
+          {
+            "object": "person",
+            "confidence": 0.28620362281799316
+          },
+          {
+            "object": "person",
+            "confidence": 0.28074219822883606
+          },
+          {
+            "object": "person",
+            "confidence": 0.2521266043186188
+          }
+        ]
+      },
+      {
+        "frame_index": 90,
+        "timestamp": 3.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7868845462799072
+          },
+          {
+            "object": "person",
+            "confidence": 0.7707434892654419
+          },
+          {
+            "object": "person",
+            "confidence": 0.7465216517448425
+          },
+          {
+            "object": "person",
+            "confidence": 0.7373987436294556
+          },
+          {
+            "object": "person",
+            "confidence": 0.570391833782196
+          },
+          {
+            "object": "person",
+            "confidence": 0.49702247977256775
+          },
+          {
+            "object": "person",
+            "confidence": 0.49102210998535156
+          },
+          {
+            "object": "person",
+            "confidence": 0.4479566812515259
+          },
+          {
+            "object": "person",
+            "confidence": 0.4415331184864044
+          },
+          {
+            "object": "person",
+            "confidence": 0.4216041564941406
+          },
+          {
+            "object": "person",
+            "confidence": 0.3731510043144226
+          },
+          {
+            "object": "person",
+            "confidence": 0.35487836599349976
+          },
+          {
+            "object": "person",
+            "confidence": 0.33635908365249634
+          },
+          {
+            "object": "person",
+            "confidence": 0.2556515634059906
+          }
+        ]
+      },
+      {
+        "frame_index": 120,
+        "timestamp": 4.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9286884665489197
+          },
+          {
+            "object": "person",
+            "confidence": 0.7738928198814392
+          },
+          {
+            "object": "person",
+            "confidence": 0.7592777609825134
+          },
+          {
+            "object": "person",
+            "confidence": 0.7475600242614746
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.7393303513526917
+          },
+          {
+            "object": "person",
+            "confidence": 0.6267299056053162
+          },
+          {
+            "object": "person",
+            "confidence": 0.623970091342926
+          },
+          {
+            "object": "person",
+            "confidence": 0.5733434557914734
+          },
+          {
+            "object": "person",
+            "confidence": 0.5285689234733582
+          },
+          {
+            "object": "person",
+            "confidence": 0.4976222813129425
+          },
+          {
+            "object": "person",
+            "confidence": 0.48753634095191956
+          },
+          {
+            "object": "person",
+            "confidence": 0.34555283188819885
+          },
+          {
+            "object": "person",
+            "confidence": 0.33016330003738403
+          },
+          {
+            "object": "person",
+            "confidence": 0.31855902075767517
+          },
+          {
+            "object": "person",
+            "confidence": 0.2870495617389679
+          },
+          {
+            "object": "person",
+            "confidence": 0.28034132719039917
+          }
+        ]
+      },
+      {
+        "frame_index": 150,
+        "timestamp": 6.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8855196237564087
+          },
+          {
+            "object": "person",
+            "confidence": 0.8419893980026245
+          },
+          {
+            "object": "person",
+            "confidence": 0.8300167322158813
+          },
+          {
+            "object": "person",
+            "confidence": 0.8164141178131104
+          },
+          {
+            "object": "person",
+            "confidence": 0.7558863162994385
+          },
+          {
+            "object": "person",
+            "confidence": 0.4883222281932831
+          },
+          {
+            "object": "person",
+            "confidence": 0.44105663895606995
+          },
+          {
+            "object": "person",
+            "confidence": 0.4404929578304291
+          },
+          {
+            "object": "person",
+            "confidence": 0.40534937381744385
+          },
+          {
+            "object": "person",
+            "confidence": 0.4001443386077881
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.38303887844085693
+          },
+          {
+            "object": "wine glass",
+            "confidence": 0.32490336894989014
+          },
+          {
+            "object": "person",
+            "confidence": 0.25436121225357056
+          },
+          {
+            "object": "person",
+            "confidence": 0.25258350372314453
+          }
+        ]
+      },
+      {
+        "frame_index": 180,
+        "timestamp": 7.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8715264797210693
+          },
+          {
+            "object": "person",
+            "confidence": 0.8531808257102966
+          },
+          {
+            "object": "person",
+            "confidence": 0.844630241394043
+          },
+          {
+            "object": "person",
+            "confidence": 0.7675328254699707
+          },
+          {
+            "object": "person",
+            "confidence": 0.7334270477294922
+          },
+          {
+            "object": "person",
+            "confidence": 0.695102334022522
+          },
+          {
+            "object": "person",
+            "confidence": 0.6402303576469421
+          },
+          {
+            "object": "person",
+            "confidence": 0.6244122982025146
+          },
+          {
+            "object": "person",
+            "confidence": 0.4590163230895996
+          },
+          {
+            "object": "person",
+            "confidence": 0.37954655289649963
+          },
+          {
+            "object": "person",
+            "confidence": 0.2746962904930115
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.2576414942741394
+          }
+        ]
+      },
+      {
+        "frame_index": 210,
+        "timestamp": 8.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9011589884757996
+          },
+          {
+            "object": "person",
+            "confidence": 0.8190802335739136
+          },
+          {
+            "object": "person",
+            "confidence": 0.8189562559127808
+          },
+          {
+            "object": "person",
+            "confidence": 0.8070855140686035
+          },
+          {
+            "object": "person",
+            "confidence": 0.7810007929801941
+          },
+          {
+            "object": "person",
+            "confidence": 0.7145147919654846
+          },
+          {
+            "object": "person",
+            "confidence": 0.6328670382499695
+          },
+          {
+            "object": "person",
+            "confidence": 0.5087361335754395
+          },
+          {
+            "object": "person",
+            "confidence": 0.46175312995910645
+          },
+          {
+            "object": "person",
+            "confidence": 0.4442954361438751
+          },
+          {
+            "object": "person",
+            "confidence": 0.3654061257839203
+          },
+          {
+            "object": "person",
+            "confidence": 0.27715232968330383
+          },
+          {
+            "object": "person",
+            "confidence": 0.2604278326034546
+          }
+        ]
+      },
+      {
+        "frame_index": 240,
+        "timestamp": 9.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8759165406227112
+          },
+          {
+            "object": "person",
+            "confidence": 0.8630531430244446
+          },
+          {
+            "object": "person",
+            "confidence": 0.848761796951294
+          },
+          {
+            "object": "person",
+            "confidence": 0.7848930358886719
+          },
+          {
+            "object": "person",
+            "confidence": 0.6608921885490417
+          },
+          {
+            "object": "person",
+            "confidence": 0.6544448137283325
+          },
+          {
+            "object": "person",
+            "confidence": 0.591871976852417
+          },
+          {
+            "object": "person",
+            "confidence": 0.5752869248390198
+          },
+          {
+            "object": "person",
+            "confidence": 0.4797782599925995
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.47478318214416504
+          },
+          {
+            "object": "person",
+            "confidence": 0.4005679786205292
+          },
+          {
+            "object": "person",
+            "confidence": 0.39716637134552
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.3234477639198303
+          },
+          {
+            "object": "person",
+            "confidence": 0.30855387449264526
+          },
+          {
+            "object": "person",
+            "confidence": 0.2724215090274811
+          }
+        ]
+      },
+      {
+        "frame_index": 270,
+        "timestamp": 10.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8668546676635742
+          },
+          {
+            "object": "person",
+            "confidence": 0.8168854117393494
+          },
+          {
+            "object": "person",
+            "confidence": 0.7265804409980774
+          },
+          {
+            "object": "person",
+            "confidence": 0.7134870290756226
+          },
+          {
+            "object": "person",
+            "confidence": 0.6123465895652771
+          },
+          {
+            "object": "person",
+            "confidence": 0.6029266119003296
+          },
+          {
+            "object": "person",
+            "confidence": 0.5359935760498047
+          },
+          {
+            "object": "person",
+            "confidence": 0.5099685788154602
+          },
+          {
+            "object": "person",
+            "confidence": 0.5015259385108948
+          },
+          {
+            "object": "person",
+            "confidence": 0.3904266357421875
+          },
+          {
+            "object": "person",
+            "confidence": 0.3456670641899109
+          },
+          {
+            "object": "person",
+            "confidence": 0.3383416533470154
+          },
+          {
+            "object": "person",
+            "confidence": 0.27275407314300537
+          },
+          {
+            "object": "person",
+            "confidence": 0.2646065354347229
+          },
+          {
+            "object": "backpack",
+            "confidence": 0.26138007640838623
+          },
+          {
+            "object": "person",
+            "confidence": 0.254466712474823
+          },
+          {
+            "object": "person",
+            "confidence": 0.25059452652931213
+          }
+        ]
+      },
+      {
+        "frame_index": 300,
+        "timestamp": 12.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8934475183486938
+          },
+          {
+            "object": "person",
+            "confidence": 0.8868733048439026
+          },
+          {
+            "object": "person",
+            "confidence": 0.8367506861686707
+          },
+          {
+            "object": "person",
+            "confidence": 0.8212217092514038
+          },
+          {
+            "object": "person",
+            "confidence": 0.7556482553482056
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.7142497897148132
+          },
+          {
+            "object": "person",
+            "confidence": 0.6595831513404846
+          },
+          {
+            "object": "person",
+            "confidence": 0.6177306175231934
+          },
+          {
+            "object": "person",
+            "confidence": 0.6091573238372803
+          },
+          {
+            "object": "person",
+            "confidence": 0.5940774083137512
+          },
+          {
+            "object": "person",
+            "confidence": 0.563011646270752
+          },
+          {
+            "object": "person",
+            "confidence": 0.5095261931419373
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.5063776969909668
+          },
+          {
+            "object": "person",
+            "confidence": 0.4834367632865906
+          },
+          {
+            "object": "person",
+            "confidence": 0.48198235034942627
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.4560810625553131
+          },
+          {
+            "object": "person",
+            "confidence": 0.3654545247554779
+          },
+          {
+            "object": "person",
+            "confidence": 0.2972877323627472
+          }
+        ]
+      },
+      {
+        "frame_index": 330,
+        "timestamp": 13.2,
+        "objects": [
+          {
+            "object": "backpack",
+            "confidence": 0.8853718638420105
+          },
+          {
+            "object": "person",
+            "confidence": 0.8446645140647888
+          },
+          {
+            "object": "person",
+            "confidence": 0.8437201380729675
+          },
+          {
+            "object": "person",
+            "confidence": 0.7306396961212158
+          },
+          {
+            "object": "person",
+            "confidence": 0.710321843624115
+          },
+          {
+            "object": "person",
+            "confidence": 0.584449052810669
+          },
+          {
+            "object": "person",
+            "confidence": 0.5775315165519714
+          },
+          {
+            "object": "person",
+            "confidence": 0.5758734941482544
+          },
+          {
+            "object": "person",
+            "confidence": 0.5410344004631042
+          },
+          {
+            "object": "person",
+            "confidence": 0.4349026679992676
+          },
+          {
+            "object": "person",
+            "confidence": 0.4215748608112335
+          },
+          {
+            "object": "person",
+            "confidence": 0.3778860569000244
+          },
+          {
+            "object": "person",
+            "confidence": 0.37505146861076355
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.36984795331954956
+          },
+          {
+            "object": "person",
+            "confidence": 0.3657730221748352
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.3295467793941498
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.3295026421546936
+          },
+          {
+            "object": "person",
+            "confidence": 0.27136021852493286
+          },
+          {
+            "object": "person",
+            "confidence": 0.2709655463695526
+          },
+          {
+            "object": "person",
+            "confidence": 0.2663050889968872
+          },
+          {
+            "object": "person",
+            "confidence": 0.2583836019039154
+          },
+          {
+            "object": "person",
+            "confidence": 0.2582903802394867
+          }
+        ]
+      },
+      {
+        "frame_index": 360,
+        "timestamp": 14.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8897231817245483
+          },
+          {
+            "object": "person",
+            "confidence": 0.883668839931488
+          },
+          {
+            "object": "person",
+            "confidence": 0.84249347448349
+          },
+          {
+            "object": "backpack",
+            "confidence": 0.7697787880897522
+          },
+          {
+            "object": "person",
+            "confidence": 0.6622060537338257
+          },
+          {
+            "object": "person",
+            "confidence": 0.568855345249176
+          },
+          {
+            "object": "person",
+            "confidence": 0.5422321557998657
+          },
+          {
+            "object": "person",
+            "confidence": 0.5145521759986877
+          },
+          {
+            "object": "person",
+            "confidence": 0.4802984297275543
+          },
+          {
+            "object": "person",
+            "confidence": 0.465122252702713
+          },
+          {
+            "object": "person",
+            "confidence": 0.3952255845069885
+          },
+          {
+            "object": "person",
+            "confidence": 0.35232725739479065
+          },
+          {
+            "object": "person",
+            "confidence": 0.3386805057525635
+          },
+          {
+            "object": "person",
+            "confidence": 0.30775919556617737
+          },
+          {
+            "object": "person",
+            "confidence": 0.29105129837989807
+          },
+          {
+            "object": "person",
+            "confidence": 0.25087836384773254
+          }
+        ]
+      },
+      {
+        "frame_index": 390,
+        "timestamp": 15.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8984956741333008
+          },
+          {
+            "object": "person",
+            "confidence": 0.8347851037979126
+          },
+          {
+            "object": "person",
+            "confidence": 0.807287335395813
+          },
+          {
+            "object": "person",
+            "confidence": 0.5777037143707275
+          },
+          {
+            "object": "person",
+            "confidence": 0.5020307302474976
+          },
+          {
+            "object": "person",
+            "confidence": 0.47089603543281555
+          },
+          {
+            "object": "person",
+            "confidence": 0.4543689787387848
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.33158135414123535
+          },
+          {
+            "object": "backpack",
+            "confidence": 0.31731942296028137
+          },
+          {
+            "object": "cell phone",
+            "confidence": 0.2797692120075226
+          }
+        ]
+      },
+      {
+        "frame_index": 420,
+        "timestamp": 16.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.6254889965057373
+          },
+          {
+            "object": "person",
+            "confidence": 0.6135043501853943
+          },
+          {
+            "object": "person",
+            "confidence": 0.612851619720459
+          },
+          {
+            "object": "person",
+            "confidence": 0.41918742656707764
+          },
+          {
+            "object": "person",
+            "confidence": 0.38078126311302185
+          },
+          {
+            "object": "person",
+            "confidence": 0.33223941922187805
+          },
+          {
+            "object": "person",
+            "confidence": 0.28158870339393616
+          }
+        ]
+      },
+      {
+        "frame_index": 450,
+        "timestamp": 18.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9420565962791443
+          },
+          {
+            "object": "person",
+            "confidence": 0.9214941263198853
+          },
+          {
+            "object": "person",
+            "confidence": 0.8899558186531067
+          },
+          {
+            "object": "person",
+            "confidence": 0.8337988257408142
+          },
+          {
+            "object": "person",
+            "confidence": 0.6273987293243408
+          },
+          {
+            "object": "backpack",
+            "confidence": 0.4079280197620392
+          },
+          {
+            "object": "person",
+            "confidence": 0.3627453148365021
+          },
+          {
+            "object": "person",
+            "confidence": 0.3307342827320099
+          },
+          {
+            "object": "person",
+            "confidence": 0.2947606146335602
+          },
+          {
+            "object": "person",
+            "confidence": 0.28096386790275574
+          }
+        ]
+      },
+      {
+        "frame_index": 480,
+        "timestamp": 19.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9328931570053101
+          },
+          {
+            "object": "person",
+            "confidence": 0.741304874420166
+          },
+          {
+            "object": "person",
+            "confidence": 0.7091999053955078
+          },
+          {
+            "object": "person",
+            "confidence": 0.6544638276100159
+          },
+          {
+            "object": "person",
+            "confidence": 0.6144191026687622
+          },
+          {
+            "object": "person",
+            "confidence": 0.5593546032905579
+          },
+          {
+            "object": "person",
+            "confidence": 0.5589743256568909
+          },
+          {
+            "object": "person",
+            "confidence": 0.5195961594581604
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.5022310018539429
+          },
+          {
+            "object": "person",
+            "confidence": 0.4911454916000366
+          },
+          {
+            "object": "person",
+            "confidence": 0.45429766178131104
+          },
+          {
+            "object": "person",
+            "confidence": 0.4506378769874573
+          },
+          {
+            "object": "person",
+            "confidence": 0.4142257273197174
+          },
+          {
+            "object": "person",
+            "confidence": 0.36570724844932556
+          },
+          {
+            "object": "person",
+            "confidence": 0.3639220893383026
+          },
+          {
+            "object": "person",
+            "confidence": 0.30254143476486206
+          },
+          {
+            "object": "person",
+            "confidence": 0.3012338876724243
+          },
+          {
+            "object": "person",
+            "confidence": 0.28519293665885925
+          },
+          {
+            "object": "person",
+            "confidence": 0.2740764319896698
+          },
+          {
+            "object": "person",
+            "confidence": 0.26948410272598267
+          },
+          {
+            "object": "person",
+            "confidence": 0.26635682582855225
+          },
+          {
+            "object": "person",
+            "confidence": 0.25754687190055847
+          }
+        ]
+      },
+      {
+        "frame_index": 510,
+        "timestamp": 20.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9190710783004761
+          },
+          {
+            "object": "person",
+            "confidence": 0.8332787752151489
+          },
+          {
+            "object": "person",
+            "confidence": 0.7841817140579224
+          },
+          {
+            "object": "person",
+            "confidence": 0.7821169495582581
+          },
+          {
+            "object": "person",
+            "confidence": 0.7788873910903931
+          },
+          {
+            "object": "person",
+            "confidence": 0.6774451732635498
+          },
+          {
+            "object": "person",
+            "confidence": 0.5754079818725586
+          },
+          {
+            "object": "person",
+            "confidence": 0.5190984606742859
+          },
+          {
+            "object": "person",
+            "confidence": 0.462907612323761
+          },
+          {
+            "object": "person",
+            "confidence": 0.41357460618019104
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.3734256327152252
+          },
+          {
+            "object": "person",
+            "confidence": 0.3428332805633545
+          },
+          {
+            "object": "person",
+            "confidence": 0.3395480513572693
+          },
+          {
+            "object": "person",
+            "confidence": 0.29216286540031433
+          },
+          {
+            "object": "person",
+            "confidence": 0.2751006484031677
+          },
+          {
+            "object": "backpack",
+            "confidence": 0.2540113031864166
+          },
+          {
+            "object": "person",
+            "confidence": 0.25338631868362427
+          }
+        ]
+      },
+      {
+        "frame_index": 540,
+        "timestamp": 21.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8612456321716309
+          },
+          {
+            "object": "person",
+            "confidence": 0.8557042479515076
+          },
+          {
+            "object": "person",
+            "confidence": 0.8106810450553894
+          },
+          {
+            "object": "person",
+            "confidence": 0.6816586256027222
+          },
+          {
+            "object": "person",
+            "confidence": 0.6420338749885559
+          },
+          {
+            "object": "person",
+            "confidence": 0.5414164066314697
+          },
+          {
+            "object": "person",
+            "confidence": 0.5047135353088379
+          },
+          {
+            "object": "person",
+            "confidence": 0.4848923683166504
+          },
+          {
+            "object": "person",
+            "confidence": 0.36480939388275146
+          },
+          {
+            "object": "person",
+            "confidence": 0.34834933280944824
+          },
+          {
+            "object": "person",
+            "confidence": 0.33164048194885254
+          },
+          {
+            "object": "person",
+            "confidence": 0.3255364000797272
+          },
+          {
+            "object": "person",
+            "confidence": 0.32451173663139343
+          },
+          {
+            "object": "person",
+            "confidence": 0.2998709976673126
+          },
+          {
+            "object": "person",
+            "confidence": 0.2642049193382263
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [
+    {
+      "type": "crowd_detection",
+      "timestamp": 1.2,
+      "description": "Large gathering detected: 13 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 2.4,
+      "description": "Large gathering detected: 18 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 3.6,
+      "description": "Large gathering detected: 14 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 4.8,
+      "description": "Large gathering detected: 15 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 6.0,
+      "description": "Large gathering detected: 12 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 7.2,
+      "description": "Large gathering detected: 11 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 8.4,
+      "description": "Large gathering detected: 13 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 9.6,
+      "description": "Large gathering detected: 13 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 10.8,
+      "description": "Large gathering detected: 16 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 12.0,
+      "description": "Large gathering detected: 15 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 13.2,
+      "description": "Large gathering detected: 18 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 14.4,
+      "description": "Large gathering detected: 15 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 19.2,
+      "description": "Large gathering detected: 21 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 20.4,
+      "description": "Large gathering detected: 15 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 21.6,
+      "description": "Large gathering detected: 15 people",
+      "severity": "medium"
+    }
+  ],
+  "insertion_points": [],
+  "summary": {
+    "language_detected": "es",
+    "total_objects_detected": 19,
+    "safety_flags": 15,
+    "safe_insertion_windows": 0
+  },
+  "annotated_video": "web_annotated_WALKING SHOTS..MXF"
+}
