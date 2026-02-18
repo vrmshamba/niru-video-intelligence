@@ -35,7 +35,37 @@ class VideoProcessor:
         os.makedirs(self.models_dir, exist_ok=True)
         os.makedirs(self.results_dir, exist_ok=True)
 
+    def _get_ffmpeg(self):
+        """Return a path to an ffmpeg binary named exactly 'ffmpeg' (or 'ffmpeg.exe' on Windows).
+        Checks system PATH first, then falls back to the imageio_ffmpeg bundled binary,
+        copying it to models/ffmpeg.exe so it can be found by name."""
+        import shutil
+        ffmpeg = shutil.which("ffmpeg")
+        if ffmpeg:
+            return ffmpeg
+        try:
+            import imageio_ffmpeg
+            bundled = imageio_ffmpeg.get_ffmpeg_exe()
+            # imageio_ffmpeg names the binary 'ffmpeg-win-x86_64-vX.X.exe', not 'ffmpeg.exe'.
+            # Copy it to models/ffmpeg.exe so subprocess calls to "ffmpeg" resolve correctly.
+            dest = os.path.join(self.models_dir, "ffmpeg.exe")
+            if not os.path.exists(dest):
+                shutil.copy2(bundled, dest)
+                print(f"Copied bundled ffmpeg to {dest}")
+            return dest
+        except Exception:
+            return None
+
     def load_models(self):
+        self.ffmpeg_path = self._get_ffmpeg()
+        if self.ffmpeg_path:
+            print(f"ffmpeg ready: {self.ffmpeg_path}")
+            # Add models/ to PATH so whisper's subprocess("ffmpeg") call finds ffmpeg.exe
+            ffmpeg_dir = os.path.dirname(self.ffmpeg_path)
+            os.environ["PATH"] = ffmpeg_dir + os.pathsep + os.environ.get("PATH", "")
+        else:
+            print("WARNING: ffmpeg not found. Transcription and H.264 encoding will be unavailable.")
+
         print("Loading Whisper model...")
         self.whisper_model = whisper.load_model("tiny", download_root=self.models_dir)
         print("Whisper model loaded.")
@@ -210,8 +240,12 @@ class VideoProcessor:
     def _reencode_h264(self, tmp_path, output_path):
         """Re-encode tmp_path to H.264/yuv420p at output_path, then delete tmp_path.
         Falls back to renaming tmp_path if ffmpeg is not available."""
+        if not self.ffmpeg_path:
+            print("ffmpeg not available. Keeping mp4v-encoded file (may not play in all browsers).")
+            os.replace(tmp_path, output_path)
+            return
         cmd = [
-            "ffmpeg", "-y",
+            self.ffmpeg_path, "-y",
             "-i", tmp_path,
             "-vcodec", "libx264",
             "-crf", "23",
@@ -219,18 +253,14 @@ class VideoProcessor:
             "-pix_fmt", "yuv420p",
             output_path
         ]
-        try:
-            result = subprocess.run(cmd, capture_output=True, text=True)
-            if result.returncode == 0:
-                os.remove(tmp_path)
-                print(f"Re-encoded to H.264: {output_path}")
-            else:
-                print(f"ffmpeg re-encode failed (returncode {result.returncode}): {result.stderr[-500:]}")
-                os.replace(tmp_path, output_path)
-                print(f"Kept mp4v fallback at: {output_path}")
-        except FileNotFoundError:
-            print("ffmpeg not found in PATH. Keeping mp4v-encoded file (may not play in all browsers).")
+        result = subprocess.run(cmd, capture_output=True, text=True)
+        if result.returncode == 0:
+            os.remove(tmp_path)
+            print(f"Re-encoded to H.264: {output_path}")
+        else:
+            print(f"ffmpeg re-encode failed (returncode {result.returncode}): {result.stderr[-500:]}")
             os.replace(tmp_path, output_path)
+            print(f"Kept mp4v fallback at: {output_path}")
 
     def analyze_safety(self, transcript, scene_analysis):
         concerns = []
