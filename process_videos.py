@@ -1,5 +1,7 @@
 import os
 import json
+import argparse
+import subprocess
 import torch
 import cv2
 from datetime import datetime
@@ -72,12 +74,12 @@ class VideoProcessor:
         try:
             print("Starting object detection and annotation...")
             # Create a path for the annotated video
-            annotated_filename = f"annotated_{filename}"
+            annotated_filename = f"web_annotated_{filename}"
             annotated_path = os.path.join(self.results_dir, annotated_filename)
-            
+
             scene_data = self.detect_objects(video_path, output_path=annotated_path)
             result["scene_analysis"] = scene_data
-            result["summary"]["total_objects_detected"] = len(scene_data["scenes"]) 
+            result["summary"]["total_objects_detected"] = len(scene_data["scenes"])
             result["annotated_video"] = annotated_filename # Store ref for dashboard
             print(f"Object detection complete. Annotated video saved to {annotated_path}")
         except Exception as e:
@@ -130,12 +132,14 @@ class VideoProcessor:
         height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
         cap.release()
 
-        # Initialize VideoWriter if output_path is provided
+        # Write annotated frames to a temp file with mp4v (reliably supported by
+        # OpenCV on all platforms), then re-encode to H.264 for browser playback.
         video_writer = None
+        tmp_path = None
         if output_path:
-            # mp4v is a safe codec for MP4
+            tmp_path = output_path + ".tmp.mp4"
             fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-            video_writer = cv2.VideoWriter(output_path, fourcc, fps, (width, height))
+            video_writer = cv2.VideoWriter(tmp_path, fourcc, fps, (width, height))
 
         # vid_stride=30 means process every 30th frame. 
         # BUT if we want a smooth annotated video, we probably want to process ALL frames 
@@ -196,11 +200,37 @@ class VideoProcessor:
             
         if video_writer:
             video_writer.release()
-                 
+            self._reencode_h264(tmp_path, output_path)
+
         return {
             "total_scenes_analyzed": len(scenes),
             "scenes": scenes
         }
+
+    def _reencode_h264(self, tmp_path, output_path):
+        """Re-encode tmp_path to H.264/yuv420p at output_path, then delete tmp_path.
+        Falls back to renaming tmp_path if ffmpeg is not available."""
+        cmd = [
+            "ffmpeg", "-y",
+            "-i", tmp_path,
+            "-vcodec", "libx264",
+            "-crf", "23",
+            "-preset", "fast",
+            "-pix_fmt", "yuv420p",
+            output_path
+        ]
+        try:
+            result = subprocess.run(cmd, capture_output=True, text=True)
+            if result.returncode == 0:
+                os.remove(tmp_path)
+                print(f"Re-encoded to H.264: {output_path}")
+            else:
+                print(f"ffmpeg re-encode failed (returncode {result.returncode}): {result.stderr[-500:]}")
+                os.replace(tmp_path, output_path)
+                print(f"Kept mp4v fallback at: {output_path}")
+        except FileNotFoundError:
+            print("ffmpeg not found in PATH. Keeping mp4v-encoded file (may not play in all browsers).")
+            os.replace(tmp_path, output_path)
 
     def analyze_safety(self, transcript, scene_analysis):
         concerns = []
@@ -256,17 +286,13 @@ class VideoProcessor:
         # Look for windows of 5 seconds (5 scenes if 1 fps)
         window_size = 5 
         
-        for i in range(len(scenes) - window_size):
+        i = 0
+        while i <= len(scenes) - window_size:
             window = scenes[i:i+window_size]
-            
-            # Criteria: 
-            # 1. Low object density (< 5 objects avg)
-            # 2. Stable (variance in object count low - simplified here to just max objects)
-            
+
             avg_objects = sum(len(s["objects"]) for s in window) / window_size
-            
             is_stable = all(len(s["objects"]) < 5 for s in window)
-            
+
             if is_stable:
                 points.append({
                     "timestamp": window[0]["timestamp"],
@@ -274,10 +300,10 @@ class VideoProcessor:
                     "reason": "stable_scene_low_objects",
                     "object_count": int(avg_objects)
                 })
-                # Skip ahead to avoid overlapping windows
-                # i += window_size # loop controls i, logic needs jump or we just accept overlaps. 
-                # For MVP, listing overlapping availability is fine or we can filter later.
-                
+                i += window_size  # skip past this window to avoid overlapping results
+            else:
+                i += 1  # slide forward one scene and try again
+
         return points
 
     def save_result(self, video_filename, data):
@@ -288,18 +314,32 @@ class VideoProcessor:
         print(f"Saved results to {path}")
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="NIRU video processing pipeline")
+    parser.add_argument(
+        "--source-dir",
+        default="videos",
+        help="Directory containing video files to process (default: videos/)"
+    )
+    args = parser.parse_args()
+
     processor = VideoProcessor()
     processor.load_models()
-    
-    videos_dir = "videos"
+
+    videos_dir = args.source_dir
     if not os.path.exists(videos_dir):
         print(f"Directory '{videos_dir}' not found.")
     else:
         print(f"Scanning '{videos_dir}' for videos...")
-        video_files = [f for f in os.listdir(videos_dir) if f.lower().endswith(('.mp4', '.avi', '.mov'))]
-        
+        SUPPORTED_EXTS = ('.mp4', '.avi', '.mov', '.MP4', '.AVI', '.MOV')
+        video_files = [
+            f for f in os.listdir(videos_dir)
+            if os.path.isfile(os.path.join(videos_dir, f))
+            and f.lower().endswith(('.mp4', '.avi', '.mov'))
+        ]
+
         if not video_files:
-            print("No video files found.")
+            print("No supported video files found (.mp4, .avi, .mov).")
+            print("Note: .MXF files are not supported by this pipeline.")
         else:
             print(f"Found {len(video_files)} videos: {video_files}")
             for video_file in video_files:
