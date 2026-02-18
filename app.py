@@ -40,17 +40,15 @@ def get_results():
 
 @app.route('/videos/<path:filename>')
 def serve_video(filename):
-    """Serve original video files"""
-    try:
-        return send_from_directory(
-            VIDEOS_DIR, 
-            filename,
-            mimetype='video/mp4',
-            as_attachment=False
-        )
-    except Exception as e:
-        print(f"Error serving video {filename}: {e}")
-        return f"Error: {str(e)}", 404
+    """Serve original video files — checks LIBRARY_DIR (H:/) first, then VIDEOS_DIR."""
+    for directory in [LIBRARY_DIR, VIDEOS_DIR]:
+        filepath = os.path.join(directory, filename)
+        if os.path.isfile(filepath):
+            ext = os.path.splitext(filename)[1].lower()
+            mimetype = 'video/quicktime' if ext in ('.mov', '.mxf') else 'video/mp4'
+            return send_from_directory(directory, filename, mimetype=mimetype, as_attachment=False)
+    print(f"Video not found in library or videos/: {filename}")
+    return f"Video not found: {filename}", 404
 
 @app.route('/results/<path:filename>')
 def serve_result_file(filename):
