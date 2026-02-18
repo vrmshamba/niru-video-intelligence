@@ -1,0 +1,930 @@
+{
+  "video_name": "CBD WALKING SHOTS (2) USING PHONE.mov",
+  "processed_at": "2026-02-18T12:27:59.120725",
+  "transcript": {
+    "text": "",
+    "language": "ja",
+    "segments": []
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 15,
+    "scenes": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7957583069801331
+          },
+          {
+            "object": "person",
+            "confidence": 0.42999643087387085
+          },
+          {
+            "object": "person",
+            "confidence": 0.2611435353755951
+          }
+        ]
+      },
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.907139241695404
+          },
+          {
+            "object": "person",
+            "confidence": 0.8535704016685486
+          },
+          {
+            "object": "person",
+            "confidence": 0.8391901254653931
+          },
+          {
+            "object": "person",
+            "confidence": 0.8060974478721619
+          },
+          {
+            "object": "person",
+            "confidence": 0.6896600127220154
+          },
+          {
+            "object": "person",
+            "confidence": 0.686707079410553
+          },
+          {
+            "object": "person",
+            "confidence": 0.6217992305755615
+          },
+          {
+            "object": "person",
+            "confidence": 0.4873848557472229
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.4697745442390442
+          },
+          {
+            "object": "person",
+            "confidence": 0.45949721336364746
+          },
+          {
+            "object": "backpack",
+            "confidence": 0.42489752173423767
+          },
+          {
+            "object": "person",
+            "confidence": 0.4068264365196228
+          },
+          {
+            "object": "person",
+            "confidence": 0.26816102862358093
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.25931084156036377
+          },
+          {
+            "object": "car",
+            "confidence": 0.2564515471458435
+          }
+        ]
+      },
+      {
+        "frame_index": 60,
+        "timestamp": 2.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.907452404499054
+          },
+          {
+            "object": "person",
+            "confidence": 0.8820603489875793
+          },
+          {
+            "object": "person",
+            "confidence": 0.857980489730835
+          },
+          {
+            "object": "person",
+            "confidence": 0.8195664882659912
+          },
+          {
+            "object": "person",
+            "confidence": 0.7855538725852966
+          },
+          {
+            "object": "person",
+            "confidence": 0.6967877745628357
+          },
+          {
+            "object": "person",
+            "confidence": 0.6217239499092102
+          },
+          {
+            "object": "person",
+            "confidence": 0.6066243648529053
+          },
+          {
+            "object": "person",
+            "confidence": 0.5803500413894653
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.44690075516700745
+          },
+          {
+            "object": "person",
+            "confidence": 0.44110655784606934
+          },
+          {
+            "object": "person",
+            "confidence": 0.4018643796443939
+          },
+          {
+            "object": "person",
+            "confidence": 0.3759152889251709
+          },
+          {
+            "object": "person",
+            "confidence": 0.33123520016670227
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.3291650414466858
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.28107884526252747
+          },
+          {
+            "object": "person",
+            "confidence": 0.2634923458099365
+          }
+        ]
+      },
+      {
+        "frame_index": 90,
+        "timestamp": 3.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9033209681510925
+          },
+          {
+            "object": "person",
+            "confidence": 0.9015791416168213
+          },
+          {
+            "object": "person",
+            "confidence": 0.7914890050888062
+          },
+          {
+            "object": "person",
+            "confidence": 0.7877793908119202
+          },
+          {
+            "object": "person",
+            "confidence": 0.7786450386047363
+          },
+          {
+            "object": "person",
+            "confidence": 0.755804181098938
+          },
+          {
+            "object": "person",
+            "confidence": 0.7557492256164551
+          },
+          {
+            "object": "person",
+            "confidence": 0.5938229560852051
+          },
+          {
+            "object": "person",
+            "confidence": 0.46528130769729614
+          },
+          {
+            "object": "person",
+            "confidence": 0.4642883539199829
+          },
+          {
+            "object": "person",
+            "confidence": 0.37440285086631775
+          },
+          {
+            "object": "person",
+            "confidence": 0.29938027262687683
+          },
+          {
+            "object": "person",
+            "confidence": 0.28516194224357605
+          },
+          {
+            "object": "fire hydrant",
+            "confidence": 0.26540347933769226
+          },
+          {
+            "object": "person",
+            "confidence": 0.26534685492515564
+          }
+        ]
+      },
+      {
+        "frame_index": 120,
+        "timestamp": 4.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9046958088874817
+          },
+          {
+            "object": "person",
+            "confidence": 0.9005986452102661
+          },
+          {
+            "object": "person",
+            "confidence": 0.849514901638031
+          },
+          {
+            "object": "person",
+            "confidence": 0.7653764486312866
+          },
+          {
+            "object": "person",
+            "confidence": 0.7529276609420776
+          },
+          {
+            "object": "cell phone",
+            "confidence": 0.748585045337677
+          },
+          {
+            "object": "person",
+            "confidence": 0.6674426794052124
+          },
+          {
+            "object": "person",
+            "confidence": 0.6656998991966248
+          },
+          {
+            "object": "person",
+            "confidence": 0.6655247211456299
+          },
+          {
+            "object": "person",
+            "confidence": 0.57901531457901
+          },
+          {
+            "object": "person",
+            "confidence": 0.506865382194519
+          },
+          {
+            "object": "person",
+            "confidence": 0.46306055784225464
+          },
+          {
+            "object": "person",
+            "confidence": 0.352527916431427
+          },
+          {
+            "object": "person",
+            "confidence": 0.34393930435180664
+          },
+          {
+            "object": "person",
+            "confidence": 0.3203180134296417
+          },
+          {
+            "object": "cell phone",
+            "confidence": 0.28506040573120117
+          }
+        ]
+      },
+      {
+        "frame_index": 150,
+        "timestamp": 6.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.904646098613739
+          },
+          {
+            "object": "person",
+            "confidence": 0.8908889889717102
+          },
+          {
+            "object": "person",
+            "confidence": 0.86700439453125
+          },
+          {
+            "object": "person",
+            "confidence": 0.8665986061096191
+          },
+          {
+            "object": "person",
+            "confidence": 0.8154763579368591
+          },
+          {
+            "object": "person",
+            "confidence": 0.7737869620323181
+          },
+          {
+            "object": "backpack",
+            "confidence": 0.7517029047012329
+          },
+          {
+            "object": "person",
+            "confidence": 0.6722672581672668
+          },
+          {
+            "object": "person",
+            "confidence": 0.6503663063049316
+          },
+          {
+            "object": "person",
+            "confidence": 0.5818557739257812
+          },
+          {
+            "object": "person",
+            "confidence": 0.31330111622810364
+          },
+          {
+            "object": "fire hydrant",
+            "confidence": 0.30877745151519775
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.3074643611907959
+          }
+        ]
+      },
+      {
+        "frame_index": 180,
+        "timestamp": 7.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9056721329689026
+          },
+          {
+            "object": "person",
+            "confidence": 0.8988452553749084
+          },
+          {
+            "object": "person",
+            "confidence": 0.8951225876808167
+          },
+          {
+            "object": "person",
+            "confidence": 0.876347005367279
+          },
+          {
+            "object": "backpack",
+            "confidence": 0.8645968437194824
+          },
+          {
+            "object": "person",
+            "confidence": 0.8347592353820801
+          },
+          {
+            "object": "person",
+            "confidence": 0.6233717203140259
+          },
+          {
+            "object": "person",
+            "confidence": 0.5388532280921936
+          },
+          {
+            "object": "person",
+            "confidence": 0.5099591016769409
+          },
+          {
+            "object": "person",
+            "confidence": 0.4132627844810486
+          },
+          {
+            "object": "cell phone",
+            "confidence": 0.34696710109710693
+          },
+          {
+            "object": "cup",
+            "confidence": 0.3074454665184021
+          },
+          {
+            "object": "person",
+            "confidence": 0.29973793029785156
+          },
+          {
+            "object": "cell phone",
+            "confidence": 0.27549946308135986
+          }
+        ]
+      },
+      {
+        "frame_index": 210,
+        "timestamp": 8.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9065092206001282
+          },
+          {
+            "object": "person",
+            "confidence": 0.8915635943412781
+          },
+          {
+            "object": "person",
+            "confidence": 0.8875367641448975
+          },
+          {
+            "object": "person",
+            "confidence": 0.8259139657020569
+          },
+          {
+            "object": "person",
+            "confidence": 0.7921652793884277
+          },
+          {
+            "object": "person",
+            "confidence": 0.7890738844871521
+          },
+          {
+            "object": "person",
+            "confidence": 0.6441805362701416
+          },
+          {
+            "object": "person",
+            "confidence": 0.4979737102985382
+          },
+          {
+            "object": "person",
+            "confidence": 0.47717511653900146
+          },
+          {
+            "object": "person",
+            "confidence": 0.46053943037986755
+          },
+          {
+            "object": "fire hydrant",
+            "confidence": 0.3706657886505127
+          },
+          {
+            "object": "person",
+            "confidence": 0.3460300862789154
+          },
+          {
+            "object": "person",
+            "confidence": 0.2674311101436615
+          }
+        ]
+      },
+      {
+        "frame_index": 240,
+        "timestamp": 9.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9308014512062073
+          },
+          {
+            "object": "person",
+            "confidence": 0.9091735482215881
+          },
+          {
+            "object": "person",
+            "confidence": 0.908980667591095
+          },
+          {
+            "object": "person",
+            "confidence": 0.8554068207740784
+          },
+          {
+            "object": "person",
+            "confidence": 0.8536980152130127
+          },
+          {
+            "object": "person",
+            "confidence": 0.8012387752532959
+          },
+          {
+            "object": "person",
+            "confidence": 0.6795823574066162
+          },
+          {
+            "object": "person",
+            "confidence": 0.4655624330043793
+          },
+          {
+            "object": "person",
+            "confidence": 0.42315953969955444
+          },
+          {
+            "object": "cell phone",
+            "confidence": 0.3856666684150696
+          },
+          {
+            "object": "fire hydrant",
+            "confidence": 0.36932840943336487
+          },
+          {
+            "object": "person",
+            "confidence": 0.32454541325569153
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.32019534707069397
+          },
+          {
+            "object": "person",
+            "confidence": 0.31139233708381653
+          },
+          {
+            "object": "person",
+            "confidence": 0.3051655888557434
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.2597126066684723
+          }
+        ]
+      },
+      {
+        "frame_index": 270,
+        "timestamp": 10.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9310674667358398
+          },
+          {
+            "object": "person",
+            "confidence": 0.9153341054916382
+          },
+          {
+            "object": "person",
+            "confidence": 0.8741951584815979
+          },
+          {
+            "object": "person",
+            "confidence": 0.8723072409629822
+          },
+          {
+            "object": "backpack",
+            "confidence": 0.7941945195198059
+          },
+          {
+            "object": "person",
+            "confidence": 0.7921826839447021
+          },
+          {
+            "object": "person",
+            "confidence": 0.7905488014221191
+          },
+          {
+            "object": "fire hydrant",
+            "confidence": 0.3964090943336487
+          },
+          {
+            "object": "person",
+            "confidence": 0.3581327497959137
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.3555736541748047
+          },
+          {
+            "object": "person",
+            "confidence": 0.3504522144794464
+          },
+          {
+            "object": "backpack",
+            "confidence": 0.2747451066970825
+          }
+        ]
+      },
+      {
+        "frame_index": 300,
+        "timestamp": 12.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9323927760124207
+          },
+          {
+            "object": "person",
+            "confidence": 0.9117389917373657
+          },
+          {
+            "object": "person",
+            "confidence": 0.8822025060653687
+          },
+          {
+            "object": "person",
+            "confidence": 0.8543604612350464
+          },
+          {
+            "object": "person",
+            "confidence": 0.7879917025566101
+          },
+          {
+            "object": "person",
+            "confidence": 0.7591004371643066
+          },
+          {
+            "object": "person",
+            "confidence": 0.7069073915481567
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.6246662139892578
+          },
+          {
+            "object": "person",
+            "confidence": 0.6024534106254578
+          },
+          {
+            "object": "backpack",
+            "confidence": 0.5870106816291809
+          },
+          {
+            "object": "person",
+            "confidence": 0.4805932939052582
+          },
+          {
+            "object": "fire hydrant",
+            "confidence": 0.4442282021045685
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.3719165623188019
+          },
+          {
+            "object": "person",
+            "confidence": 0.28210029006004333
+          }
+        ]
+      },
+      {
+        "frame_index": 330,
+        "timestamp": 13.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9333354234695435
+          },
+          {
+            "object": "person",
+            "confidence": 0.9319285750389099
+          },
+          {
+            "object": "person",
+            "confidence": 0.9196498394012451
+          },
+          {
+            "object": "person",
+            "confidence": 0.8930653929710388
+          },
+          {
+            "object": "person",
+            "confidence": 0.631635308265686
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.5541336536407471
+          },
+          {
+            "object": "person",
+            "confidence": 0.540131688117981
+          },
+          {
+            "object": "person",
+            "confidence": 0.5388638377189636
+          },
+          {
+            "object": "person",
+            "confidence": 0.4810517430305481
+          },
+          {
+            "object": "person",
+            "confidence": 0.47137635946273804
+          },
+          {
+            "object": "fire hydrant",
+            "confidence": 0.33432477712631226
+          },
+          {
+            "object": "person",
+            "confidence": 0.28976374864578247
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.2643921971321106
+          }
+        ]
+      },
+      {
+        "frame_index": 360,
+        "timestamp": 14.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9275652766227722
+          },
+          {
+            "object": "person",
+            "confidence": 0.9203161597251892
+          },
+          {
+            "object": "person",
+            "confidence": 0.909285306930542
+          },
+          {
+            "object": "person",
+            "confidence": 0.8674300312995911
+          },
+          {
+            "object": "person",
+            "confidence": 0.7868040800094604
+          },
+          {
+            "object": "person",
+            "confidence": 0.6940642595291138
+          },
+          {
+            "object": "person",
+            "confidence": 0.6077659726142883
+          },
+          {
+            "object": "person",
+            "confidence": 0.5814469456672668
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.46210771799087524
+          },
+          {
+            "object": "fire hydrant",
+            "confidence": 0.377762109041214
+          },
+          {
+            "object": "person",
+            "confidence": 0.26634106040000916
+          }
+        ]
+      },
+      {
+        "frame_index": 390,
+        "timestamp": 15.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9255516529083252
+          },
+          {
+            "object": "person",
+            "confidence": 0.9213202595710754
+          },
+          {
+            "object": "person",
+            "confidence": 0.919928789138794
+          },
+          {
+            "object": "person",
+            "confidence": 0.8923789262771606
+          },
+          {
+            "object": "person",
+            "confidence": 0.8629305362701416
+          },
+          {
+            "object": "person",
+            "confidence": 0.8399868011474609
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.5173551440238953
+          },
+          {
+            "object": "person",
+            "confidence": 0.31347399950027466
+          }
+        ]
+      },
+      {
+        "frame_index": 420,
+        "timestamp": 16.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8978322148323059
+          },
+          {
+            "object": "person",
+            "confidence": 0.8635290861129761
+          },
+          {
+            "object": "person",
+            "confidence": 0.8470680713653564
+          },
+          {
+            "object": "person",
+            "confidence": 0.8461571931838989
+          },
+          {
+            "object": "person",
+            "confidence": 0.8158639669418335
+          },
+          {
+            "object": "person",
+            "confidence": 0.7700324654579163
+          },
+          {
+            "object": "person",
+            "confidence": 0.5634525418281555
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.4567473530769348
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.36347565054893494
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [
+    {
+      "type": "crowd_detection",
+      "timestamp": 1.2,
+      "description": "Large gathering detected: 11 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 2.4,
+      "description": "Large gathering detected: 14 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 3.6,
+      "description": "Large gathering detected: 14 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 4.8,
+      "description": "Large gathering detected: 14 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 6.0,
+      "description": "Large gathering detected: 10 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 7.2,
+      "description": "Large gathering detected: 10 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 8.4,
+      "description": "Large gathering detected: 12 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 9.6,
+      "description": "Large gathering detected: 12 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 12.0,
+      "description": "Large gathering detected: 10 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 13.2,
+      "description": "Large gathering detected: 10 people",
+      "severity": "medium"
+    }
+  ],
+  "insertion_points": [],
+  "summary": {
+    "language_detected": "ja",
+    "total_objects_detected": 15,
+    "safety_flags": 10,
+    "safe_insertion_windows": 0
+  },
+  "annotated_video": "web_annotated_CBD WALKING SHOTS (2) USING PHONE.mov"
+}
