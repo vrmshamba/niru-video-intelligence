@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cmd /c \"dir H:\\\\ /b 2>&1\")",
+      "Bash(cmd /c \"dir H:\\\\ /b\")",
+      "Bash(python:*)",
+      "Bash(cmd /c:*)",
+      "Bash(cmd /c \"py -0\")",
+      "Bash(\"H:/NIRU_MVP_Dev/.venv/Scripts/python.exe\":*)"
+    ]
+  }
+}

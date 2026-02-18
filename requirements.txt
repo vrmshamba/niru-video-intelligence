@@ -3,10 +3,10 @@ torch
 torchvision
 gdown==4.7.1
 pillow
-numpy==1.24.3
-pandas==2.1.3
+numpy
+pandas
 pydub==0.25.1
-moviepy==1.0.3
+moviepy
 openai-whisper
 ultralytics
 opencv-python
