@@ -155,8 +155,11 @@ class VideoProcessor:
         if not self.yolo_model:
             raise ValueError("YOLO model not loaded.")
 
+        # YOLO doesn't support MXF — convert to a temp MP4 first if needed
+        yolo_path, mxf_tmp = self._to_mp4_if_needed(video_path)
+
         # Open source video to get properties
-        cap = cv2.VideoCapture(video_path)
+        cap = cv2.VideoCapture(yolo_path)
         fps = cap.get(cv2.CAP_PROP_FPS)
         width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
         height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
@@ -189,7 +192,7 @@ class VideoProcessor:
         
         print(f"Running YOLO inference (generating annotated video)...")
         # Lower confidence for better detection, especially partial views
-        results = self.yolo_model(video_path, stream=True, verbose=False, conf=0.25) # Lowered from default 0.25
+        results = self.yolo_model(yolo_path, stream=True, verbose=False, conf=0.25)
         
         scenes = []
         frame_idx = 0
@@ -232,10 +235,35 @@ class VideoProcessor:
             video_writer.release()
             self._reencode_h264(tmp_path, output_path)
 
+        if mxf_tmp and os.path.exists(mxf_tmp):
+            os.remove(mxf_tmp)
+
         return {
             "total_scenes_analyzed": len(scenes),
             "scenes": scenes
         }
+
+    def _to_mp4_if_needed(self, video_path):
+        """If video_path is MXF, convert to a temp MP4 via ffmpeg so YOLO can read it.
+        Returns (path_to_use, tmp_path_to_delete). tmp_path_to_delete is None if no
+        conversion was needed."""
+        if not video_path.lower().endswith('.mxf'):
+            return video_path, None
+        if not self.ffmpeg_path:
+            raise RuntimeError("ffmpeg not available — cannot convert MXF for YOLO.")
+        tmp_mp4 = video_path + ".yolo_tmp.mp4"
+        cmd = [
+            self.ffmpeg_path, "-y",
+            "-i", video_path,
+            "-vcodec", "copy",   # stream-copy video (fast, no re-encode)
+            "-an",               # drop audio (YOLO doesn't need it)
+            tmp_mp4
+        ]
+        result = subprocess.run(cmd, capture_output=True, text=True)
+        if result.returncode != 0:
+            raise RuntimeError(f"ffmpeg MXF->MP4 conversion failed: {result.stderr[-500:]}")
+        print(f"Converted MXF to temp MP4 for YOLO: {tmp_mp4}")
+        return tmp_mp4, tmp_mp4
 
     def _reencode_h264(self, tmp_path, output_path):
         """Re-encode tmp_path to H.264/yuv420p at output_path, then delete tmp_path.
