@@ -9,11 +9,48 @@ jobs:
   sync-to-hub:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          fetch-depth: 1
-      - name: Push to hub
+          python-version: '3.10'
+
+      - name: Install huggingface_hub
+        run: pip install huggingface_hub
+
+      - name: Push code files to HF Space
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          git push -f https://susanngatia:$HF_TOKEN@huggingface.co/spaces/susanngatia/whisper-banana main
+          python - <<'EOF'
+          import os
+          from huggingface_hub import HfApi
+
+          api = HfApi(token=os.environ["HF_TOKEN"])
+          api.upload_folder(
+              folder_path=".",
+              repo_id="susanngatia/whisper-banana",
+              repo_type="space",
+              ignore_patterns=[
+                  ".git/",
+                  ".github/",
+                  ".venv/",
+                  "__pycache__/",
+                  "*.pyc",
+                  "results/",
+                  "videos/",
+                  "models/",
+                  "outputs/",
+                  "annotation_frames/",
+                  "annotation_labels/",
+                  "training/",
+                  "*.mp4",
+                  "*.avi",
+                  "*.mov",
+                  "*.mxf",
+                  "*.pt",
+              ],
+          )
+          print("Sync to HuggingFace Space complete.")
+          EOF
