@@ -19,6 +19,10 @@ models/
 results/web_annotated_*
 results/annotated_*
 
+# Annotation frames and per-video labels (large — regenerate with extract_and_annotate.py)
+annotation_frames/
+annotation_labels/*/
+
 # IDEs
 .vscode/
 .idea/
