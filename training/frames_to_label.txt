@@ -1,0 +1,106 @@
+
+Top 50 frames most likely to contain target classes
+RANK  SCORE  VIDEO                                         FRAME        SIGNALS
+--------------------------------------------------------------------------------------------------------------
+1     92     CBD Cabro 20th June 2025                      frame_00145  nganya:20  city_hoppa:10  no_helmet:20  conductor:20  hawkers:12  pothole:10
+2     92     CBD Cabro 20th June 2025                      frame_00148  nganya:20  city_hoppa:10  no_helmet:20  conductor:20  hawkers:12  pothole:10
+3     88     CBD Cabro 20th June 2025                      frame_00105  nganya:20  city_hoppa:10  no_helmet:20  conductor:20  hawkers:8  pothole:10
+4     88     CBD Cabro 20th June 2025                      frame_00107  nganya:20  city_hoppa:10  no_helmet:20  conductor:20  hawkers:8  pothole:10
+5     88     CBD Cabro 20th June 2025                      frame_00140  nganya:20  city_hoppa:10  no_helmet:20  conductor:20  hawkers:8  pothole:10
+6     86     CBD Cabro 20th June 2025                      frame_00108  nganya:20  city_hoppa:10  no_helmet:14  conductor:20  hawkers:12  pothole:10
+7     86     CBD Cabro 20th June 2025                      frame_00147  nganya:20  city_hoppa:10  no_helmet:14  conductor:20  hawkers:12  pothole:10
+8     84     BUSES,STRANDED BUST STOP1                     frame_00122  nganya:12  city_hoppa:20  no_helmet:20  conductor:20  hawkers:12
+9     84     CBD TRAFFIC                                   frame_00004  nganya:12  city_hoppa:20  no_helmet:14  conductor:20  hawkers:8  pothole:10
+10    82     AERIAL MATATUS NRB                            frame_00006  nganya:20  city_hoppa:10  no_helmet:20  conductor:20  hawkers:12
+11    82     CBD Cabro 20th June 2025                      frame_00104  nganya:20  city_hoppa:10  no_helmet:14  conductor:20  hawkers:8  pothole:10
+12    82     CBD Cabro 20th June 2025                      frame_00112  nganya:20  city_hoppa:10  no_helmet:14  conductor:20  hawkers:8  pothole:10
+13    82     CBD Cabro 20th June 2025                      frame_00142  nganya:20  city_hoppa:10  no_helmet:14  conductor:20  hawkers:8  pothole:10
+14    82     CBD Cabro 20th June 2025                      frame_00143  nganya:20  city_hoppa:10  no_helmet:14  conductor:20  hawkers:8  pothole:10
+15    80     CBD Cabro 20th June 2025                      frame_00141  nganya:16  city_hoppa:10  no_helmet:20  conductor:16  hawkers:8  pothole:10
+16    78     AERIAL MATATUS NRB                            frame_00014  nganya:20  city_hoppa:10  no_helmet:20  conductor:20  hawkers:8
+17    78     CBD Cabro 20th June 2025                      frame_00119  nganya:16  city_hoppa:10  no_helmet:14  conductor:16  hawkers:12  pothole:10
+18    78     CBD Cabro 20th June 2025                      frame_00139  nganya:16  city_hoppa:10  no_helmet:14  conductor:16  hawkers:12  pothole:10
+19    76     AERIAL MATATUS NRB                            frame_00005  nganya:20  city_hoppa:10  no_helmet:14  conductor:20  hawkers:12
+20    76     AERIAL MATATUS NRB                            frame_00025  nganya:20  city_hoppa:10  no_helmet:14  conductor:20  hawkers:12
+21    74     AERIAL MATATUS NRB                            frame_00017  nganya:12  city_hoppa:10  no_helmet:20  conductor:20  hawkers:12
+22    74     CBD Cabro 20th June 2025                      frame_00151  nganya:12  city_hoppa:20  conductor:20  hawkers:12  pothole:10
+23    74     CBD Cabro 20th June 2025                      frame_00153  nganya:12  city_hoppa:20  conductor:20  hawkers:12  pothole:10
+24    74     CBD Cabro 20th June 2025                      frame_00155  nganya:12  city_hoppa:20  conductor:20  hawkers:12  pothole:10
+25    72     AERIAL MATATUS CBD                            frame_00000  nganya:20  city_hoppa:10  conductor:20  hawkers:12  pothole:10
+26    72     AERIAL MATATUS CBD                            frame_00001  nganya:20  city_hoppa:10  conductor:20  hawkers:12  pothole:10
+27    72     AERIAL MATATUS CBD                            frame_00003  nganya:20  city_hoppa:10  conductor:20  hawkers:12  pothole:10
+28    72     AERIAL MATATUS CBD                            frame_00004  nganya:20  city_hoppa:10  conductor:20  hawkers:12  pothole:10
+29    72     AERIAL MATATUS CBD                            frame_00017  nganya:20  city_hoppa:10  conductor:20  hawkers:12  pothole:10
+30    72     AERIAL MATATUS CBD                            frame_00020  nganya:20  city_hoppa:10  conductor:20  hawkers:12  pothole:10
+31    72     AERIAL MATATUS NRB                            frame_00001  nganya:20  city_hoppa:10  no_helmet:14  conductor:20  hawkers:8
+32    72     AERIAL MATATUS NRB                            frame_00002  nganya:20  city_hoppa:10  no_helmet:14  conductor:20  hawkers:8
+33    72     AERIAL MATATUS NRB                            frame_00004  nganya:20  city_hoppa:10  no_helmet:14  conductor:20  hawkers:8
+34    72     AERIAL MATATUS NRB                            frame_00007  nganya:20  city_hoppa:10  no_helmet:14  conductor:20  hawkers:8
+35    72     AERIAL MATATUS NRB                            frame_00008  nganya:20  city_hoppa:10  no_helmet:14  conductor:20  hawkers:8
+36    72     AERIAL MATATUS NRB                            frame_00012  nganya:20  city_hoppa:10  no_helmet:14  conductor:20  hawkers:8
+37    72     AERIAL MATATUS NRB                            frame_00020  nganya:20  city_hoppa:10  no_helmet:14  conductor:20  hawkers:8
+38    72     AERIAL MATATUS NRB                            frame_00023  nganya:20  city_hoppa:10  no_helmet:14  conductor:20  hawkers:8
+39    72     CBD Cabro 20th June 2025                      frame_00146  nganya:20  city_hoppa:10  conductor:20  hawkers:12  pothole:10
+40    72     CBD Cabro 20th June 2025                      frame_00154  nganya:20  city_hoppa:10  conductor:20  hawkers:12  pothole:10
+41    72     CBD Cabro 20th June 2025                      frame_00156  nganya:20  city_hoppa:10  conductor:20  hawkers:12  pothole:10
+42    72     CBD Cabro 20th June 2025                      frame_00157  nganya:20  city_hoppa:10  conductor:20  hawkers:12  pothole:10
+43    72     CBD Cabro 20th June 2025                      frame_00159  nganya:20  city_hoppa:10  conductor:20  hawkers:12  pothole:10
+44    72     CBD Cabro 20th June 2025                      frame_00161  nganya:20  city_hoppa:10  conductor:20  hawkers:12  pothole:10
+45    72     CBD Cabro 20th June 2025                      frame_00162  nganya:20  city_hoppa:10  conductor:20  hawkers:12  pothole:10
+46    72     CBD Cabro 20th June 2025                      frame_00163  nganya:20  city_hoppa:10  conductor:20  hawkers:12  pothole:10
+47    72     CBD Cabro 20th June 2025                      frame_00164  nganya:20  city_hoppa:10  conductor:20  hawkers:12  pothole:10
+48    72     CBD Cabro 20th June 2025                      frame_00165  nganya:20  city_hoppa:10  conductor:20  hawkers:12  pothole:10
+49    72     CBD Cabro 20th June 2025                      frame_00166  nganya:20  city_hoppa:10  conductor:20  hawkers:12  pothole:10
+50    72     CBD Cabro 20th June 2025                      frame_00167  nganya:20  city_hoppa:10  conductor:20  hawkers:12  pothole:10
+
+Image paths:
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00145.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00148.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00105.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00107.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00140.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00108.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00147.jpg
+H:\NIRU_MVP_Dev\annotation_frames\BUSES,STRANDED BUST STOP1\frame_00122.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD TRAFFIC\frame_00004.jpg
+H:\NIRU_MVP_Dev\annotation_frames\AERIAL MATATUS NRB\frame_00006.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00104.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00112.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00142.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00143.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00141.jpg
+H:\NIRU_MVP_Dev\annotation_frames\AERIAL MATATUS NRB\frame_00014.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00119.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00139.jpg
+H:\NIRU_MVP_Dev\annotation_frames\AERIAL MATATUS NRB\frame_00005.jpg
+H:\NIRU_MVP_Dev\annotation_frames\AERIAL MATATUS NRB\frame_00025.jpg
+H:\NIRU_MVP_Dev\annotation_frames\AERIAL MATATUS NRB\frame_00017.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00151.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00153.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00155.jpg
+H:\NIRU_MVP_Dev\annotation_frames\AERIAL MATATUS CBD\frame_00000.jpg
+H:\NIRU_MVP_Dev\annotation_frames\AERIAL MATATUS CBD\frame_00001.jpg
+H:\NIRU_MVP_Dev\annotation_frames\AERIAL MATATUS CBD\frame_00003.jpg
+H:\NIRU_MVP_Dev\annotation_frames\AERIAL MATATUS CBD\frame_00004.jpg
+H:\NIRU_MVP_Dev\annotation_frames\AERIAL MATATUS CBD\frame_00017.jpg
+H:\NIRU_MVP_Dev\annotation_frames\AERIAL MATATUS CBD\frame_00020.jpg
+H:\NIRU_MVP_Dev\annotation_frames\AERIAL MATATUS NRB\frame_00001.jpg
+H:\NIRU_MVP_Dev\annotation_frames\AERIAL MATATUS NRB\frame_00002.jpg
+H:\NIRU_MVP_Dev\annotation_frames\AERIAL MATATUS NRB\frame_00004.jpg
+H:\NIRU_MVP_Dev\annotation_frames\AERIAL MATATUS NRB\frame_00007.jpg
+H:\NIRU_MVP_Dev\annotation_frames\AERIAL MATATUS NRB\frame_00008.jpg
+H:\NIRU_MVP_Dev\annotation_frames\AERIAL MATATUS NRB\frame_00012.jpg
+H:\NIRU_MVP_Dev\annotation_frames\AERIAL MATATUS NRB\frame_00020.jpg
+H:\NIRU_MVP_Dev\annotation_frames\AERIAL MATATUS NRB\frame_00023.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00146.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00154.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00156.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00157.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00159.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00161.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00162.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00163.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00164.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00165.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00166.jpg
+H:\NIRU_MVP_Dev\annotation_frames\CBD Cabro 20th June 2025\frame_00167.jpg
