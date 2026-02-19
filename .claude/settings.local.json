@@ -6,7 +6,11 @@
       "Bash(python:*)",
       "Bash(cmd /c:*)",
       "Bash(cmd /c \"py -0\")",
-      "Bash(\"H:/NIRU_MVP_Dev/.venv/Scripts/python.exe\":*)"
+      "Bash(\"H:/NIRU_MVP_Dev/.venv/Scripts/python.exe\":*)",
+      "Bash(\"C:/Python314/python.exe\" -m venv \"H:/NIRU_MVP_Dev/.venv\")",
+      "Bash(echo:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
