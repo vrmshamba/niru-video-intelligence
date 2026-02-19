@@ -7,7 +7,7 @@ Two-phase workflow
 ------------------
 1. PREPARE  (--prepare-only or auto-run before training)
    - Reads annotation_frames/ and annotation_labels/ (COCO-80 auto-labels).
-   - Remaps the 8 COCO classes that overlap with the 17 Nairobi classes.
+   - Remaps the 5 COCO classes that overlap with the 20 Nairobi classes.
    - Discards label lines for COCO classes with no Nairobi equivalent.
    - Writes images and remapped labels to training/prepared/{images,labels}/{train,val}/.
    - Splits by VIDEO (not by frame) — 80% train / 20% val — to avoid data leakage.
@@ -32,12 +32,14 @@ Usage
 
 Notes
 -----
-- The 9 Nairobi-specific classes (hawker, police_officer, traffic_marshal, etc.)
-  have no COCO equivalent. They will show 0 labels after remapping. Add manual
-  annotations to annotation_labels/<video>/ for those classes and re-run prepare.
-- matatu vs bus: initially both map from COCO "bus". After manual re-labeling,
-  re-run prepare to get the proper split.
-- bodaboda vs motorcycle: initially both map from COCO "motorcycle". Same caveat.
+- 15 of the 20 Nairobi classes need manual annotation (nganya, city_hoppa,
+  school_bus, large_bus, bodaboda_no_helmet, bodaboda_stage, tuk_tuk, mkokoteni,
+  street_hawkers, traffic_marshal, conductor, matatu_stage, illegal_dumping,
+  garbage_pile, pothole). They show 0 labels until manually annotated.
+- matatu vs nganya/city_hoppa/school_bus/large_bus: all initially remapped from
+  COCO "bus". After manual re-labeling, re-run prepare to get the proper split.
+- bodaboda vs bodaboda_no_helmet/tuk_tuk: all initially remapped from COCO
+  "motorcycle". Same caveat.
 """
 
 import os
@@ -62,14 +64,12 @@ DATASET_YAML = THIS_DIR / "dataset.yaml"
 # -1 means discard (no meaningful equivalent)
 # ---------------------------------------------------------------------------
 COCO_TO_NAIROBI = {
-    0:   6,   # person        → pedestrian
-    1:   5,   # bicycle       → bicycle
-    2:   2,   # car           → car
-    3:   4,   # motorcycle    → motorcycle  (includes bodaboda; differentiate with manual labels)
-    5:   0,   # bus           → matatu      (includes bus; differentiate with manual labels)
-    7:   3,   # truck         → truck
-    9:  11,   # traffic light → traffic_light
-    11: 12,   # stop sign     → road_sign
+    0:  14,   # person        → passenger      (street_hawkers/conductor/marshal need manual split)
+    3:   5,   # motorcycle    → bodaboda        (bodaboda_no_helmet/tuk_tuk need manual split)
+    5:   0,   # bus           → matatu          (nganya/city_hoppa/school_bus/large_bus need manual split)
+    9:  17,   # traffic light → traffic_lights
+    11: 18,   # stop sign     → road_sign
+    # COCO 1 (bicycle), 2 (car), 7 (truck) → discarded (no equivalent in 20-class schema)
 }
 
 VAL_SPLIT = 0.20   # fraction of videos held out for validation
@@ -220,13 +220,28 @@ def train_model(epochs: int, imgsz: int, batch: int, device: str) -> None:
 def print_class_summary() -> None:
     """Print expected label counts per Nairobi class after remapping."""
     nairobi_names = {
-        0: "matatu", 1: "bus", 2: "car", 3: "truck",
-        4: "motorcycle", 5: "bicycle", 6: "pedestrian",
-        7: "hawker", 8: "police_officer", 9: "traffic_marshal",
-        10: "handcart", 11: "traffic_light", 12: "road_sign",
-        13: "market_stall", 14: "matatu_conductor", 15: "crowd", 16: "bodaboda",
+        0:  "matatu",
+        1:  "nganya",
+        2:  "city_hoppa",
+        3:  "school_bus",
+        4:  "large_bus",
+        5:  "bodaboda",
+        6:  "bodaboda_no_helmet",
+        7:  "bodaboda_stage",
+        8:  "tuk_tuk",
+        9:  "mkokoteni",
+        10: "street_hawkers",
+        11: "traffic_marshal",
+        12: "conductor",
+        13: "matatu_stage",
+        14: "passenger",
+        15: "illegal_dumping",
+        16: "garbage_pile",
+        17: "traffic_lights",
+        18: "road_sign",
+        19: "pothole",
     }
-    counts = {i: 0 for i in range(17)}
+    counts = {i: 0 for i in range(20)}
 
     if not LABELS_DIR.exists():
         print("[summary] annotation_labels/ not found — skipping class summary.")
