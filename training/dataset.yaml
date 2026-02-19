@@ -1,0 +1,60 @@
+# NIRU Custom Dataset — 17 Nairobi Street Classes
+# Fine-tunes YOLOv8n on Nairobi street footage extracted from H:/ video library.
+#
+# Raw source data (COCO-80 auto-labels):
+#   annotation_frames/   — 1 JPG/second extracted from each video
+#   annotation_labels/   — YOLO-format labels from YOLOv8n/COCO
+#
+# training/training.py remaps the 7 overlapping COCO classes to this schema
+# and copies data into the prepared/ layout expected by YOLOv8 trainer.
+#
+# Prepare dataset:
+#   python training/training.py --prepare-only
+#
+# Train (after prepare):
+#   python training/training.py
+#
+# Or train directly with yolo CLI:
+#   yolo detect train data=training/dataset.yaml model=yolov8n.pt epochs=50 imgsz=640
+
+path: H:/NIRU_MVP_Dev/training/prepared   # dataset root (absolute)
+train: images/train                        # training images — relative to path
+val:   images/val                          # validation images — relative to path
+
+# Number of classes
+nc: 17
+
+# Class names — Nairobi street context
+# Classes 0-6 are remapped from COCO-80 auto-labels (see training.py COCO_TO_NAIROBI).
+# Classes 7-16 require manual annotation or additional labeling passes.
+names:
+  0:  matatu            # Kenyan minibus (14-seat); remapped from COCO bus initially
+  1:  bus               # full-size PSV bus; remapped from COCO bus initially
+  2:  car               # private vehicle; remapped from COCO car
+  3:  truck             # goods truck / lorry; remapped from COCO truck
+  4:  motorcycle        # general motorbike; remapped from COCO motorcycle
+  5:  bicycle           # pedal bicycle; remapped from COCO bicycle
+  6:  pedestrian        # walking person; remapped from COCO person
+  7:  hawker            # street vendor — requires manual labels
+  8:  police_officer    # uniformed officer — requires manual labels
+  9:  traffic_marshal   # yellow-vest marshal — requires manual labels
+  10: handcart          # mkokoteni / push-cart — requires manual labels
+  11: traffic_light     # traffic light; remapped from COCO traffic light
+  12: road_sign         # road sign / stop sign; remapped from COCO stop sign
+  13: market_stall      # open-air stall / kiosk — requires manual labels
+  14: matatu_conductor  # tout / makanga — requires manual labels
+  15: crowd             # dense group of people — requires manual labels
+  16: bodaboda          # motorcycle taxi; remapped from COCO motorcycle initially
+
+# COCO-to-Nairobi remapping used by training.py during dataset preparation:
+# (informational — parsed by training.py at runtime)
+#
+# COCO 0  (person)        → 6  (pedestrian)
+# COCO 1  (bicycle)       → 5  (bicycle)
+# COCO 2  (car)           → 2  (car)
+# COCO 3  (motorcycle)    → 4  (motorcycle)   [bodaboda also tagged here initially]
+# COCO 5  (bus)           → 0  (matatu)        [bus also tagged here initially]
+# COCO 7  (truck)         → 3  (truck)
+# COCO 9  (traffic light) → 11 (traffic_light)
+# COCO 11 (stop sign)     → 12 (road_sign)
+# All other COCO classes  → discarded
