@@ -1,32 +1,41 @@
 """
 extract_and_annotate.py
 
-1. Extracts 1 frame per second from a list of videos using OpenCV.
-2. Saves frames as JPGs to annotation_frames/<video_stem>/
-3. Runs YOLOv8 on every extracted frame.
-4. Saves YOLO-format .txt labels to annotation_labels/<video_stem>/
-   Each label line: class_id cx_norm cy_norm w_norm h_norm
-5. Saves classes.txt (COCO-80 names) alongside the labels.
+Extracts frames from H: drive videos for Roboflow labeling.
+Optionally runs YOLOv8 auto-annotation to pre-populate labels (speeds up manual correction).
+
+Default behaviour: scene-change detection across ALL videos, no frame cap.
+A frame is saved only when the scene shifts meaningfully — avoids thousands of
+near-identical frames from static shots.
+
+Modes:
+  Scene change (default): extract frames only when scene changes significantly
+  Uniform:                extract one frame every --interval seconds (--uniform)
+
+Output:
+  Flat (default): annotation_frames/{video_stem}_NNNNN.jpg  ← best for Roboflow drag-and-drop
+  Subfolders:     annotation_frames/{video_stem}/frame_NNNNN.jpg  (--subfolders)
 
 Usage:
-    python extract_and_annotate.py [--videos-dir H:/] [--n 10]
+    python extract_and_annotate.py                  # all videos, scene-change, no cap
+    python extract_and_annotate.py --n 10           # first 10 videos only
+    python extract_and_annotate.py --threshold 15   # more sensitive (more frames)
+    python extract_and_annotate.py --threshold 40   # less sensitive (fewer frames)
+    python extract_and_annotate.py --uniform        # uniform sampling every 3s instead
+    python extract_and_annotate.py --annotate       # also run YOLO pre-annotation
 """
 
 import os
-import sys
 import argparse
 import cv2
-
-# MXF needs ffmpeg pre-conversion for YOLO but OpenCV can open it directly for frame extraction.
-# We use OpenCV for frames (works on all formats), then YOLO on the saved JPGs.
+from pathlib import Path
 
 FRAMES_DIR  = "annotation_frames"
 LABELS_DIR  = "annotation_labels"
 LIBRARY_DIR = "H:/"
-N_VIDEOS    = 10
 SUPPORTED   = ('.mp4', '.avi', '.mov', '.mxf')
 
-# COCO-80 class names (YOLOv8 default)
+# COCO-80 class names (YOLOv8 default) — used only when --annotate is set
 COCO_CLASSES = [
     "person","bicycle","car","motorcycle","airplane","bus","train","truck","boat",
     "traffic light","fire hydrant","stop sign","parking meter","bench","bird","cat",
@@ -42,52 +51,80 @@ COCO_CLASSES = [
 ]
 
 
-def get_videos(library_dir, n):
+def get_videos(library_dir, n=None):
     files = sorted([
         f for f in os.listdir(library_dir)
         if os.path.isfile(os.path.join(library_dir, f))
         and f.lower().endswith(SUPPORTED)
+        and ".yolo_tmp" not in f          # skip pipeline temp files
     ])
-    return files[:n]
+    return files if n is None else files[:n]
 
 
-def extract_frames(video_path, out_dir):
-    """Extract 1 frame per second. Returns list of saved frame paths."""
-    os.makedirs(out_dir, exist_ok=True)
-    cap = cv2.VideoCapture(video_path)
-    if not cap.isOpened():
-        print(f"  WARNING: OpenCV could not open {video_path}")
-        return []
+def extract_frames_uniform(cap, fps, total_frames, interval_sec, max_frames, out_dir, stem):
+    """Extract one frame every interval_sec seconds, up to max_frames (None = unlimited)."""
+    frame_step = max(1, int(fps * interval_sec))
+    extracted = 0
+    frame_idx = 0
+    saved_paths = []
 
-    fps = cap.get(cv2.CAP_PROP_FPS)
-    if fps <= 0:
-        fps = 25  # fallback
-    total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
-    duration_s = int(total_frames / fps)
-
-    print(f"  Duration: ~{duration_s}s @ {fps:.1f}fps — extracting {duration_s} frames")
-
-    saved = []
-    for sec in range(duration_s):
-        frame_idx = int(sec * fps)
+    while (max_frames is None or extracted < max_frames) and frame_idx < total_frames:
         cap.set(cv2.CAP_PROP_POS_FRAMES, frame_idx)
         ret, frame = cap.read()
         if not ret:
             break
-        out_path = os.path.join(out_dir, f"frame_{sec:05d}.jpg")
-        cv2.imwrite(out_path, frame, [cv2.IMWRITE_JPEG_QUALITY, 90])
-        saved.append(out_path)
+        path = _save_frame(frame, out_dir, stem, extracted)
+        saved_paths.append(path)
+        extracted += 1
+        frame_idx += frame_step
 
-    cap.release()
-    return saved
+    return saved_paths
+
+
+def extract_frames_scene_change(cap, fps, total_frames, threshold, max_frames, out_dir, stem):
+    """Extract frames whenever the scene changes by more than threshold (mean pixel diff).
+    max_frames=None means no limit."""
+    check_step = max(1, int(fps * 0.5))  # check every 0.5s
+    extracted = 0
+    frame_idx = 0
+    last_gray = None
+    saved_paths = []
+
+    while (max_frames is None or extracted < max_frames) and frame_idx < total_frames:
+        cap.set(cv2.CAP_PROP_POS_FRAMES, frame_idx)
+        ret, frame = cap.read()
+        if not ret:
+            break
+
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        if last_gray is None or cv2.absdiff(gray, last_gray).mean() >= threshold:
+            path = _save_frame(frame, out_dir, stem, extracted)
+            saved_paths.append(path)
+            last_gray = gray
+            extracted += 1
+
+        frame_idx += check_step
+
+    return saved_paths
+
+
+def _save_frame(frame, out_dir, stem, index):
+    """Save a frame as JPEG. Returns the saved path."""
+    filename = f"{stem}_{index:05d}.jpg"
+    path = os.path.join(out_dir, filename)
+    if not os.path.exists(path):
+        cv2.imwrite(path, frame, [cv2.IMWRITE_JPEG_QUALITY, 90])
+    return path
 
 
 def annotate_frames(frame_paths, label_dir, yolo_model):
-    """Run YOLO on each frame and write YOLO-format .txt labels."""
+    """Run YOLO on each frame and write YOLO-format .txt label files."""
     os.makedirs(label_dir, exist_ok=True)
     for frame_path in frame_paths:
         stem = os.path.splitext(os.path.basename(frame_path))[0]
         label_path = os.path.join(label_dir, f"{stem}.txt")
+        if os.path.exists(label_path):
+            continue
 
         results = yolo_model(frame_path, verbose=False, conf=0.25)
         lines = []
@@ -106,56 +143,98 @@ def annotate_frames(frame_paths, label_dir, yolo_model):
             f.write('\n'.join(lines))
 
 
-def save_classes(labels_root):
-    classes_path = os.path.join(labels_root, "classes.txt")
-    with open(classes_path, 'w') as f:
-        f.write('\n'.join(COCO_CLASSES))
-    print(f"Saved {classes_path}")
-
-
 def main():
-    parser = argparse.ArgumentParser(description="Frame extraction + YOLO auto-annotation")
-    parser.add_argument("--library-dir", default=LIBRARY_DIR)
-    parser.add_argument("--n", type=int, default=N_VIDEOS, help="Number of videos to process")
+    parser = argparse.ArgumentParser(description="Frame extraction for Roboflow labeling")
+    parser.add_argument("--library-dir", default=LIBRARY_DIR,
+                        help="Directory to scan for videos (default: H:/)")
+    parser.add_argument("--n", type=int, default=None,
+                        help="Limit to first N videos (default: all videos)")
+    parser.add_argument("--interval", type=float, default=3.0,
+                        help="Seconds between frames in uniform mode (default: 3.0)")
+    parser.add_argument("--max", type=int, default=None, dest="max_frames",
+                        help="Max frames per video (default: unlimited)")
+    parser.add_argument("--uniform", action="store_true",
+                        help="Use uniform sampling every --interval seconds instead of scene-change")
+    parser.add_argument("--threshold", type=float, default=25.0,
+                        help="Scene change sensitivity — mean pixel diff to trigger save "
+                             "(0-255, lower=more frames, default: 25)")
+    parser.add_argument("--annotate", action="store_true",
+                        help="Run YOLOv8 COCO-80 auto-annotation (useful as a labeling starting point)")
+    parser.add_argument("--subfolders", action="store_true",
+                        help="Save frames into per-video subfolders instead of flat directory")
     args = parser.parse_args()
 
-    os.makedirs(FRAMES_DIR, exist_ok=True)
-    os.makedirs(LABELS_DIR, exist_ok=True)
+    frames_root = Path(FRAMES_DIR)
+    frames_root.mkdir(parents=True, exist_ok=True)
 
-    from ultralytics import YOLO
-    print("Loading YOLOv8n model...")
-    model = YOLO("yolov8n.pt")
-    print("Model loaded.\n")
+    model = None
+    if args.annotate:
+        from ultralytics import YOLO
+        print("Loading YOLOv8n model for auto-annotation...")
+        model = YOLO("yolov8n.pt")
+        Path(LABELS_DIR).mkdir(parents=True, exist_ok=True)
+        classes_path = Path(LABELS_DIR) / "classes.txt"
+        classes_path.write_text('\n'.join(COCO_CLASSES))
+        print(f"Saved class list to {classes_path}\n")
 
     videos = get_videos(args.library_dir, args.n)
-    print(f"Processing {len(videos)} videos from {args.library_dir}\n")
+    if not videos:
+        print(f"No supported videos found in {args.library_dir}")
+        return
 
-    save_classes(LABELS_DIR)
+    mode = f"uniform ({args.interval}s interval)" if args.uniform else "scene-change"
+    cap_str = f"max {args.max_frames} frames/video" if args.max_frames else "no frame cap"
+    print(f"Found {len(videos)} videos · mode: {mode} · {cap_str}")
+    print(f"Output: {frames_root}/\n")
+
+    total_frames_saved = 0
 
     for i, filename in enumerate(videos, 1):
         video_path = os.path.join(args.library_dir, filename)
-        stem = os.path.splitext(filename)[0]
-        frame_dir = os.path.join(FRAMES_DIR, stem)
-        label_dir = os.path.join(LABELS_DIR, stem)
+        stem = Path(filename).stem
+
+        # Determine output directory
+        if args.subfolders:
+            out_dir = frames_root / stem
+        else:
+            out_dir = frames_root
+        out_dir = str(out_dir)
+        os.makedirs(out_dir, exist_ok=True)
 
         print(f"[{i}/{len(videos)}] {filename}")
 
-        # Step 1: Extract frames
-        print("  Extracting frames...")
-        frame_paths = extract_frames(video_path, frame_dir)
-        print(f"  Saved {len(frame_paths)} frames to {frame_dir}")
-
-        if not frame_paths:
-            print("  Skipping annotation (no frames extracted).")
+        cap = cv2.VideoCapture(video_path)
+        if not cap.isOpened():
+            print("  SKIP — OpenCV could not open file")
             continue
 
-        # Step 2: Auto-annotate
-        print("  Running YOLO annotation...")
-        annotate_frames(frame_paths, label_dir, model)
-        label_count = sum(1 for f in os.listdir(label_dir) if f.endswith('.txt'))
-        print(f"  Saved {label_count} label files to {label_dir}\n")
+        fps = cap.get(cv2.CAP_PROP_FPS) or 25.0
+        total_video_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+        duration = total_video_frames / fps
 
-    print("Done.")
+        if args.uniform:
+            frame_paths = extract_frames_uniform(
+                cap, fps, total_video_frames, args.interval, args.max_frames, out_dir, stem
+            )
+        else:
+            frame_paths = extract_frames_scene_change(
+                cap, fps, total_video_frames, args.threshold, args.max_frames, out_dir, stem
+            )
+
+        cap.release()
+        total_frames_saved += len(frame_paths)
+        print(f"  {len(frame_paths)} frames extracted  ({duration:.0f}s video)")
+
+        if args.annotate and model and frame_paths:
+            label_dir = os.path.join(LABELS_DIR, stem) if args.subfolders else LABELS_DIR
+            print(f"  Running YOLO annotation on {len(frame_paths)} frames...")
+            annotate_frames(frame_paths, label_dir, model)
+            print(f"  Labels saved to {label_dir}")
+
+    print(f"\nDone. {total_frames_saved} total frames saved to {FRAMES_DIR}/")
+    if args.annotate:
+        print(f"Labels saved to {LABELS_DIR}/")
+    print("\nNext step: zip annotation_frames/ and upload to Roboflow.")
 
 
 if __name__ == "__main__":

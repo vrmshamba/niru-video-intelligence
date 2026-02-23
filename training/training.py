@@ -3,32 +3,28 @@ training/training.py
 
 YOLOv8 fine-tuning script for NIRU — Nairobi street footage.
 
-Two-phase workflow
-------------------
-1. PREPARE  (--prepare-only or auto-run before training)
-   - Reads annotation_frames/ and annotation_labels/ (COCO-80 auto-labels).
-   - Remaps the 5 COCO classes that overlap with the 20 Nairobi classes.
-   - Discards label lines for COCO classes with no Nairobi equivalent.
-   - Writes images and remapped labels to training/prepared/{images,labels}/{train,val}/.
-   - Splits by VIDEO (not by frame) — 80% train / 20% val — to avoid data leakage.
+RECOMMENDED WORKFLOW (Roboflow)
+--------------------------------
+1. Label frames on Roboflow with your 20 Nairobi classes.
+2. Export dataset from Roboflow → YOLOv8 format → download zip.
+3. Extract zip to a local folder, e.g. roboflow_export/.
+4. Run:
+       python training/training.py --roboflow-export roboflow_export/
+   This uses Roboflow's data.yaml directly (train/valid splits already done).
 
-2. TRAIN
-   - Calls YOLO("yolov8n.pt").train() with training/dataset.yaml.
-   - Results land in runs/detect/niru_nairobi/.
+FALLBACK WORKFLOW (COCO auto-labels only)
+------------------------------------------
+1. Run extract_and_annotate.py --annotate  to generate COCO-80 auto-labels.
+2. Run:
+       python training/training.py --prepare-only   # remap COCO → Nairobi, split dataset
+       python training/training.py --train-only     # train on prepared/
+   Or combined:
+       python training/training.py
 
-Usage
------
-    # Full prepare + train:
-    python training/training.py
-
-    # Prepare only (inspect data before training):
-    python training/training.py --prepare-only
-
-    # Train only (dataset already prepared):
-    python training/training.py --train-only
-
-    # Override hyperparameters:
+Other options
+-------------
     python training/training.py --epochs 100 --imgsz 1280 --batch 8
+    python training/training.py --summary    # show label counts per class
 
 Notes
 -----
@@ -36,10 +32,6 @@ Notes
   school_bus, large_bus, bodaboda_no_helmet, bodaboda_stage, tuk_tuk, mkokoteni,
   street_hawkers, traffic_marshal, conductor, matatu_stage, illegal_dumping,
   garbage_pile, pothole). They show 0 labels until manually annotated.
-- matatu vs nganya/city_hoppa/school_bus/large_bus: all initially remapped from
-  COCO "bus". After manual re-labeling, re-run prepare to get the proper split.
-- bodaboda vs bodaboda_no_helmet/tuk_tuk: all initially remapped from COCO
-  "motorcycle". Same caveat.
 """
 
 import os
@@ -112,23 +104,41 @@ def prepare_dataset(force: bool = False) -> None:
     if not LABELS_DIR.exists():
         sys.exit(f"[prepare] ERROR: {LABELS_DIR} not found. Run extract_and_annotate.py first.")
 
-    # Collect video stems that have both frames and labels
-    video_stems = sorted([
-        d.name for d in FRAMES_DIR.iterdir()
-        if d.is_dir() and (LABELS_DIR / d.name).is_dir()
-    ])
+    # Support both flat layout (video_stem_NNNNN.jpg) and subfolder layout
+    # Flat: annotation_frames/MATATU CBD NRB_00001.jpg
+    # Subfolder: annotation_frames/MATATU CBD NRB/frame_00001.jpg
+    flat_jpgs = sorted(FRAMES_DIR.glob("*.jpg"))
+
+    if flat_jpgs:
+        # Flat layout — derive video stem from filename prefix (everything before last _NNNNN)
+        stem_map = {}  # stem → [jpg_paths]
+        for jpg in flat_jpgs:
+            # filename: "{video_stem}_{index:05d}.jpg"
+            parts = jpg.stem.rsplit("_", 1)
+            stem = parts[0] if len(parts) == 2 and parts[1].isdigit() else jpg.stem
+            stem_map.setdefault(stem, []).append(jpg)
+        video_stems = sorted(stem_map.keys())
+        use_flat = True
+    else:
+        # Subfolder layout (legacy)
+        video_stems = sorted([
+            d.name for d in FRAMES_DIR.iterdir()
+            if d.is_dir() and (LABELS_DIR / d.name).is_dir()
+        ])
+        stem_map = {}
+        use_flat = False
 
     if not video_stems:
-        sys.exit("[prepare] ERROR: No matching frame/label directories found.")
+        sys.exit("[prepare] ERROR: No frames found in annotation_frames/. Run extract_and_annotate.py first.")
 
-    print(f"[prepare] Found {len(video_stems)} annotated video(s).")
+    print(f"[prepare] Found {len(video_stems)} video stem(s) ({'flat' if use_flat else 'subfolder'} layout).")
 
-    # Train/val split by video (prevents frame-level leakage)
+    # Train/val split by video stem (prevents frame-level leakage)
     random.seed(RANDOM_SEED)
     shuffled = video_stems[:]
     random.shuffle(shuffled)
     n_val = max(1, int(len(shuffled) * VAL_SPLIT))
-    val_stems  = set(shuffled[:n_val])
+    val_stems   = set(shuffled[:n_val])
     train_stems = set(shuffled[n_val:])
     print(f"[prepare] Split: {len(train_stems)} train videos / {len(val_stems)} val videos.")
 
@@ -138,30 +148,32 @@ def prepare_dataset(force: bool = False) -> None:
         (PREPARED / "labels" / split).mkdir(parents=True, exist_ok=True)
 
     stats = {"train_img": 0, "val_img": 0, "train_lbl": 0, "val_lbl": 0,
-             "discarded_imgs": 0, "remapped_lines": 0}
+             "remapped_lines": 0}
 
     for stem in video_stems:
         split = "val" if stem in val_stems else "train"
-        frame_src_dir = FRAMES_DIR / stem
-        label_src_dir = LABELS_DIR / stem
-        img_dst_dir   = PREPARED / "images" / split
-        lbl_dst_dir   = PREPARED / "labels" / split
+        img_dst_dir = PREPARED / "images" / split
+        lbl_dst_dir = PREPARED / "labels" / split
 
-        jpg_files = sorted(frame_src_dir.glob("*.jpg"))
+        if use_flat:
+            jpg_files = sorted(stem_map[stem])
+            label_src_dir = LABELS_DIR  # labels are also flat
+        else:
+            jpg_files = sorted((FRAMES_DIR / stem).glob("*.jpg"))
+            label_src_dir = LABELS_DIR / stem
+
         for jpg in jpg_files:
             label_src = label_src_dir / (jpg.stem + ".txt")
             remapped = remap_label_file(label_src)
 
-            # Use video stem as prefix to avoid filename collisions across videos
+            # Sanitise stem for use in destination filename
             safe_stem = stem.replace(" ", "_").replace(",", "")
-            dst_name  = f"{safe_stem}__{jpg.name}"
-            lbl_name  = f"{safe_stem}__{jpg.stem}.txt"
+            dst_name = f"{safe_stem}__{jpg.name}"
+            lbl_name = f"{safe_stem}__{jpg.stem}.txt"
 
-            # Copy image
             shutil.copy2(jpg, img_dst_dir / dst_name)
             stats[f"{split}_img"] += 1
 
-            # Write remapped label (empty file if no detections → valid for YOLO)
             (lbl_dst_dir / lbl_name).write_text("\n".join(remapped))
             if remapped:
                 stats[f"{split}_lbl"] += 1
@@ -173,28 +185,40 @@ def prepare_dataset(force: bool = False) -> None:
     print(f"[prepare] Dataset written to: {PREPARED}")
 
 
-def train_model(epochs: int, imgsz: int, batch: int, device: str) -> None:
-    """Run YOLOv8 fine-tuning."""
+def train_model(epochs: int, imgsz: int, batch: int, device: str,
+                roboflow_export: str | None = None) -> None:
+    """Run YOLOv8 fine-tuning.
+
+    roboflow_export: path to folder containing Roboflow's exported data.yaml.
+                     If given, that data.yaml is used directly instead of
+                     training/data.yaml, bypassing the prepare step.
+    """
     try:
         from ultralytics import YOLO
     except ImportError:
         sys.exit("[train] ERROR: ultralytics not installed. Run: pip install ultralytics")
 
-    # Verify prepared dataset exists
-    train_imgs = PREPARED / "images" / "train"
-    if not train_imgs.exists() or not any(train_imgs.glob("*.jpg")):
-        sys.exit(
-            f"[train] ERROR: No training images found at {train_imgs}.\n"
-            "        Run with --prepare-only first, or omit --train-only."
-        )
+    if roboflow_export:
+        data_yaml = Path(roboflow_export) / "data.yaml"
+        if not data_yaml.exists():
+            sys.exit(f"[train] ERROR: data.yaml not found in {roboflow_export}")
+        print(f"[train] Using Roboflow export: {data_yaml}")
+    else:
+        data_yaml = DATASET_YAML
+        train_imgs = PREPARED / "images" / "train"
+        if not train_imgs.exists() or not any(train_imgs.glob("*.jpg")):
+            sys.exit(
+                f"[train] ERROR: No training images found at {train_imgs}.\n"
+                "        Run --prepare-only first, or use --roboflow-export."
+            )
 
     print(f"\n[train] Starting fine-tuning: epochs={epochs} imgsz={imgsz} batch={batch} device={device}")
     print(f"[train] Base model : yolov8n.pt")
-    print(f"[train] Dataset    : {DATASET_YAML}")
+    print(f"[train] Dataset    : {data_yaml}")
 
     model = YOLO("yolov8n.pt")
     results = model.train(
-        data=str(DATASET_YAML),
+        data=str(data_yaml),
         epochs=epochs,
         imgsz=imgsz,
         batch=batch,
@@ -286,6 +310,9 @@ def main():
                         help="Batch size (default: 16; reduce if OOM).")
     parser.add_argument("--device",  type=str,   default="0",
                         help="Device: '0' for GPU 0, 'cpu' for CPU (default: '0').")
+    parser.add_argument("--roboflow-export", type=str, default=None, metavar="DIR",
+                        help="Path to Roboflow export folder containing data.yaml. "
+                             "Skips prepare step and trains directly on Roboflow's splits.")
     parser.add_argument("--summary", action="store_true",
                         help="Print class label distribution and exit.")
     args = parser.parse_args()
@@ -295,6 +322,17 @@ def main():
 
     if args.summary:
         print_class_summary()
+        return
+
+    if args.roboflow_export:
+        # Roboflow path: skip prepare, train directly from export
+        train_model(
+            epochs=args.epochs,
+            imgsz=args.imgsz,
+            batch=args.batch,
+            device=args.device,
+            roboflow_export=args.roboflow_export,
+        )
         return
 
     if not args.train_only:

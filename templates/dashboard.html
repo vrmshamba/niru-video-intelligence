@@ -91,9 +91,9 @@
         .banana-shape {
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, 
-                rgba(251, 191, 36, 0.9) 0%, 
-                rgba(245, 158, 11, 0.7) 50%, 
+            background: linear-gradient(135deg,
+                rgba(251, 191, 36, 0.9) 0%,
+                rgba(245, 158, 11, 0.7) 50%,
                 rgba(252, 211, 77, 0.5) 100%);
             border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
             position: relative;
@@ -173,11 +173,74 @@
             z-index: 10;
         }
 
+        /* ── Tabs ── */
+        .tabs {
+            display: flex;
+            gap: 0;
+            margin-bottom: 36px;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .tab-btn {
+            background: none;
+            border: none;
+            border-bottom: 2px solid transparent;
+            margin-bottom: -1px;
+            color: var(--text-dim);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 12px 28px;
+            cursor: pointer;
+            transition: color 0.2s, border-color 0.2s;
+        }
+
+        .tab-btn.active {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+        }
+
+        .tab-btn:hover:not(.active) {
+            color: var(--text-main);
+        }
+
+        /* ── Processing Banner ── */
+        .processing-banner {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            background: rgba(251, 191, 36, 0.08);
+            border: 1px solid rgba(251, 191, 36, 0.25);
+            border-radius: 14px;
+            padding: 16px 24px;
+            margin-bottom: 28px;
+            color: var(--primary);
+            font-size: 0.95rem;
+        }
+
+        .spinner {
+            width: 18px;
+            height: 18px;
+            border: 2px solid rgba(251, 191, 36, 0.25);
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+            flex-shrink: 0;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* ── Summary Stats (Results tab) ── */
         .summary-stats {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 24px;
             margin-bottom: 48px;
+            list-style: none;
+            padding: 0;
+            margin-left: 0;
         }
 
         .stat-card {
@@ -370,6 +433,206 @@
             border: 1px solid var(--glass-border);
         }
 
+        /* ── Library Section ── */
+        .library-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 28px;
+        }
+
+        .library-header h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.6rem;
+            color: var(--text-main);
+            margin: 0 0 6px 0;
+        }
+
+        .library-meta {
+            color: var(--text-dim);
+            font-size: 0.85rem;
+        }
+
+        .btn-refresh {
+            background: none;
+            color: var(--text-dim);
+            border: 1px solid var(--glass-border);
+            padding: 9px 18px;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            transition: color 0.2s, border-color 0.2s;
+            flex-shrink: 0;
+        }
+
+        .btn-refresh:hover {
+            color: var(--text-main);
+            border-color: rgba(251, 191, 36, 0.35);
+        }
+
+        .library-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 16px;
+        }
+
+        .library-card {
+            background: var(--card-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 20px 22px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            transition: border-color 0.2s, transform 0.2s;
+        }
+
+        .library-card:hover {
+            border-color: rgba(251, 191, 36, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .library-card-name {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.95rem;
+            color: #fff;
+            word-break: break-all;
+            line-height: 1.4;
+        }
+
+        .library-card-size {
+            color: var(--text-dim);
+            font-size: 0.8rem;
+        }
+
+        .library-card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 4px;
+        }
+
+        .badge-processed {
+            background: rgba(16, 185, 129, 0.12);
+            color: var(--success);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .badge-unprocessed {
+            color: var(--text-dim);
+            border: 1px solid var(--glass-border);
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .btn-process {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            color: #000;
+            border: none;
+            padding: 7px 16px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            transition: opacity 0.2s, transform 0.2s;
+        }
+
+        .btn-process:hover:not(:disabled) {
+            opacity: 0.88;
+            transform: scale(1.03);
+        }
+
+        .btn-process:disabled {
+            opacity: 0.35;
+            cursor: not-allowed;
+        }
+
+        .btn-view-results {
+            background: none;
+            color: var(--primary);
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            padding: 7px 16px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            transition: border-color 0.2s;
+        }
+
+        .btn-view-results:hover {
+            border-color: var(--primary);
+        }
+
+        /* ── Class Filter Bar ── */
+        .filter-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 32px;
+            align-items: center;
+        }
+
+        .filter-label {
+            color: var(--text-dim);
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-right: 4px;
+            flex-shrink: 0;
+        }
+
+        .filter-chip {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            color: var(--text-dim);
+            padding: 5px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            transition: background 0.15s, border-color 0.15s, color 0.15s;
+            white-space: nowrap;
+        }
+
+        .filter-chip:hover {
+            border-color: rgba(251, 191, 36, 0.4);
+            color: var(--text-main);
+        }
+
+        .filter-chip.active {
+            background: rgba(251, 191, 36, 0.15);
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .filter-chip.chip-all {
+            border-color: rgba(251, 191, 36, 0.3);
+            color: var(--text-main);
+        }
+
+        .filter-chip.chip-all.active {
+            background: rgba(251, 191, 36, 0.2);
+        }
+
+        .filter-count {
+            color: var(--text-dim);
+            font-size: 0.8rem;
+            margin-left: auto;
+            flex-shrink: 0;
+        }
+
         @media (max-width: 1100px) {
             .video-content {
                 grid-template-columns: 1fr;
@@ -390,42 +653,174 @@
     </header>
 
     <div class="container">
-        <!-- Summary Stats -->
-        <ul class="summary-stats">
-            <li class="stat-card">
-                <div class="stat-value" id="total-videos">0</div>
-                <div class="stat-label">Videos Processed</div>
-            </li>
-            <li class="stat-card">
-                <div class="stat-value" id="total-flags" style="color: var(--accent);">0</div>
-                <div class="stat-label">Safety Flags</div>
-            </li>
-            <li class="stat-card">
-                <div class="stat-value" id="total-insertions" style="color: var(--success);">0</div>
-                <div class="stat-label">Insertion Points</div>
-            </li>
-        </ul>
 
-        <!-- Video Grid -->
-        <div class="video-grid" id="video-container">
-            <!-- Video Cards will be injected here -->
-            <div style="text-align:center; padding: 40px; color: #7f8c8d;">
-                Loading analysis results...
+        <!-- Tab Navigation -->
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="results" onclick="switchTab('results')">Results</button>
+            <button class="tab-btn" data-tab="library" onclick="switchTab('library')">Library</button>
+        </div>
+
+        <!-- Processing Status Banner (shared across tabs) -->
+        <div id="processing-banner" class="processing-banner" style="display:none">
+            <div class="spinner"></div>
+            <span>Processing: <strong id="processing-filename"></strong></span>
+        </div>
+
+        <!-- ── Results Section ── -->
+        <div id="results-section">
+            <ul class="summary-stats">
+                <li class="stat-card">
+                    <div class="stat-value" id="total-videos">0</div>
+                    <div class="stat-label">Videos Processed</div>
+                </li>
+                <li class="stat-card">
+                    <div class="stat-value" id="total-flags" style="color: var(--accent);">0</div>
+                    <div class="stat-label">Safety Flags</div>
+                </li>
+                <li class="stat-card">
+                    <div class="stat-value" id="total-insertions" style="color: var(--success);">0</div>
+                    <div class="stat-label">Insertion Points</div>
+                </li>
+            </ul>
+
+            <!-- Class Filter Bar -->
+            <div class="filter-bar" id="filter-bar" style="display:none">
+                <span class="filter-label">Filter</span>
+                <!-- chips injected by JS -->
+            </div>
+
+            <div class="video-grid" id="video-container">
+                <div style="text-align:center; padding: 40px; color: #7f8c8d;">
+                    Loading analysis results...
+                </div>
             </div>
         </div>
+
+        <!-- ── Library Section ── -->
+        <div id="library-section" style="display:none">
+            <div class="library-header">
+                <div>
+                    <h2>Video Library</h2>
+                    <div class="library-meta" id="library-meta">Loading...</div>
+                </div>
+                <button class="btn-refresh" onclick="loadLibrary()">↻ Refresh</button>
+            </div>
+            <div id="library-grid" class="library-grid">
+                <!-- Library cards injected here -->
+            </div>
+        </div>
+
     </div>
 
     <script>
+        // ── State ──
+        let _statusPollInterval = null;
+        let _isProcessing = false;
+        let _allResults = [];
+        let _activeFilters = new Set();
+
+        // ── Tab Switching ──
+        function switchTab(tab) {
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.tab === tab);
+            });
+            document.getElementById('results-section').style.display = tab === 'results' ? '' : 'none';
+            document.getElementById('library-section').style.display = tab === 'library' ? '' : 'none';
+            if (tab === 'library') loadLibrary();
+        }
+
+        // ── Results ──
         async function loadData() {
             try {
                 const response = await fetch('/api/results');
                 const data = await response.json();
+                _allResults = data;
+                _activeFilters.clear();
+                renderFilters(data);
                 renderDashboard(data);
             } catch (e) {
                 console.error("Error loading data:", e);
                 document.getElementById('video-container').innerHTML =
                     `<div style="text-align:center; color:red;">Error loading results. Ensure backend is running.</div>`;
             }
+        }
+
+        // ── Class Filters ──
+        function extractClasses(data) {
+            const classes = new Set();
+            data.forEach(item => {
+                (item.scene_analysis.scenes || []).forEach(scene => {
+                    (scene.objects || []).forEach(obj => classes.add(obj.object));
+                });
+            });
+            return Array.from(classes).sort();
+        }
+
+        function renderFilters(data) {
+            const bar = document.getElementById('filter-bar');
+            const classes = extractClasses(data);
+            if (classes.length === 0) { bar.style.display = 'none'; return; }
+
+            bar.style.display = 'flex';
+            // Keep the label, rebuild chips
+            bar.innerHTML = '<span class="filter-label">Filter</span>';
+
+            // "All" chip
+            const allChip = document.createElement('button');
+            allChip.className = 'filter-chip chip-all' + (_activeFilters.size === 0 ? ' active' : '');
+            allChip.textContent = 'All';
+            allChip.onclick = () => { _activeFilters.clear(); applyFilters(); };
+            bar.appendChild(allChip);
+
+            classes.forEach(cls => {
+                const chip = document.createElement('button');
+                chip.className = 'filter-chip' + (_activeFilters.has(cls) ? ' active' : '');
+                chip.textContent = cls.replace(/_/g, ' ');
+                chip.dataset.cls = cls;
+                chip.onclick = () => toggleFilter(cls);
+                bar.appendChild(chip);
+            });
+
+            // Result count
+            const count = document.createElement('span');
+            count.className = 'filter-count';
+            count.id = 'filter-count';
+            bar.appendChild(count);
+            updateFilterCount(data.length, data.length);
+        }
+
+        function toggleFilter(cls) {
+            if (_activeFilters.has(cls)) {
+                _activeFilters.delete(cls);
+            } else {
+                _activeFilters.add(cls);
+            }
+            applyFilters();
+        }
+
+        function applyFilters() {
+            // Update chip active states
+            document.querySelectorAll('.filter-chip[data-cls]').forEach(chip => {
+                chip.classList.toggle('active', _activeFilters.has(chip.dataset.cls));
+            });
+            document.querySelector('.chip-all').classList.toggle('active', _activeFilters.size === 0);
+
+            // Filter results
+            const filtered = _activeFilters.size === 0 ? _allResults : _allResults.filter(item => {
+                const detectedClasses = new Set(
+                    (item.scene_analysis.scenes || [])
+                        .flatMap(s => (s.objects || []).map(o => o.object))
+                );
+                return [..._activeFilters].some(cls => detectedClasses.has(cls));
+            });
+
+            updateFilterCount(filtered.length, _allResults.length);
+            renderDashboard(filtered);
+        }
+
+        function updateFilterCount(shown, total) {
+            const el = document.getElementById('filter-count');
+            if (el) el.textContent = shown === total ? `${total} videos` : `${shown} of ${total} videos`;
         }
 
         function renderDashboard(data) {
@@ -436,6 +831,14 @@
             let totalFlags = 0;
             let totalInsertions = 0;
 
+            if (totalVideos === 0) {
+                container.innerHTML = '<div style="text-align:center; padding:40px; color:#7f8c8d;">No processed videos yet. Use the Library tab to process a video.</div>';
+                document.getElementById('total-videos').textContent = 0;
+                document.getElementById('total-flags').textContent = 0;
+                document.getElementById('total-insertions').textContent = 0;
+                return;
+            }
+
             data.forEach(item => {
                 totalFlags += item.summary.safety_flags || 0;
                 totalInsertions += item.summary.safe_insertion_windows || 0;
@@ -443,7 +846,6 @@
                 const card = document.createElement('div');
                 card.className = 'video-card';
 
-                // Video Source Paths - FIXED for web-compatible videos
                 const rawVideoUrl = `/videos/${encodeURIComponent(item.video_name)}`;
                 const annotatedFileName = `web_annotated_${item.video_name}`;
                 const annotatedVideoUrl = `/results/${encodeURIComponent(annotatedFileName)}`;
@@ -498,19 +900,24 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="analysis-section">
                             <div class="section-title">Safety Analysis</div>
                             ${safetyHtml}
-                            
+
                             <div class="section-title" style="margin-top:20px;">Insertion Recommendations</div>
                             ${insertionHtml}
-                            
-                            <div class="section-title" style="margin-top:20px;">Audio Transcript (${item.summary.language_detected || 'N/A'})</div>
+
+                            <div class="section-title" style="margin-top:20px;">
+                                Audio Transcript
+                                <span class="meta-tag">${item.summary.language_detected || 'N/A'}${item.transcript.language_confidence ? ' · ' + Math.round(item.transcript.language_confidence * 100) + '%' : ''}</span>
+                                ${item.transcript.source === 'gemini' ? '<span class="meta-tag" style="color:#10b981;border-color:rgba(16,185,129,0.3);">Gemini</span>' : '<span class="meta-tag">Whisper</span>'}
+                                ${item.transcript.language_note ? `<span class="meta-tag" style="color:#f59e0b;border-color:rgba(245,158,11,0.3);" title="${item.transcript.language_note}">⚠ uncertain</span>` : ''}
+                            </div>
                             <div class="transcript-box">
                                 ${item.transcript.text || "No speech detected."}
                             </div>
-                            
+
                             <div style="margin-top:15px; font-size:0.8em; color:#7f8c8d;">
                                 Objects Detected: ${item.summary.total_objects_detected || 0}
                             </div>
@@ -521,7 +928,6 @@
                 container.appendChild(card);
             });
 
-            // Update Stats
             document.getElementById('total-videos').textContent = totalVideos;
             document.getElementById('total-flags').textContent = totalFlags;
             document.getElementById('total-insertions').textContent = totalInsertions;
@@ -533,8 +939,162 @@
             return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
         }
 
-        // Initial Load
+        // ── Library ──
+        async function loadLibrary() {
+            const grid = document.getElementById('library-grid');
+            const meta = document.getElementById('library-meta');
+            grid.innerHTML = '<div style="color:var(--text-dim); padding:20px;">Loading library...</div>';
+            meta.textContent = '';
+
+            try {
+                const res = await fetch('/api/library');
+                const data = await res.json();
+                renderLibrary(data);
+            } catch (e) {
+                grid.innerHTML = '<div style="color:#ef4444; padding:20px;">Error loading library. Is the server running?</div>';
+            }
+        }
+
+        function renderLibrary(data) {
+            const grid = document.getElementById('library-grid');
+            const meta = document.getElementById('library-meta');
+
+            const processedCount = data.files.filter(f => f.processed).length;
+            meta.textContent = `${data.count} videos · ${processedCount} processed · ${data.source_dir}`;
+
+            if (data.files.length === 0) {
+                grid.innerHTML = '<div style="color:var(--text-dim); padding:20px;">No supported videos found in library directory.</div>';
+                return;
+            }
+
+            grid.innerHTML = '';
+            data.files.forEach(file => {
+                const card = document.createElement('div');
+                card.className = 'library-card';
+                card.dataset.filename = file.name;
+
+                const statusBadge = file.processed
+                    ? '<span class="badge-processed">✓ Processed</span>'
+                    : '<span class="badge-unprocessed">Not processed</span>';
+
+                const safeFilename = file.name.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+                const actionBtn = file.processed
+                    ? `<button class="btn-view-results" onclick="switchTab('results')">View Results</button>`
+                    : `<button class="btn-process" onclick="processVideo('${safeFilename}')"${_isProcessing ? ' disabled' : ''}>Process</button>`;
+
+                card.innerHTML = `
+                    <div class="library-card-name">${file.name}</div>
+                    <div class="library-card-size">${file.size_mb} MB</div>
+                    <div class="library-card-footer">
+                        ${statusBadge}
+                        ${actionBtn}
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // ── Processing ──
+        async function processVideo(filename) {
+            try {
+                const res = await fetch('/api/process', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ filename })
+                });
+                const data = await res.json();
+
+                if (res.status === 409) {
+                    alert(`Already processing: ${data.current}`);
+                    return;
+                }
+                if (!res.ok) {
+                    alert(`Error: ${data.error}`);
+                    return;
+                }
+
+                setProcessingUI(true, filename);
+                startPolling();
+            } catch (e) {
+                alert('Failed to start processing. Is the server running?');
+            }
+        }
+
+        function setProcessingUI(isRunning, filename) {
+            _isProcessing = isRunning;
+            const banner = document.getElementById('processing-banner');
+            const filenameEl = document.getElementById('processing-filename');
+
+            if (isRunning) {
+                banner.style.display = 'flex';
+                if (filename) filenameEl.textContent = filename;
+                document.querySelectorAll('.btn-process').forEach(btn => btn.disabled = true);
+            } else {
+                banner.style.display = 'none';
+                document.querySelectorAll('.btn-process').forEach(btn => btn.disabled = false);
+            }
+        }
+
+        function startPolling() {
+            if (_statusPollInterval) return;
+            _statusPollInterval = setInterval(pollStatus, 2000);
+        }
+
+        function stopPolling() {
+            clearInterval(_statusPollInterval);
+            _statusPollInterval = null;
+        }
+
+        async function pollStatus() {
+            try {
+                const res = await fetch('/api/process/status');
+                const data = await res.json();
+
+                if (data.running) {
+                    setProcessingUI(true, data.filename);
+                    return;
+                }
+
+                // No longer running
+                stopPolling();
+
+                if (data.status === 'done') {
+                    document.getElementById('processing-filename').textContent = data.filename + ' — done!';
+                    setTimeout(async () => {
+                        setProcessingUI(false);
+                        loadLibrary();
+                        await loadData();   // reloads results + rebuilds filters
+                    }, 2000);
+                } else if (data.status === 'error') {
+                    document.getElementById('processing-filename').textContent =
+                        `Error: ${data.error}`;
+                    setTimeout(() => {
+                        setProcessingUI(false);
+                        loadLibrary();
+                    }, 4000);
+                }
+            } catch (e) {
+                console.error('Status poll error:', e);
+            }
+        }
+
+        // On load: check if something is already processing
+        async function checkInitialStatus() {
+            try {
+                const res = await fetch('/api/process/status');
+                const data = await res.json();
+                if (data.running) {
+                    setProcessingUI(true, data.filename);
+                    startPolling();
+                }
+            } catch (e) {
+                // server not ready yet, ignore
+            }
+        }
+
+        // ── Boot ──
         loadData();
+        checkInitialStatus();
     </script>
 </body>
 

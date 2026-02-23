@@ -2,6 +2,9 @@ from flask import Flask, render_template, jsonify, send_from_directory, request
 import os
 import json
 import threading
+from dotenv import load_dotenv
+
+load_dotenv()  # loads .env into os.environ
 
 app = Flask(__name__)
 
@@ -115,7 +118,8 @@ def trigger_process():
         try:
             # Lazy import — avoids loading torch/whisper at Flask startup
             from process_videos import VideoProcessor
-            processor = VideoProcessor()
+            whisper_size = os.environ.get("NIRU_WHISPER_MODEL", "small")
+            processor = VideoProcessor(whisper_model_size=whisper_size)
             processor.load_models()
             processor.process_video(filepath)
             with _processing_lock:

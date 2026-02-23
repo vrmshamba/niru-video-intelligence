@@ -22,6 +22,7 @@ jobs:
       - name: Push code files to HF Space
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          GOOGLE_API_KEY: ${{ secrets.HODI_AIGEMINI }}
         run: |
           python - <<'EOF'
           import os
@@ -50,6 +51,7 @@ jobs:
                   "*.mov",
                   "*.mxf",
                   "*.pt",
+                  ".env",
               ],
           )
           print("Sync to HuggingFace Space complete.")

@@ -10,3 +10,5 @@ moviepy
 openai-whisper
 ultralytics
 opencv-python
+google-genai>=1.0.0
+python-dotenv>=1.0.0

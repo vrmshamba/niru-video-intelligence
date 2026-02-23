@@ -3,6 +3,9 @@ import json
 import argparse
 import subprocess
 import torch
+from dotenv import load_dotenv
+
+load_dotenv()  # loads .env into os.environ
 import cv2
 from datetime import datetime
 import whisper
@@ -23,11 +26,12 @@ except importlib.metadata.PackageNotFoundError:
 from ultralytics import YOLO
 
 class VideoProcessor:
-    def __init__(self, models_dir="models", results_dir="results"):
+    def __init__(self, models_dir="models", results_dir="results", whisper_model_size="small"):
         self.models_dir = models_dir
         self.results_dir = results_dir
+        self.whisper_model_size = whisper_model_size
         self.ensure_directories()
-        
+
         self.whisper_model = None
         self.yolo_model = None
         
@@ -66,14 +70,20 @@ class VideoProcessor:
         else:
             print("WARNING: ffmpeg not found. Transcription and H.264 encoding will be unavailable.")
 
-        print("Loading Whisper model...")
-        self.whisper_model = whisper.load_model("tiny", download_root=self.models_dir)
+        print(f"Loading Whisper {self.whisper_model_size} model...")
+        self.whisper_model = whisper.load_model(self.whisper_model_size, download_root=self.models_dir)
         print("Whisper model loaded.")
         
         print("Loading YOLO model...")
-        # Auto-downloads to current dir usually, let's verify path handling later
-        self.yolo_model = YOLO("yolov8n.pt") 
-        print("YOLO model loaded.")
+        custom_model = os.path.join(self.models_dir, "niru_nairobi.pt")
+        base_model   = os.path.join(self.models_dir, "yolov8n.pt")
+        if os.path.exists(custom_model):
+            self.yolo_model = YOLO(custom_model)
+            print(f"Loaded custom Nairobi model: {custom_model}")
+        else:
+            self.yolo_model = YOLO(base_model)   # downloads to models/ if not present
+            print(f"Loaded base YOLO model: {base_model}")
+            print("  (train and place models/niru_nairobi.pt to use the custom model)")
 
     def process_video(self, video_path):
         filename = os.path.basename(video_path)
@@ -141,14 +151,121 @@ class VideoProcessor:
         self.save_result(filename, result)
         return result
     
+    def _transcribe_with_gemini(self, video_path):
+        """Transcribe using Gemini 2.0 Flash — handles all Kenyan languages."""
+        from google import genai
+        from google.genai import types
+
+        client = genai.Client(api_key=os.environ["GOOGLE_API_KEY"])
+
+        import time
+        print("  Uploading to Gemini API...")
+        uploaded = client.files.upload(file=video_path)
+
+        # Wait for Gemini to finish processing the video (state: PROCESSING → ACTIVE)
+        while uploaded.state.name == "PROCESSING":
+            print("  Waiting for file to become active...")
+            time.sleep(5)
+            uploaded = client.files.get(name=uploaded.name)
+        if uploaded.state.name != "ACTIVE":
+            raise RuntimeError(f"Gemini file processing failed: {uploaded.state}")
+        print("  File active, requesting transcription...")
+
+        prompt = """You are a professional transcriptionist specialising in East African languages.
+Transcribe this audio/video exactly as spoken, preserving the original language.
+The content may be in any of these languages:
+  English, Swahili, Sheng (Nairobi street slang — mix of Swahili/English/Kikuyu),
+  Kikuyu (Gikuyu), Kalenjin (Nandi/Kipsigis/Tugen dialects), Maasai (Maa),
+  Dholuo (Luo), Luhya (Luyia), Kisii (Gusii/Ekegusii).
+
+Return ONLY a valid JSON object — no markdown, no code fences:
+{
+  "language": "full language name as detected",
+  "language_code": "ISO 639 code or best approximation",
+  "confidence": "high | medium | low",
+  "notes": "optional — mixed languages, unclear speech, dialect details, or null",
+  "text": "complete transcription of all speech",
+  "segments": [
+    {"start": 0.0, "end": 4.2, "text": "segment text"},
+    ...
+  ]
+}
+If there is no speech, return text as empty string and segments as [].
+"""
+        try:
+            response = client.models.generate_content(
+                model="gemini-2.5-flash",
+                contents=[uploaded, prompt],
+            )
+        finally:
+            try:
+                client.files.delete(name=uploaded.name)
+            except Exception:
+                pass
+
+        # Strip accidental code fences
+        raw = response.text.strip()
+        if raw.startswith("```"):
+            raw = raw.split("```")[1]
+            if raw.startswith("json"):
+                raw = raw[4:]
+            raw = raw.strip().rstrip("```").strip()
+
+        return json.loads(raw)
+
     def transcribe_audio(self, video_path):
         if not self.whisper_model:
             raise ValueError("Whisper model not loaded.")
-        result = self.whisper_model.transcribe(video_path)
+
+        # ── Gemini path (preferred — handles all Kenyan languages) ───────────
+        if os.environ.get("GOOGLE_API_KEY"):
+            try:
+                print("  Using Gemini 2.0 Flash for transcription...")
+                g = self._transcribe_with_gemini(video_path)
+                conf_map = {"high": 0.95, "medium": 0.70, "low": 0.40}
+                return {
+                    "text": g.get("text", ""),
+                    "language": g.get("language", "unknown"),
+                    "language_code": g.get("language_code", ""),
+                    "language_confidence": conf_map.get(g.get("confidence", "low"), 0.40),
+                    "language_note": g.get("notes"),
+                    "segments": g.get("segments", []),
+                    "source": "gemini",
+                }
+            except Exception as e:
+                print(f"  Gemini transcription failed ({e}). Falling back to Whisper.")
+
+        # ── Whisper fallback ─────────────────────────────────────────────────
+        print("  Using Whisper for transcription...")
+        audio = whisper.load_audio(video_path)
+        audio_segment = whisper.pad_or_trim(audio)
+        mel = whisper.log_mel_spectrogram(audio_segment).to(self.whisper_model.device)
+        _, lang_probs = self.whisper_model.detect_language(mel)
+
+        detected_lang = max(lang_probs, key=lang_probs.get)
+        lang_confidence = round(lang_probs[detected_lang], 3)
+
+        WHISPER_SUPPORTED = {"sw", "en", "fr", "de", "es", "ar", "pt", "hi", "zh"}
+        if lang_confidence < 0.4 or detected_lang not in WHISPER_SUPPORTED:
+            lang_hint = None
+            language_note = (
+                f"uncertain ({detected_lang}, {lang_confidence:.0%} conf) — "
+                "possibly Kikuyu, Dholuo, Kalenjin, or other Kenyan language. "
+                "Set GOOGLE_API_KEY for full language support."
+            )
+        else:
+            lang_hint = detected_lang
+            language_note = None
+
+        result = self.whisper_model.transcribe(video_path, language=lang_hint)
         return {
             "text": result["text"],
             "language": result["language"],
-            "segments": result["segments"]
+            "language_code": result["language"],
+            "language_confidence": lang_confidence,
+            "language_note": language_note,
+            "segments": result["segments"],
+            "source": "whisper",
         }
 
     def detect_objects(self, video_path, output_path=None):
@@ -378,9 +495,15 @@ if __name__ == "__main__":
         default="videos",
         help="Directory containing video files to process (default: videos/)"
     )
+    parser.add_argument(
+        "--whisper-model",
+        default="small",
+        choices=["tiny", "base", "small", "medium", "large"],
+        help="Whisper model size (default: small). Use medium for best Swahili/Dholuo accuracy."
+    )
     args = parser.parse_args()
 
-    processor = VideoProcessor()
+    processor = VideoProcessor(whisper_model_size=args.whisper_model)
     processor.load_models()
 
     videos_dir = args.source_dir
