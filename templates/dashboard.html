@@ -638,6 +638,475 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* ── Audio Transcription Tab ── */
+        .tx-stat-pills {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 36px;
+            flex-wrap: wrap;
+        }
+
+        .tx-stat-pill {
+            flex: 1;
+            min-width: 180px;
+            background: var(--card-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 18px;
+            padding: 24px 28px;
+            cursor: pointer;
+            transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+            text-align: left;
+        }
+
+        .tx-stat-pill:hover {
+            border-color: rgba(251, 191, 36, 0.35);
+            transform: translateY(-2px);
+        }
+
+        .tx-stat-pill.active {
+            border-color: var(--primary);
+            background: rgba(251, 191, 36, 0.07);
+            box-shadow: 0 0 0 1px var(--primary);
+        }
+
+        .tx-pill-num {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--text-main);
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+
+        .tx-pill-num.num-flags  { color: #f59e0b; }
+        .tx-pill-num.num-insert { color: #10b981; }
+
+        .tx-pill-label {
+            color: var(--text-dim);
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.09em;
+        }
+
+        /* search bar */
+        .tx-search {
+            width: 100%;
+            background: var(--card-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            padding: 12px 18px;
+            margin-bottom: 20px;
+            outline: none;
+            transition: border-color 0.2s;
+            box-sizing: border-box;
+        }
+
+        .tx-search:focus {
+            border-color: rgba(251, 191, 36, 0.45);
+        }
+
+        /* video list (sub-tab: Videos) */
+        .tx-video-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .tx-video-row {
+            background: var(--card-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 14px;
+            overflow: hidden;
+            transition: border-color 0.2s;
+        }
+
+        .tx-video-row:hover {
+            border-color: rgba(251, 191, 36, 0.3);
+        }
+
+        .tx-video-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 14px 20px;
+            cursor: pointer;
+        }
+
+        .tx-video-name {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.95rem;
+            color: #fff;
+            flex: 1;
+            min-width: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .tx-video-meta {
+            display: flex;
+            gap: 8px;
+            flex-shrink: 0;
+            align-items: center;
+        }
+
+        .tx-badge {
+            padding: 3px 9px;
+            border-radius: 6px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            border: 1px solid;
+            white-space: nowrap;
+        }
+
+        .tx-badge-lang   { color: #fbbf24; border-color: rgba(251,191,36,0.3); background: rgba(251,191,36,0.08); }
+        .tx-badge-gemini { color: #10b981; border-color: rgba(16,185,129,0.3); background: rgba(16,185,129,0.08); }
+        .tx-badge-whisper{ color: #94a3b8; border-color: rgba(148,163,184,0.3); background: rgba(148,163,184,0.07); }
+        .tx-badge-none   { color: #64748b; border-color: rgba(100,116,139,0.25); background: transparent; }
+
+        .tx-expand-btn {
+            color: var(--text-dim);
+            font-size: 0.85rem;
+            flex-shrink: 0;
+            transition: transform 0.2s;
+        }
+
+        .tx-video-body {
+            padding: 0 20px 16px;
+            border-top: 1px solid var(--glass-border);
+            display: none;
+        }
+
+        .tx-video-body.open { display: block; }
+
+        .tx-transcript-text {
+            color: var(--text-dim);
+            font-size: 0.9rem;
+            line-height: 1.75;
+            white-space: pre-wrap;
+            margin: 12px 0 0;
+        }
+
+        .tx-no-speech {
+            color: #4b5563;
+            font-size: 0.85rem;
+            font-style: italic;
+            padding: 8px 0;
+        }
+
+        /* expanded row: video + transcript side by side */
+        .tx-expanded-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 14px 0 4px;
+        }
+
+        @media (max-width: 860px) {
+            .tx-expanded-layout { grid-template-columns: 1fr; }
+        }
+
+        .tx-player-wrap {
+            background: #000;
+            border-radius: 12px;
+            overflow: hidden;
+            aspect-ratio: 16/9;
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .tx-player-wrap video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .tx-segments {
+            overflow-y: auto;
+            max-height: 240px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            padding-right: 4px;
+        }
+
+        .tx-segments::-webkit-scrollbar { width: 4px; }
+        .tx-segments::-webkit-scrollbar-thumb { background: var(--glass-border); border-radius: 4px; }
+
+        .tx-segment {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+        }
+
+        .tx-seg-time {
+            background: rgba(251,191,36,0.1);
+            color: #fbbf24;
+            border: 1px solid rgba(251,191,36,0.22);
+            border-radius: 5px;
+            padding: 2px 7px;
+            font-size: 0.72rem;
+            font-family: monospace;
+            cursor: pointer;
+            flex-shrink: 0;
+            white-space: nowrap;
+            transition: background 0.15s;
+            line-height: 1.7;
+        }
+
+        .tx-seg-time:hover {
+            background: rgba(251,191,36,0.24);
+        }
+
+        .tx-seg-text {
+            color: var(--text-dim);
+            font-size: 0.875rem;
+            line-height: 1.6;
+        }
+
+        .btn-retranscribe {
+            background: none;
+            color: #fbbf24;
+            border: 1px solid rgba(251,191,36,0.3);
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            transition: border-color 0.2s, background 0.2s;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+
+        .btn-retranscribe:hover:not(:disabled) {
+            background: rgba(251,191,36,0.1);
+            border-color: var(--primary);
+        }
+
+        .btn-retranscribe:disabled {
+            opacity: 0.35;
+            cursor: not-allowed;
+        }
+
+        .btn-retranscribe-all {
+            background: rgba(251,191,36,0.1);
+            color: var(--primary);
+            border: 1px solid rgba(251,191,36,0.35);
+            padding: 8px 18px;
+            border-radius: 10px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            transition: background 0.2s;
+            margin-bottom: 20px;
+        }
+
+        .btn-retranscribe-all:hover:not(:disabled) { background: rgba(251,191,36,0.18); }
+        .btn-retranscribe-all:disabled { opacity: 0.35; cursor: not-allowed; }
+
+        /* ── Correction Mode ── */
+        .btn-correct {
+            background: none;
+            color: #a78bfa;
+            border: 1px solid rgba(167,139,250,0.3);
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            transition: border-color 0.2s, background 0.2s;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+        .btn-correct:hover { background: rgba(167,139,250,0.1); border-color: #a78bfa; }
+        .btn-correct.corrected { color: #10b981; border-color: rgba(16,185,129,0.3); background: rgba(16,185,129,0.08); }
+
+        .tx-correction-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            max-height: 280px;
+            overflow-y: auto;
+            padding-right: 4px;
+        }
+        .tx-correction-panel::-webkit-scrollbar { width: 4px; }
+        .tx-correction-panel::-webkit-scrollbar-thumb { background: var(--glass-border); border-radius: 4px; }
+
+        .tx-seg-edit-row {
+            display: flex;
+            gap: 8px;
+            align-items: flex-start;
+        }
+
+        .tx-seg-play {
+            background: rgba(251,191,36,0.1);
+            color: #fbbf24;
+            border: 1px solid rgba(251,191,36,0.22);
+            border-radius: 5px;
+            padding: 4px 8px;
+            font-size: 0.72rem;
+            font-family: monospace;
+            cursor: pointer;
+            flex-shrink: 0;
+            white-space: nowrap;
+            transition: background 0.15s;
+            line-height: 1.55;
+        }
+        .tx-seg-play:hover { background: rgba(251,191,36,0.24); }
+
+        .tx-seg-textarea {
+            flex: 1;
+            background: rgba(0,0,0,0.25);
+            border: 1px solid var(--glass-border);
+            border-radius: 7px;
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.875rem;
+            line-height: 1.55;
+            padding: 6px 10px;
+            resize: vertical;
+            min-height: 36px;
+            transition: border-color 0.2s;
+            width: 100%;
+        }
+        .tx-seg-textarea:focus { outline: none; border-color: rgba(167,139,250,0.5); }
+
+        .tx-no-seg-textarea {
+            width: 100%;
+            background: rgba(0,0,0,0.25);
+            border: 1px solid var(--glass-border);
+            border-radius: 10px;
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            line-height: 1.7;
+            padding: 12px 14px;
+            resize: vertical;
+            min-height: 100px;
+            transition: border-color 0.2s;
+        }
+        .tx-no-seg-textarea:focus { outline: none; border-color: rgba(167,139,250,0.5); }
+
+        .tx-correction-footer {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            padding-top: 10px;
+            border-top: 1px solid var(--glass-border);
+            margin-top: 8px;
+        }
+
+        .tx-lang-input {
+            background: rgba(0,0,0,0.2);
+            border: 1px solid var(--glass-border);
+            border-radius: 7px;
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.82rem;
+            padding: 5px 10px;
+            width: 160px;
+            transition: border-color 0.2s;
+        }
+        .tx-lang-input:focus { outline: none; border-color: rgba(167,139,250,0.5); }
+
+        .btn-save-correction {
+            background: linear-gradient(135deg, #a78bfa, #7c3aed);
+            color: #fff;
+            border: none;
+            padding: 7px 18px;
+            border-radius: 8px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            transition: opacity 0.2s;
+        }
+        .btn-save-correction:hover { opacity: 0.88; }
+
+        .btn-cancel-correction {
+            background: none;
+            color: var(--text-dim);
+            border: 1px solid var(--glass-border);
+            padding: 7px 14px;
+            border-radius: 8px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            transition: color 0.2s;
+        }
+        .btn-cancel-correction:hover { color: var(--text-main); }
+
+        .tx-save-status {
+            font-size: 0.8rem;
+            color: #10b981;
+            margin-left: auto;
+        }
+
+        .badge-corrected {
+            background: rgba(16,185,129,0.1);
+            color: #10b981;
+            border: 1px solid rgba(16,185,129,0.3);
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-size: 0.7rem;
+            font-weight: 700;
+        }
+
+        /* flat table (Safety Flags & Insertion Points) */
+        .tx-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.875rem;
+        }
+
+        .tx-table th {
+            text-align: left;
+            color: var(--text-dim);
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.09em;
+            padding: 8px 14px 14px;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .tx-table td {
+            padding: 11px 14px;
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+            vertical-align: top;
+            color: var(--text-dim);
+        }
+
+        .tx-table td:first-child {
+            color: var(--text-main);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.85rem;
+            max-width: 220px;
+            word-break: break-all;
+        }
+
+        .tx-table tr:hover td { background: rgba(255,255,255,0.02); }
+
+        .sev-high   { color: #ef4444; font-weight: 700; }
+        .sev-medium { color: #f59e0b; font-weight: 700; }
+        .sev-low    { color: #94a3b8; }
+
+        .tx-table-wrap {
+            max-height: 620px;
+            overflow-y: auto;
+            border: 1px solid var(--glass-border);
+            border-radius: 14px;
+        }
+
+        .tx-table-wrap::-webkit-scrollbar { width: 6px; }
+        .tx-table-wrap::-webkit-scrollbar-thumb { background: var(--glass-border); border-radius: 10px; }
     </style>
 </head>
 
@@ -657,6 +1126,7 @@
         <!-- Tab Navigation -->
         <div class="tabs">
             <button class="tab-btn active" data-tab="results" onclick="switchTab('results')">Results</button>
+            <button class="tab-btn" data-tab="transcription" onclick="switchTab('transcription')">Audio Transcription</button>
             <button class="tab-btn" data-tab="library" onclick="switchTab('library')">Library</button>
         </div>
 
@@ -696,6 +1166,68 @@
             </div>
         </div>
 
+        <!-- ── Audio Transcription Section ── -->
+        <div id="transcription-section" style="display:none">
+            <!-- Stat pills act as sub-tab selectors -->
+            <div class="tx-stat-pills">
+                <div class="tx-stat-pill active" id="pill-videos" onclick="switchTxTab('videos')">
+                    <div class="tx-pill-num" id="tx-count-videos">0</div>
+                    <div class="tx-pill-label">Videos Processed</div>
+                </div>
+                <div class="tx-stat-pill" id="pill-safety" onclick="switchTxTab('safety')">
+                    <div class="tx-pill-num num-flags" id="tx-count-safety">0</div>
+                    <div class="tx-pill-label">Safety Flags</div>
+                </div>
+                <div class="tx-stat-pill" id="pill-insertions" onclick="switchTxTab('insertions')">
+                    <div class="tx-pill-num num-insert" id="tx-count-insertions">0</div>
+                    <div class="tx-pill-label">Insertion Points</div>
+                </div>
+            </div>
+
+            <!-- Videos sub-tab -->
+            <div id="tx-videos-panel">
+                <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-bottom:20px;">
+                    <input class="tx-search" id="tx-search" type="text" placeholder="Search by video name or transcript…" oninput="filterTxVideos()" style="margin-bottom:0; flex:1; min-width:200px;">
+                    <button class="btn-retranscribe-all" id="btn-retranscribe-all" onclick="retranscribeAll()">↻ Re-transcribe All with Gemini</button>
+                </div>
+                <div class="tx-video-list" id="tx-video-list"></div>
+            </div>
+
+            <!-- Safety Flags sub-tab -->
+            <div id="tx-safety-panel" style="display:none">
+                <input class="tx-search" id="tx-safety-search" type="text" placeholder="Search by video name, type, or description…" oninput="filterTxTable('tx-safety-search','tx-safety-body')">
+                <div class="tx-table-wrap">
+                    <table class="tx-table">
+                        <thead><tr>
+                            <th>Video</th>
+                            <th>Time</th>
+                            <th>Type</th>
+                            <th>Severity</th>
+                            <th>Description</th>
+                        </tr></thead>
+                        <tbody id="tx-safety-body"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Insertion Points sub-tab -->
+            <div id="tx-insertions-panel" style="display:none">
+                <input class="tx-search" id="tx-insert-search" type="text" placeholder="Search by video name or reason…" oninput="filterTxTable('tx-insert-search','tx-insert-body')">
+                <div class="tx-table-wrap">
+                    <table class="tx-table">
+                        <thead><tr>
+                            <th>Video</th>
+                            <th>Timestamp</th>
+                            <th>Duration</th>
+                            <th>Reason</th>
+                            <th>Objects</th>
+                        </tr></thead>
+                        <tbody id="tx-insert-body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
         <!-- ── Library Section ── -->
         <div id="library-section" style="display:none">
             <div class="library-header">
@@ -720,13 +1252,416 @@
         let _activeFilters = new Set();
 
         // ── Tab Switching ──
+        let _txRendered = false;
+
         function switchTab(tab) {
             document.querySelectorAll('.tab-btn').forEach(btn => {
                 btn.classList.toggle('active', btn.dataset.tab === tab);
             });
-            document.getElementById('results-section').style.display = tab === 'results' ? '' : 'none';
-            document.getElementById('library-section').style.display = tab === 'library' ? '' : 'none';
+            document.getElementById('results-section').style.display        = tab === 'results'       ? '' : 'none';
+            document.getElementById('transcription-section').style.display  = tab === 'transcription' ? '' : 'none';
+            document.getElementById('library-section').style.display        = tab === 'library'       ? '' : 'none';
             if (tab === 'library') loadLibrary();
+            if (tab === 'transcription' && !_txRendered) { renderTranscription(_allResults); _txRendered = true; }
+        }
+
+        // ── Audio Transcription Sub-tabs ──
+        let _txSubTab = 'videos';
+
+        function switchTxTab(sub) {
+            _txSubTab = sub;
+            ['videos','safety','insertions'].forEach(s => {
+                document.getElementById(`pill-${s}`).classList.toggle('active', s === sub);
+                document.getElementById(`tx-${s}-panel`).style.display = s === sub ? '' : 'none';
+            });
+        }
+
+        let _txVideoData = [];  // indexed by row idx: { url, segments, speech, name }
+        let _corrections = {};  // video_name → correction object
+
+        async function renderTranscription(data) {
+            // Load saved corrections first
+            try {
+                const res = await fetch('/api/corrections');
+                _corrections = await res.json();
+            } catch(e) { _corrections = {}; }
+        _renderTranscriptionSync(data);
+        }
+
+        function _renderTranscriptionSync(data) {
+            let totalSafety = 0, totalInsert = 0;
+            const videoRows = [];
+            const safetyRows = [];
+            const insertRows = [];
+            _txVideoData = [];
+
+            data.forEach(item => {
+                const t = item.transcript || {};
+                const speech = (t.text || '').trim();
+                const segments = (t.segments || []).filter(s => (s.text || '').trim());
+                const langDisplay = t.language || t.language_code || 'unknown';
+                const source = t.source || '';
+                const conf = t.language_confidence ? Math.round(t.language_confidence * 100) + '%' : '';
+                const note = t.language_note || '';
+
+                // Build lang badge
+                const langBadge = `<span class="tx-badge tx-badge-lang">${langDisplay}${conf ? ' · '+conf : ''}</span>`;
+                const srcBadge  = source === 'gemini'
+                    ? '<span class="tx-badge tx-badge-gemini">Gemini</span>'
+                    : source === 'whisper'
+                    ? '<span class="tx-badge tx-badge-whisper">Whisper</span>'
+                    : '<span class="tx-badge tx-badge-none">—</span>';
+                const warnBadge = note ? '<span class="tx-badge" style="color:#f59e0b;border-color:rgba(245,158,11,0.3);" title="'+note+'">⚠</span>' : '';
+
+                const idx = _txVideoData.length;
+                _txVideoData.push({
+                    url: '/videos/' + encodeURIComponent(item.video_name),
+                    segments,
+                    speech,
+                    name: item.video_name,
+                    language: langDisplay
+                });
+
+                videoRows.push({ name: item.video_name, langBadge, srcBadge, warnBadge, speech, idx });
+
+                // Safety flags
+                (item.safety_concerns || []).forEach(flag => {
+                    totalSafety++;
+                    safetyRows.push({
+                        video: item.video_name,
+                        time: flag.timestamp != null ? formatTime(flag.timestamp) : '—',
+                        type: (flag.type || '').replace(/_/g, ' '),
+                        severity: flag.severity || '',
+                        desc: flag.description || ''
+                    });
+                });
+
+                // Insertion points
+                (item.insertion_points || []).forEach(pt => {
+                    totalInsert++;
+                    insertRows.push({
+                        video: item.video_name,
+                        time: pt.timestamp != null ? formatTime(pt.timestamp) : '—',
+                        dur: (pt.duration || 0) + 's',
+                        reason: (pt.reason || '').replace(/_/g, ' '),
+                        objs: pt.object_count != null ? pt.object_count : '—'
+                    });
+                });
+            });
+
+            // Update pill counts
+            document.getElementById('tx-count-videos').textContent    = data.length;
+            document.getElementById('tx-count-safety').textContent    = totalSafety;
+            document.getElementById('tx-count-insertions').textContent = totalInsert;
+
+            // Render video list
+            const listEl = document.getElementById('tx-video-list');
+            listEl.innerHTML = '';
+            videoRows.forEach((row) => {
+                const idx = row.idx;
+                const d = _txVideoData[idx];
+
+                // Build segments HTML (lazy — video src injected on open)
+                let rightPanel = '';
+                if (d.segments.length > 0) {
+                    const segsHtml = d.segments.map(seg =>
+                        `<div class="tx-segment">
+                            <button class="tx-seg-time" onclick="seekTxVideo(${idx},${seg.start})">${formatTime(seg.start)}</button>
+                            <span class="tx-seg-text">${(seg.text || '').trim()}</span>
+                        </div>`
+                    ).join('');
+                    rightPanel = `<div class="tx-segments">${segsHtml}</div>`;
+                } else if (d.speech) {
+                    rightPanel = `<div class="tx-transcript-text">${d.speech}</div>`;
+                } else {
+                    rightPanel = `<div class="tx-no-speech">No speech detected in this clip.</div>`;
+                }
+
+                const div = document.createElement('div');
+                div.className = 'tx-video-row';
+                div.dataset.name = row.name.toLowerCase();
+                div.dataset.text = row.speech.toLowerCase();
+                const safeNameAttr = row.name.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+                const isGemini = _txVideoData[idx] && (row.srcBadge.includes('gemini'));
+                const retranscribeBtn = !isGemini
+                    ? `<button class="btn-retranscribe" id="rtbtn-${idx}" onclick="event.stopPropagation(); retranscribeVideo('${safeNameAttr}', this)">↻ Gemini</button>`
+                    : '';
+                const hasCorrected = !!_corrections[row.name];
+                const correctedBadge = hasCorrected ? '<span class="badge-corrected">✓ Corrected</span>' : '';
+                const correctBtn = `<button class="btn-correct${hasCorrected ? ' corrected' : ''}" id="cbtn-${idx}" onclick="event.stopPropagation(); toggleCorrectMode(${idx})">${hasCorrected ? '✓ Edit' : '✏ Correct'}</button>`;
+                div.innerHTML = `
+                    <div class="tx-video-header" onclick="toggleTxRow(${idx})">
+                        <div class="tx-video-name" title="${row.name}">${row.name}</div>
+                        <div class="tx-video-meta">${row.langBadge}${row.srcBadge}${row.warnBadge}${correctedBadge}${retranscribeBtn}${correctBtn}</div>
+                        <span class="tx-expand-btn" id="tx-arrow-${idx}">▶</span>
+                    </div>
+                    <div class="tx-video-body" id="tx-body-${idx}">
+                        <div class="tx-expanded-layout">
+                            <div class="tx-player-wrap">
+                                <video id="tx-vid-${idx}" preload="none" controls></video>
+                            </div>
+                            ${rightPanel}
+                        </div>
+                    </div>
+                `;
+                listEl.appendChild(div);
+            });
+
+            // Render safety table
+            const safetyBody = document.getElementById('tx-safety-body');
+            safetyBody.innerHTML = safetyRows.map(r => `
+                <tr data-search="${(r.video + r.type + r.desc).toLowerCase()}">
+                    <td>${r.video}</td>
+                    <td style="white-space:nowrap">${r.time}</td>
+                    <td>${r.type}</td>
+                    <td class="sev-${r.severity}">${r.severity}</td>
+                    <td>${r.desc}</td>
+                </tr>`).join('');
+
+            // Render insertions table
+            const insertBody = document.getElementById('tx-insert-body');
+            insertBody.innerHTML = insertRows.map(r => `
+                <tr data-search="${(r.video + r.reason).toLowerCase()}">
+                    <td>${r.video}</td>
+                    <td style="white-space:nowrap">${r.time}</td>
+                    <td>${r.dur}</td>
+                    <td>${r.reason}</td>
+                    <td>${r.objs}</td>
+                </tr>`).join('');
+        }
+
+        function toggleTxRow(idx) {
+            const body  = document.getElementById(`tx-body-${idx}`);
+            const arrow = document.getElementById(`tx-arrow-${idx}`);
+            const open  = body.classList.toggle('open');
+            arrow.textContent = open ? '▼' : '▶';
+            if (open) {
+                // Lazy-load: set video src only when the row is first opened
+                const vid = document.getElementById(`tx-vid-${idx}`);
+                if (!vid.getAttribute('src')) {
+                    vid.src = _txVideoData[idx].url;
+                }
+            }
+        }
+
+        function seekTxVideo(idx, time) {
+            const vid = document.getElementById(`tx-vid-${idx}`);
+            if (!vid.getAttribute('src')) vid.src = _txVideoData[idx].url;
+            vid.currentTime = time;
+            vid.play();
+        }
+
+        function filterTxVideos() {
+            const q = document.getElementById('tx-search').value.toLowerCase();
+            document.querySelectorAll('#tx-video-list .tx-video-row').forEach(row => {
+                const match = row.dataset.name.includes(q) || row.dataset.text.includes(q);
+                row.style.display = match ? '' : 'none';
+            });
+        }
+
+        function filterTxTable(inputId, bodyId) {
+            const q = document.getElementById(inputId).value.toLowerCase();
+            document.querySelectorAll(`#${bodyId} tr`).forEach(row => {
+                row.style.display = row.dataset.search.includes(q) ? '' : 'none';
+            });
+        }
+
+        // ── Correction Mode ──
+        let _correctionMode = {};  // idx → true/false
+
+        function toggleCorrectMode(idx) {
+            const isOpen = _correctionMode[idx];
+            if (isOpen) {
+                exitCorrectMode(idx);
+            } else {
+                enterCorrectMode(idx);
+            }
+        }
+
+        function enterCorrectMode(idx) {
+            _correctionMode[idx] = true;
+
+            // Make sure row is open
+            const body = document.getElementById(`tx-body-${idx}`);
+            const arrow = document.getElementById(`tx-arrow-${idx}`);
+            if (!body.classList.contains('open')) {
+                body.classList.add('open');
+                arrow.textContent = '▼';
+                const vid = document.getElementById(`tx-vid-${idx}`);
+                if (!vid.getAttribute('src')) vid.src = _txVideoData[idx].url;
+            }
+
+            const d = _txVideoData[idx];
+            const existing = _corrections[d.name];
+            // Use existing correction segments if present, else fall back to Gemini segments
+            const segsToEdit = existing ? existing.segments : d.segments;
+            const langToEdit = existing ? existing.language : d.language;
+
+            let rightHtml = '';
+            if (segsToEdit && segsToEdit.length > 0) {
+                const rows = segsToEdit.map((seg, si) => `
+                    <div class="tx-seg-edit-row">
+                        <button class="tx-seg-play" onclick="seekTxVideo(${idx}, ${seg.start})" title="Play from ${formatTime(seg.start)}">${formatTime(seg.start)}</button>
+                        <textarea class="tx-seg-textarea" id="tx-edit-${idx}-${si}" rows="2">${(seg.text || '').trim()}</textarea>
+                    </div>`).join('');
+                rightHtml = `<div class="tx-correction-panel" id="tx-correction-${idx}">${rows}</div>`;
+            } else {
+                // No segments — single textarea with full text
+                const fullText = existing ? existing.full_text : (d.speech || '');
+                rightHtml = `<textarea class="tx-no-seg-textarea" id="tx-edit-${idx}-full">${fullText}</textarea>`;
+            }
+
+            rightHtml += `
+                <div class="tx-correction-footer">
+                    <input class="tx-lang-input" id="tx-lang-${idx}" type="text" value="${langToEdit || ''}" placeholder="Language (e.g. Swahili/Sheng)">
+                    <button class="btn-save-correction" onclick="saveCorrection(${idx})">💾 Save</button>
+                    <button class="btn-cancel-correction" onclick="exitCorrectMode(${idx})">Cancel</button>
+                    <span class="tx-save-status" id="tx-save-status-${idx}"></span>
+                </div>`;
+
+            // Replace the right panel
+            const layout = body.querySelector('.tx-expanded-layout');
+            const rightPanel = layout.children[1];
+            rightPanel.dataset.originalHtml = rightPanel.innerHTML;
+            rightPanel.innerHTML = rightHtml;
+
+            // Update button label
+            const btn = document.getElementById(`cbtn-${idx}`);
+            if (btn) { btn.textContent = '✕ Cancel'; btn.classList.add('corrected'); }
+        }
+
+        function exitCorrectMode(idx) {
+            _correctionMode[idx] = false;
+            const body = document.getElementById(`tx-body-${idx}`);
+            const layout = body.querySelector('.tx-expanded-layout');
+            const rightPanel = layout.children[1];
+            if (rightPanel.dataset.originalHtml !== undefined) {
+                rightPanel.innerHTML = rightPanel.dataset.originalHtml;
+                delete rightPanel.dataset.originalHtml;
+            }
+            const hasCorrected = !!_corrections[_txVideoData[idx].name];
+            const btn = document.getElementById(`cbtn-${idx}`);
+            if (btn) {
+                btn.textContent = hasCorrected ? '✓ Edit' : '✏ Correct';
+                btn.classList.toggle('corrected', hasCorrected);
+            }
+        }
+
+        async function saveCorrection(idx) {
+            const d = _txVideoData[idx];
+            const existing = _corrections[d.name];
+            const segsSource = existing ? existing.segments : d.segments;
+            const language = (document.getElementById(`tx-lang-${idx}`) || {}).value || d.language;
+
+            let segments = [];
+            const statusEl = document.getElementById(`tx-save-status-${idx}`);
+
+            if (segsSource && segsSource.length > 0) {
+                segsSource.forEach((seg, si) => {
+                    const ta = document.getElementById(`tx-edit-${idx}-${si}`);
+                    segments.push({ start: seg.start, end: seg.end, text: ta ? ta.value.trim() : seg.text });
+                });
+            } else {
+                const ta = document.getElementById(`tx-edit-${idx}-full`);
+                const text = ta ? ta.value.trim() : '';
+                segments = [{ start: 0, end: null, text }];
+            }
+
+            try {
+                statusEl.textContent = 'Saving…';
+                const res = await fetch('/api/corrections/save', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ video_name: d.name, language, segments })
+                });
+                const result = await res.json();
+                if (res.ok) {
+                    _corrections[d.name] = { video_name: d.name, language, segments };
+                    statusEl.textContent = `✓ Saved (${result.segments} segments)`;
+                    // Update header badge
+                    const cbtn = document.getElementById(`cbtn-${idx}`);
+                    if (cbtn) { cbtn.textContent = '✕ Cancel'; cbtn.classList.add('corrected'); }
+                    setTimeout(() => { statusEl.textContent = ''; }, 3000);
+                } else {
+                    statusEl.style.color = '#ef4444';
+                    statusEl.textContent = `Error: ${result.error}`;
+                }
+            } catch(e) {
+                statusEl.style.color = '#ef4444';
+                statusEl.textContent = 'Save failed.';
+            }
+        }
+
+        // ── Retranscribe ──
+        let _retranscribeQueue = [];
+
+        async function retranscribeVideo(filename, btnEl) {
+            if (_isProcessing) { alert('Another job is running. Please wait.'); return; }
+            if (btnEl) btnEl.disabled = true;
+            try {
+                const res = await fetch('/api/retranscribe', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ filename })
+                });
+                const data = await res.json();
+                if (res.status === 409) { alert(`Busy: ${data.current}`); if (btnEl) btnEl.disabled = false; return; }
+                if (!res.ok) { alert(`Error: ${data.error}`); if (btnEl) btnEl.disabled = false; return; }
+                setProcessingUI(true, filename);
+                startPolling();
+            } catch (e) {
+                alert('Failed to start retranscription.');
+                if (btnEl) btnEl.disabled = false;
+            }
+        }
+
+        async function retranscribeAll() {
+            // Build queue of all non-Gemini videos
+            _retranscribeQueue = _allResults
+                .filter(r => (r.transcript || {}).source !== 'gemini')
+                .map(r => r.video_name);
+            if (_retranscribeQueue.length === 0) { alert('All videos already have Gemini transcriptions.'); return; }
+            const allBtn = document.getElementById('btn-retranscribe-all');
+            if (allBtn) allBtn.disabled = true;
+            await _drainRetranscribeQueue();
+        }
+
+        async function _drainRetranscribeQueue() {
+            if (_retranscribeQueue.length === 0) {
+                // All done — reload
+                _txRendered = false;
+                await loadData();
+                renderTranscription(_allResults); _txRendered = true;
+                const allBtn = document.getElementById('btn-retranscribe-all');
+                if (allBtn) allBtn.disabled = false;
+                return;
+            }
+            const filename = _retranscribeQueue.shift();
+            try {
+                const res = await fetch('/api/retranscribe', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ filename })
+                });
+                if (!res.ok) {
+                    console.warn(`Retranscribe skipped (${filename}):`, await res.json());
+                    await _drainRetranscribeQueue();
+                    return;
+                }
+                setProcessingUI(true, `[${_allResults.length - _retranscribeQueue.length}/${_allResults.length}] ${filename}`);
+                // Poll until done, then trigger next
+                const interval = setInterval(async () => {
+                    const s = await fetch('/api/process/status').then(r => r.json());
+                    if (!s.running) {
+                        clearInterval(interval);
+                        setProcessingUI(false);
+                        await _drainRetranscribeQueue();
+                    }
+                }, 3000);
+            } catch (e) {
+                console.error('Retranscribe error:', e);
+                await _drainRetranscribeQueue();
+            }
         }
 
         // ── Results ──
@@ -736,8 +1671,12 @@
                 const data = await response.json();
                 _allResults = data;
                 _activeFilters.clear();
+                _txRendered = false;   // force transcription tab to re-render on next visit
                 renderFilters(data);
                 renderDashboard(data);
+                if (document.querySelector('.tab-btn[data-tab="transcription"]').classList.contains('active')) {
+                    renderTranscription(data); _txRendered = true;
+                }
             } catch (e) {
                 console.error("Error loading data:", e);
                 document.getElementById('video-container').innerHTML =
@@ -1058,13 +1997,17 @@
                 // No longer running
                 stopPolling();
 
-                if (data.status === 'done') {
+                if (data.status === 'done' || data.status === 'retranscribing_done') {
                     document.getElementById('processing-filename').textContent = data.filename + ' — done!';
                     setTimeout(async () => {
                         setProcessingUI(false);
                         loadLibrary();
                         await loadData();   // reloads results + rebuilds filters
-                    }, 2000);
+                        // Refresh transcription tab if open
+                        if (document.querySelector('.tab-btn[data-tab="transcription"]').classList.contains('active')) {
+                            renderTranscription(_allResults); _txRendered = true;
+                        }
+                    }, 1500);
                 } else if (data.status === 'error') {
                     document.getElementById('processing-filename').textContent =
                         `Error: ${data.error}`;

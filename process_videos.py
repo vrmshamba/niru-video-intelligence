@@ -151,21 +151,44 @@ class VideoProcessor:
         self.save_result(filename, result)
         return result
     
+    def _extract_audio(self, video_path):
+        """Extract audio to a temporary MP3 using ffmpeg. Returns temp file path."""
+        import tempfile, time as _time
+        tmp = tempfile.NamedTemporaryFile(suffix=".mp3", delete=False)
+        tmp.close()
+        ffmpeg = self.ffmpeg_path or "ffmpeg"
+        result = subprocess.run(
+            [ffmpeg, "-y", "-i", video_path, "-vn",
+             "-acodec", "libmp3lame", "-ar", "16000", "-ac", "1", "-b:a", "64k",
+             tmp.name],
+            capture_output=True
+        )
+        if result.returncode != 0:
+            os.unlink(tmp.name)
+            raise RuntimeError(f"ffmpeg audio extraction failed: {result.stderr.decode()[:300]}")
+        return tmp.name
+
     def _transcribe_with_gemini(self, video_path):
-        """Transcribe using Gemini 2.0 Flash — handles all Kenyan languages."""
+        """Transcribe using Gemini 2.5 Flash — uploads audio only (cheaper, free-tier friendly)."""
+        import time
         from google import genai
-        from google.genai import types
 
         client = genai.Client(api_key=os.environ["GOOGLE_API_KEY"])
 
-        import time
-        print("  Uploading to Gemini API...")
-        uploaded = client.files.upload(file=video_path)
+        # Extract audio only — much cheaper than uploading the full video
+        print("  Extracting audio for Gemini upload...")
+        audio_path = self._extract_audio(video_path)
 
-        # Wait for Gemini to finish processing the video (state: PROCESSING → ACTIVE)
+        try:
+            print("  Uploading audio to Gemini API...")
+            uploaded = client.files.upload(file=audio_path)
+        finally:
+            os.unlink(audio_path)  # delete temp audio immediately after upload
+
+        # Wait for Gemini to finish processing (state: PROCESSING → ACTIVE)
         while uploaded.state.name == "PROCESSING":
             print("  Waiting for file to become active...")
-            time.sleep(5)
+            time.sleep(3)
             uploaded = client.files.get(name=uploaded.name)
         if uploaded.state.name != "ACTIVE":
             raise RuntimeError(f"Gemini file processing failed: {uploaded.state}")
