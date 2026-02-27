@@ -514,6 +514,77 @@ niru-mvp/
 
 ---
 
+## Phase 2: Implemented Extensions
+
+The following features were built beyond the original MVP scope. They represent the current state of the platform as of February 2026.
+
+### Feature 7: Multilingual Transcription (Gemini 2.5 Flash)
+
+**Description:** Upgrade primary transcription engine to support the full range of Kenyan languages.
+
+**What was built:**
+- Gemini 2.5 Flash as the primary transcription engine; Whisper retained as automatic fallback
+- Language support: English, Swahili, Sheng (Nairobi street slang — Swahili/English/Kikuyu mix), Kikuyu, Kalenjin, Maasai (Maa), Dholuo, Luhya, Kisii
+- Audio-only upload to Gemini API (cheaper than full video; temp file deleted immediately after upload)
+- Structured JSON output with language name, ISO code, confidence level, dialect notes, and timestamped segments
+- Retranscribe endpoint (`POST /api/retranscribe`) — re-runs Gemini on an already-processed video, updating only the transcript field without a full reprocess
+
+### Feature 8: Library Browser and Dashboard-Triggered Processing
+
+**Description:** Browse the full video library and trigger processing directly from the dashboard, without using the CLI.
+
+**What was built:**
+- `GET /api/library` — lists all supported videos in `LIBRARY_DIR` with file size and processed status
+- Library tab in dashboard — card grid showing all videos with a per-video process button
+- `POST /api/process` — starts background processing for a single file; single-slot queue returns 409 if busy
+- `GET /api/process/status` — polling endpoint returning current processing state (idle / processing / done / error)
+- Live processing banner in the dashboard UI — displays filename and animated spinner while a job is running
+- `NIRU_LIBRARY_DIR` environment variable for configurable library path
+- `NIRU_WHISPER_MODEL` environment variable for configurable Whisper model size
+
+### Feature 9: Transcript Correction UI
+
+**Description:** Allow human editors to correct AI-generated transcripts in the dashboard, producing labelled training data.
+
+**What was built:**
+- Inline correction panel in the Transcription tab — segment-by-segment text editing with language labelling
+- `POST /api/corrections/save` — persists corrected segments to `training/corrections/{stem}_corrected.json`
+- `GET /api/corrections` — loads all saved corrections for display across sessions
+- `POST /api/corrections/delete` — removes a saved correction
+- Correction files store: video name, language label, correction timestamp, per-segment text, and reconstructed full text
+
+### Feature 10: YOLO Fine-Tuning Pipeline (Nairobi-Specific Classes)
+
+**Description:** Train a custom YOLO model on Nairobi street footage, replacing the generic COCO-80 model with one tuned for local transport and street scenes.
+
+**What was built:**
+- `training/training.py` — full YOLOv8 fine-tuning script with Roboflow export and COCO auto-label fallback workflows
+- 20 Nairobi-specific classes: nganya (matatu), city_hoppa, school_bus, large_bus, bodaboda, bodaboda_no_helmet, bodaboda_stage, tuk_tuk, mkokoteni, street_hawkers, traffic_marshal, conductor, matatu_stage, illegal_dumping, garbage_pile, pothole, passenger, pedestrian, car, truck
+- `extract_and_annotate.py` — frame extraction and COCO auto-label generation for bootstrapping
+- `training/rank_frames.py` — ranks annotation frames by detection diversity for efficient manual labelling
+- `training/setup_label_studio.py` — Label Studio integration helper
+- Pipeline auto-loads `models/niru_nairobi.pt` if present; falls back to `yolov8n.pt`
+
+### Feature 11: MXF Format and Browser-Compatible Video Output
+
+**Description:** Handle broadcast-format MXF files (common in Kenyan TV production) and ensure annotated output videos play in all browsers.
+
+**What was built:**
+- Auto-detection of MXF files; ffmpeg-based MXF → MP4 conversion before YOLO inference
+- Bundled ffmpeg via `imageio_ffmpeg` (auto-copies to `models/ffmpeg.exe` if not on system PATH)
+- H.264 + yuv420p re-encoding of all annotated output videos for cross-browser playback compatibility
+
+### Feature 12: Expanded Library Scale
+
+**Description:** Pipeline scaled from 4 sample videos to the full production library on the H: drive.
+
+**What was built:**
+- Full H:/ drive library processing (~153 videos across .mp4, .avi, .mov, .mxf)
+- 320+ result JSON files generated
+- Library browser surfaces processed vs. unprocessed status for every file
+
+---
+
 ## Risk Assessment
 
 ### Technical Risks
