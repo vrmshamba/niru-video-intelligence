@@ -1,5 +1,5 @@
-# NIRU Custom Dataset — 20 Nairobi Street Classes
-# Fine-tunes YOLOv8n on Nairobi street footage extracted from H:/ video library.
+# NIRU Custom Dataset — 20 Kenya Street Classes
+# Fine-tunes YOLOv8n on Kenya street footage extracted from H:/ video library.
 #
 # Raw source data (COCO-80 auto-labels):
 #   annotation_frames/   — 1 JPG/second extracted from each video
@@ -24,7 +24,7 @@ val:   images/val                          # validation images — relative to p
 # Number of classes
 nc: 20
 
-# Class names — Nairobi street context
+# Class names — Kenya street context
 # Classes with COCO remapping are bootstrapped from auto-labels.
 # Classes marked "manual" require annotation before the model can learn them.
 names:

@@ -1,4 +1,4 @@
-# YOLOv8 Dataset Configuration — NIRU Nairobi Custom Classes
+# YOLOv8 Dataset Configuration — NIRU Kenya Custom Classes
 #
 # USAGE
 # -----
@@ -14,7 +14,7 @@ path: H:/NIRU_MVP_Dev/training/prepared   # updated by training.py --prepare
 train: images/train
 val:   images/val
 
-# 20 custom Nairobi classes
+# 20 custom Kenya classes
 nc: 20
 
 names:

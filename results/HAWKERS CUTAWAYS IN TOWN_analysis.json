@@ -1,10 +1,14 @@
 {
   "video_name": "HAWKERS CUTAWAYS IN TOWN.mp4",
-  "processed_at": "2026-02-18T08:06:54.792727",
+  "processed_at": "2026-02-23T10:28:10.958940",
   "transcript": {
     "text": "",
-    "language": "nn",
-    "segments": []
+    "language": "No speech detected",
+    "language_code": "und",
+    "language_confidence": 0.95,
+    "language_note": "No speech detected in the audio.",
+    "segments": [],
+    "source": "gemini"
   },
   "scene_analysis": {
     "total_scenes_analyzed": 59,
@@ -2629,7 +2633,7 @@
   ],
   "insertion_points": [],
   "summary": {
-    "language_detected": "nn",
+    "language_detected": "No speech detected",
     "total_objects_detected": 59,
     "safety_flags": 20,
     "safe_insertion_windows": 0

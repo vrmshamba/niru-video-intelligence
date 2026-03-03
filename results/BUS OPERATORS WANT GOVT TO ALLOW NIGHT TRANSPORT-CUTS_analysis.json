@@ -2,266 +2,449 @@
   "video_name": "BUS OPERATORS WANT GOVT TO ALLOW NIGHT TRANSPORT-CUTS.mp4",
   "processed_at": "2026-02-18T08:20:56.466547",
   "transcript": {
-    "text": " Minos dija Amoziri, Moziri Nishida, Ava Tatu Ishida. Amoziri Charsita. Amoziri Nishida, Ava Tatu Ishida. Amoziri Nishida, Ava Tatu Ishida. Amoziri Nishida, Ava Tatu Ishida. Amoziri Nishida, Ava Tatu Ishida. Amoziri Nishida, Ava Tatu Ishida. Amoziri Nishida, Ava Tatu Ishida.",
-    "language": "nn",
+    "text": "Kwani gari. Kwani gari? We ulienda wapi? Hapa pasaha hapa mwenyewe. Baba Kwani. Kwani unanigonga. Unapiga hapo. Uko wapi? Kwani ni gari. Simama. Kama hivi. Wanajaribu. Ushaweza kupiga picha. Walikuwa wanajaribu moto. wanajaribu la moyo. Hawa mawaziri, mawaziri ni shida. Hawatatui shida. Wanazidisha shida. Bwana Yesu. Neno linakwambia la uzima. Hawa wanaongea na. We ndio. Wale mawaziri sana. kwenye gari. Haya. Zangu zimekaa. Si tano. Hii. Eh. Hiyo. Sita. Si tano. Na namba. Utadanganya nani bwana? nani. Si tuko na wale. Wanaongea na huyo. Wanasema kama waziri wakati huo. Hao waziri. Sasa ndio wanasema wanawake. Sio wanazungumzia wakati huo. Hawazungumzi. Wanasema wanakupanga. Sio. Ndio wanasema. Wale wakubwa ndio. Ndio hao. Umenielewa. Sasa ndio wanakuja. Hawa ndio wamefika hapo. Kama hapo. Wa. Kama. Hawajui wananong'ona nini. Nimekuwa nikiangalia hapa. Hata bwana siwezi kuta. Sasa ndio. Wako hapa. Haya. Kweli. Wewe. Kwani. Wewe. Hao waziri. Hawajui nani. Sasa. Kama. Ndio hapa. Wewe. Wanawaona. Aisee. Kama gari. Umeanza kuongea naye. Hawatakuelewa. Yaani. Kama. Unaoongea nini? Si wamesema wenyewe. Wanasema. Wanasema nini? Wanaongea nani? Hawa ni. Si hawa. Wamefika. Hapa. Kwani. Wewe. Wanasema. ",
+    "language": "Swahili",
+    "language_code": "sw",
+    "language_confidence": 0.95,
+    "language_note": "null",
     "segments": [
       {
-        "id": 0,
-        "seek": 0,
         "start": 0.0,
-        "end": 10.18,
-        "text": " Minos dija",
-        "tokens": [
-          50364,
-          2829,
-          329,
-          1026,
-          2938,
-          50873
-        ],
-        "temperature": 1.0,
-        "avg_logprob": -5.319785118103027,
-        "compression_ratio": 0.5555555555555556,
-        "no_speech_prob": 0.5837770104408264
+        "end": 4.19,
+        "text": "Kwani gari. Kwani gari?"
       },
       {
-        "id": 1,
-        "seek": 10018,
-        "start": 100.18,
-        "end": 104.18,
-        "text": " Amoziri, Moziri Nishida, Ava Tatu Ishida.",
-        "tokens": [
-          50364,
-          316,
-          3280,
-          89,
-          12988,
-          11,
-          3335,
-          89,
-          12988,
-          426,
-          742,
-          2887,
-          11,
-          316,
-          2757,
-          19645,
-          84,
-          42854,
-          2887,
-          13,
-          50564
-        ],
-        "temperature": 0.0,
-        "avg_logprob": -0.9506241083145142,
-        "compression_ratio": 1.0535714285714286,
-        "no_speech_prob": 0.412365585565567
+        "start": 6.27,
+        "end": 7.37,
+        "text": "We ulienda wapi?"
       },
       {
-        "id": 2,
-        "seek": 10018,
-        "start": 104.18,
-        "end": 106.18,
-        "text": " Amoziri Charsita.",
-        "tokens": [
-          50564,
-          316,
-          3280,
-          89,
-          12988,
-          761,
-          685,
-          2786,
-          13,
-          50664
-        ],
-        "temperature": 0.0,
-        "avg_logprob": -0.9506241083145142,
-        "compression_ratio": 1.0535714285714286,
-        "no_speech_prob": 0.412365585565567
+        "start": 14.28,
+        "end": 15.69,
+        "text": "Hapa pasaha hapa mwenyewe."
       },
       {
-        "id": 3,
-        "seek": 13018,
-        "start": 130.18,
-        "end": 136.18,
-        "text": " Amoziri Nishida, Ava Tatu Ishida.",
-        "tokens": [
-          50364,
-          316,
-          3280,
-          89,
-          12988,
-          426,
-          742,
-          2887,
-          11,
-          316,
-          2757,
-          19645,
-          84,
-          42854,
-          2887,
-          13,
-          50664
-        ],
-        "temperature": 0.0,
-        "avg_logprob": -0.5265412330627441,
-        "compression_ratio": 0.868421052631579,
-        "no_speech_prob": 0.7443009614944458
+        "start": 23.38,
+        "end": 23.78,
+        "text": "Baba"
       },
       {
-        "id": 4,
-        "seek": 16018,
-        "start": 160.18,
-        "end": 166.18,
-        "text": " Amoziri Nishida, Ava Tatu Ishida.",
-        "tokens": [
-          50364,
-          316,
-          3280,
-          89,
-          12988,
-          426,
-          742,
-          2887,
-          11,
-          316,
-          2757,
-          19645,
-          84,
-          42854,
-          2887,
-          13,
-          50664
-        ],
-        "temperature": 0.0,
-        "avg_logprob": -0.3072800636291504,
-        "compression_ratio": 0.868421052631579,
-        "no_speech_prob": 0.9305136203765869
+        "start": 25.1,
+        "end": 25.4,
+        "text": "Kwani."
       },
       {
-        "id": 5,
-        "seek": 19018,
-        "start": 190.18,
-        "end": 196.18,
-        "text": " Amoziri Nishida, Ava Tatu Ishida.",
-        "tokens": [
-          50364,
-          316,
-          3280,
-          89,
-          12988,
-          426,
-          742,
-          2887,
-          11,
-          316,
-          2757,
-          19645,
-          84,
-          42854,
-          2887,
-          13,
-          50664
-        ],
-        "temperature": 0.0,
-        "avg_logprob": -0.2735132906172011,
-        "compression_ratio": 0.868421052631579,
-        "no_speech_prob": 0.9137750267982483
+        "start": 26.6,
+        "end": 27.24,
+        "text": "Kwani unanigonga."
       },
       {
-        "id": 6,
-        "seek": 22018,
-        "start": 220.18,
-        "end": 230.18,
-        "text": " Amoziri Nishida, Ava Tatu Ishida.",
-        "tokens": [
-          50364,
-          316,
-          3280,
-          89,
-          12988,
-          426,
-          742,
-          2887,
-          11,
-          316,
-          2757,
-          19645,
-          84,
-          42854,
-          2887,
-          13,
-          50864
-        ],
-        "temperature": 0.0,
-        "avg_logprob": -0.24738929006788465,
-        "compression_ratio": 0.868421052631579,
-        "no_speech_prob": 0.8993173241615295
+        "start": 27.64,
+        "end": 28.52,
+        "text": "Unapiga hapo."
       },
       {
-        "id": 7,
-        "seek": 25018,
-        "start": 250.18,
-        "end": 260.18,
-        "text": " Amoziri Nishida, Ava Tatu Ishida.",
-        "tokens": [
-          50364,
-          316,
-          3280,
-          89,
-          12988,
-          426,
-          742,
-          2887,
-          11,
-          316,
-          2757,
-          19645,
-          84,
-          42854,
-          2887,
-          13,
-          50864
-        ],
-        "temperature": 0.0,
-        "avg_logprob": -0.19443933169047037,
-        "compression_ratio": 0.868421052631579,
-        "no_speech_prob": 0.9272121787071228
+        "start": 31.7,
+        "end": 32.22,
+        "text": "Uko wapi?"
       },
       {
-        "id": 8,
-        "seek": 28018,
-        "start": 280.18,
-        "end": 288.18,
-        "text": " Amoziri Nishida, Ava Tatu Ishida.",
-        "tokens": [
-          50364,
-          316,
-          3280,
-          89,
-          12988,
-          426,
-          742,
-          2887,
-          11,
-          316,
-          2757,
-          19645,
-          84,
-          42854,
-          2887,
-          13,
-          50764
-        ],
-        "temperature": 0.0,
-        "avg_logprob": -0.18736428684658474,
-        "compression_ratio": 0.868421052631579,
-        "no_speech_prob": 0.8623504638671875
+        "start": 42.44,
+        "end": 42.84,
+        "text": "Kwani ni gari."
+      },
+      {
+        "start": 54.38,
+        "end": 54.9,
+        "text": "Simama."
+      },
+      {
+        "start": 55.45,
+        "end": 56.1,
+        "text": "Kama hivi."
+      },
+      {
+        "start": 105.79,
+        "end": 106.39,
+        "text": "Wanajaribu."
+      },
+      {
+        "start": 133.02,
+        "end": 134.19,
+        "text": "Ushaweza kupiga picha."
+      },
+      {
+        "start": 134.56,
+        "end": 136.29,
+        "text": "Walikuwa wanajaribu moto."
+      },
+      {
+        "start": 138.83,
+        "end": 139.75,
+        "text": "wanajaribu la moyo."
+      },
+      {
+        "start": 141.22,
+        "end": 143.9,
+        "text": "Hawa mawaziri, mawaziri ni shida. Hawatatui shida."
+      },
+      {
+        "start": 145.47,
+        "end": 146.47,
+        "text": "Wanazidisha shida."
+      },
+      {
+        "start": 149.26,
+        "end": 149.8,
+        "text": "Bwana Yesu."
+      },
+      {
+        "start": 150.39,
+        "end": 153.3,
+        "text": "Neno linakwambia la uzima."
+      },
+      {
+        "start": 159.22,
+        "end": 159.87,
+        "text": "Hawa wanaongea na."
+      },
+      {
+        "start": 159.87,
+        "end": 160.77,
+        "text": "We ndio."
+      },
+      {
+        "start": 161.42,
+        "end": 162.27,
+        "text": "Wale mawaziri sana."
+      },
+      {
+        "start": 201.76,
+        "end": 202.26,
+        "text": "kwenye gari."
+      },
+      {
+        "start": 202.94,
+        "end": 203.49,
+        "text": "Haya."
+      },
+      {
+        "start": 203.89,
+        "end": 204.49,
+        "text": "Zangu zimekaa."
+      },
+      {
+        "start": 204.66,
+        "end": 205.11,
+        "text": "Si tano."
+      },
+      {
+        "start": 210.74,
+        "end": 211.04,
+        "text": "Hii."
+      },
+      {
+        "start": 211.23,
+        "end": 211.64,
+        "text": "Eh."
+      },
+      {
+        "start": 211.64,
+        "end": 212.1,
+        "text": "Hiyo."
+      },
+      {
+        "start": 213.62,
+        "end": 214.22,
+        "text": "Sita."
+      },
+      {
+        "start": 214.42,
+        "end": 214.77,
+        "text": "Si tano."
+      },
+      {
+        "start": 218.49,
+        "end": 219.09,
+        "text": "Na namba."
+      },
+      {
+        "start": 233.15,
+        "end": 234.36,
+        "text": "Utadanganya nani bwana?"
+      },
+      {
+        "start": 237.13,
+        "end": 237.45,
+        "text": "nani."
+      },
+      {
+        "start": 240.5,
+        "end": 241.16,
+        "text": "Si tuko na wale."
+      },
+      {
+        "start": 241.76,
+        "end": 242.42,
+        "text": "Wanaongea na huyo."
+      },
+      {
+        "start": 243.68,
+        "end": 245.38,
+        "text": "Wanasema kama waziri wakati huo."
+      },
+      {
+        "start": 245.48,
+        "end": 246.08,
+        "text": "Hao waziri."
+      },
+      {
+        "start": 246.33,
+        "end": 247.93,
+        "text": "Sasa ndio wanasema wanawake."
+      },
+      {
+        "start": 248.5,
+        "end": 250.75,
+        "text": "Sio wanazungumzia wakati huo."
+      },
+      {
+        "start": 251.27,
+        "end": 252.02,
+        "text": "Hawazungumzi."
+      },
+      {
+        "start": 252.28,
+        "end": 253.28,
+        "text": "Wanasema wanakupanga."
+      },
+      {
+        "start": 253.38,
+        "end": 253.68,
+        "text": "Sio."
+      },
+      {
+        "start": 254.29,
+        "end": 255.07,
+        "text": "Ndio wanasema."
+      },
+      {
+        "start": 255.42,
+        "end": 256.42,
+        "text": "Wale wakubwa ndio."
+      },
+      {
+        "start": 257.06,
+        "end": 257.66,
+        "text": "Ndio hao."
+      },
+      {
+        "start": 257.96,
+        "end": 258.66,
+        "text": "Umenielewa."
+      },
+      {
+        "start": 258.66,
+        "end": 260.6,
+        "text": "Sasa ndio wanakuja."
+      },
+      {
+        "start": 261.27,
+        "end": 262.17,
+        "text": "Hawa ndio wamefika hapo."
+      },
+      {
+        "start": 262.47,
+        "end": 263.13,
+        "text": "Kama hapo."
+      },
+      {
+        "start": 263.97,
+        "end": 264.47,
+        "text": "Wa."
+      },
+      {
+        "start": 264.47,
+        "end": 264.87,
+        "text": "Kama."
+      },
+      {
+        "start": 265.81,
+        "end": 267.4,
+        "text": "Hawajui wananong'ona nini."
+      },
+      {
+        "start": 267.8,
+        "end": 269.45,
+        "text": "Nimekuwa nikiangalia hapa."
+      },
+      {
+        "start": 269.69,
+        "end": 271.32,
+        "text": "Hata bwana siwezi kuta."
+      },
+      {
+        "start": 271.74,
+        "end": 272.29,
+        "text": "Sasa ndio."
+      },
+      {
+        "start": 273.08,
+        "end": 273.7,
+        "text": "Wako hapa."
+      },
+      {
+        "start": 274.69,
+        "end": 275.09,
+        "text": "Haya."
+      },
+      {
+        "start": 275.38,
+        "end": 275.78,
+        "text": "Kweli."
+      },
+      {
+        "start": 276.08,
+        "end": 276.5,
+        "text": "Wewe."
+      },
+      {
+        "start": 276.84,
+        "end": 277.24,
+        "text": "Kwani."
+      },
+      {
+        "start": 277.37,
+        "end": 277.77,
+        "text": "Wewe."
+      },
+      {
+        "start": 278.4,
+        "end": 279.17,
+        "text": "Hao waziri."
+      },
+      {
+        "start": 279.87,
+        "end": 280.45,
+        "text": "Hawajui nani."
+      },
+      {
+        "start": 280.93,
+        "end": 281.25,
+        "text": "Sasa."
+      },
+      {
+        "start": 281.42,
+        "end": 281.82,
+        "text": "Kama."
+      },
+      {
+        "start": 282.26,
+        "end": 282.8,
+        "text": "Ndio hapa."
+      },
+      {
+        "start": 283.07,
+        "end": 283.47,
+        "text": "Wewe."
+      },
+      {
+        "start": 283.74,
+        "end": 284.4,
+        "text": "Wanawaona."
+      },
+      {
+        "start": 284.67,
+        "end": 285.07,
+        "text": "Aisee."
+      },
+      {
+        "start": 285.64,
+        "end": 286.29,
+        "text": "Kama gari."
+      },
+      {
+        "start": 287.03,
+        "end": 288.16,
+        "text": "Umeanza kuongea naye."
+      },
+      {
+        "start": 288.59,
+        "end": 289.54,
+        "text": "Hawatakuelewa."
+      },
+      {
+        "start": 289.81,
+        "end": 290.17,
+        "text": "Yaani."
+      },
+      {
+        "start": 290.47,
+        "end": 290.87,
+        "text": "Kama."
+      },
+      {
+        "start": 291.56,
+        "end": 292.36,
+        "text": "Unaoongea nini?"
+      },
+      {
+        "start": 292.59,
+        "end": 293.59,
+        "text": "Si wamesema wenyewe."
+      },
+      {
+        "start": 293.75,
+        "end": 294.25,
+        "text": "Wanasema."
+      },
+      {
+        "start": 294.51,
+        "end": 295.21,
+        "text": "Wanasema nini?"
+      },
+      {
+        "start": 295.8,
+        "end": 296.65,
+        "text": "Wanaongea nani?"
+      },
+      {
+        "start": 296.88,
+        "end": 297.38,
+        "text": "Hawa ni."
+      },
+      {
+        "start": 297.51,
+        "end": 297.87,
+        "text": "Si hawa."
+      },
+      {
+        "start": 298.08,
+        "end": 298.58,
+        "text": "Wamefika."
+      },
+      {
+        "start": 299.12,
+        "end": 299.42,
+        "text": "Hapa."
+      },
+      {
+        "start": 299.63,
+        "end": 300.03,
+        "text": "Kwani."
+      },
+      {
+        "start": 300.19,
+        "end": 300.59,
+        "text": "Wewe."
+      },
+      {
+        "start": 300.86,
+        "end": 301.46,
+        "text": "Wanasema."
       }
-    ]
+    ],
+    "source": "gemini"
   },
   "scene_analysis": {
     "total_scenes_analyzed": 233,
@@ -10901,10 +11084,11 @@
     }
   ],
   "summary": {
-    "language_detected": "nn",
+    "language_detected": "Swahili",
     "total_objects_detected": 233,
     "safety_flags": 95,
     "safe_insertion_windows": 6
   },
-  "annotated_video": "web_annotated_BUS OPERATORS WANT GOVT TO ALLOW NIGHT TRANSPORT-CUTS.mp4"
+  "annotated_video": "web_annotated_BUS OPERATORS WANT GOVT TO ALLOW NIGHT TRANSPORT-CUTS.mp4",
+  "retranscribed_at": "2026-02-23T11:12:35.702695"
 }
