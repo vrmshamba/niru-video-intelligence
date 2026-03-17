@@ -1,0 +1,291 @@
+/*
+ * HodiAI — Glassmorphism Depth Style System
+ * Generated from UI/UX Pro Max search: "Glassmorphism depth"
+ * Sources: Glassmorphism + Dimensional Layering + Spatial UI (VisionOS)
+ * ─────────────────────────────────────────────────────────────────────
+ */
+
+/* ── Design System Variables ─────────────────────────────────────── */
+:root {
+  /* Glassmorphism — dark-theme tuned */
+  --blur-amount:      14px;
+  --glass-opacity:    0.06;
+  --glass-bg:         rgba(255, 255, 255, 0.04);
+  --glass-bg-light:   rgba(255, 255, 255, 0.02);
+  --glass-bg-heavy:   rgba(255, 255, 255, 0.07);
+  --glass-border:     rgba(255, 255, 255, 0.09);
+  --glass-border-dim: rgba(255, 255, 255, 0.05);
+
+  /* Spatial / VisionOS */
+  --glass-blur-spatial:     40px;
+  --glass-saturate-spatial: 180%;
+  --window-radius:          24px;
+  --depth-shadow:           0 8px 32px rgba(0, 0, 0, 0.1);
+  --focus-scale:            1.02;
+
+  /* Dimensional Elevation Scale */
+  --elevation-1: 0 1px 3px  rgba(0, 0, 0, 0.10);
+  --elevation-2: 0 4px 6px  rgba(0, 0, 0, 0.10);
+  --elevation-3: 0 10px 20px rgba(0, 0, 0, 0.10);
+  --elevation-4: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+  /* African HodiAI accent overlays */
+  --glass-gold:       rgba(217, 119, 6, 0.15);
+  --glass-terracotta: rgba(198, 123, 92, 0.12);
+  --glass-green:      rgba(21, 128, 61, 0.12);
+}
+
+
+/* ══════════════════════════════════════════════════════════════════ */
+/*  1. GLASSMORPHISM — Frosted glass cards & panels                  */
+/* ══════════════════════════════════════════════════════════════════ */
+
+.glass {
+  background:        var(--glass-bg);
+  backdrop-filter:   blur(var(--blur-amount));
+  -webkit-backdrop-filter: blur(var(--blur-amount));
+  border:            1px solid var(--glass-border);
+  border-radius:     16px;
+  color:             #fff;
+}
+
+.glass-light {
+  background:        var(--glass-bg-light);
+  backdrop-filter:   blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border:            1px solid var(--glass-border-dim);
+  border-radius:     12px;
+}
+
+.glass-heavy {
+  background:        var(--glass-bg-heavy);
+  backdrop-filter:   blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border:            1px solid rgba(255, 255, 255, 0.3);
+  border-radius:     20px;
+}
+
+/* African-tinted glass variants */
+.glass-gold {
+  background:        var(--glass-gold);
+  backdrop-filter:   blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border:            1px solid rgba(217, 119, 6, 0.25);
+  border-radius:     16px;
+}
+
+.glass-terracotta {
+  background:        var(--glass-terracotta);
+  backdrop-filter:   blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border:            1px solid rgba(198, 123, 92, 0.25);
+  border-radius:     16px;
+}
+
+.glass-green {
+  background:        var(--glass-green);
+  backdrop-filter:   blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border:            1px solid rgba(21, 128, 61, 0.25);
+  border-radius:     16px;
+}
+
+/* Light reflection shimmer on top edge */
+.glass-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.glass-shimmer::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    transparent 100%);
+}
+
+
+/* ══════════════════════════════════════════════════════════════════ */
+/*  2. DIMENSIONAL LAYERING — Z-depth elevation system               */
+/* ══════════════════════════════════════════════════════════════════ */
+
+/* Layer 1 — base surface */
+.layer-1 {
+  position: relative;
+  z-index: 1;
+  box-shadow: var(--elevation-1);
+}
+
+/* Layer 2 — raised cards */
+.layer-2 {
+  position: relative;
+  z-index: 2;
+  box-shadow: var(--elevation-2);
+  transform: translateZ(4px);
+}
+
+/* Layer 3 — floating panels */
+.layer-3 {
+  position: relative;
+  z-index: 3;
+  box-shadow: var(--elevation-3);
+  transform: translateZ(8px);
+}
+
+/* Layer 4 — modals / popovers */
+.layer-4 {
+  position: relative;
+  z-index: 4;
+  box-shadow: var(--elevation-4);
+  transform: translateZ(16px);
+}
+
+/* Elevation hover upgrade */
+.layer-hover {
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+.layer-hover:hover {
+  box-shadow: var(--elevation-3);
+  transform: translateY(-4px) translateZ(8px);
+}
+
+/* Floating card — lifts on hover with depth */
+.card-floating {
+  transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+  will-change: transform;
+}
+.card-floating:hover {
+  box-shadow: var(--elevation-4), 0 0 0 1px rgba(255, 255, 255, 0.08);
+  transform: translateY(-6px);
+}
+
+/* Parallax depth wrapper (JS can apply translateY on scroll) */
+.parallax-layer {
+  will-change: transform;
+  transition: transform 0.1s linear;
+}
+.parallax-slow  { --parallax-speed: 0.3; }
+.parallax-mid   { --parallax-speed: 0.6; }
+.parallax-fast  { --parallax-speed: 1.0; }
+
+/* Overlapping stacked cards — bento style */
+.stack-cards {
+  position: relative;
+}
+.stack-cards > * {
+  position: relative;
+  transition: transform 0.2s ease, z-index 0s;
+}
+.stack-cards > *:hover {
+  z-index: 10;
+  transform: scale(1.03);
+}
+
+
+/* ══════════════════════════════════════════════════════════════════ */
+/*  3. SPATIAL UI (VisionOS) — Immersive floating windows            */
+/* ══════════════════════════════════════════════════════════════════ */
+
+.spatial-window {
+  background:        rgba(255, 255, 255, 0.2);
+  backdrop-filter:   blur(var(--glass-blur-spatial)) saturate(var(--glass-saturate-spatial));
+  -webkit-backdrop-filter: blur(var(--glass-blur-spatial)) saturate(var(--glass-saturate-spatial));
+  border-radius:     var(--window-radius);
+  border:            1px solid rgba(255, 255, 255, 0.25);
+  box-shadow:        var(--depth-shadow);
+  transition:        transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.spatial-window:hover,
+.spatial-window:focus-within {
+  transform: scale(var(--focus-scale));
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
+}
+
+/* Gaze / cursor hover glow effect */
+.spatial-glow {
+  position: relative;
+  overflow: hidden;
+}
+.spatial-glow::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: radial-gradient(
+    circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(255, 255, 255, 0.08) 0%,
+    transparent 60%
+  );
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.spatial-glow:hover::after {
+  opacity: 1;
+}
+
+/* Depth shadow with African warm tint */
+.spatial-warm {
+  box-shadow:
+    0 8px 32px rgba(198, 123, 92, 0.15),
+    0 2px 8px  rgba(217, 119, 6, 0.10);
+}
+
+
+/* ══════════════════════════════════════════════════════════════════ */
+/*  4. UTILITY CLASSES                                               */
+/* ══════════════════════════════════════════════════════════════════ */
+
+/* Depth backgrounds for coloured vibrant glass */
+.depth-bg-gold      { background: linear-gradient(135deg, rgba(217,119,6,0.3), rgba(180,83,9,0.2)); }
+.depth-bg-terracotta{ background: linear-gradient(135deg, rgba(198,123,92,0.3), rgba(154,52,18,0.2)); }
+.depth-bg-green     { background: linear-gradient(135deg, rgba(21,128,61,0.3), rgba(20,83,45,0.2)); }
+.depth-bg-dark      { background: linear-gradient(135deg, rgba(0,0,0,0.5), rgba(17,17,17,0.6)); }
+
+/* Text contrast helpers for glass backgrounds */
+.glass-text-light { color: rgba(255, 255, 255, 0.95); }
+.glass-text-dim   { color: rgba(255, 255, 255, 0.65); }
+.glass-text-warm  { color: #F5F0E1; }
+
+/* Frosted divider */
+.glass-divider {
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent,
+    rgba(255, 255, 255, 0.15) 30%,
+    rgba(255, 255, 255, 0.15) 70%,
+    transparent);
+  border: none;
+  margin: 20px 0;
+}
+
+/* Blur overlay backdrop (e.g. modal) */
+.blur-backdrop {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(8px) brightness(0.7);
+  -webkit-backdrop-filter: blur(8px) brightness(0.7);
+  z-index: 100;
+}
+
+/* Performance: contain layout for blur-heavy elements */
+.glass,
+.glass-light,
+.glass-heavy,
+.spatial-window {
+  contain: layout style;
+}
+
+/* Reduced motion — disable blur animation, keep static glass */
+@media (prefers-reduced-motion: reduce) {
+  .card-floating,
+  .layer-hover,
+  .spatial-window,
+  .glass-shimmer::before {
+    transition: none;
+    animation: none;
+  }
+}

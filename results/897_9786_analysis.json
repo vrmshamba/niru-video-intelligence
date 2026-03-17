@@ -1,0 +1,23 @@
+{
+  "video_name": "897_9786.MXF",
+  "processed_at": "2026-03-17T14:00:51.040980",
+  "transcript": {
+    "text": "",
+    "language": "No speech detected",
+    "language_code": null,
+    "language_confidence": 0.4,
+    "language_note": null,
+    "segments": [],
+    "source": "gemini"
+  },
+  "scene_analysis": {
+    "error": "ffmpeg MXF->MP4 conversion failed: D80800460202A12A91\n  Stream #0:4: Audio: pcm_s16le, 48000 Hz, mono, s16, 768 kb/s\n    Metadata:\n      file_package_umid: 0x060A2B340101010501010D431300000037DB2A2F839305D80800460202A12A91\n  Stream #0:5: Data: none\nStream mapping:\n  Stream #0:0 -> #0:0 (copy)\n[mp4 @ 000002266bfab680] Could not find tag for codec dvvideo in stream #0, codec not currently supported in container\n[out#0/mp4 @ 000002266bfb8e80] Could not write header (incorrect codec parameters ?): Invalid argument\nConversion failed!\n"
+  },
+  "safety_concerns": [],
+  "insertion_points": [],
+  "summary": {
+    "language_detected": "No speech detected",
+    "safety_flags": 0,
+    "safe_insertion_windows": 0
+  }
+}
