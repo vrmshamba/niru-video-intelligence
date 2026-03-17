@@ -11,9 +11,10 @@ venv/
 ENV/
 
 # Large Files (Videos & Models)
-videos/*.mp4
-videos/*.avi
-videos/*.mov
+videos/
+cvat annotated/
+*.MXF
+*.mxf
 results/annotated_*.mp4
 models/
 *.pt
