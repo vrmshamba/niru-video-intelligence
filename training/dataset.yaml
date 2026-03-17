@@ -1,4 +1,4 @@
-# NIRU Custom Dataset — 20 Kenya Street Classes
+# HodiAI Custom Dataset — 20 Kenya Street Classes
 # Fine-tunes YOLOv8n on Kenya street footage extracted from H:/ video library.
 #
 # Raw source data (COCO-80 auto-labels):
@@ -17,7 +17,7 @@
 # Or train directly with yolo CLI:
 #   yolo detect train data=training/dataset.yaml model=yolov8n.pt epochs=50 imgsz=640
 
-path: H:/NIRU_MVP_Dev/training/prepared   # dataset root (absolute)
+path: H:/HodiAI_Dev/training/prepared   # dataset root (absolute)
 train: images/train                        # training images — relative to path
 val:   images/val                          # validation images — relative to path
 

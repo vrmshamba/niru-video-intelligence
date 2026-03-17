@@ -1,4 +1,4 @@
-# YOLOv8 Dataset Configuration — NIRU Kenya Custom Classes
+# YOLOv8 Dataset Configuration — HodiAI Kenya Custom Classes
 #
 # USAGE
 # -----
@@ -10,7 +10,7 @@
 #   python training/training.py --prepare-only   # remaps COCO → Nairobi classes
 #   python training/training.py                  # prepare + train
 
-path: H:/NIRU_MVP_Dev/training/prepared   # updated by training.py --prepare
+path: H:/HodiAI_Dev/training/prepared   # updated by training.py --prepare
 train: images/train
 val:   images/val
 
