@@ -1,0 +1,539 @@
+{
+  "video_name": "GROGON WELDING CUTS.MXF",
+  "processed_at": "2026-02-18T18:08:15.252407",
+  "transcript": {
+    "text": " uno es una ac Alicia un\u00e1tico le\u653eamos p clic ah\u00ed",
+    "language": "es",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 4.2,
+        "text": " uno es una ac Alicia",
+        "tokens": [
+          50364,
+          8526,
+          785,
+          2002,
+          696,
+          38153,
+          50574
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.723284981467507,
+        "compression_ratio": 0.85,
+        "no_speech_prob": 0.5071248412132263
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 4.22,
+        "end": 6.22,
+        "text": " un\u00e1tico",
+        "tokens": [
+          50575,
+          517,
+          28234,
+          50675
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.723284981467507,
+        "compression_ratio": 0.85,
+        "no_speech_prob": 0.5071248412132263
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 8.82,
+        "end": 12.18,
+        "text": " le\u653eamos",
+        "tokens": [
+          50805,
+          476,
+          12744,
+          2151,
+          50973
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.723284981467507,
+        "compression_ratio": 0.85,
+        "no_speech_prob": 0.5071248412132263
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 13.280000000000001,
+        "end": 16.0,
+        "text": " p clic ah\u00ed",
+        "tokens": [
+          51028,
+          280,
+          33661,
+          12571,
+          51164
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.723284981467507,
+        "compression_ratio": 0.85,
+        "no_speech_prob": 0.5071248412132263
+      }
+    ]
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 15,
+    "scenes": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8220630884170532
+          },
+          {
+            "object": "person",
+            "confidence": 0.7875549793243408
+          },
+          {
+            "object": "person",
+            "confidence": 0.7280036807060242
+          },
+          {
+            "object": "person",
+            "confidence": 0.40798455476760864
+          },
+          {
+            "object": "person",
+            "confidence": 0.26032304763793945
+          }
+        ]
+      },
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.919876754283905
+          },
+          {
+            "object": "person",
+            "confidence": 0.8092952966690063
+          },
+          {
+            "object": "person",
+            "confidence": 0.7519510984420776
+          },
+          {
+            "object": "car",
+            "confidence": 0.5982286930084229
+          },
+          {
+            "object": "skateboard",
+            "confidence": 0.2878537178039551
+          }
+        ]
+      },
+      {
+        "frame_index": 60,
+        "timestamp": 2.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8990727066993713
+          },
+          {
+            "object": "person",
+            "confidence": 0.7763717770576477
+          },
+          {
+            "object": "horse",
+            "confidence": 0.6554710865020752
+          }
+        ]
+      },
+      {
+        "frame_index": 90,
+        "timestamp": 3.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.6927603483200073
+          },
+          {
+            "object": "person",
+            "confidence": 0.6818219423294067
+          },
+          {
+            "object": "person",
+            "confidence": 0.610784113407135
+          },
+          {
+            "object": "person",
+            "confidence": 0.5952157974243164
+          },
+          {
+            "object": "car",
+            "confidence": 0.5856055021286011
+          },
+          {
+            "object": "car",
+            "confidence": 0.2816939949989319
+          }
+        ]
+      },
+      {
+        "frame_index": 120,
+        "timestamp": 4.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8923448920249939
+          },
+          {
+            "object": "skateboard",
+            "confidence": 0.6686742305755615
+          },
+          {
+            "object": "elephant",
+            "confidence": 0.6327414512634277
+          },
+          {
+            "object": "person",
+            "confidence": 0.546107292175293
+          },
+          {
+            "object": "car",
+            "confidence": 0.44216692447662354
+          },
+          {
+            "object": "person",
+            "confidence": 0.425899475812912
+          }
+        ]
+      },
+      {
+        "frame_index": 150,
+        "timestamp": 6.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8867348432540894
+          },
+          {
+            "object": "person",
+            "confidence": 0.7951052188873291
+          },
+          {
+            "object": "car",
+            "confidence": 0.778620183467865
+          },
+          {
+            "object": "car",
+            "confidence": 0.49334409832954407
+          },
+          {
+            "object": "car",
+            "confidence": 0.4658357501029968
+          },
+          {
+            "object": "person",
+            "confidence": 0.31069886684417725
+          }
+        ]
+      },
+      {
+        "frame_index": 180,
+        "timestamp": 7.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.887365460395813
+          },
+          {
+            "object": "person",
+            "confidence": 0.7746260166168213
+          },
+          {
+            "object": "car",
+            "confidence": 0.7090301513671875
+          },
+          {
+            "object": "car",
+            "confidence": 0.6305789351463318
+          },
+          {
+            "object": "car",
+            "confidence": 0.3222457766532898
+          },
+          {
+            "object": "person",
+            "confidence": 0.30052804946899414
+          }
+        ]
+      },
+      {
+        "frame_index": 210,
+        "timestamp": 8.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8662875294685364
+          },
+          {
+            "object": "person",
+            "confidence": 0.7407962679862976
+          },
+          {
+            "object": "person",
+            "confidence": 0.6730273962020874
+          },
+          {
+            "object": "person",
+            "confidence": 0.4732315242290497
+          },
+          {
+            "object": "skateboard",
+            "confidence": 0.440221905708313
+          },
+          {
+            "object": "car",
+            "confidence": 0.3982722759246826
+          }
+        ]
+      },
+      {
+        "frame_index": 240,
+        "timestamp": 9.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9289948344230652
+          },
+          {
+            "object": "person",
+            "confidence": 0.855394721031189
+          },
+          {
+            "object": "person",
+            "confidence": 0.8455398082733154
+          },
+          {
+            "object": "car",
+            "confidence": 0.8296934366226196
+          },
+          {
+            "object": "person",
+            "confidence": 0.7337237596511841
+          }
+        ]
+      },
+      {
+        "frame_index": 270,
+        "timestamp": 10.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8952639698982239
+          },
+          {
+            "object": "car",
+            "confidence": 0.848491370677948
+          },
+          {
+            "object": "person",
+            "confidence": 0.8362980484962463
+          },
+          {
+            "object": "person",
+            "confidence": 0.8233612179756165
+          },
+          {
+            "object": "person",
+            "confidence": 0.6251937747001648
+          },
+          {
+            "object": "person",
+            "confidence": 0.4796504080295563
+          },
+          {
+            "object": "skateboard",
+            "confidence": 0.27108851075172424
+          }
+        ]
+      },
+      {
+        "frame_index": 300,
+        "timestamp": 12.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8969022035598755
+          },
+          {
+            "object": "person",
+            "confidence": 0.8247606754302979
+          },
+          {
+            "object": "person",
+            "confidence": 0.8031087517738342
+          },
+          {
+            "object": "person",
+            "confidence": 0.6967739462852478
+          },
+          {
+            "object": "car",
+            "confidence": 0.5804114937782288
+          },
+          {
+            "object": "person",
+            "confidence": 0.5313650369644165
+          },
+          {
+            "object": "person",
+            "confidence": 0.2768136262893677
+          }
+        ]
+      },
+      {
+        "frame_index": 330,
+        "timestamp": 13.2,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.7800012826919556
+          },
+          {
+            "object": "person",
+            "confidence": 0.5572811365127563
+          },
+          {
+            "object": "person",
+            "confidence": 0.4383912682533264
+          },
+          {
+            "object": "horse",
+            "confidence": 0.4023907482624054
+          },
+          {
+            "object": "person",
+            "confidence": 0.34904471039772034
+          },
+          {
+            "object": "elephant",
+            "confidence": 0.3160461485385895
+          }
+        ]
+      },
+      {
+        "frame_index": 360,
+        "timestamp": 14.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8603501319885254
+          },
+          {
+            "object": "person",
+            "confidence": 0.851990818977356
+          },
+          {
+            "object": "person",
+            "confidence": 0.8419255018234253
+          },
+          {
+            "object": "person",
+            "confidence": 0.8065631985664368
+          },
+          {
+            "object": "car",
+            "confidence": 0.7725423574447632
+          },
+          {
+            "object": "person",
+            "confidence": 0.36350950598716736
+          }
+        ]
+      },
+      {
+        "frame_index": 390,
+        "timestamp": 15.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8846091628074646
+          },
+          {
+            "object": "person",
+            "confidence": 0.8682146072387695
+          },
+          {
+            "object": "car",
+            "confidence": 0.8485345244407654
+          },
+          {
+            "object": "person",
+            "confidence": 0.8475140929222107
+          },
+          {
+            "object": "person",
+            "confidence": 0.7615054249763489
+          },
+          {
+            "object": "car",
+            "confidence": 0.5699297785758972
+          },
+          {
+            "object": "car",
+            "confidence": 0.25429123640060425
+          },
+          {
+            "object": "bottle",
+            "confidence": 0.25326499342918396
+          }
+        ]
+      },
+      {
+        "frame_index": 420,
+        "timestamp": 16.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.6783163547515869
+          },
+          {
+            "object": "person",
+            "confidence": 0.6589983105659485
+          },
+          {
+            "object": "person",
+            "confidence": 0.6527409553527832
+          },
+          {
+            "object": "person",
+            "confidence": 0.6525838375091553
+          },
+          {
+            "object": "person",
+            "confidence": 0.2805235981941223
+          },
+          {
+            "object": "person",
+            "confidence": 0.26520249247550964
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [],
+  "insertion_points": [],
+  "summary": {
+    "language_detected": "es",
+    "total_objects_detected": 15,
+    "safety_flags": 0,
+    "safe_insertion_windows": 0
+  },
+  "annotated_video": "web_annotated_GROGON WELDING CUTS.MXF"
+}

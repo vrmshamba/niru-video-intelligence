@@ -1,0 +1,856 @@
+{
+  "video_name": "traffic lights.AVI",
+  "processed_at": "2026-02-18T11:42:36.785529",
+  "transcript": {
+    "text": "",
+    "language": "ru",
+    "segments": []
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 44,
+    "scenes": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9196712970733643
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8480228185653687
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6575506329536438
+          }
+        ]
+      },
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9184617400169373
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8530252575874329
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.590535044670105
+          }
+        ]
+      },
+      {
+        "frame_index": 60,
+        "timestamp": 2.4,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.922760009765625
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8478090167045593
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6566305160522461
+          }
+        ]
+      },
+      {
+        "frame_index": 90,
+        "timestamp": 3.6,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9196929931640625
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8511623740196228
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6050863265991211
+          }
+        ]
+      },
+      {
+        "frame_index": 120,
+        "timestamp": 4.8,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9143505096435547
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8505123257637024
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5440257787704468
+          }
+        ]
+      },
+      {
+        "frame_index": 150,
+        "timestamp": 6.0,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9141314625740051
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8576485514640808
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.47473153471946716
+          }
+        ]
+      },
+      {
+        "frame_index": 180,
+        "timestamp": 7.2,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9111562371253967
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.851607084274292
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.37347573041915894
+          }
+        ]
+      },
+      {
+        "frame_index": 210,
+        "timestamp": 8.4,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9108756184577942
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8487996459007263
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6875209212303162
+          }
+        ]
+      },
+      {
+        "frame_index": 240,
+        "timestamp": 9.6,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9239910244941711
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.858450710773468
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6263320446014404
+          }
+        ]
+      },
+      {
+        "frame_index": 270,
+        "timestamp": 10.8,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9046798944473267
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8513732552528381
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.643043577671051
+          }
+        ]
+      },
+      {
+        "frame_index": 300,
+        "timestamp": 12.0,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9137831330299377
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8533697128295898
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.43516290187835693
+          }
+        ]
+      },
+      {
+        "frame_index": 330,
+        "timestamp": 13.2,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9066528677940369
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8557929396629333
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.4392872750759125
+          }
+        ]
+      },
+      {
+        "frame_index": 360,
+        "timestamp": 14.4,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9119746088981628
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8564302325248718
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.61531662940979
+          }
+        ]
+      },
+      {
+        "frame_index": 390,
+        "timestamp": 15.6,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9128261208534241
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8489679098129272
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5431452989578247
+          }
+        ]
+      },
+      {
+        "frame_index": 420,
+        "timestamp": 16.8,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9084022641181946
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8498316407203674
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6712767481803894
+          }
+        ]
+      },
+      {
+        "frame_index": 450,
+        "timestamp": 18.0,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9107908606529236
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8529792428016663
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.7544819712638855
+          }
+        ]
+      },
+      {
+        "frame_index": 480,
+        "timestamp": 19.2,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9142624139785767
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8548797965049744
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.7175168991088867
+          }
+        ]
+      },
+      {
+        "frame_index": 510,
+        "timestamp": 20.4,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9138356447219849
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8508577346801758
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.7002736926078796
+          }
+        ]
+      },
+      {
+        "frame_index": 540,
+        "timestamp": 21.6,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9155004620552063
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8560846447944641
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6203510165214539
+          }
+        ]
+      },
+      {
+        "frame_index": 570,
+        "timestamp": 22.8,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9336135387420654
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8880876898765564
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5527554750442505
+          }
+        ]
+      },
+      {
+        "frame_index": 600,
+        "timestamp": 24.0,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9271963834762573
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8825105428695679
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.7284951210021973
+          }
+        ]
+      },
+      {
+        "frame_index": 630,
+        "timestamp": 25.2,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9325361251831055
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8971869349479675
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5510618686676025
+          }
+        ]
+      },
+      {
+        "frame_index": 660,
+        "timestamp": 26.4,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9266124963760376
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8772727847099304
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6975611448287964
+          }
+        ]
+      },
+      {
+        "frame_index": 690,
+        "timestamp": 27.6,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9301217198371887
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8867628574371338
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.623614490032196
+          }
+        ]
+      },
+      {
+        "frame_index": 720,
+        "timestamp": 28.8,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9349822998046875
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8842114806175232
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.7205886244773865
+          }
+        ]
+      },
+      {
+        "frame_index": 750,
+        "timestamp": 30.0,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9325870275497437
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8982321619987488
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.7001132369041443
+          }
+        ]
+      },
+      {
+        "frame_index": 780,
+        "timestamp": 31.2,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9293212294578552
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.9024739265441895
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.520319938659668
+          }
+        ]
+      },
+      {
+        "frame_index": 810,
+        "timestamp": 32.4,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9343746304512024
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.9010095596313477
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.7539313435554504
+          }
+        ]
+      },
+      {
+        "frame_index": 840,
+        "timestamp": 33.6,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9350767135620117
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8931683897972107
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6873420476913452
+          }
+        ]
+      },
+      {
+        "frame_index": 870,
+        "timestamp": 34.8,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9387803673744202
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.9073756337165833
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.4900159239768982
+          }
+        ]
+      },
+      {
+        "frame_index": 900,
+        "timestamp": 36.0,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9256147742271423
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8910690546035767
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6899363994598389
+          }
+        ]
+      },
+      {
+        "frame_index": 930,
+        "timestamp": 37.2,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.949649453163147
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8989548683166504
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6884452700614929
+          }
+        ]
+      },
+      {
+        "frame_index": 960,
+        "timestamp": 38.4,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9365614056587219
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.9057310819625854
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.7208361625671387
+          }
+        ]
+      },
+      {
+        "frame_index": 990,
+        "timestamp": 39.6,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9490315914154053
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8907628655433655
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5912097096443176
+          }
+        ]
+      },
+      {
+        "frame_index": 1020,
+        "timestamp": 40.8,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9364205598831177
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8572433590888977
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6538479328155518
+          }
+        ]
+      },
+      {
+        "frame_index": 1050,
+        "timestamp": 42.0,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9227687120437622
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8261683583259583
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6740906238555908
+          }
+        ]
+      },
+      {
+        "frame_index": 1080,
+        "timestamp": 43.2,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9436697363853455
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8659029603004456
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5886375904083252
+          }
+        ]
+      },
+      {
+        "frame_index": 1110,
+        "timestamp": 44.4,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9369392991065979
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8539657592773438
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5595596432685852
+          }
+        ]
+      },
+      {
+        "frame_index": 1140,
+        "timestamp": 45.6,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9178906083106995
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8540427684783936
+          }
+        ]
+      },
+      {
+        "frame_index": 1170,
+        "timestamp": 46.8,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9229280948638916
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8636542558670044
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5924888849258423
+          }
+        ]
+      },
+      {
+        "frame_index": 1200,
+        "timestamp": 48.0,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9240617156028748
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.858725368976593
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.49069589376449585
+          }
+        ]
+      },
+      {
+        "frame_index": 1230,
+        "timestamp": 49.2,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9229391813278198
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8531449437141418
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5974199771881104
+          }
+        ]
+      },
+      {
+        "frame_index": 1260,
+        "timestamp": 50.4,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9222356081008911
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8548008799552917
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.2990858852863312
+          }
+        ]
+      },
+      {
+        "frame_index": 1290,
+        "timestamp": 51.6,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9180812835693359
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.8578920364379883
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [],
+  "insertion_points": [
+    {
+      "timestamp": 0.0,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 3
+    },
+    {
+      "timestamp": 6.0,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 3
+    },
+    {
+      "timestamp": 12.0,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 3
+    },
+    {
+      "timestamp": 18.0,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 3
+    },
+    {
+      "timestamp": 24.0,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 3
+    },
+    {
+      "timestamp": 30.0,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 3
+    },
+    {
+      "timestamp": 36.0,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 3
+    },
+    {
+      "timestamp": 42.0,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 2
+    }
+  ],
+  "summary": {
+    "language_detected": "ru",
+    "total_objects_detected": 44,
+    "safety_flags": 0,
+    "safe_insertion_windows": 8
+  },
+  "annotated_video": "web_annotated_traffic lights.AVI"
+}

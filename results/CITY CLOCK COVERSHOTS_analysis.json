@@ -1,0 +1,160 @@
+{
+  "video_name": "CITY CLOCK COVERSHOTS.AVI",
+  "processed_at": "2026-02-18T08:35:19.494997",
+  "transcript": {
+    "text": " No, no, no, no, no, no, no, no.",
+    "language": "en",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 2.0,
+        "text": " No, no, no, no, no, no, no, no.",
+        "tokens": [
+          50364,
+          883,
+          11,
+          572,
+          11,
+          572,
+          11,
+          572,
+          11,
+          572,
+          11,
+          572,
+          11,
+          572,
+          11,
+          572,
+          13,
+          50464
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.9441454034102591,
+        "compression_ratio": 2.066666666666667,
+        "no_speech_prob": 0.5355731248855591
+      }
+    ]
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 9,
+    "scenes": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "objects": [
+          {
+            "object": "clock",
+            "confidence": 0.5138747096061707
+          }
+        ]
+      },
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "objects": [
+          {
+            "object": "clock",
+            "confidence": 0.508063793182373
+          }
+        ]
+      },
+      {
+        "frame_index": 60,
+        "timestamp": 2.4,
+        "objects": [
+          {
+            "object": "clock",
+            "confidence": 0.49081066250801086
+          }
+        ]
+      },
+      {
+        "frame_index": 90,
+        "timestamp": 3.6,
+        "objects": [
+          {
+            "object": "clock",
+            "confidence": 0.4689866304397583
+          }
+        ]
+      },
+      {
+        "frame_index": 120,
+        "timestamp": 4.8,
+        "objects": [
+          {
+            "object": "clock",
+            "confidence": 0.5894880294799805
+          }
+        ]
+      },
+      {
+        "frame_index": 150,
+        "timestamp": 6.0,
+        "objects": [
+          {
+            "object": "clock",
+            "confidence": 0.5123209953308105
+          },
+          {
+            "object": "clock",
+            "confidence": 0.4174692630767822
+          }
+        ]
+      },
+      {
+        "frame_index": 180,
+        "timestamp": 7.2,
+        "objects": [
+          {
+            "object": "clock",
+            "confidence": 0.303381085395813
+          }
+        ]
+      },
+      {
+        "frame_index": 270,
+        "timestamp": 10.8,
+        "objects": [
+          {
+            "object": "train",
+            "confidence": 0.5830923318862915
+          },
+          {
+            "object": "train",
+            "confidence": 0.37904199957847595
+          }
+        ]
+      },
+      {
+        "frame_index": 300,
+        "timestamp": 12.0,
+        "objects": [
+          {
+            "object": "train",
+            "confidence": 0.4137832522392273
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [],
+  "insertion_points": [
+    {
+      "timestamp": 0.0,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 1
+    }
+  ],
+  "summary": {
+    "language_detected": "en",
+    "total_objects_detected": 9,
+    "safety_flags": 0,
+    "safe_insertion_windows": 1
+  },
+  "annotated_video": "web_annotated_CITY CLOCK COVERSHOTS.AVI"
+}

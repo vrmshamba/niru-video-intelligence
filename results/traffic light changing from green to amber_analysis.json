@@ -1,0 +1,358 @@
+{
+  "video_name": "traffic light changing from green to amber.AVI",
+  "processed_at": "2026-02-18T11:41:46.251330",
+  "transcript": {
+    "text": "\u99c5\u3084\u304f\u3042\u3052\u305f\u5b50\u306e\u6ce2\u304c\u3089\u3050\u304b\u3088\u304f\u8003\u3048\u305f\u308f\u3089\u305b\u3067\u3059",
+    "language": "ja",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 9.32,
+        "text": "\u99c5\u3084\u304f\u3042\u3052\u305f\u5b50\u306e\u6ce2\u304c\u3089\u3050\u304b\u3088\u304f\u8003\u3048\u305f",
+        "tokens": [
+          50364,
+          165,
+          100,
+          227,
+          7355,
+          6134,
+          3590,
+          26012,
+          3368,
+          7626,
+          2972,
+          30806,
+          5142,
+          5154,
+          35849,
+          3703,
+          5591,
+          6134,
+          26504,
+          6474,
+          3368,
+          50830
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -4.211322021484375,
+        "compression_ratio": 1.0,
+        "no_speech_prob": 0.4271923899650574
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 9.32,
+        "end": 15.36,
+        "text": "\u308f\u3089\u305b\u3067\u3059",
+        "tokens": [
+          50830,
+          9206,
+          5154,
+          13702,
+          4767,
+          51132
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -4.211322021484375,
+        "compression_ratio": 1.0,
+        "no_speech_prob": 0.4271923899650574
+      }
+    ]
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 10,
+    "scenes": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.8944809436798096
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5858992338180542
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5604826211929321
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.4718168377876282
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.31527724862098694
+          }
+        ]
+      },
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9108260869979858
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6317316889762878
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6266292333602905
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5112836360931396
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.2515103220939636
+          }
+        ]
+      },
+      {
+        "frame_index": 60,
+        "timestamp": 2.4,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9209234714508057
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5888441801071167
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5736005902290344
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5429509282112122
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.3563235104084015
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.31096500158309937
+          }
+        ]
+      },
+      {
+        "frame_index": 90,
+        "timestamp": 3.6,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9097647666931152
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6071645021438599
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.513609766960144
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.4800277650356293
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.27359139919281006
+          }
+        ]
+      },
+      {
+        "frame_index": 120,
+        "timestamp": 4.8,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.8302658796310425
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6647006869316101
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5926780700683594
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5434760451316833
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5420623421669006
+          }
+        ]
+      },
+      {
+        "frame_index": 150,
+        "timestamp": 6.0,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.9202368855476379
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6582379341125488
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6209560632705688
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.47757625579833984
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.459320992231369
+          }
+        ]
+      },
+      {
+        "frame_index": 180,
+        "timestamp": 7.2,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.8924833536148071
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6349830627441406
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5807204246520996
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5777590870857239
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.550729513168335
+          }
+        ]
+      },
+      {
+        "frame_index": 210,
+        "timestamp": 8.4,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.8921149969100952
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.7464801073074341
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6462962031364441
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5648564696311951
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.4931793510913849
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.31284427642822266
+          }
+        ]
+      },
+      {
+        "frame_index": 240,
+        "timestamp": 9.6,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.8809677958488464
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6674924492835999
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5298758745193481
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5272956490516663
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.502417802810669
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.40089380741119385
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.26923003792762756
+          }
+        ]
+      },
+      {
+        "frame_index": 270,
+        "timestamp": 10.8,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.8921455144882202
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6963357925415039
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.621743381023407
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5361592769622803
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.47380977869033813
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.408492773771286
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [],
+  "insertion_points": [],
+  "summary": {
+    "language_detected": "ja",
+    "total_objects_detected": 10,
+    "safety_flags": 0,
+    "safe_insertion_windows": 0
+  },
+  "annotated_video": "web_annotated_traffic light changing from green to amber.AVI"
+}

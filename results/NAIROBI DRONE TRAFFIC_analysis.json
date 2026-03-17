@@ -1,0 +1,181 @@
+{
+  "video_name": "NAIROBI DRONE TRAFFIC.MOV",
+  "processed_at": "2026-02-18T15:30:33.101109",
+  "transcript": {
+    "error": "Failed to load audio: ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers\r\n  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)\r\n  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband\r\n  libavutil      59. 39.100 / 59. 39.100\r\n  libavcodec     61. 19.100 / 61. 19.100\r\n  libavformat    61.  7.100 / 61.  7.100\r\n  libavdevice    61.  3.100 / 61.  3.100\r\n  libavfilter    10.  4.100 / 10.  4.100\r\n  libswscale      8.  3.100 /  8.  3.100\r\n  libswresample   5.  3.100 /  5.  3.100\r\n  libpostproc    58.  3.100 / 58.  3.100\r\nInput #0, mov,mp4,m4a,3gp,3g2,mj2, from 'H:/NAIROBI DRONE TRAFFIC.MOV':\r\n  Metadata:\r\n    major_brand     : qt  \r\n    minor_version   : 537986816\r\n    compatible_brands: qt  \r\n    creation_time   : 2017-08-18T18:12:07.000000Z\r\n    location        : -1.287907+36.815551+106.900\r\n    location-\u007f{\u007f    : -1.287907+36.815551+106.900\r\n    comment         : DE=None, Mode=M, DSW=0001\r\n  Duration: 00:00:29.00, start: 0.000000, bitrate: 58745 kb/s\r\n  Stream #0:0[0x1](eng): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 60346 kb/s, 25 fps, 25 tbr, 25k tbn (default)\r\n      Metadata:\r\n        creation_time   : 2017-08-18T18:12:07.000000Z\r\n        handler_name    : DJI.AVC\r\n        vendor_id       : [0][0][0][0]\r\n        encoder         : AVC encoder\r\n  Stream #0:1[0x2](eng): Data: none (priv / 0x76697270), 61 kb/s\r\n      Metadata:\r\n        creation_time   : 2017-08-18T18:12:07.000000Z\r\n        handler_name    : DJI.Meta\r\nOutput #0, s16le, to 'pipe:':\r\n[out#0/s16le @ 000001eb9efa1f80] Output file does not contain any stream\r\nError opening output file -.\r\nError opening output files: Invalid argument\r\n"
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 9,
+    "scenes": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.4419195055961609
+          },
+          {
+            "object": "car",
+            "confidence": 0.32623291015625
+          },
+          {
+            "object": "car",
+            "confidence": 0.3256939649581909
+          }
+        ]
+      },
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.37370213866233826
+          },
+          {
+            "object": "car",
+            "confidence": 0.282000869512558
+          }
+        ]
+      },
+      {
+        "frame_index": 120,
+        "timestamp": 4.8,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.41770079731941223
+          },
+          {
+            "object": "car",
+            "confidence": 0.2707231044769287
+          },
+          {
+            "object": "car",
+            "confidence": 0.26634323596954346
+          },
+          {
+            "object": "train",
+            "confidence": 0.25705650448799133
+          }
+        ]
+      },
+      {
+        "frame_index": 180,
+        "timestamp": 7.2,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.3367163836956024
+          },
+          {
+            "object": "car",
+            "confidence": 0.28716227412223816
+          }
+        ]
+      },
+      {
+        "frame_index": 210,
+        "timestamp": 8.4,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.4408416748046875
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.3247128427028656
+          },
+          {
+            "object": "car",
+            "confidence": 0.27039313316345215
+          }
+        ]
+      },
+      {
+        "frame_index": 240,
+        "timestamp": 9.6,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.46970415115356445
+          },
+          {
+            "object": "car",
+            "confidence": 0.35379084944725037
+          },
+          {
+            "object": "train",
+            "confidence": 0.34600767493247986
+          },
+          {
+            "object": "car",
+            "confidence": 0.3201691210269928
+          },
+          {
+            "object": "car",
+            "confidence": 0.3066982924938202
+          },
+          {
+            "object": "car",
+            "confidence": 0.30387529730796814
+          },
+          {
+            "object": "car",
+            "confidence": 0.2548927068710327
+          }
+        ]
+      },
+      {
+        "frame_index": 330,
+        "timestamp": 13.2,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.2732307016849518
+          },
+          {
+            "object": "car",
+            "confidence": 0.2716224491596222
+          }
+        ]
+      },
+      {
+        "frame_index": 420,
+        "timestamp": 16.8,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.2628903090953827
+          }
+        ]
+      },
+      {
+        "frame_index": 630,
+        "timestamp": 25.2,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.3902968168258667
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [],
+  "insertion_points": [
+    {
+      "timestamp": 0.0,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 2
+    }
+  ],
+  "summary": {
+    "total_objects_detected": 9,
+    "safety_flags": 0,
+    "safe_insertion_windows": 1
+  },
+  "annotated_video": "web_annotated_NAIROBI DRONE TRAFFIC.MOV"
+}

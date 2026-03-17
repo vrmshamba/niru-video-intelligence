@@ -1,0 +1,320 @@
+{
+  "video_name": "PASSENGERS INSIDE A BUS PEEPING THROUGH THE WINDOWS.AVI",
+  "processed_at": "2026-02-18T10:50:56.348364",
+  "transcript": {
+    "text": "",
+    "language": "nn",
+    "segments": []
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 13,
+    "scenes": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.6772971749305725
+          },
+          {
+            "object": "person",
+            "confidence": 0.48895177245140076
+          },
+          {
+            "object": "cat",
+            "confidence": 0.4528640806674957
+          },
+          {
+            "object": "person",
+            "confidence": 0.2832976281642914
+          }
+        ]
+      },
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "objects": [
+          {
+            "object": "cat",
+            "confidence": 0.5204927325248718
+          },
+          {
+            "object": "chair",
+            "confidence": 0.46867308020591736
+          },
+          {
+            "object": "person",
+            "confidence": 0.4109219014644623
+          },
+          {
+            "object": "person",
+            "confidence": 0.406386137008667
+          },
+          {
+            "object": "person",
+            "confidence": 0.35163331031799316
+          },
+          {
+            "object": "person",
+            "confidence": 0.26343995332717896
+          }
+        ]
+      },
+      {
+        "frame_index": 60,
+        "timestamp": 2.4,
+        "objects": [
+          {
+            "object": "suitcase",
+            "confidence": 0.497005432844162
+          },
+          {
+            "object": "person",
+            "confidence": 0.370286762714386
+          },
+          {
+            "object": "person",
+            "confidence": 0.3560537099838257
+          },
+          {
+            "object": "person",
+            "confidence": 0.3459327518939972
+          }
+        ]
+      },
+      {
+        "frame_index": 90,
+        "timestamp": 3.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.4646032154560089
+          },
+          {
+            "object": "person",
+            "confidence": 0.33346325159072876
+          },
+          {
+            "object": "person",
+            "confidence": 0.30907511711120605
+          },
+          {
+            "object": "chair",
+            "confidence": 0.2748405635356903
+          }
+        ]
+      },
+      {
+        "frame_index": 120,
+        "timestamp": 4.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.5762262940406799
+          },
+          {
+            "object": "person",
+            "confidence": 0.4727118909358978
+          },
+          {
+            "object": "person",
+            "confidence": 0.3771241009235382
+          },
+          {
+            "object": "person",
+            "confidence": 0.2726508378982544
+          }
+        ]
+      },
+      {
+        "frame_index": 150,
+        "timestamp": 6.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.5174497365951538
+          }
+        ]
+      },
+      {
+        "frame_index": 180,
+        "timestamp": 7.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7480961084365845
+          },
+          {
+            "object": "chair",
+            "confidence": 0.35078510642051697
+          }
+        ]
+      },
+      {
+        "frame_index": 210,
+        "timestamp": 8.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.30753442645072937
+          },
+          {
+            "object": "chair",
+            "confidence": 0.30094045400619507
+          }
+        ]
+      },
+      {
+        "frame_index": 240,
+        "timestamp": 9.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7571701407432556
+          },
+          {
+            "object": "person",
+            "confidence": 0.7027543783187866
+          },
+          {
+            "object": "person",
+            "confidence": 0.4450547993183136
+          },
+          {
+            "object": "chair",
+            "confidence": 0.43194034695625305
+          },
+          {
+            "object": "person",
+            "confidence": 0.31546691060066223
+          }
+        ]
+      },
+      {
+        "frame_index": 300,
+        "timestamp": 12.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.3559483587741852
+          },
+          {
+            "object": "cat",
+            "confidence": 0.34859752655029297
+          },
+          {
+            "object": "person",
+            "confidence": 0.32218319177627563
+          },
+          {
+            "object": "person",
+            "confidence": 0.29793986678123474
+          },
+          {
+            "object": "person",
+            "confidence": 0.2739516496658325
+          }
+        ]
+      },
+      {
+        "frame_index": 330,
+        "timestamp": 13.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7230154275894165
+          },
+          {
+            "object": "person",
+            "confidence": 0.5767130851745605
+          },
+          {
+            "object": "person",
+            "confidence": 0.5023148059844971
+          },
+          {
+            "object": "person",
+            "confidence": 0.47880008816719055
+          },
+          {
+            "object": "person",
+            "confidence": 0.37813541293144226
+          },
+          {
+            "object": "chair",
+            "confidence": 0.37251171469688416
+          },
+          {
+            "object": "person",
+            "confidence": 0.35371050238609314
+          }
+        ]
+      },
+      {
+        "frame_index": 360,
+        "timestamp": 14.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7467122077941895
+          },
+          {
+            "object": "chair",
+            "confidence": 0.4541626572608948
+          },
+          {
+            "object": "chair",
+            "confidence": 0.4291636049747467
+          },
+          {
+            "object": "person",
+            "confidence": 0.39334169030189514
+          },
+          {
+            "object": "person",
+            "confidence": 0.37609973549842834
+          },
+          {
+            "object": "person",
+            "confidence": 0.28505170345306396
+          }
+        ]
+      },
+      {
+        "frame_index": 390,
+        "timestamp": 15.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.6557231545448303
+          },
+          {
+            "object": "chair",
+            "confidence": 0.5020560026168823
+          },
+          {
+            "object": "person",
+            "confidence": 0.37811279296875
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [],
+  "insertion_points": [
+    {
+      "timestamp": 2.4,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 3
+    }
+  ],
+  "summary": {
+    "language_detected": "nn",
+    "total_objects_detected": 13,
+    "safety_flags": 0,
+    "safe_insertion_windows": 1
+  },
+  "annotated_video": "web_annotated_PASSENGERS INSIDE A BUS PEEPING THROUGH THE WINDOWS.AVI"
+}

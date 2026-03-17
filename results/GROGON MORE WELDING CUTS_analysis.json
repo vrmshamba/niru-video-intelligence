@@ -1,0 +1,551 @@
+{
+  "video_name": "GROGON MORE WELDING CUTS.MXF",
+  "processed_at": "2026-02-18T18:04:21.571434",
+  "transcript": {
+    "text": " resolute\u5c0f\u96bb\u5c0f\u96bb",
+    "language": "jw",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 4.0,
+        "text": " resolute",
+        "tokens": [
+          50364,
+          7923,
+          1169,
+          50564
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -4.251102447509766,
+        "compression_ratio": 0.5,
+        "no_speech_prob": 0.5817403793334961
+      },
+      {
+        "id": 1,
+        "seek": 400,
+        "start": 4.5,
+        "end": 6.78,
+        "text": "\u5c0f\u96bb",
+        "tokens": [
+          50389,
+          7322,
+          47857,
+          50503
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -4.262569003634983,
+        "compression_ratio": 0.7058823529411765,
+        "no_speech_prob": 0.46515947580337524
+      },
+      {
+        "id": 2,
+        "seek": 400,
+        "start": 29.8,
+        "end": 32.2,
+        "text": "\u5c0f\u96bb",
+        "tokens": [
+          51654,
+          7322,
+          47857,
+          51774
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -4.262569003634983,
+        "compression_ratio": 0.7058823529411765,
+        "no_speech_prob": 0.46515947580337524
+      }
+    ]
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 23,
+    "scenes": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8300526142120361
+          },
+          {
+            "object": "person",
+            "confidence": 0.7208962440490723
+          },
+          {
+            "object": "person",
+            "confidence": 0.4242098927497864
+          },
+          {
+            "object": "person",
+            "confidence": 0.30341723561286926
+          },
+          {
+            "object": "person",
+            "confidence": 0.2787169814109802
+          },
+          {
+            "object": "person",
+            "confidence": 0.26020529866218567
+          }
+        ]
+      },
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.6445897817611694
+          },
+          {
+            "object": "person",
+            "confidence": 0.6238827109336853
+          }
+        ]
+      },
+      {
+        "frame_index": 60,
+        "timestamp": 2.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7635600566864014
+          },
+          {
+            "object": "person",
+            "confidence": 0.7167004942893982
+          },
+          {
+            "object": "person",
+            "confidence": 0.49395984411239624
+          },
+          {
+            "object": "knife",
+            "confidence": 0.40971335768699646
+          }
+        ]
+      },
+      {
+        "frame_index": 90,
+        "timestamp": 3.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7564706206321716
+          },
+          {
+            "object": "person",
+            "confidence": 0.39196398854255676
+          }
+        ]
+      },
+      {
+        "frame_index": 120,
+        "timestamp": 4.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7615797519683838
+          }
+        ]
+      },
+      {
+        "frame_index": 150,
+        "timestamp": 6.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7553837895393372
+          },
+          {
+            "object": "person",
+            "confidence": 0.5878381729125977
+          }
+        ]
+      },
+      {
+        "frame_index": 180,
+        "timestamp": 7.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.4445436894893646
+          }
+        ]
+      },
+      {
+        "frame_index": 210,
+        "timestamp": 8.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.572324275970459
+          },
+          {
+            "object": "person",
+            "confidence": 0.4131866991519928
+          },
+          {
+            "object": "person",
+            "confidence": 0.33083951473236084
+          }
+        ]
+      },
+      {
+        "frame_index": 240,
+        "timestamp": 9.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.6364660263061523
+          },
+          {
+            "object": "person",
+            "confidence": 0.33906903862953186
+          },
+          {
+            "object": "person",
+            "confidence": 0.2573049068450928
+          }
+        ]
+      },
+      {
+        "frame_index": 270,
+        "timestamp": 10.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.49993956089019775
+          },
+          {
+            "object": "person",
+            "confidence": 0.32792025804519653
+          }
+        ]
+      },
+      {
+        "frame_index": 300,
+        "timestamp": 12.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.5392727851867676
+          }
+        ]
+      },
+      {
+        "frame_index": 330,
+        "timestamp": 13.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7015509009361267
+          },
+          {
+            "object": "person",
+            "confidence": 0.42963165044784546
+          }
+        ]
+      },
+      {
+        "frame_index": 360,
+        "timestamp": 14.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7854225635528564
+          },
+          {
+            "object": "person",
+            "confidence": 0.37083128094673157
+          }
+        ]
+      },
+      {
+        "frame_index": 390,
+        "timestamp": 15.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.5223875641822815
+          },
+          {
+            "object": "person",
+            "confidence": 0.33547520637512207
+          },
+          {
+            "object": "person",
+            "confidence": 0.3151755928993225
+          },
+          {
+            "object": "person",
+            "confidence": 0.29323282837867737
+          }
+        ]
+      },
+      {
+        "frame_index": 420,
+        "timestamp": 16.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.6203527450561523
+          },
+          {
+            "object": "person",
+            "confidence": 0.5110063552856445
+          },
+          {
+            "object": "person",
+            "confidence": 0.44810107350349426
+          },
+          {
+            "object": "person",
+            "confidence": 0.28107020258903503
+          }
+        ]
+      },
+      {
+        "frame_index": 450,
+        "timestamp": 18.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8096529841423035
+          },
+          {
+            "object": "person",
+            "confidence": 0.7603812217712402
+          },
+          {
+            "object": "skateboard",
+            "confidence": 0.43465641140937805
+          },
+          {
+            "object": "person",
+            "confidence": 0.37144288420677185
+          }
+        ]
+      },
+      {
+        "frame_index": 480,
+        "timestamp": 19.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7577444314956665
+          },
+          {
+            "object": "person",
+            "confidence": 0.6289116740226746
+          },
+          {
+            "object": "person",
+            "confidence": 0.5967342853546143
+          },
+          {
+            "object": "person",
+            "confidence": 0.3568693995475769
+          },
+          {
+            "object": "person",
+            "confidence": 0.3053438365459442
+          },
+          {
+            "object": "person",
+            "confidence": 0.2872467339038849
+          }
+        ]
+      },
+      {
+        "frame_index": 510,
+        "timestamp": 20.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7230836153030396
+          },
+          {
+            "object": "person",
+            "confidence": 0.6383138298988342
+          },
+          {
+            "object": "person",
+            "confidence": 0.5482880473136902
+          },
+          {
+            "object": "person",
+            "confidence": 0.5418312549591064
+          },
+          {
+            "object": "person",
+            "confidence": 0.33679699897766113
+          },
+          {
+            "object": "person",
+            "confidence": 0.316168874502182
+          },
+          {
+            "object": "person",
+            "confidence": 0.29511067271232605
+          }
+        ]
+      },
+      {
+        "frame_index": 540,
+        "timestamp": 21.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8115352988243103
+          },
+          {
+            "object": "person",
+            "confidence": 0.42104366421699524
+          },
+          {
+            "object": "person",
+            "confidence": 0.4060669541358948
+          },
+          {
+            "object": "person",
+            "confidence": 0.32206159830093384
+          },
+          {
+            "object": "person",
+            "confidence": 0.28395703434944153
+          }
+        ]
+      },
+      {
+        "frame_index": 570,
+        "timestamp": 22.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8675165176391602
+          },
+          {
+            "object": "person",
+            "confidence": 0.7630783915519714
+          },
+          {
+            "object": "person",
+            "confidence": 0.5378255248069763
+          }
+        ]
+      },
+      {
+        "frame_index": 600,
+        "timestamp": 24.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.783260703086853
+          },
+          {
+            "object": "person",
+            "confidence": 0.7175735235214233
+          },
+          {
+            "object": "person",
+            "confidence": 0.5936405658721924
+          },
+          {
+            "object": "tie",
+            "confidence": 0.4099219739437103
+          },
+          {
+            "object": "person",
+            "confidence": 0.3882139027118683
+          }
+        ]
+      },
+      {
+        "frame_index": 630,
+        "timestamp": 25.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7719683647155762
+          },
+          {
+            "object": "person",
+            "confidence": 0.6500874757766724
+          },
+          {
+            "object": "person",
+            "confidence": 0.5310794711112976
+          },
+          {
+            "object": "person",
+            "confidence": 0.4778955578804016
+          },
+          {
+            "object": "person",
+            "confidence": 0.42172276973724365
+          }
+        ]
+      },
+      {
+        "frame_index": 660,
+        "timestamp": 26.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.726743221282959
+          },
+          {
+            "object": "person",
+            "confidence": 0.700476348400116
+          },
+          {
+            "object": "person",
+            "confidence": 0.6365655064582825
+          },
+          {
+            "object": "person",
+            "confidence": 0.33690348267555237
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [
+    {
+      "type": "weapon_detection",
+      "timestamp": 2.4,
+      "description": "Detected potential weapon: knife",
+      "severity": "high"
+    }
+  ],
+  "insertion_points": [
+    {
+      "timestamp": 1.2,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 2
+    },
+    {
+      "timestamp": 7.2,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 2
+    },
+    {
+      "timestamp": 13.2,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 3
+    }
+  ],
+  "summary": {
+    "language_detected": "jw",
+    "total_objects_detected": 23,
+    "safety_flags": 1,
+    "safe_insertion_windows": 3
+  },
+  "annotated_video": "web_annotated_GROGON MORE WELDING CUTS.MXF"
+}

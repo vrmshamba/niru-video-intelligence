@@ -1,0 +1,125 @@
+{
+  "video_name": "NAIROBI EXPRESS WAY AERIAL SHOTS ,.MP4",
+  "processed_at": "2026-02-18T10:08:15.541309",
+  "transcript": {
+    "error": "Failed to load audio: ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers\r\n  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)\r\n  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband\r\n  libavutil      59. 39.100 / 59. 39.100\r\n  libavcodec     61. 19.100 / 61. 19.100\r\n  libavformat    61.  7.100 / 61.  7.100\r\n  libavdevice    61.  3.100 / 61.  3.100\r\n  libavfilter    10.  4.100 / 10.  4.100\r\n  libswscale      8.  3.100 /  8.  3.100\r\n  libswresample   5.  3.100 /  5.  3.100\r\n  libpostproc    58.  3.100 / 58.  3.100\r\nInput #0, mov,mp4,m4a,3gp,3g2,mj2, from 'H:/NAIROBI EXPRESS WAY AERIAL SHOTS ,.MP4':\r\n  Metadata:\r\n    major_brand     : isom\r\n    minor_version   : 512\r\n    compatible_brands: isomiso2avc1mp41\r\n    creation_time   : 2022-06-10T16:05:28.000000Z\r\n    encoder         : Lavf56.15.102\r\n  Duration: 00:00:52.16, start: 0.000000, bitrate: 35001 kb/s\r\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080, 34999 kb/s, 25 fps, 25 tbr, 25k tbn (default)\r\n      Metadata:\r\n        creation_time   : 2022-06-10T16:05:28.000000Z\r\n        handler_name    : VideoHandler\r\n        vendor_id       : [0][0][0][0]\r\nOutput #0, s16le, to 'pipe:':\r\n[out#0/s16le @ 000002680ca07340] Output file does not contain any stream\r\nError opening output file -.\r\nError opening output files: Invalid argument\r\n"
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 9,
+    "scenes": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "objects": [
+          {
+            "object": "train",
+            "confidence": 0.26480528712272644
+          }
+        ]
+      },
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "objects": [
+          {
+            "object": "train",
+            "confidence": 0.3350863456726074
+          }
+        ]
+      },
+      {
+        "frame_index": 120,
+        "timestamp": 4.8,
+        "objects": [
+          {
+            "object": "train",
+            "confidence": 0.32366228103637695
+          }
+        ]
+      },
+      {
+        "frame_index": 180,
+        "timestamp": 7.2,
+        "objects": [
+          {
+            "object": "train",
+            "confidence": 0.2658652067184448
+          }
+        ]
+      },
+      {
+        "frame_index": 240,
+        "timestamp": 9.6,
+        "objects": [
+          {
+            "object": "train",
+            "confidence": 0.3600248694419861
+          },
+          {
+            "object": "train",
+            "confidence": 0.2783798575401306
+          }
+        ]
+      },
+      {
+        "frame_index": 270,
+        "timestamp": 10.8,
+        "objects": [
+          {
+            "object": "train",
+            "confidence": 0.40498530864715576
+          }
+        ]
+      },
+      {
+        "frame_index": 720,
+        "timestamp": 28.8,
+        "objects": [
+          {
+            "object": "train",
+            "confidence": 0.25378668308258057
+          }
+        ]
+      },
+      {
+        "frame_index": 750,
+        "timestamp": 30.0,
+        "objects": [
+          {
+            "object": "train",
+            "confidence": 0.516109824180603
+          }
+        ]
+      },
+      {
+        "frame_index": 1230,
+        "timestamp": 49.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.30060744285583496
+          },
+          {
+            "object": "car",
+            "confidence": 0.25139907002449036
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [],
+  "insertion_points": [
+    {
+      "timestamp": 0.0,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 1
+    }
+  ],
+  "summary": {
+    "total_objects_detected": 9,
+    "safety_flags": 0,
+    "safe_insertion_windows": 1
+  },
+  "annotated_video": "web_annotated_NAIROBI EXPRESS WAY AERIAL SHOTS ,.MP4"
+}

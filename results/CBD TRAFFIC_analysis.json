@@ -1,0 +1,259 @@
+{
+  "video_name": "CBD TRAFFIC.MXF",
+  "processed_at": "2026-02-18T18:00:01.532965",
+  "transcript": {
+    "text": "",
+    "language": "nn",
+    "segments": []
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 6,
+    "scenes": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.9348800778388977
+          },
+          {
+            "object": "car",
+            "confidence": 0.91538006067276
+          },
+          {
+            "object": "car",
+            "confidence": 0.8695504665374756
+          },
+          {
+            "object": "bus",
+            "confidence": 0.7284320592880249
+          },
+          {
+            "object": "bus",
+            "confidence": 0.7037345170974731
+          },
+          {
+            "object": "person",
+            "confidence": 0.3613998591899872
+          },
+          {
+            "object": "person",
+            "confidence": 0.2933829426765442
+          },
+          {
+            "object": "car",
+            "confidence": 0.2789653241634369
+          }
+        ]
+      },
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.8786919116973877
+          },
+          {
+            "object": "bus",
+            "confidence": 0.8696554899215698
+          },
+          {
+            "object": "bus",
+            "confidence": 0.7732133865356445
+          },
+          {
+            "object": "car",
+            "confidence": 0.5077804923057556
+          },
+          {
+            "object": "car",
+            "confidence": 0.3101193606853485
+          },
+          {
+            "object": "car",
+            "confidence": 0.3039923906326294
+          },
+          {
+            "object": "car",
+            "confidence": 0.2871466279029846
+          },
+          {
+            "object": "person",
+            "confidence": 0.27332833409309387
+          }
+        ]
+      },
+      {
+        "frame_index": 60,
+        "timestamp": 2.4,
+        "objects": [
+          {
+            "object": "bus",
+            "confidence": 0.896174967288971
+          },
+          {
+            "object": "car",
+            "confidence": 0.8762502074241638
+          },
+          {
+            "object": "bus",
+            "confidence": 0.8169578909873962
+          },
+          {
+            "object": "car",
+            "confidence": 0.6002727150917053
+          },
+          {
+            "object": "car",
+            "confidence": 0.3723256289958954
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.29479485750198364
+          },
+          {
+            "object": "truck",
+            "confidence": 0.2818087041378021
+          },
+          {
+            "object": "car",
+            "confidence": 0.2788137197494507
+          },
+          {
+            "object": "car",
+            "confidence": 0.2590717673301697
+          },
+          {
+            "object": "car",
+            "confidence": 0.2563091814517975
+          }
+        ]
+      },
+      {
+        "frame_index": 90,
+        "timestamp": 3.6,
+        "objects": [
+          {
+            "object": "bus",
+            "confidence": 0.8244489431381226
+          },
+          {
+            "object": "bus",
+            "confidence": 0.5935717821121216
+          },
+          {
+            "object": "person",
+            "confidence": 0.4391116797924042
+          },
+          {
+            "object": "car",
+            "confidence": 0.4111157953739166
+          },
+          {
+            "object": "motorcycle",
+            "confidence": 0.3979746401309967
+          }
+        ]
+      },
+      {
+        "frame_index": 120,
+        "timestamp": 4.8,
+        "objects": [
+          {
+            "object": "bus",
+            "confidence": 0.928022027015686
+          },
+          {
+            "object": "bus",
+            "confidence": 0.8103892207145691
+          },
+          {
+            "object": "car",
+            "confidence": 0.6260871291160583
+          },
+          {
+            "object": "person",
+            "confidence": 0.5246151089668274
+          },
+          {
+            "object": "car",
+            "confidence": 0.4343550503253937
+          },
+          {
+            "object": "truck",
+            "confidence": 0.416503369808197
+          },
+          {
+            "object": "motorcycle",
+            "confidence": 0.3855564594268799
+          },
+          {
+            "object": "motorcycle",
+            "confidence": 0.3437003791332245
+          },
+          {
+            "object": "car",
+            "confidence": 0.32212457060813904
+          },
+          {
+            "object": "person",
+            "confidence": 0.26579058170318604
+          }
+        ]
+      },
+      {
+        "frame_index": 150,
+        "timestamp": 6.0,
+        "objects": [
+          {
+            "object": "bus",
+            "confidence": 0.9286662340164185
+          },
+          {
+            "object": "bus",
+            "confidence": 0.7426345348358154
+          },
+          {
+            "object": "motorcycle",
+            "confidence": 0.6069584488868713
+          },
+          {
+            "object": "person",
+            "confidence": 0.549966037273407
+          },
+          {
+            "object": "person",
+            "confidence": 0.44704633951187134
+          },
+          {
+            "object": "car",
+            "confidence": 0.3991281986236572
+          },
+          {
+            "object": "person",
+            "confidence": 0.38712218403816223
+          },
+          {
+            "object": "bus",
+            "confidence": 0.3420690596103668
+          },
+          {
+            "object": "car",
+            "confidence": 0.3093930780887604
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [],
+  "insertion_points": [],
+  "summary": {
+    "language_detected": "nn",
+    "total_objects_detected": 6,
+    "safety_flags": 0,
+    "safe_insertion_windows": 0
+  },
+  "annotated_video": "web_annotated_CBD TRAFFIC.MXF"
+}

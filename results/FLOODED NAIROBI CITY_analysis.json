@@ -1,0 +1,331 @@
+{
+  "video_name": "FLOODED NAIROBI CITY.AVI",
+  "processed_at": "2026-02-18T08:46:44.616768",
+  "transcript": {
+    "text": "",
+    "language": "en",
+    "segments": []
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 4,
+    "scenes": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.9021680951118469
+          },
+          {
+            "object": "car",
+            "confidence": 0.8982065916061401
+          },
+          {
+            "object": "car",
+            "confidence": 0.7412787079811096
+          },
+          {
+            "object": "umbrella",
+            "confidence": 0.714751660823822
+          },
+          {
+            "object": "umbrella",
+            "confidence": 0.68925541639328
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6315304040908813
+          },
+          {
+            "object": "person",
+            "confidence": 0.6004337072372437
+          },
+          {
+            "object": "car",
+            "confidence": 0.5331647992134094
+          },
+          {
+            "object": "person",
+            "confidence": 0.4692670404911041
+          },
+          {
+            "object": "car",
+            "confidence": 0.44245100021362305
+          },
+          {
+            "object": "car",
+            "confidence": 0.39666852355003357
+          },
+          {
+            "object": "car",
+            "confidence": 0.3556433618068695
+          },
+          {
+            "object": "car",
+            "confidence": 0.350980281829834
+          },
+          {
+            "object": "person",
+            "confidence": 0.3322921693325043
+          },
+          {
+            "object": "umbrella",
+            "confidence": 0.32042863965034485
+          },
+          {
+            "object": "car",
+            "confidence": 0.26594868302345276
+          },
+          {
+            "object": "car",
+            "confidence": 0.2539890706539154
+          },
+          {
+            "object": "car",
+            "confidence": 0.2537001669406891
+          }
+        ]
+      },
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.9094933271408081
+          },
+          {
+            "object": "car",
+            "confidence": 0.8713790774345398
+          },
+          {
+            "object": "car",
+            "confidence": 0.846337080001831
+          },
+          {
+            "object": "car",
+            "confidence": 0.7688757181167603
+          },
+          {
+            "object": "person",
+            "confidence": 0.6523377895355225
+          },
+          {
+            "object": "car",
+            "confidence": 0.6175837516784668
+          },
+          {
+            "object": "umbrella",
+            "confidence": 0.5734155178070068
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.545985758304596
+          },
+          {
+            "object": "person",
+            "confidence": 0.5043705701828003
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.45437994599342346
+          },
+          {
+            "object": "car",
+            "confidence": 0.4461781084537506
+          },
+          {
+            "object": "car",
+            "confidence": 0.4447244703769684
+          },
+          {
+            "object": "car",
+            "confidence": 0.42759305238723755
+          },
+          {
+            "object": "umbrella",
+            "confidence": 0.2722912132740021
+          },
+          {
+            "object": "car",
+            "confidence": 0.26120519638061523
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.26022762060165405
+          }
+        ]
+      },
+      {
+        "frame_index": 60,
+        "timestamp": 2.4,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.9349188208580017
+          },
+          {
+            "object": "car",
+            "confidence": 0.882091760635376
+          },
+          {
+            "object": "car",
+            "confidence": 0.8722690343856812
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.6820886731147766
+          },
+          {
+            "object": "car",
+            "confidence": 0.6680315136909485
+          },
+          {
+            "object": "car",
+            "confidence": 0.647731363773346
+          },
+          {
+            "object": "umbrella",
+            "confidence": 0.6054535508155823
+          },
+          {
+            "object": "person",
+            "confidence": 0.5460370182991028
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.4946644604206085
+          },
+          {
+            "object": "car",
+            "confidence": 0.48959386348724365
+          },
+          {
+            "object": "car",
+            "confidence": 0.41799116134643555
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.4119943082332611
+          },
+          {
+            "object": "umbrella",
+            "confidence": 0.3831981122493744
+          },
+          {
+            "object": "car",
+            "confidence": 0.36862269043922424
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.3490603566169739
+          },
+          {
+            "object": "umbrella",
+            "confidence": 0.29236167669296265
+          },
+          {
+            "object": "car",
+            "confidence": 0.28280019760131836
+          }
+        ]
+      },
+      {
+        "frame_index": 90,
+        "timestamp": 3.6,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.9420291185379028
+          },
+          {
+            "object": "car",
+            "confidence": 0.9049415588378906
+          },
+          {
+            "object": "car",
+            "confidence": 0.8683302998542786
+          },
+          {
+            "object": "car",
+            "confidence": 0.6445984244346619
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5626385807991028
+          },
+          {
+            "object": "car",
+            "confidence": 0.5449449419975281
+          },
+          {
+            "object": "car",
+            "confidence": 0.4694734513759613
+          },
+          {
+            "object": "car",
+            "confidence": 0.4574340283870697
+          },
+          {
+            "object": "umbrella",
+            "confidence": 0.4106440842151642
+          },
+          {
+            "object": "person",
+            "confidence": 0.3763076364994049
+          },
+          {
+            "object": "umbrella",
+            "confidence": 0.35847049951553345
+          },
+          {
+            "object": "car",
+            "confidence": 0.3434731662273407
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.3114098310470581
+          },
+          {
+            "object": "person",
+            "confidence": 0.30831727385520935
+          },
+          {
+            "object": "car",
+            "confidence": 0.30772820115089417
+          },
+          {
+            "object": "car",
+            "confidence": 0.27916690707206726
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.2631811499595642
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.2582103908061981
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.25757482647895813
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.2553218603134155
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [],
+  "insertion_points": [],
+  "summary": {
+    "language_detected": "en",
+    "total_objects_detected": 4,
+    "safety_flags": 0,
+    "safe_insertion_windows": 0
+  },
+  "annotated_video": "web_annotated_FLOODED NAIROBI CITY.AVI"
+}

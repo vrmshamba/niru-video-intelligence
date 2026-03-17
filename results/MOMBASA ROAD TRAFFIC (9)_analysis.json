@@ -1,0 +1,102 @@
+{
+  "video_name": "MOMBASA ROAD TRAFFIC (9).MXF",
+  "processed_at": "2026-02-18T18:14:44.267972",
+  "transcript": {
+    "text": " Apekalaughter \u0438\u0434 curiosity PETER",
+    "language": "nn",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 33.56,
+        "text": " Apeka",
+        "tokens": [
+          50364,
+          316,
+          494,
+          2330,
+          50542
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -3.3192291259765625,
+        "compression_ratio": 0.38461538461538464,
+        "no_speech_prob": 0.23144489526748657
+      },
+      {
+        "id": 1,
+        "seek": 3356,
+        "start": 33.56,
+        "end": 37.440000000000005,
+        "text": "laughter",
+        "tokens": [
+          50364,
+          5330,
+          50558
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -6.456180865948017,
+        "compression_ratio": 0.7837837837837838,
+        "no_speech_prob": 0.23096616566181183
+      },
+      {
+        "id": 2,
+        "seek": 3356,
+        "start": 38.68,
+        "end": 42.160000000000004,
+        "text": " \u0438\u0434",
+        "tokens": [
+          50620,
+          17255,
+          50794
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -6.456180865948017,
+        "compression_ratio": 0.7837837837837838,
+        "no_speech_prob": 0.23096616566181183
+      },
+      {
+        "id": 3,
+        "seek": 3356,
+        "start": 44.160000000000004,
+        "end": 47.300000000000004,
+        "text": " curiosity",
+        "tokens": [
+          50894,
+          18769,
+          51051
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -6.456180865948017,
+        "compression_ratio": 0.7837837837837838,
+        "no_speech_prob": 0.23096616566181183
+      },
+      {
+        "id": 4,
+        "seek": 3356,
+        "start": 49.78,
+        "end": 55.74,
+        "text": " PETER",
+        "tokens": [
+          51175,
+          36040,
+          51473
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -6.456180865948017,
+        "compression_ratio": 0.7837837837837838,
+        "no_speech_prob": 0.23096616566181183
+      }
+    ]
+  },
+  "scene_analysis": {
+    "error": "ffmpeg MXF->MP4 conversion failed: 00460202951977\n  Stream #0:4: Audio: pcm_s16le, 48000 Hz, mono, s16, 768 kb/s\n      Metadata:\n        file_package_umid: 0x060A2B340101010501010D4313000000CD1CF4DA529405CC0800460202951977\n  Stream #0:5: Data: none\nStream mapping:\n  Stream #0:0 -> #0:0 (copy)\n[mp4 @ 000001a547f6de00] Could not find tag for codec dvvideo in stream #0, codec not currently supported in container\n[out#0/mp4 @ 000001a548016600] Could not write header (incorrect codec parameters ?): Invalid argument\nConversion failed!\n"
+  },
+  "safety_concerns": [],
+  "insertion_points": [],
+  "summary": {
+    "language_detected": "nn",
+    "safety_flags": 0,
+    "safe_insertion_windows": 0
+  }
+}

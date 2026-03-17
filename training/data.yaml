@@ -1,0 +1,40 @@
+# YOLOv8 Dataset Configuration — HodiAI Kenya Custom Classes
+#
+# USAGE
+# -----
+# Option A — Roboflow export (recommended):
+#   python training/training.py --roboflow-export path/to/roboflow_export
+#   (uses the data.yaml inside the Roboflow export folder directly)
+#
+# Option B — local annotation_frames with COCO auto-labels:
+#   python training/training.py --prepare-only   # remaps COCO → Nairobi classes
+#   python training/training.py                  # prepare + train
+
+path: H:/HodiAI_Dev/training/prepared   # updated by training.py --prepare
+train: images/train
+val:   images/val
+
+# 20 custom Kenya classes
+nc: 20
+
+names:
+  0:  matatu
+  1:  nganya
+  2:  city_hoppa
+  3:  school_bus
+  4:  large_bus
+  5:  bodaboda
+  6:  bodaboda_no_helmet
+  7:  bodaboda_stage
+  8:  tuk_tuk
+  9:  mkokoteni
+  10: street_hawkers
+  11: traffic_marshal
+  12: conductor
+  13: matatu_stage
+  14: passenger
+  15: illegal_dumping
+  16: garbage_pile
+  17: traffic_lights
+  18: road_sign
+  19: pothole

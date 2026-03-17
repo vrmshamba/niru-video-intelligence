@@ -1,0 +1,844 @@
+{
+  "video_name": "WALKING SHOTS.AVI",
+  "processed_at": "2026-02-18T11:14:44.958393",
+  "transcript": {
+    "text": "",
+    "language": "ar",
+    "segments": []
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 29,
+    "scenes": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8811960816383362
+          },
+          {
+            "object": "person",
+            "confidence": 0.5005509257316589
+          }
+        ]
+      },
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.5879324674606323
+          },
+          {
+            "object": "person",
+            "confidence": 0.36188042163848877
+          }
+        ]
+      },
+      {
+        "frame_index": 120,
+        "timestamp": 4.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.5415287017822266
+          },
+          {
+            "object": "person",
+            "confidence": 0.48992714285850525
+          },
+          {
+            "object": "person",
+            "confidence": 0.39002853631973267
+          }
+        ]
+      },
+      {
+        "frame_index": 150,
+        "timestamp": 6.0,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.9232527613639832
+          },
+          {
+            "object": "person",
+            "confidence": 0.8096871972084045
+          },
+          {
+            "object": "person",
+            "confidence": 0.7835347652435303
+          },
+          {
+            "object": "person",
+            "confidence": 0.7750419974327087
+          },
+          {
+            "object": "person",
+            "confidence": 0.35835596919059753
+          }
+        ]
+      },
+      {
+        "frame_index": 180,
+        "timestamp": 7.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7938491106033325
+          },
+          {
+            "object": "person",
+            "confidence": 0.7276251912117004
+          },
+          {
+            "object": "person",
+            "confidence": 0.49013400077819824
+          },
+          {
+            "object": "person",
+            "confidence": 0.32301029562950134
+          }
+        ]
+      },
+      {
+        "frame_index": 210,
+        "timestamp": 8.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.3111846148967743
+          },
+          {
+            "object": "person",
+            "confidence": 0.2685633599758148
+          },
+          {
+            "object": "person",
+            "confidence": 0.256919801235199
+          }
+        ]
+      },
+      {
+        "frame_index": 240,
+        "timestamp": 9.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7336753010749817
+          },
+          {
+            "object": "person",
+            "confidence": 0.6587423086166382
+          },
+          {
+            "object": "train",
+            "confidence": 0.5249149203300476
+          }
+        ]
+      },
+      {
+        "frame_index": 270,
+        "timestamp": 10.8,
+        "objects": [
+          {
+            "object": "tie",
+            "confidence": 0.546247661113739
+          },
+          {
+            "object": "person",
+            "confidence": 0.45380720496177673
+          },
+          {
+            "object": "person",
+            "confidence": 0.3934307396411896
+          },
+          {
+            "object": "person",
+            "confidence": 0.3495692014694214
+          },
+          {
+            "object": "person",
+            "confidence": 0.34571966528892517
+          },
+          {
+            "object": "tie",
+            "confidence": 0.3125620484352112
+          },
+          {
+            "object": "person",
+            "confidence": 0.2796730399131775
+          }
+        ]
+      },
+      {
+        "frame_index": 300,
+        "timestamp": 12.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7355930805206299
+          },
+          {
+            "object": "person",
+            "confidence": 0.6603450775146484
+          },
+          {
+            "object": "person",
+            "confidence": 0.5211102962493896
+          }
+        ]
+      },
+      {
+        "frame_index": 330,
+        "timestamp": 13.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.779761552810669
+          },
+          {
+            "object": "car",
+            "confidence": 0.715956449508667
+          },
+          {
+            "object": "person",
+            "confidence": 0.35818350315093994
+          },
+          {
+            "object": "car",
+            "confidence": 0.3448154330253601
+          },
+          {
+            "object": "person",
+            "confidence": 0.2629246115684509
+          }
+        ]
+      },
+      {
+        "frame_index": 360,
+        "timestamp": 14.4,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.9265861511230469
+          },
+          {
+            "object": "person",
+            "confidence": 0.9129800796508789
+          },
+          {
+            "object": "person",
+            "confidence": 0.8447811007499695
+          },
+          {
+            "object": "person",
+            "confidence": 0.8007980585098267
+          },
+          {
+            "object": "person",
+            "confidence": 0.6912049055099487
+          },
+          {
+            "object": "person",
+            "confidence": 0.5616300702095032
+          },
+          {
+            "object": "person",
+            "confidence": 0.44287431240081787
+          }
+        ]
+      },
+      {
+        "frame_index": 390,
+        "timestamp": 15.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.6544857621192932
+          },
+          {
+            "object": "train",
+            "confidence": 0.3675977885723114
+          }
+        ]
+      },
+      {
+        "frame_index": 420,
+        "timestamp": 16.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8981785774230957
+          },
+          {
+            "object": "person",
+            "confidence": 0.8307090401649475
+          },
+          {
+            "object": "person",
+            "confidence": 0.3710964024066925
+          }
+        ]
+      },
+      {
+        "frame_index": 450,
+        "timestamp": 18.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9254329204559326
+          },
+          {
+            "object": "person",
+            "confidence": 0.32340410351753235
+          }
+        ]
+      },
+      {
+        "frame_index": 480,
+        "timestamp": 19.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.863463282585144
+          },
+          {
+            "object": "car",
+            "confidence": 0.7848960757255554
+          },
+          {
+            "object": "person",
+            "confidence": 0.6550673246383667
+          },
+          {
+            "object": "person",
+            "confidence": 0.5307590961456299
+          }
+        ]
+      },
+      {
+        "frame_index": 510,
+        "timestamp": 20.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.809039831161499
+          },
+          {
+            "object": "car",
+            "confidence": 0.7975946664810181
+          },
+          {
+            "object": "person",
+            "confidence": 0.7623305916786194
+          },
+          {
+            "object": "person",
+            "confidence": 0.5529420375823975
+          },
+          {
+            "object": "person",
+            "confidence": 0.5342853665351868
+          },
+          {
+            "object": "person",
+            "confidence": 0.4047851860523224
+          },
+          {
+            "object": "suitcase",
+            "confidence": 0.36300429701805115
+          },
+          {
+            "object": "person",
+            "confidence": 0.3518235981464386
+          },
+          {
+            "object": "person",
+            "confidence": 0.34391921758651733
+          }
+        ]
+      },
+      {
+        "frame_index": 540,
+        "timestamp": 21.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8913193941116333
+          },
+          {
+            "object": "person",
+            "confidence": 0.8099504113197327
+          },
+          {
+            "object": "person",
+            "confidence": 0.8028011918067932
+          },
+          {
+            "object": "person",
+            "confidence": 0.6869080662727356
+          },
+          {
+            "object": "person",
+            "confidence": 0.5577192902565002
+          },
+          {
+            "object": "person",
+            "confidence": 0.46862727403640747
+          },
+          {
+            "object": "person",
+            "confidence": 0.4128086268901825
+          },
+          {
+            "object": "person",
+            "confidence": 0.40873193740844727
+          },
+          {
+            "object": "person",
+            "confidence": 0.31899335980415344
+          },
+          {
+            "object": "person",
+            "confidence": 0.274807333946228
+          },
+          {
+            "object": "person",
+            "confidence": 0.2607975900173187
+          },
+          {
+            "object": "person",
+            "confidence": 0.25176164507865906
+          }
+        ]
+      },
+      {
+        "frame_index": 570,
+        "timestamp": 22.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8955045342445374
+          },
+          {
+            "object": "person",
+            "confidence": 0.8447814583778381
+          },
+          {
+            "object": "car",
+            "confidence": 0.7306733727455139
+          },
+          {
+            "object": "person",
+            "confidence": 0.5918423533439636
+          },
+          {
+            "object": "person",
+            "confidence": 0.5499469637870789
+          },
+          {
+            "object": "person",
+            "confidence": 0.4859439730644226
+          },
+          {
+            "object": "person",
+            "confidence": 0.29682469367980957
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.2807255685329437
+          },
+          {
+            "object": "person",
+            "confidence": 0.26288408041000366
+          }
+        ]
+      },
+      {
+        "frame_index": 600,
+        "timestamp": 24.0,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.8295625448226929
+          },
+          {
+            "object": "person",
+            "confidence": 0.7190589904785156
+          },
+          {
+            "object": "person",
+            "confidence": 0.41736626625061035
+          }
+        ]
+      },
+      {
+        "frame_index": 630,
+        "timestamp": 25.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8808178305625916
+          },
+          {
+            "object": "person",
+            "confidence": 0.8061450719833374
+          },
+          {
+            "object": "person",
+            "confidence": 0.7106049060821533
+          },
+          {
+            "object": "car",
+            "confidence": 0.7068802118301392
+          },
+          {
+            "object": "person",
+            "confidence": 0.6890534162521362
+          },
+          {
+            "object": "person",
+            "confidence": 0.6009951233863831
+          },
+          {
+            "object": "person",
+            "confidence": 0.45414379239082336
+          }
+        ]
+      },
+      {
+        "frame_index": 660,
+        "timestamp": 26.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8657015562057495
+          },
+          {
+            "object": "person",
+            "confidence": 0.8520532846450806
+          },
+          {
+            "object": "person",
+            "confidence": 0.8170876502990723
+          },
+          {
+            "object": "car",
+            "confidence": 0.7390537858009338
+          },
+          {
+            "object": "person",
+            "confidence": 0.7194931507110596
+          },
+          {
+            "object": "person",
+            "confidence": 0.7192328572273254
+          },
+          {
+            "object": "person",
+            "confidence": 0.489271342754364
+          },
+          {
+            "object": "person",
+            "confidence": 0.31217893958091736
+          }
+        ]
+      },
+      {
+        "frame_index": 690,
+        "timestamp": 27.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8947268128395081
+          },
+          {
+            "object": "person",
+            "confidence": 0.8724737167358398
+          },
+          {
+            "object": "person",
+            "confidence": 0.7829789519309998
+          },
+          {
+            "object": "car",
+            "confidence": 0.7336398959159851
+          },
+          {
+            "object": "person",
+            "confidence": 0.5982990264892578
+          },
+          {
+            "object": "person",
+            "confidence": 0.4244142174720764
+          },
+          {
+            "object": "person",
+            "confidence": 0.401800274848938
+          },
+          {
+            "object": "person",
+            "confidence": 0.2782537043094635
+          }
+        ]
+      },
+      {
+        "frame_index": 720,
+        "timestamp": 28.8,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.8259912729263306
+          },
+          {
+            "object": "person",
+            "confidence": 0.795829176902771
+          },
+          {
+            "object": "person",
+            "confidence": 0.7051933407783508
+          },
+          {
+            "object": "person",
+            "confidence": 0.3030686378479004
+          },
+          {
+            "object": "person",
+            "confidence": 0.3020545542240143
+          }
+        ]
+      },
+      {
+        "frame_index": 750,
+        "timestamp": 30.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.921957790851593
+          },
+          {
+            "object": "person",
+            "confidence": 0.8619516491889954
+          },
+          {
+            "object": "person",
+            "confidence": 0.8327661156654358
+          },
+          {
+            "object": "car",
+            "confidence": 0.7952940464019775
+          },
+          {
+            "object": "person",
+            "confidence": 0.5399295687675476
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.2850315272808075
+          }
+        ]
+      },
+      {
+        "frame_index": 780,
+        "timestamp": 31.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.939689576625824
+          },
+          {
+            "object": "person",
+            "confidence": 0.8774460554122925
+          },
+          {
+            "object": "car",
+            "confidence": 0.8486359715461731
+          },
+          {
+            "object": "person",
+            "confidence": 0.6989738941192627
+          },
+          {
+            "object": "person",
+            "confidence": 0.66073077917099
+          },
+          {
+            "object": "person",
+            "confidence": 0.6164901852607727
+          },
+          {
+            "object": "person",
+            "confidence": 0.5198557376861572
+          }
+        ]
+      },
+      {
+        "frame_index": 810,
+        "timestamp": 32.4,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.865655779838562
+          },
+          {
+            "object": "person",
+            "confidence": 0.812102735042572
+          },
+          {
+            "object": "person",
+            "confidence": 0.7844722270965576
+          },
+          {
+            "object": "person",
+            "confidence": 0.7631365060806274
+          },
+          {
+            "object": "person",
+            "confidence": 0.6194543242454529
+          },
+          {
+            "object": "person",
+            "confidence": 0.3873763382434845
+          },
+          {
+            "object": "person",
+            "confidence": 0.35234302282333374
+          },
+          {
+            "object": "person",
+            "confidence": 0.3520686626434326
+          },
+          {
+            "object": "person",
+            "confidence": 0.2962927222251892
+          }
+        ]
+      },
+      {
+        "frame_index": 840,
+        "timestamp": 33.6,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.8775164484977722
+          },
+          {
+            "object": "person",
+            "confidence": 0.8621577024459839
+          },
+          {
+            "object": "person",
+            "confidence": 0.7628074884414673
+          },
+          {
+            "object": "person",
+            "confidence": 0.7257457375526428
+          },
+          {
+            "object": "person",
+            "confidence": 0.6446824669837952
+          },
+          {
+            "object": "person",
+            "confidence": 0.4174060523509979
+          },
+          {
+            "object": "person",
+            "confidence": 0.3846103847026825
+          },
+          {
+            "object": "person",
+            "confidence": 0.35972052812576294
+          }
+        ]
+      },
+      {
+        "frame_index": 870,
+        "timestamp": 34.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7653757929801941
+          },
+          {
+            "object": "person",
+            "confidence": 0.7537244558334351
+          },
+          {
+            "object": "car",
+            "confidence": 0.7214824557304382
+          },
+          {
+            "object": "person",
+            "confidence": 0.5035660862922668
+          },
+          {
+            "object": "person",
+            "confidence": 0.4120514988899231
+          },
+          {
+            "object": "person",
+            "confidence": 0.38856735825538635
+          },
+          {
+            "object": "person",
+            "confidence": 0.3298558294773102
+          }
+        ]
+      },
+      {
+        "frame_index": 900,
+        "timestamp": 36.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8845645785331726
+          },
+          {
+            "object": "person",
+            "confidence": 0.8628661632537842
+          },
+          {
+            "object": "person",
+            "confidence": 0.8230814933776855
+          },
+          {
+            "object": "car",
+            "confidence": 0.7992498874664307
+          },
+          {
+            "object": "person",
+            "confidence": 0.7501959800720215
+          },
+          {
+            "object": "person",
+            "confidence": 0.3734573721885681
+          },
+          {
+            "object": "person",
+            "confidence": 0.3079206347465515
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [
+    {
+      "type": "crowd_detection",
+      "timestamp": 21.6,
+      "description": "Large gathering detected: 12 people",
+      "severity": "medium"
+    }
+  ],
+  "insertion_points": [],
+  "summary": {
+    "language_detected": "ar",
+    "total_objects_detected": 29,
+    "safety_flags": 1,
+    "safe_insertion_windows": 0
+  },
+  "annotated_video": "web_annotated_WALKING SHOTS.AVI"
+}

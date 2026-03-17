@@ -1,0 +1,176 @@
+{
+  "video_name": "GROGON MEN AT WORK (3).MXF",
+  "processed_at": "2026-02-18T18:03:15.186442",
+  "transcript": {
+    "text": "",
+    "language": "jw",
+    "segments": []
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 10,
+    "scenes": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.827663004398346
+          }
+        ]
+      },
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.5663877129554749
+          },
+          {
+            "object": "person",
+            "confidence": 0.43862903118133545
+          },
+          {
+            "object": "cup",
+            "confidence": 0.3442213535308838
+          }
+        ]
+      },
+      {
+        "frame_index": 60,
+        "timestamp": 2.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.5599097013473511
+          },
+          {
+            "object": "person",
+            "confidence": 0.4882589876651764
+          },
+          {
+            "object": "cup",
+            "confidence": 0.3588370680809021
+          },
+          {
+            "object": "bowl",
+            "confidence": 0.28325381875038147
+          }
+        ]
+      },
+      {
+        "frame_index": 90,
+        "timestamp": 3.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7403692603111267
+          },
+          {
+            "object": "person",
+            "confidence": 0.46751174330711365
+          }
+        ]
+      },
+      {
+        "frame_index": 120,
+        "timestamp": 4.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7624533772468567
+          },
+          {
+            "object": "person",
+            "confidence": 0.4241636395454407
+          }
+        ]
+      },
+      {
+        "frame_index": 150,
+        "timestamp": 6.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.6841098666191101
+          },
+          {
+            "object": "person",
+            "confidence": 0.3300034701824188
+          }
+        ]
+      },
+      {
+        "frame_index": 180,
+        "timestamp": 7.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8056557178497314
+          }
+        ]
+      },
+      {
+        "frame_index": 210,
+        "timestamp": 8.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8356452584266663
+          },
+          {
+            "object": "person",
+            "confidence": 0.40470051765441895
+          }
+        ]
+      },
+      {
+        "frame_index": 240,
+        "timestamp": 9.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8712364435195923
+          },
+          {
+            "object": "person",
+            "confidence": 0.47082313895225525
+          }
+        ]
+      },
+      {
+        "frame_index": 270,
+        "timestamp": 10.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.7859996557235718
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [],
+  "insertion_points": [
+    {
+      "timestamp": 0.0,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 2
+    },
+    {
+      "timestamp": 6.0,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 1
+    }
+  ],
+  "summary": {
+    "language_detected": "jw",
+    "total_objects_detected": 10,
+    "safety_flags": 0,
+    "safe_insertion_windows": 2
+  },
+  "annotated_video": "web_annotated_GROGON MEN AT WORK (3).MXF"
+}

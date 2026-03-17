@@ -1,0 +1,307 @@
+{
+  "video_name": "CLOSE UP TRAFFIC LIGHTS.MXF",
+  "processed_at": "2026-02-18T18:00:29.648066",
+  "transcript": {
+    "text": " Put up on the trotzdemSea grandson A laundry When standby I need deceiving Didn't ask the address My student's address",
+    "language": "nn",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 4.24,
+        "text": " Put up on the trotzdem",
+        "tokens": [
+          50364,
+          4935,
+          493,
+          322,
+          264,
+          28325,
+          50576
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.214914833627096,
+        "compression_ratio": 1.145631067961165,
+        "no_speech_prob": 0.5134871006011963
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 4.24,
+        "end": 5.28,
+        "text": "Sea grandson",
+        "tokens": [
+          50576,
+          10637,
+          64,
+          31657,
+          50628
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.214914833627096,
+        "compression_ratio": 1.145631067961165,
+        "no_speech_prob": 0.5134871006011963
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 5.3,
+        "end": 5.94,
+        "text": " A laundry",
+        "tokens": [
+          50629,
+          316,
+          19811,
+          50661
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.214914833627096,
+        "compression_ratio": 1.145631067961165,
+        "no_speech_prob": 0.5134871006011963
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 5.94,
+        "end": 8.06,
+        "text": " When standby",
+        "tokens": [
+          50661,
+          1133,
+          50170,
+          50767
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.214914833627096,
+        "compression_ratio": 1.145631067961165,
+        "no_speech_prob": 0.5134871006011963
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 8.06,
+        "end": 9.28,
+        "text": " I need deceiving",
+        "tokens": [
+          50767,
+          286,
+          643,
+          14088,
+          2123,
+          50828
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.214914833627096,
+        "compression_ratio": 1.145631067961165,
+        "no_speech_prob": 0.5134871006011963
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 9.32,
+        "end": 11.38,
+        "text": " Didn't ask the address",
+        "tokens": [
+          50830,
+          11151,
+          380,
+          1029,
+          264,
+          2985,
+          50933
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.214914833627096,
+        "compression_ratio": 1.145631067961165,
+        "no_speech_prob": 0.5134871006011963
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 11.38,
+        "end": 14.88,
+        "text": " My student's address",
+        "tokens": [
+          50933,
+          1222,
+          3107,
+          311,
+          2985,
+          51108
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.214914833627096,
+        "compression_ratio": 1.145631067961165,
+        "no_speech_prob": 0.5134871006011963
+      }
+    ]
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 10,
+    "scenes": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.5005142688751221
+          }
+        ]
+      },
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.46585366129875183
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.3345017433166504
+          }
+        ]
+      },
+      {
+        "frame_index": 60,
+        "timestamp": 2.4,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.8055171370506287
+          },
+          {
+            "object": "laptop",
+            "confidence": 0.5500237345695496
+          }
+        ]
+      },
+      {
+        "frame_index": 90,
+        "timestamp": 3.6,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.7432191967964172
+          },
+          {
+            "object": "keyboard",
+            "confidence": 0.3719741702079773
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.29460862278938293
+          }
+        ]
+      },
+      {
+        "frame_index": 120,
+        "timestamp": 4.8,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.8740130662918091
+          },
+          {
+            "object": "keyboard",
+            "confidence": 0.267111599445343
+          }
+        ]
+      },
+      {
+        "frame_index": 150,
+        "timestamp": 6.0,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.8230655193328857
+          }
+        ]
+      },
+      {
+        "frame_index": 180,
+        "timestamp": 7.2,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.8840150237083435
+          },
+          {
+            "object": "keyboard",
+            "confidence": 0.25851255655288696
+          }
+        ]
+      },
+      {
+        "frame_index": 210,
+        "timestamp": 8.4,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.835992157459259
+          },
+          {
+            "object": "keyboard",
+            "confidence": 0.3847919702529907
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.26020437479019165
+          }
+        ]
+      },
+      {
+        "frame_index": 240,
+        "timestamp": 9.6,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.775540292263031
+          },
+          {
+            "object": "keyboard",
+            "confidence": 0.438143789768219
+          }
+        ]
+      },
+      {
+        "frame_index": 270,
+        "timestamp": 10.8,
+        "objects": [
+          {
+            "object": "traffic light",
+            "confidence": 0.7686295509338379
+          },
+          {
+            "object": "keyboard",
+            "confidence": 0.27276918292045593
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [],
+  "insertion_points": [
+    {
+      "timestamp": 0.0,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 2
+    },
+    {
+      "timestamp": 6.0,
+      "duration": 5,
+      "reason": "stable_scene_low_objects",
+      "object_count": 2
+    }
+  ],
+  "summary": {
+    "language_detected": "nn",
+    "total_objects_detected": 10,
+    "safety_flags": 0,
+    "safe_insertion_windows": 2
+  },
+  "annotated_video": "web_annotated_CLOSE UP TRAFFIC LIGHTS.MXF"
+}

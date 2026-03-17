@@ -1,0 +1,417 @@
+{
+  "video_name": "STREET SHOT  PEOPLE WALKING,TRAFFIC LIGHT .AVI",
+  "processed_at": "2026-02-18T10:55:50.280893",
+  "transcript": {
+    "text": " \u0431\u043b\u044f\u0434\u043a\u043039",
+    "language": "ru",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 2.18,
+        "text": " \u0431\u043b\u044f\u0434\u043a\u043039",
+        "tokens": [
+          50400,
+          1268,
+          2873,
+          856,
+          2833,
+          12493,
+          50473
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -4.6638383865356445,
+        "compression_ratio": 0.6086956521739131,
+        "no_speech_prob": 0.5102007389068604
+      }
+    ]
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 5,
+    "scenes": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8706971406936646
+          },
+          {
+            "object": "person",
+            "confidence": 0.8695999383926392
+          },
+          {
+            "object": "person",
+            "confidence": 0.8381005525588989
+          },
+          {
+            "object": "person",
+            "confidence": 0.8055011034011841
+          },
+          {
+            "object": "person",
+            "confidence": 0.7392140626907349
+          },
+          {
+            "object": "person",
+            "confidence": 0.7123695015907288
+          },
+          {
+            "object": "person",
+            "confidence": 0.6923353672027588
+          },
+          {
+            "object": "person",
+            "confidence": 0.6373880505561829
+          },
+          {
+            "object": "person",
+            "confidence": 0.5640576481819153
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.4802553057670593
+          },
+          {
+            "object": "person",
+            "confidence": 0.4255305826663971
+          },
+          {
+            "object": "person",
+            "confidence": 0.3609917163848877
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.263074666261673
+          }
+        ]
+      },
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8933982253074646
+          },
+          {
+            "object": "person",
+            "confidence": 0.8721314668655396
+          },
+          {
+            "object": "person",
+            "confidence": 0.8090276718139648
+          },
+          {
+            "object": "person",
+            "confidence": 0.7947642803192139
+          },
+          {
+            "object": "person",
+            "confidence": 0.7362996935844421
+          },
+          {
+            "object": "person",
+            "confidence": 0.6950825452804565
+          },
+          {
+            "object": "person",
+            "confidence": 0.6831886172294617
+          },
+          {
+            "object": "person",
+            "confidence": 0.6761272549629211
+          },
+          {
+            "object": "person",
+            "confidence": 0.6514243483543396
+          },
+          {
+            "object": "person",
+            "confidence": 0.6296296715736389
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.4742294251918793
+          },
+          {
+            "object": "person",
+            "confidence": 0.4284864664077759
+          },
+          {
+            "object": "person",
+            "confidence": 0.41189754009246826
+          },
+          {
+            "object": "person",
+            "confidence": 0.3254886865615845
+          },
+          {
+            "object": "person",
+            "confidence": 0.2795000672340393
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.27890655398368835
+          }
+        ]
+      },
+      {
+        "frame_index": 60,
+        "timestamp": 2.4,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.9052295088768005
+          },
+          {
+            "object": "person",
+            "confidence": 0.8482621908187866
+          },
+          {
+            "object": "person",
+            "confidence": 0.7821550369262695
+          },
+          {
+            "object": "person",
+            "confidence": 0.6880985498428345
+          },
+          {
+            "object": "person",
+            "confidence": 0.6712198853492737
+          },
+          {
+            "object": "person",
+            "confidence": 0.6664252281188965
+          },
+          {
+            "object": "person",
+            "confidence": 0.6495366096496582
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5719965100288391
+          },
+          {
+            "object": "person",
+            "confidence": 0.5387876629829407
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.4573684334754944
+          },
+          {
+            "object": "car",
+            "confidence": 0.419100821018219
+          },
+          {
+            "object": "person",
+            "confidence": 0.3330748975276947
+          },
+          {
+            "object": "person",
+            "confidence": 0.32049041986465454
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.31145820021629333
+          },
+          {
+            "object": "car",
+            "confidence": 0.2996194362640381
+          }
+        ]
+      },
+      {
+        "frame_index": 90,
+        "timestamp": 3.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.911454975605011
+          },
+          {
+            "object": "person",
+            "confidence": 0.8994656205177307
+          },
+          {
+            "object": "person",
+            "confidence": 0.8557385206222534
+          },
+          {
+            "object": "person",
+            "confidence": 0.7473905086517334
+          },
+          {
+            "object": "person",
+            "confidence": 0.6951539516448975
+          },
+          {
+            "object": "person",
+            "confidence": 0.6606372594833374
+          },
+          {
+            "object": "person",
+            "confidence": 0.6249247193336487
+          },
+          {
+            "object": "person",
+            "confidence": 0.6237145662307739
+          },
+          {
+            "object": "person",
+            "confidence": 0.599320113658905
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.5595872402191162
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.4965801239013672
+          },
+          {
+            "object": "person",
+            "confidence": 0.46275970339775085
+          },
+          {
+            "object": "person",
+            "confidence": 0.423595130443573
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.4177250266075134
+          },
+          {
+            "object": "car",
+            "confidence": 0.35964077711105347
+          },
+          {
+            "object": "car",
+            "confidence": 0.2979247570037842
+          },
+          {
+            "object": "person",
+            "confidence": 0.27897563576698303
+          }
+        ]
+      },
+      {
+        "frame_index": 120,
+        "timestamp": 4.8,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.8794506192207336
+          },
+          {
+            "object": "person",
+            "confidence": 0.8620197176933289
+          },
+          {
+            "object": "person",
+            "confidence": 0.8028550148010254
+          },
+          {
+            "object": "person",
+            "confidence": 0.7061150670051575
+          },
+          {
+            "object": "person",
+            "confidence": 0.6391844153404236
+          },
+          {
+            "object": "person",
+            "confidence": 0.6261814832687378
+          },
+          {
+            "object": "person",
+            "confidence": 0.6030591130256653
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.48150157928466797
+          },
+          {
+            "object": "person",
+            "confidence": 0.4704137444496155
+          },
+          {
+            "object": "car",
+            "confidence": 0.39966726303100586
+          },
+          {
+            "object": "person",
+            "confidence": 0.37689629197120667
+          },
+          {
+            "object": "person",
+            "confidence": 0.37608715891838074
+          },
+          {
+            "object": "person",
+            "confidence": 0.35342347621917725
+          },
+          {
+            "object": "person",
+            "confidence": 0.28915753960609436
+          },
+          {
+            "object": "person",
+            "confidence": 0.2868936061859131
+          },
+          {
+            "object": "person",
+            "confidence": 0.2668050527572632
+          },
+          {
+            "object": "handbag",
+            "confidence": 0.26165881752967834
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [
+    {
+      "type": "crowd_detection",
+      "timestamp": 0.0,
+      "description": "Large gathering detected: 11 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 1.2,
+      "description": "Large gathering detected: 14 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 2.4,
+      "description": "Large gathering detected: 10 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 3.6,
+      "description": "Large gathering detected: 12 people",
+      "severity": "medium"
+    },
+    {
+      "type": "crowd_detection",
+      "timestamp": 4.8,
+      "description": "Large gathering detected: 14 people",
+      "severity": "medium"
+    }
+  ],
+  "insertion_points": [],
+  "summary": {
+    "language_detected": "ru",
+    "total_objects_detected": 5,
+    "safety_flags": 5,
+    "safe_insertion_windows": 0
+  },
+  "annotated_video": "web_annotated_STREET SHOT  PEOPLE WALKING,TRAFFIC LIGHT .AVI"
+}

@@ -1,0 +1,247 @@
+{
+  "video_name": "MORE CTS MATATUS ON THE STREETS.MXF",
+  "processed_at": "2026-02-18T18:15:01.576608",
+  "transcript": {
+    "text": "",
+    "language": "ja",
+    "segments": []
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 8,
+    "scenes": [
+      {
+        "frame_index": 0,
+        "timestamp": 0.0,
+        "objects": [
+          {
+            "object": "bus",
+            "confidence": 0.9102354645729065
+          },
+          {
+            "object": "person",
+            "confidence": 0.7834367156028748
+          },
+          {
+            "object": "motorcycle",
+            "confidence": 0.6817039251327515
+          },
+          {
+            "object": "motorcycle",
+            "confidence": 0.5561177730560303
+          },
+          {
+            "object": "truck",
+            "confidence": 0.5343542098999023
+          },
+          {
+            "object": "car",
+            "confidence": 0.504476010799408
+          },
+          {
+            "object": "person",
+            "confidence": 0.45475804805755615
+          },
+          {
+            "object": "car",
+            "confidence": 0.4477553963661194
+          },
+          {
+            "object": "bus",
+            "confidence": 0.38796597719192505
+          },
+          {
+            "object": "car",
+            "confidence": 0.27593719959259033
+          }
+        ]
+      },
+      {
+        "frame_index": 30,
+        "timestamp": 1.2,
+        "objects": [
+          {
+            "object": "bus",
+            "confidence": 0.8521450757980347
+          },
+          {
+            "object": "person",
+            "confidence": 0.682326078414917
+          },
+          {
+            "object": "car",
+            "confidence": 0.6491372585296631
+          },
+          {
+            "object": "car",
+            "confidence": 0.6463576555252075
+          },
+          {
+            "object": "motorcycle",
+            "confidence": 0.6416894197463989
+          },
+          {
+            "object": "truck",
+            "confidence": 0.6147140264511108
+          },
+          {
+            "object": "car",
+            "confidence": 0.39121386408805847
+          },
+          {
+            "object": "person",
+            "confidence": 0.384151816368103
+          },
+          {
+            "object": "person",
+            "confidence": 0.28120166063308716
+          }
+        ]
+      },
+      {
+        "frame_index": 60,
+        "timestamp": 2.4,
+        "objects": [
+          {
+            "object": "bus",
+            "confidence": 0.8944652080535889
+          },
+          {
+            "object": "car",
+            "confidence": 0.8768858909606934
+          },
+          {
+            "object": "car",
+            "confidence": 0.8678594827651978
+          },
+          {
+            "object": "motorcycle",
+            "confidence": 0.6297147870063782
+          },
+          {
+            "object": "person",
+            "confidence": 0.5530012249946594
+          },
+          {
+            "object": "bus",
+            "confidence": 0.4055418372154236
+          },
+          {
+            "object": "bus",
+            "confidence": 0.31256863474845886
+          }
+        ]
+      },
+      {
+        "frame_index": 90,
+        "timestamp": 3.6,
+        "objects": [
+          {
+            "object": "person",
+            "confidence": 0.3083495795726776
+          }
+        ]
+      },
+      {
+        "frame_index": 120,
+        "timestamp": 4.8,
+        "objects": [
+          {
+            "object": "bus",
+            "confidence": 0.8836267590522766
+          },
+          {
+            "object": "car",
+            "confidence": 0.8543930053710938
+          },
+          {
+            "object": "bus",
+            "confidence": 0.6461896896362305
+          },
+          {
+            "object": "person",
+            "confidence": 0.2808019816875458
+          },
+          {
+            "object": "train",
+            "confidence": 0.2691649794578552
+          }
+        ]
+      },
+      {
+        "frame_index": 150,
+        "timestamp": 6.0,
+        "objects": [
+          {
+            "object": "bus",
+            "confidence": 0.8872258067131042
+          },
+          {
+            "object": "train",
+            "confidence": 0.5234503149986267
+          }
+        ]
+      },
+      {
+        "frame_index": 180,
+        "timestamp": 7.2,
+        "objects": [
+          {
+            "object": "bus",
+            "confidence": 0.9114209413528442
+          },
+          {
+            "object": "car",
+            "confidence": 0.8177595138549805
+          },
+          {
+            "object": "person",
+            "confidence": 0.7523890137672424
+          },
+          {
+            "object": "car",
+            "confidence": 0.4426734447479248
+          },
+          {
+            "object": "car",
+            "confidence": 0.3237681984901428
+          }
+        ]
+      },
+      {
+        "frame_index": 210,
+        "timestamp": 8.4,
+        "objects": [
+          {
+            "object": "car",
+            "confidence": 0.8330284357070923
+          },
+          {
+            "object": "car",
+            "confidence": 0.47786223888397217
+          },
+          {
+            "object": "person",
+            "confidence": 0.4614317715167999
+          },
+          {
+            "object": "car",
+            "confidence": 0.4284985363483429
+          },
+          {
+            "object": "traffic light",
+            "confidence": 0.3975093364715576
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [],
+  "insertion_points": [],
+  "summary": {
+    "language_detected": "ja",
+    "total_objects_detected": 8,
+    "safety_flags": 0,
+    "safe_insertion_windows": 0
+  },
+  "annotated_video": "web_annotated_MORE CTS MATATUS ON THE STREETS.MXF"
+}

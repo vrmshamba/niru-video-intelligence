@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cmd /c \"dir H:\\\\ /b 2>&1\")",
+      "Bash(cmd /c \"dir H:\\\\ /b\")",
+      "Bash(python:*)",
+      "Bash(cmd /c:*)",
+      "Bash(cmd /c \"py -0\")",
+      "Bash(\"H:/HodiAI_Dev/.venv/Scripts/python.exe\":*)",
+      "Bash(\"C:/Python314/python.exe\" -m venv \"H:/HodiAI_Dev/.venv\")",
+      "Bash(echo:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(.venv/Scripts/pip.exe install:*)"
+    ]
+  }
+}

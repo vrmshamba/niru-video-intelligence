@@ -1,0 +1,58 @@
+name: Sync to Hugging Face Hub
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  sync-to-hub:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install huggingface_hub
+        run: pip install huggingface_hub
+
+      - name: Push code files to HF Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          GOOGLE_API_KEY: ${{ secrets.HODI_AIGEMINI }}
+        run: |
+          python - <<'EOF'
+          import os
+          from huggingface_hub import HfApi
+
+          api = HfApi(token=os.environ["HF_TOKEN"])
+          api.upload_folder(
+              folder_path=".",
+              repo_id="susanngatia/hodi-ai",
+              repo_type="space",
+              ignore_patterns=[
+                  ".git/",
+                  ".github/",
+                  ".venv/",
+                  "__pycache__/",
+                  "*.pyc",
+                  "results/",
+                  "videos/",
+                  "models/",
+                  "outputs/",
+                  "annotation_frames/",
+                  "annotation_labels/",
+                  "training/",
+                  "*.mp4",
+                  "*.avi",
+                  "*.mov",
+                  "*.mxf",
+                  "*.pt",
+                  ".env",
+              ],
+          )
+          print("Sync to HuggingFace Space complete.")
+          EOF

@@ -1,0 +1,43 @@
+{
+  "video_name": "GROGON SPARE PARTS CUTS.MXF",
+  "processed_at": "2026-02-18T18:05:48.506033",
+  "transcript": {
+    "text": "",
+    "language": "cy",
+    "segments": []
+  },
+  "scene_analysis": {
+    "total_scenes_analyzed": 2,
+    "scenes": [
+      {
+        "frame_index": 60,
+        "timestamp": 2.4,
+        "objects": [
+          {
+            "object": "clock",
+            "confidence": 0.3383883833885193
+          }
+        ]
+      },
+      {
+        "frame_index": 300,
+        "timestamp": 12.0,
+        "objects": [
+          {
+            "object": "backpack",
+            "confidence": 0.2939320206642151
+          }
+        ]
+      }
+    ]
+  },
+  "safety_concerns": [],
+  "insertion_points": [],
+  "summary": {
+    "language_detected": "cy",
+    "total_objects_detected": 2,
+    "safety_flags": 0,
+    "safe_insertion_windows": 0
+  },
+  "annotated_video": "web_annotated_GROGON SPARE PARTS CUTS.MXF"
+}

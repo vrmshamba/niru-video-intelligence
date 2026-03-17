@@ -1,0 +1,63 @@
+# HodiAI Custom Dataset — 20 Kenya Street Classes
+# Fine-tunes YOLOv8n on Kenya street footage extracted from H:/ video library.
+#
+# Raw source data (COCO-80 auto-labels):
+#   annotation_frames/   — 1 JPG/second extracted from each video
+#   annotation_labels/   — YOLO-format labels from YOLOv8n/COCO
+#
+# training/training.py remaps the 5 overlapping COCO classes to this schema
+# and copies data into the prepared/ layout expected by YOLOv8 trainer.
+#
+# Prepare dataset:
+#   python training/training.py --prepare-only
+#
+# Train (after prepare):
+#   python training/training.py
+#
+# Or train directly with yolo CLI:
+#   yolo detect train data=training/dataset.yaml model=yolov8n.pt epochs=50 imgsz=640
+
+path: H:/HodiAI_Dev/training/prepared   # dataset root (absolute)
+train: images/train                        # training images — relative to path
+val:   images/val                          # validation images — relative to path
+
+# Number of classes
+nc: 20
+
+# Class names — Kenya street context
+# Classes with COCO remapping are bootstrapped from auto-labels.
+# Classes marked "manual" require annotation before the model can learn them.
+names:
+  0:  matatu              # 14-seat minibus PSV; remapped from COCO bus (catch-all)
+  1:  nganya              # higher-capacity matatu variant — manual labels needed
+  2:  city_hoppa          # large city bus brand — manual labels needed
+  3:  school_bus          # yellow/marked school bus — manual labels needed
+  4:  large_bus           # full-size inter-city bus — manual labels needed
+  5:  bodaboda            # motorcycle taxi; remapped from COCO motorcycle (catch-all)
+  6:  bodaboda_no_helmet  # helmetless rider safety flag — manual labels needed
+  7:  bodaboda_stage      # motorcycle taxi waiting area — manual labels needed
+  8:  tuk_tuk             # three-wheel auto-rickshaw — manual labels needed
+  9:  mkokoteni           # human-powered push-cart — manual labels needed
+  10: street_hawkers      # mobile street vendors — manual labels needed
+  11: traffic_marshal     # yellow-vest traffic controller — manual labels needed
+  12: conductor           # matatu tout / makanga — manual labels needed
+  13: matatu_stage        # matatu bus stop / terminus — manual labels needed
+  14: passenger           # pedestrian / commuter; remapped from COCO person (catch-all)
+  15: illegal_dumping     # roadside waste dumping event — manual labels needed
+  16: garbage_pile        # accumulated roadside garbage — manual labels needed
+  17: traffic_lights      # traffic signal; remapped from COCO traffic light
+  18: road_sign           # road / stop sign; remapped from COCO stop sign
+  19: pothole             # road surface damage — manual labels needed
+
+# COCO-to-Nairobi remapping used by training.py during dataset preparation:
+# (informational — parsed by training.py at runtime)
+#
+# COCO 0  (person)        →  14 (passenger)     [hawkers, conductors, marshals need manual split]
+# COCO 3  (motorcycle)    →   5 (bodaboda)       [tuk_tuk / no-helmet need manual split]
+# COCO 5  (bus)           →   0 (matatu)         [nganya/city_hoppa/school_bus/large_bus need manual split]
+# COCO 9  (traffic light) →  17 (traffic_lights)
+# COCO 11 (stop sign)     →  18 (road_sign)
+# COCO 1  (bicycle)       →  discarded (no equivalent class)
+# COCO 2  (car)           →  discarded (no equivalent class)
+# COCO 7  (truck)         →  discarded (no equivalent class)
+# All other COCO classes  →  discarded
